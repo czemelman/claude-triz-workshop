@@ -44,8 +44,16 @@ def vocabulary(live_matrices_path):
 # --- 1. Every matrix_file resolves and parses ----------------------------
 
 def test_every_matrix_file_resolves_and_parses(registry, live_matrices_path):
-    """Each registry entry's matrix_file path must exist and be valid JSON."""
+    """Each registry entry's matrix_file path must exist and be valid JSON.
+
+    Entries with `bundled: false` reference matrices that are intentionally
+    NOT shipped in this repo (license restrictions; see MATRICES_OPTIONAL.md).
+    A missing file for such an entry is expected — the plugin's Stage A will
+    drop the matrix at runtime when the file isn't on disk. The test asserts
+    file presence ONLY for bundled entries.
+    """
     failures = []
+    skipped_unbundled = []
     for entry in registry.get("matrices", []):
         rel = entry.get("matrix_file")
         if not rel:
@@ -53,6 +61,9 @@ def test_every_matrix_file_resolves_and_parses(registry, live_matrices_path):
             continue
         p = live_matrices_path / rel
         if not p.exists():
+            if entry.get("bundled") is False:
+                skipped_unbundled.append(entry["id"])
+                continue
             failures.append(f"{entry['id']!r}: {p} missing")
             continue
         try:
@@ -60,6 +71,10 @@ def test_every_matrix_file_resolves_and_parses(registry, live_matrices_path):
         except json.JSONDecodeError as e:
             failures.append(f"{entry['id']!r}: invalid JSON: {e}")
     assert not failures, "\n".join(failures)
+    # Diagnostic: surface which entries were correctly skipped (visible in -v output).
+    if skipped_unbundled:
+        print(f"\n  [info] {len(skipped_unbundled)} unbundled matrix file(s) "
+              f"absent as expected: {sorted(skipped_unbundled)}")
 
 
 # --- 2. Every meta.id matches filename stem -------------------------------
