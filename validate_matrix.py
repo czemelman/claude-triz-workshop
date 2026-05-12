@@ -406,17 +406,36 @@ def run_strict() -> int:
         print("  ok (no cycles)")
 
     # Registry consistency
+    # Note: registry entries with `bundled: false` reference matrices that are
+    # intentionally NOT shipped in this repo (license restrictions; see
+    # MATRICES_OPTIONAL.md). They are valid registry entries — the plugin's
+    # Stage A will skip them at runtime if the file is missing — but the
+    # file-existence check below skips them here.
     print(f"\nRegistry consistency:")
     reg_errs = []
+    reg_warns = []
     for entry in registry.get('matrices', []):
         mp = os.path.join(ROOT, entry['matrix_file'])
         if not os.path.exists(mp):
-            reg_errs.append(f"matrix_file {entry['matrix_file']!r} for id={entry['id']!r} does not exist")
+            if entry.get('bundled') is False:
+                reg_warns.append(
+                    f"matrix_file {entry['matrix_file']!r} for id={entry['id']!r} "
+                    f"absent (bundled=false; expected — see MATRICES_OPTIONAL.md)"
+                )
+            else:
+                reg_errs.append(
+                    f"matrix_file {entry['matrix_file']!r} for id={entry['id']!r} does not exist"
+                )
     for e in reg_errs:
         print(f"  ERROR: {e}")
+    for w in reg_warns:
+        print(f"  note:  {w}")
     total_errors += len(reg_errs)
-    if not reg_errs:
+    total_warnings += len(reg_warns)
+    if not reg_errs and not reg_warns:
         print("  ok")
+    elif not reg_errs:
+        print("  ok (with unbundled-matrix notes above)")
 
     print(f"\n{'='*60}")
     print(f"TOTAL: {total_errors} errors, {total_warnings} warnings")
