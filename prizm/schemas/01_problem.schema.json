@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/01_problem.schema.json",
+  "title": "01_problem",
+  "description": "Output of the triz-problem-framer subagent. Captures the structured contradiction and routing signals used by every downstream stage.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "improving_concept",
+    "worsening_concept",
+    "domain_signals",
+    "exotic_signals",
+    "contradiction_type",
+    "domain_class",
+    "framing_confidence",
+    "constraints"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "improving_concept": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-text description of the attribute being improved. Not yet mapped to any matrix's parameter set."
+    },
+    "worsening_concept": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-text description of the attribute that worsens as a side effect of the improvement."
+    },
+    "domain_signals": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Tags from selector_tags_vocabulary.json:domain_signals describing the problem's domain."
+    },
+    "exotic_signals": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Tags from selector_tags_vocabulary.json:exotic_signals (e.g. bio-analogy, governance, security)."
+    },
+    "contradiction_type": {
+      "type": "string",
+      "enum": ["engineering-contradiction", "physical-contradiction"]
+    },
+    "domain_class": {
+      "type": "string",
+      "description": "Coarse-grained domain class drawn from selector_tags_vocabulary.json:domain_classes."
+    },
+    "framing_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "constraints": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "User-supplied constraints on acceptable solutions. May be empty. Appended to by the fatal-severity reformulate_with_constraint flow."
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Optional brief rationale from the framer."
+    }
+  },
+  "additionalProperties": true
+}

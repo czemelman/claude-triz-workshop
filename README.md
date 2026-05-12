@@ -1,4 +1,6 @@
-# claude-triz-workshop
+# prizm
+
+*(repository: `claude-triz-workshop`)*
 
 A Claude Code plugin that turns a TRIZ contradiction-matrix collection into a working multi-agent inventive-problem-solving pipeline.
 
@@ -17,7 +19,7 @@ Every step writes an auditable JSON artifact. Runs are replayable.
 
 ```
 .
-├── triz-workshop/                # the Claude Code plugin (THIS is what /plugin install grabs)
+├── prizm/                # the Claude Code plugin (THIS is what /plugin install grabs)
 │   ├── .claude-plugin/plugin.json
 │   ├── agents/                   # 7 LLM subagents
 │   ├── commands/                 # 4 slash commands
@@ -50,13 +52,13 @@ Inside Claude Code:
 
 ```
 /plugin marketplace add czemelman/claude-triz-workshop
-/plugin install triz-workshop@claude-triz-workshop
+/plugin install prizm@prizm
 ```
 
 Then point the plugin at the bundled matrix corpus by setting an env var **before launching Claude Code** (the plugin's scripts read this at startup):
 
 ```bash
-export TRIZ_MATRICES_PATH=~/.claude/plugins/marketplaces/claude-triz-workshop
+export TRIZ_MATRICES_PATH=~/.claude/plugins/marketplaces/claude-triz-workshop  # repo dir name unchanged
 ```
 
 (That path is where Claude Code clones the marketplace — adjust if yours differs. Run `/plugin list` to confirm.)
@@ -65,7 +67,7 @@ export TRIZ_MATRICES_PATH=~/.claude/plugins/marketplaces/claude-triz-workshop
 
 ```bash
 git clone git@github.com:czemelman/claude-triz-workshop.git ~/dev/claude-triz-workshop
-ln -s ~/dev/claude-triz-workshop/triz-workshop ~/.claude/plugins/triz-workshop
+ln -s ~/dev/claude-triz-workshop/prizm ~/.claude/plugins/prizm
 export TRIZ_MATRICES_PATH=~/dev/claude-triz-workshop
 # Restart Claude Code so it picks up the new plugin manifest.
 ```
@@ -73,9 +75,9 @@ export TRIZ_MATRICES_PATH=~/dev/claude-triz-workshop
 ### Using it
 
 ```
-/triz-workshop:triz-list-matrices       # see what's available
-/triz-workshop:triz-explain-matrix altshuller_39x39
-/triz-workshop:triz-solve "Reduce car body weight without losing crash safety."
+/prizm:list       # see what's available
+/prizm:explain altshuller_39x39
+/prizm:solve "Reduce car body weight without losing crash safety."
 ```
 
 ## Bundled matrices

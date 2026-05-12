@@ -1,8 +1,8 @@
-# triz-workshop CI workflow (design v6 §20, §20.9, §20.11, §20.12).
+# prizm CI workflow (design v6 §20, §20.9, §20.11, §20.12).
 #
-# This workflow lives at the REPO ROOT — not inside triz-workshop/ — because
+# This workflow lives at the REPO ROOT — not inside prizm/ — because
 # the matrix corpus (matrices/, use_cases/, registry.json) sits at the root
-# and the plugin code at triz-workshop/ shares it. The `paths` filter
+# and the plugin code at prizm/ shares it. The `paths` filter
 # narrows triggering to changes that could plausibly break the test suite.
 #
 # What this enforces:
@@ -20,8 +20,8 @@
 #   The state-driver tests invoke next_action.py via subprocess.run(); a
 #   plain `pytest --cov=scripts/next_action` does NOT see those calls. We
 #   wire up subprocess coverage following the standard recipe:
-#     - .coveragerc (committed at triz-workshop/) sets parallel=true.
-#     - sitecustomize.py (committed at triz-workshop/) calls
+#     - .coveragerc (committed at prizm/) sets parallel=true.
+#     - sitecustomize.py (committed at prizm/) calls
 #       coverage.process_startup() at child-interpreter startup.
 #     - tests/conftest.py exports COVERAGE_PROCESS_START + PYTHONPATH so
 #       the child sees both the config and the sitecustomize shim.
@@ -35,7 +35,7 @@
 #   Target is 90% (v6 §20.9); raise to 90 when Phase 2 adds the live eval
 #   harness that exercises those paths.
 
-name: triz-workshop CI
+name: prizm CI
 
 # `on:` is quoted to avoid YAML 1.1 parsers (e.g. PyYAML safe_load)
 # coercing it to the boolean True. GitHub Actions parses both forms;
@@ -43,7 +43,7 @@ name: triz-workshop CI
 "on":
   push:
     paths:
-      - "triz-workshop/**"
+      - "prizm/**"
       - "matrices/**"
       - "use_cases/**"
       - "registry.json"
@@ -52,7 +52,7 @@ name: triz-workshop CI
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
-      - "triz-workshop/**"
+      - "prizm/**"
       - "matrices/**"
       - "use_cases/**"
       - "registry.json"
@@ -71,10 +71,10 @@ jobs:
       TRIZ_MATRICES_PATH: ${{ github.workspace }}
       # Subprocess-coverage: tell every Python child to read the rc and
       # write its fragments alongside the parent's data file.
-      COVERAGE_PROCESS_START: ${{ github.workspace }}/triz-workshop/.coveragerc
-      COVERAGE_FILE: ${{ github.workspace }}/triz-workshop/.coverage
-      # Keep PYTHONPATH so child processes pick up triz-workshop/sitecustomize.py.
-      PYTHONPATH: ${{ github.workspace }}/triz-workshop
+      COVERAGE_PROCESS_START: ${{ github.workspace }}/prizm/.coveragerc
+      COVERAGE_FILE: ${{ github.workspace }}/prizm/.coverage
+      # Keep PYTHONPATH so child processes pick up prizm/sitecustomize.py.
+      PYTHONPATH: ${{ github.workspace }}/prizm
 
     steps:
       - name: Checkout
@@ -85,10 +85,10 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-          cache-dependency-path: triz-workshop/requirements.txt
+          cache-dependency-path: prizm/requirements.txt
 
       - name: Install dependencies
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -101,7 +101,7 @@ jobs:
           python validate_matrix.py --strict
 
       - name: Run unit tests
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pytest tests/unit -q
 
@@ -109,24 +109,24 @@ jobs:
         # Real-registry test (§20.11) and heterogeneity tests (§20.12) live
         # in tests/integration/. We run the entire integration directory in
         # one pass so the per-test setup cost amortizes.
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pytest tests/integration -q
 
       - name: Run property tests
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pytest tests/property -q
 
       - name: Run real-registry test explicitly (§20.11)
         # Belt-and-braces: even if a future PR moves test_real_registry
         # under a different directory, this step ensures it runs.
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pytest tests/integration/test_real_registry.py -q
 
       - name: Run heterogeneity tests explicitly (§20.12)
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python -m pytest tests/integration/test_heterogeneity.py -q
 
@@ -136,14 +136,14 @@ jobs:
         # subprocess fragments are produced by sitecustomize.py inside each
         # child. After pytest finishes we explicitly `coverage combine` and
         # `coverage report` to merge and gate.
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           # Clean any stale data from previous runs.
           rm -f .coverage
           find . -maxdepth 1 -name ".coverage.*" -delete
           # Run the entire test suite. Subprocess-coverage fragments will be
           # written to .coverage.<pid>.<host> in this directory because
-          # COVERAGE_FILE is set to triz-workshop/.coverage.
+          # COVERAGE_FILE is set to prizm/.coverage.
           python -m pytest tests/ -q
           # Combine the fragments into a single .coverage database.
           python -m coverage combine
@@ -162,7 +162,7 @@ jobs:
         # Smoke-test the eval runner: 10 labeled cases, no live LLM. If
         # the runner crashes on the public cases, the routing layer has
         # regressed even if the unit/integration tests pass.
-        working-directory: triz-workshop
+        working-directory: prizm
         run: |
           python eval/run_eval.py
 
@@ -173,8 +173,8 @@ jobs:
         with:
           name: coverage-${{ github.run_id }}
           path: |
-            triz-workshop/.coverage
-            triz-workshop/htmlcov/
+            prizm/.coverage
+            prizm/htmlcov/
           if-no-files-found: ignore
           retention-days: 14
 
@@ -183,6 +183,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: eval-report-${{ github.run_id }}
-          path: triz-workshop/eval/reports/
+          path: prizm/eval/reports/
           if-no-files-found: ignore
           retention-days: 14

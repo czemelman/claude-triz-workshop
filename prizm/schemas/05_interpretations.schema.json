@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/05_interpretations.schema.json",
+  "title": "05_interpretations",
+  "description": "Merged interpretations emitted by merge_interpretations.py. Sorted by (principle_canonical_id, interpretation_lineage). NOT deduplicated across interpretation_lineages: cross-matrix angles are preserved per design v6 S9.6a.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "interpretations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "interpretations": {
+      "type": "array",
+      "description": "Each entry is a 05_interpretation_single shape. Sorted by tuple (principle_canonical_id, interpretation_lineage). No dedup.",
+      "items": {
+        "type": "object",
+        "required": [
+          "matrix_id",
+          "principle_id",
+          "principle_canonical_id",
+          "interpretation_lineage",
+          "principle_name",
+          "concrete_suggestion",
+          "applies_how"
+        ],
+        "properties": {
+          "matrix_id": {"type": "string", "minLength": 1},
+          "principle_id": {"type": "string", "minLength": 1},
+          "principle_canonical_id": {
+            "type": "string",
+            "pattern": "^P_[A-Z][A-Z_]*$"
+          },
+          "principle_name": {"type": "string", "minLength": 1},
+          "interpretation_lineage": {
+            "type": "string",
+            "enum": [
+              "altshuller-40",
+              "biotriz-40",
+              "drug-safety-reframed",
+              "triz-ai-extended"
+            ]
+          },
+          "concrete_suggestion": {"type": "string", "minLength": 1},
+          "applies_how": {"type": "string", "minLength": 1},
+          "interpretation_caveat": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

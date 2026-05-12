@@ -1,6 +1,6 @@
 # Licenses
 
-The plugin itself is MIT (see `triz-workshop/LICENSE`).
+The plugin itself is MIT (see `prizm/LICENSE`).
 
 The matrix corpus is a mosaic of independently-licensed sources. The table below documents each matrix's license, whether it ships bundled in this repo, and the attribution required.
 
@@ -47,7 +47,7 @@ These matrices exist in the design and the registry but are NOT shipped in this 
 
 ## Plugin code license
 
-All Python scripts, JSON schemas, subagent prompts, slash command bodies, methodology skill, tests, eval harness, and design documents in this repo are released under the MIT License (see `triz-workshop/LICENSE`).
+All Python scripts, JSON schemas, subagent prompts, slash command bodies, methodology skill, tests, eval harness, and design documents in this repo are released under the MIT License (see `prizm/LICENSE`).
 
 ## Provenance copies
 

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/03_mapping.schema.json",
+  "title": "03_mapping",
+  "description": "Output of the triz-parameter-mapper subagent. Per-matrix mapping of the user's contradiction onto the matrix's parameter set. alternatives are FULL pairs per design v6 S9.3a, not single-axis substitutions.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matrix_id",
+    "improving_param_id",
+    "worsening_param_id",
+    "improving_rationale",
+    "worsening_rationale",
+    "alternatives",
+    "mapping_confidence",
+    "no_clean_mapping"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "matrix_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "improving_param_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Parameter id in the matrix's native id space. Numeric for altshuller-style matrices; prefixed (e.g. S1, T19) for matrices with meta.parameter_id_style == 'prefixed'."
+    },
+    "worsening_param_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "improving_rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "worsening_rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "description": "Full (improving, worsening) pairs to fall back to if the primary cell is empty. Tried in array order by lookup_principles.py.",
+      "items": {
+        "type": "object",
+        "required": ["improving_param_id", "worsening_param_id", "alt_strength"],
+        "properties": {
+          "improving_param_id": {"type": "string", "minLength": 1},
+          "worsening_param_id": {"type": "string", "minLength": 1},
+          "alt_strength": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "rationale": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "mapping_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "no_clean_mapping": {
+      "type": "boolean",
+      "default": false,
+      "description": "Mapper's self-declaration that no clean parameter mapping exists. Triggers the no-clean-mapping branch in the state-driver."
+    }
+  },
+  "additionalProperties": true
+}

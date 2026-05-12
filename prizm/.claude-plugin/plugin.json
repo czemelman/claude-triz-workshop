@@ -1,0 +1,28 @@
+{
+  "name": "prizm",
+  "version": "0.1.0",
+  "description": "prizm — refract one problem through multiple TRIZ matrices and keep their distinct framings. Multi-matrix selection, structurally-blinded mapping critic, principle lookup, concrete synthesis, secondary-contradiction critique. State machine in Python; LLM is a dispatcher.",
+  "author": {
+    "name": "Constantin Zemelman",
+    "url": "https://github.com/czemelman"
+  },
+  "compatibility": {
+    "matrix_collection_schema": ">=1.1.0 <2.0.0",
+    "claude_code": ">=2.1.0",
+    "python": ">=3.10"
+  },
+  "supported_artifact_schema_versions": [1],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/scripts/validate_artifact.py --hook-mode >> .triz/hook.log 2>&1"
+          }
+        ]
+      }
+    ]
+  }
+}

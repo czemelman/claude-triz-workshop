@@ -4,9 +4,9 @@ matrices/mann_matrix2003_48x48.json
 
 # --- Runtime artifacts ---
 .triz/                      # per-project plugin run state
-triz-workshop/.triz/
-triz-workshop/eval/reports/
-triz-workshop/eval/labeled_problems.local.jsonl
+prizm/.triz/
+prizm/eval/reports/
+prizm/eval/labeled_problems.local.jsonl
 
 # --- Python ---
 __pycache__/

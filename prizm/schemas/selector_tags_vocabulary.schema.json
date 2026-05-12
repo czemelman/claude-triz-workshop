@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/selector_tags_vocabulary.schema.json",
+  "title": "selector_tags_vocabulary",
+  "description": "Schema for the controlled vocabulary file selector_tags_vocabulary.json (storage design amendment 2). The lists here bound every selector_tags.* value used anywhere in the matrix corpus and every signal/class/lineage value used in artifacts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated",
+    "domains",
+    "problem_classes",
+    "tags",
+    "exotic_signals",
+    "domain_signals",
+    "contradiction_types",
+    "domain_classes",
+    "interpretation_lineages",
+    "matrix_statuses"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "generated": {
+      "type": "string",
+      "description": "ISO-like date string identifying when this vocabulary snapshot was produced."
+    },
+    "domains": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "problem_classes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "exotic_signals": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "domain_signals": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "contradiction_types": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "domain_classes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "interpretation_lineages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "altshuller-40",
+          "biotriz-40",
+          "drug-safety-reframed",
+          "triz-ai-extended"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "matrix_statuses": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

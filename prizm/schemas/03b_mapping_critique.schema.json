@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/03b_mapping_critique.schema.json",
+  "title": "03b_mapping_critique",
+  "description": "Phase-2 deliberation output of the triz-mapping-critic subagent. Only produced when the mapper's 03_mapping and the critic's 03c_independent_mapping disagree (mechanical compare_mappings()).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matrix_id",
+    "verdict",
+    "chosen_mapping",
+    "rationale"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "matrix_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["agree", "disagree", "propose_third"],
+      "description": "agree = critic concedes to mapper. disagree = critic stands by independent mapping. propose_third = neither original is right; chosen_mapping is novel."
+    },
+    "chosen_mapping": {
+      "type": "object",
+      "required": ["improving_param_id", "worsening_param_id"],
+      "properties": {
+        "improving_param_id": {"type": "string", "minLength": 1},
+        "worsening_param_id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

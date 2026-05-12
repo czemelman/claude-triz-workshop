@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prizm.local/schemas/06_solutions.schema.json",
+  "title": "06_solutions",
+  "description": "Output of the triz-solution-synthesizer subagent: 1-4 named candidate solutions. Per design v6 S9.6a, principles_applied is deduped on principle_canonical_id; interpretation_refs is NOT deduped (every interpretation that contributed is referenced, including multiple from the same canonical_id with different interpretation_lineages).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "summary",
+          "principles_applied",
+          "interpretation_refs",
+          "implementation_sketch",
+          "novelty_estimate",
+          "effort_estimate"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Short human-readable label for the candidate."
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "principles_applied": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^P_[A-Z][A-Z_]*$"
+            },
+            "uniqueItems": true,
+            "description": "Deduped list of principle_canonical_ids the candidate draws on. List-level dedup per S9.6a; interpretation-level distinctness preserved in interpretation_refs."
+          },
+          "interpretation_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["matrix_id", "principle_id"],
+              "properties": {
+                "matrix_id": {"type": "string", "minLength": 1},
+                "principle_id": {"type": "string", "minLength": 1}
+              },
+              "additionalProperties": true
+            },
+            "description": "Pointers to each (matrix_id, principle_id) interpretation that contributed. NOT deduped: two refs with the same canonical_id but different matrix_id are valid and required for cross-matrix angle preservation."
+          },
+          "implementation_sketch": {
+            "type": "string",
+            "minLength": 1
+          },
+          "novelty_estimate": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "effort_estimate": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
