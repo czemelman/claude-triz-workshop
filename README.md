@@ -42,22 +42,35 @@ Every step writes an auditable JSON artifact. Runs are replayable.
 └── MATRICES_OPTIONAL.md          # how to fetch the 2 non-bundled matrices
 ```
 
-## Install (local dev)
+## Install
 
-```bash
-# 1. Clone
-git clone git@github.com:czemelman/claude-triz-workshop.git ~/dev/claude-triz-workshop
+### Option 1 — Via Claude Code marketplace (recommended)
 
-# 2. Symlink into Claude Code's plugins dir
-ln -s ~/dev/claude-triz-workshop/triz-workshop ~/.claude/plugins/triz-workshop
+Inside Claude Code:
 
-# 3. Point the plugin at the matrix corpus
-export TRIZ_MATRICES_PATH=~/dev/claude-triz-workshop
-
-# 4. Restart Claude Code so it picks up the new plugin manifest.
+```
+/plugin marketplace add czemelman/claude-triz-workshop
+/plugin install triz-workshop@claude-triz-workshop
 ```
 
-Then in Claude Code:
+Then point the plugin at the bundled matrix corpus by setting an env var **before launching Claude Code** (the plugin's scripts read this at startup):
+
+```bash
+export TRIZ_MATRICES_PATH=~/.claude/plugins/marketplaces/claude-triz-workshop
+```
+
+(That path is where Claude Code clones the marketplace — adjust if yours differs. Run `/plugin list` to confirm.)
+
+### Option 2 — Local dev install (symlink)
+
+```bash
+git clone git@github.com:czemelman/claude-triz-workshop.git ~/dev/claude-triz-workshop
+ln -s ~/dev/claude-triz-workshop/triz-workshop ~/.claude/plugins/triz-workshop
+export TRIZ_MATRICES_PATH=~/dev/claude-triz-workshop
+# Restart Claude Code so it picks up the new plugin manifest.
+```
+
+### Using it
 
 ```
 /triz-workshop:triz-list-matrices       # see what's available
