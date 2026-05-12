@@ -1,0 +1,12 @@
+{
+  "action": "run_script",
+  "script": "select_matrix.py",
+  "args": [
+    "--run-id",
+    "fix-d03-try-mat",
+    "--matrix",
+    "heinrich_39x39"
+  ],
+  "run_id": "fix-d03-try-mat",
+  "expected_artifact": "02_selection.json"
+}

@@ -1,0 +1,9 @@
+{
+  "fixture_name": "d14_retry-cap-skip",
+  "kind": "decisions",
+  "run_id": "fix-d14-skip",
+  "description": "At retry cap, user chose 'skip' / 'skip_stage'.\n\nBehavior gap: not implemented; current code returns self_correct.",
+  "files": [
+    "state.json"
+  ]
+}

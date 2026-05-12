@@ -1,0 +1,10 @@
+{
+  "fixture_name": "24_secondary-contradiction-loop-iteration-2",
+  "kind": "states",
+  "run_id": "fix-24-loop-iter-2",
+  "description": "Same as fixture 23 but loop_depth=2 (would be the 3rd iteration if loops were implemented).\n\nBehavior gap: secondary-contradiction loop iteration is unimplemented; state-driver advances to assemble regardless of loop_depth when no fatal candidates exist.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

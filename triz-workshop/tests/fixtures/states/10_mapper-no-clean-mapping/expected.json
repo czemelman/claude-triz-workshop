@@ -1,0 +1,11 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-10-mapper-noclean",
+    "--no_resolution"
+  ],
+  "run_id": "fix-10-mapper-noclean",
+  "expected_artifact": "final-report.md"
+}

@@ -1,0 +1,16 @@
+{
+  "action": "ask_user",
+  "kind": "stage_retry_exhausted",
+  "run_id": "fix-28-missing-art",
+  "stage_paused_at": "framer",
+  "options": [
+    {
+      "id": "abort",
+      "label": "Abort the run."
+    },
+    {
+      "id": "edit_artifact",
+      "label": "Manually edit 01_problem.json then resume."
+    }
+  ]
+}

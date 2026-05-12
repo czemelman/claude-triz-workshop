@@ -1,0 +1,6 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-solution-synthesizer",
+  "run_id": "fix-d16-reform",
+  "expected_artifact": "06_solutions.json"
+}

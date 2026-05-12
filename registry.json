@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.1",
+  "generated": "2026-05-04",
+  "storage_design_version": "1.1",
+  "matrices": [
+    {
+      "id": "altshuller_39x39",
+      "matrix_file": "matrices/altshuller_39x39.json",
+      "status": "canonical",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 39,
+        "cols": 39,
+        "populated_cells": 1244
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:daf88196289bd38d",
+      "summary": "Classic Altshuller TRIZ Contradiction Matrix (1971). 1244 cells.",
+      "use_case_file": "use_cases/altshuller_39x39.json",
+      "bundled": true
+    },
+    {
+      "id": "altshuller_russian_original",
+      "matrix_file": "matrices/altshuller_russian_original.json",
+      "status": "variant",
+      "language": [
+        "ru",
+        "en"
+      ],
+      "dimensions": {
+        "rows": 39,
+        "cols": 39,
+        "populated_cells": 1244
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": [
+          "altshuller_39x39"
+        ]
+      },
+      "content_hash": "sha256:bb0094226114aeb7",
+      "summary": "Altshuller TRIZ Contradiction Matrix (Russian Original) (1971). 1244 cells.",
+      "use_case_file": "use_cases/altshuller_russian_original.json",
+      "bundled": true
+    },
+    {
+      "id": "biotriz_24x24",
+      "matrix_file": "matrices/biotriz_24x24.json",
+      "status": "variant",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 6,
+        "cols": 6,
+        "populated_cells": 36
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "included",
+      "principle_taxonomy": "biotriz-40",
+      "interpretation_lineage": "biotriz-40",
+      "lineage": {
+        "derived_from": "biotriz_6x6_bio",
+        "supersedes": [],
+        "identical_to": [
+          "biotriz_6x6_bio"
+        ]
+      },
+      "content_hash": "sha256:9e4ddcfadd4a14b5",
+      "summary": "BioTRIZ Contradiction Matrix (Extended) (2006). 36 cells.",
+      "use_case_file": "use_cases/biotriz_24x24.json",
+      "bundled": true
+    },
+    {
+      "id": "biotriz_6x6_bio",
+      "matrix_file": "matrices/biotriz_6x6_bio.json",
+      "status": "domain",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 6,
+        "cols": 6,
+        "populated_cells": 36
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "included",
+      "principle_taxonomy": "biotriz-40",
+      "interpretation_lineage": "biotriz-40",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [
+          "biotriz_6x6 (legacy bundled file)"
+        ],
+        "identical_to": []
+      },
+      "content_hash": "sha256:ec53131ab681e2dc",
+      "summary": "BioTRIZ / PRIZM Contradiction Matrix (Biology-derived) (2006). 36 cells.",
+      "use_case_file": "use_cases/biotriz_6x6_bio.json",
+      "bundled": true
+    },
+    {
+      "id": "biotriz_6x6_tech",
+      "matrix_file": "matrices/biotriz_6x6_tech.json",
+      "status": "domain",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 6,
+        "cols": 6,
+        "populated_cells": 36
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "included",
+      "principle_taxonomy": "biotriz-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [
+          "biotriz_6x6 (legacy bundled file)"
+        ],
+        "identical_to": []
+      },
+      "content_hash": "sha256:feb2ea9756795cbc",
+      "summary": "BioTRIZ / PRIZM Contradiction Matrix (Technology-derived) (2006). 36 cells.",
+      "use_case_file": "use_cases/biotriz_6x6_tech.json",
+      "bundled": true
+    },
+    {
+      "id": "drug_safety_18x18",
+      "matrix_file": "matrices/drug_safety_18x18.json",
+      "status": "domain",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 18,
+        "cols": 18,
+        "populated_cells": 295
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "drug-safety-reframed",
+      "interpretation_lineage": "drug-safety-reframed",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:11fb589ac045d0e6",
+      "summary": "Drug Safety Governance TRIZ Matrix (2026). 295 cells.",
+      "use_case_file": "use_cases/drug_safety_18x18.json",
+      "bundled": false,
+      "bundled_note": "See MATRICES_OPTIONAL.md for how to obtain and install locally. Not redistributable under CC BY-NC-ND 4.0."
+    },
+    {
+      "id": "healthcare_servqual",
+      "matrix_file": "matrices/healthcare_servqual.json",
+      "status": "domain",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 10,
+        "cols": 9,
+        "populated_cells": 13
+      },
+      "parameter_id_style": "prefixed",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:c091539ce81061e3",
+      "summary": "Healthcare SERVQUAL TRIZ Contradiction Matrix (2024). 13 cells.",
+      "use_case_file": "use_cases/healthcare_servqual.json",
+      "bundled": true
+    },
+    {
+      "id": "heinrich_39x39",
+      "matrix_file": "matrices/heinrich_39x39.json",
+      "status": "derived",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 39,
+        "cols": 39,
+        "populated_cells": 109
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:03ec7d9776b68a74",
+      "summary": "Heinrich 'The Inventing Machine' TRIZ Matrix (2023). 109 cells.",
+      "use_case_file": "use_cases/heinrich_39x39.json",
+      "bundled": true
+    },
+    {
+      "id": "innovatetriz_extended",
+      "matrix_file": "matrices/innovatetriz_extended.json",
+      "status": "experimental",
+      "language": [
+        "zh",
+        "en"
+      ],
+      "dimensions": {
+        "rows": 18,
+        "cols": 18,
+        "populated_cells": 16
+      },
+      "parameter_id_style": "alphanumeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:0392f046cfeeb5a1",
+      "summary": "InnovateTRIZ Extended Matrix (2025). 16 cells.",
+      "use_case_file": "use_cases/innovatetriz_extended.json",
+      "bundled": true
+    },
+    {
+      "id": "mann_matrix2003_48x48",
+      "matrix_file": "matrices/mann_matrix2003_48x48.json",
+      "status": "shell",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 48,
+        "cols": 48,
+        "populated_cells": 0
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:9dec697279eeed92",
+      "summary": "Matrix 2003 (Darrell Mann Updated Contradiction Matrix) (2003). shell only (no cells).",
+      "use_case_file": "use_cases/mann_matrix2003_48x48.json",
+      "bundled": false,
+      "bundled_note": "See MATRICES_OPTIONAL.md. Shell-only (no populated cells) and not redistributable."
+    },
+    {
+      "id": "triz_ai_50x50",
+      "matrix_file": "matrices/triz_ai_50x50.json",
+      "status": "experimental",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 50,
+        "cols": 50,
+        "populated_cells": 2345
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "triz-ai-extended",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": []
+      },
+      "content_hash": "sha256:a04f4adea0df3251",
+      "summary": "triz-ai Extended TRIZ Matrix (2026). 2345 cells.",
+      "use_case_file": "use_cases/triz_ai_50x50.json",
+      "bundled": true
+    },
+    {
+      "id": "biotriz_6x6_legacy",
+      "matrix_file": "matrices/redundant/biotriz_6x6_legacy.json",
+      "status": "identical-duplicate",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 6,
+        "cols": 6,
+        "populated_cells": 36
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "included",
+      "principle_taxonomy": "biotriz-40",
+      "interpretation_lineage": "biotriz-40",
+      "lineage": {
+        "derived_from": null,
+        "supersedes": [],
+        "identical_to": [
+          "biotriz_6x6_bio"
+        ]
+      },
+      "content_hash": "sha256:1913504f1209d3b7",
+      "summary": "BioTRIZ / PRIZM Contradiction Matrix (2006). 36 cells.",
+      "bundled": true
+    },
+    {
+      "id": "matriz_org_39x39",
+      "matrix_file": "matrices/redundant/matriz_org_39x39.json",
+      "status": "identical-duplicate",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 39,
+        "cols": 39,
+        "populated_cells": 1244
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": [
+          "altshuller_39x39"
+        ]
+      },
+      "content_hash": "sha256:95ce607e77349956",
+      "summary": "MATRIZ Official TRIZ Contradiction Matrix (1971). 1244 cells.",
+      "bundled": true
+    },
+    {
+      "id": "triz_agents_39x39",
+      "matrix_file": "matrices/redundant/triz_agents_39x39.json",
+      "status": "identical-duplicate",
+      "language": [
+        "en"
+      ],
+      "dimensions": {
+        "rows": 39,
+        "cols": 39,
+        "populated_cells": 1244
+      },
+      "parameter_id_style": "numeric",
+      "diagonal_cells": "excluded",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40",
+      "lineage": {
+        "derived_from": "altshuller_39x39",
+        "supersedes": [],
+        "identical_to": [
+          "altshuller_39x39"
+        ]
+      },
+      "content_hash": "sha256:276a1217af138a32",
+      "summary": "TRIZ-Agents Matrix (2025). 1244 cells.",
+      "bundled": true
+    }
+  ],
+  "notes": "Regenerated after Phase 0 substrate completion. selector_tags and skip_in_favor_of redirects are populated in use_cases/<matrix_id>.json files. canonical_id and interpretation_lineage are set on every principle entry. Run `python3 validate_matrix.py --strict` to re-verify. Two matrices (drug_safety_18x18, mann_matrix2003_48x48) are NOT bundled in this repo due to license restrictions; see MATRICES_OPTIONAL.md for fetch instructions. Their use-case files are shipped — drop a matching matrix file into matrices/ and re-run regenerate_registry.py to enable."
+}

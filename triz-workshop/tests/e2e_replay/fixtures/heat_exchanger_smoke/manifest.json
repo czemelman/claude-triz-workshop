@@ -1,0 +1,21 @@
+{
+  "fixture_id": "heat_exchanger_smoke",
+  "description": "5-step canonical happy-path trace seeded at the FRAMER stage with a single-matrix selection (altshuller_39x39). Drawn from eval case norm_001_heat_exchanger.",
+  "expected_branch": "normal",
+  "user_prompt": "Reduce heat exchanger weight without losing thermal performance.",
+  "seed_run_id": "replay-fixture-heat-exchanger",
+  "seed_state": {
+    "current_stage": "framer",
+    "completed_stages": ["init"],
+    "selected_matrices": []
+  },
+  "num_steps": 5,
+  "expected_action_sequence": [
+    "dispatch_subagent (triz-problem-framer)",
+    "run_script (select_matrix.py)",
+    "dispatch_subagents_parallel (mapper + independent critic for altshuller_39x39)",
+    "run_script (lookup_principles.py)",
+    "dispatch_subagents_parallel (6 principle interpreters)"
+  ],
+  "notes": "Stub artifacts planted between steps satisfy each schema's required fields with simple values. Not a behavioral test of subagent quality; this is a regression baseline for the action sequence the state-driver produces given a canonical happy-path corpus."
+}

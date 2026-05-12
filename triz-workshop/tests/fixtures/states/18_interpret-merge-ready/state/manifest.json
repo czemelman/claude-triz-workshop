@@ -1,0 +1,16 @@
+{
+  "fixture_name": "18_interpret-merge-ready",
+  "kind": "states",
+  "run_id": "fix-18-interpret-merge",
+  "description": "All per-principle artifacts written. Expect run_script merge_interpretations.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "05_interpretation_altshuller_39x39_1.json",
+    "05_interpretation_altshuller_39x39_15.json",
+    "state.json"
+  ]
+}

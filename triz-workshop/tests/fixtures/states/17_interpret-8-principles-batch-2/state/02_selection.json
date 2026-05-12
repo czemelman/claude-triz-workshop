@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "weights_version": "v0",
+  "selected_matrices": [
+    {
+      "matrix_id": "altshuller_39x39",
+      "score": 50.0,
+      "rationale": "selected: altshuller_39x39",
+      "selection_confidence": "high",
+      "score_breakdown": {
+        "domain_overlap": 30,
+        "class_match": 20,
+        "status_bonus": 0,
+        "exotic_match": 0
+      },
+      "status": "canonical",
+      "parameter_id_style": "numeric",
+      "principle_taxonomy": "altshuller-40",
+      "interpretation_lineage": "altshuller-40"
+    }
+  ],
+  "rejected_matrices": [],
+  "run_strategy": "single",
+  "stage_e_invoked": false
+}

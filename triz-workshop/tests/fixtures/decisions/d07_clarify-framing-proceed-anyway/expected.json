@@ -1,0 +1,10 @@
+{
+  "action": "run_script",
+  "script": "select_matrix.py",
+  "args": [
+    "--run-id",
+    "fix-d07-clarify-proceed"
+  ],
+  "run_id": "fix-d07-clarify-proceed",
+  "expected_artifact": "02_selection.json"
+}

@@ -1,0 +1,9 @@
+{
+  "fixture_name": "31_state-corrupted",
+  "kind": "states",
+  "run_id": "fix-31-state-corrupt",
+  "description": "state.json is malformed (invalid JSON). Expect ask_user kind=state_corrupted with options abort, attempt_repair.",
+  "files": [
+    "state.json"
+  ]
+}

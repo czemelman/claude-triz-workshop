@@ -1,0 +1,9 @@
+{
+  "fixture_name": "d11_validation-failure-retry",
+  "kind": "decisions",
+  "run_id": "fix-d11-validation-retry",
+  "description": "User chooses edit_artifact; retry budget remains. Driver re-dispatches the framer subagent.",
+  "files": [
+    "state.json"
+  ]
+}

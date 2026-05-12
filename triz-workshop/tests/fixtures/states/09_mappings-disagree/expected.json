@@ -1,0 +1,12 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-09-map-disagree",
+  "dispatches": [
+    {
+      "subagent": "triz-mapping-critic",
+      "run_id": "fix-09-map-disagree",
+      "expected_artifact": "03b_mapping_critique_altshuller_39x39.json",
+      "prompt": "Phase 2 (deliberation). Your independent mapping at `.triz/runs/fix-09-map-disagree/03c_independent_mapping_altshuller_39x39.json` disagrees with the mapper's at `.triz/runs/fix-09-map-disagree/03_mapping_altshuller_39x39.json`. Read both. Decide: agree (concede to mapper), disagree (keep your independent mapping), or propose_third (neither is right). Write the verdict to `.triz/runs/fix-09-map-disagree/03b_mapping_critique_altshuller_39x39.json` per 03b_mapping_critique.schema.json."
+    }
+  ]
+}

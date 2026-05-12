@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://triz-workshop.local/schemas/05_interpretation_single.schema.json",
+  "title": "05_interpretation_single",
+  "description": "One per-(matrix_id, principle_id) interpretation artifact emitted by the triz-principle-interpreter subagent. Carries principle_canonical_id and interpretation_lineage so the synthesizer can dedup at the principle-list layer while preserving distinct angles at the interpretation layer (design v6 S9.5a, S9.6a).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matrix_id",
+    "principle_id",
+    "principle_canonical_id",
+    "interpretation_lineage",
+    "principle_name",
+    "concrete_suggestion",
+    "applies_how"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "matrix_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principle_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Native principle id within the host matrix (string to accommodate prefixed ids; numeric ids are stringified)."
+    },
+    "principle_canonical_id": {
+      "type": "string",
+      "pattern": "^P_[A-Z][A-Z_]*$",
+      "description": "Cross-matrix canonical id (amendment 3). Used by the synthesizer for list-level dedup."
+    },
+    "principle_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interpretation_lineage": {
+      "type": "string",
+      "enum": [
+        "altshuller-40",
+        "biotriz-40",
+        "drug-safety-reframed",
+        "triz-ai-extended"
+      ],
+      "description": "The interpretive tradition this principle is being read through. Two interpretations sharing principle_canonical_id but differing here are distinct angles and must NOT be deduplicated downstream."
+    },
+    "concrete_suggestion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Domain-specific concrete suggestion synthesized from the principle for the user's problem."
+    },
+    "applies_how": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Brief explanation of how the principle maps onto the contradiction in this domain."
+    },
+    "interpretation_caveat": {
+      "type": "string",
+      "description": "Optional caveat (e.g. 'matrix is LLM-generated; cross-validate against altshuller-40 if available' for triz-ai-extended)."
+    }
+  },
+  "additionalProperties": true
+}

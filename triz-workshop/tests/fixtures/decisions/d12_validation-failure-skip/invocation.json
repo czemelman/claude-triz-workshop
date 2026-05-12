@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d12-skip",
+    "--user-input",
+    "{\"choice\": \"skip\"}"
+  ],
+  "user_input": "skip"
+}

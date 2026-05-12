@@ -1,0 +1,12 @@
+{
+  "action": "run_script",
+  "script": "lookup_principles.py",
+  "args": [
+    "--run-id",
+    "fix-12-phase2-result",
+    "--matrix",
+    "altshuller_39x39"
+  ],
+  "run_id": "fix-12-phase2-result",
+  "expected_artifact": "04_principles_altshuller_39x39.json"
+}

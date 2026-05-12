@@ -1,0 +1,15 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-13-lookup-alt",
+  "batch_size": 7,
+  "dispatches": [
+    {
+      "subagent": "triz-principle-interpreter",
+      "expected_artifact": "05_interpretation_altshuller_39x39_3.json"
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "expected_artifact": "05_interpretation_altshuller_39x39_35.json"
+    }
+  ]
+}

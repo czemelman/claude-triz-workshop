@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "matrix_id": "altshuller_39x39",
+  "populated": true,
+  "principles": [
+    1,
+    15,
+    28,
+    35
+  ],
+  "alternatives_tried": [
+    {
+      "improving_param_id": "9",
+      "worsening_param_id": "14",
+      "found": true,
+      "principles": [
+        1,
+        15,
+        28,
+        35
+      ]
+    }
+  ]
+}

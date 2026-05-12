@@ -1,0 +1,9 @@
+{
+  "fixture_name": "28_missing-expected-artifact",
+  "kind": "states",
+  "run_id": "fix-28-missing-art",
+  "description": "Subagent failed to write the expected artifact (01_problem.json absent). retry_counts.framer=3 (at cap, bump to 4 > MAX_RETRIES_PER_STAGE). Expect ask_user kind=stage_retry_exhausted.",
+  "files": [
+    "state.json"
+  ]
+}

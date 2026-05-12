@@ -1,0 +1,9 @@
+{
+  "fixture_name": "33_argparse-typo",
+  "kind": "states",
+  "run_id": "fix-33-argparse-typo",
+  "description": "args contain a typo `--runid` AND a valid `--run-id` (so the fixture loader can extract a run_id for state copy). argparse sees the unrecognized `--runid` flag and emits a self_correct.\n\nNote: the integration runner (test_routing_fixtures.py) requires the loader to find a run_id; pure 'missing --run-id' invocations are tested in tests/unit/test_argparse_hardening.py instead.",
+  "files": [
+    "state.json"
+  ]
+}

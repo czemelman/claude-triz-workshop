@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d09-loop",
+    "--user-input",
+    "{\"choice\": \"secondary_contradiction_loop\"}"
+  ],
+  "user_input": "secondary_contradiction_loop"
+}

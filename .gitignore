@@ -1,0 +1,34 @@
+# --- Restricted-license matrices (NOT redistributable; see MATRICES_OPTIONAL.md) ---
+matrices/drug_safety_18x18.json
+matrices/mann_matrix2003_48x48.json
+
+# --- Runtime artifacts ---
+.triz/                      # per-project plugin run state
+triz-workshop/.triz/
+triz-workshop/eval/reports/
+triz-workshop/eval/labeled_problems.local.jsonl
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# --- Editor / OS ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Local dev scratch ---
+*.tmp
+.env
+.env.local

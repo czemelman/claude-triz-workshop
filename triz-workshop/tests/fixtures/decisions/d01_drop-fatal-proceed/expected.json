@@ -1,0 +1,12 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-d01-drop-fatal",
+    "--exclude",
+    "A"
+  ],
+  "run_id": "fix-d01-drop-fatal",
+  "expected_artifact": "final-report.md"
+}

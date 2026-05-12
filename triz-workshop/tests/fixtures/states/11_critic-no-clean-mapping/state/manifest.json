@@ -1,0 +1,13 @@
+{
+  "fixture_name": "11_critic-no-clean-mapping",
+  "kind": "states",
+  "run_id": "fix-11-critic-noclean",
+  "description": "Critic Phase-1 says no_clean_mapping=true. Branch to no-resolution.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "state.json"
+  ]
+}

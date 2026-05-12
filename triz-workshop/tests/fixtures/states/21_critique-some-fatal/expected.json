@@ -1,0 +1,37 @@
+{
+  "action": "ask_user",
+  "kind": "fatal_severity_in_critique",
+  "run_id": "fix-21-crit-some-fatal",
+  "stage_paused_at": "07_critique",
+  "fatal_candidates": [
+    "Candidate A"
+  ],
+  "non_fatal_candidates": [
+    "Candidate B"
+  ],
+  "options": [
+    {
+      "id": "drop_fatal_proceed",
+      "label": "Drop the fatal candidate(s); proceed with the others.",
+      "available_when": "some_fatal"
+    },
+    {
+      "id": "reformulate_with_constraint",
+      "label": "Add a constraint to the original problem and re-run synthesis.",
+      "prompts_user_for": "constraint_text"
+    },
+    {
+      "id": "try_different_matrix",
+      "label": "Re-run with a different matrix (override auto-selection).",
+      "prompts_user_for": "matrix_id"
+    },
+    {
+      "id": "accept_with_override",
+      "label": "Accept the fatal candidate anyway (logged as explicit override)."
+    },
+    {
+      "id": "abandon_with_writeup",
+      "label": "Abandon the run; produce a 'no acceptable resolution' report."
+    }
+  ]
+}

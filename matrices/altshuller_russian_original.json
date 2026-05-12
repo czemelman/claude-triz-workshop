@@ -1,0 +1,7398 @@
+{
+  "meta": {
+    "name": "Altshuller TRIZ Contradiction Matrix (Russian Original)",
+    "version": "Original (1971-1985)",
+    "author": "Genrich Altshuller (Генрих Альтшуллер)",
+    "year": "1971",
+    "domain": "General engineering",
+    "dimensions": {
+      "rows": 39,
+      "cols": 39,
+      "populated_cells": 1244
+    },
+    "source_url": "https://www.altshuller.ru/triz/technique2.asp",
+    "license": "Public domain",
+    "notes": "Russian original from the Altshuller Foundation website. Matrix data is identical to the classic version from triz40.com. Parameter names include both English and Russian (name_ru field). This is the authoritative original source.",
+    "id": "altshuller_russian_original",
+    "status": "variant",
+    "parameter_id_style": "numeric",
+    "diagonal_cells": "excluded",
+    "principle_taxonomy": "altshuller-40",
+    "interpretation_lineage": "altshuller-40",
+    "language": [
+      "ru",
+      "en"
+    ],
+    "lineage": {
+      "derived_from": "altshuller_39x39",
+      "supersedes": [],
+      "identical_to": [
+        "altshuller_39x39"
+      ]
+    }
+  },
+  "parameters": {
+    "1": {
+      "name": "Weight of moving object",
+      "name_ru": "Вес подвижного объекта",
+      "description": "The mass of the object, in a gravitational field. The force that the body exerts on its support or suspension."
+    },
+    "2": {
+      "name": "Weight of stationary object",
+      "name_ru": "Вес неподвижного объекта",
+      "description": "The mass of the object, in a gravitational field. The force that the body exerts on its support or suspension, when the object is not in motion."
+    },
+    "3": {
+      "name": "Length of moving object",
+      "name_ru": "Длина подвижного объекта",
+      "description": "Any one linear dimension of the moving object, not necessarily the longest."
+    },
+    "4": {
+      "name": "Length of stationary object",
+      "name_ru": "Длина неподвижного объекта",
+      "description": "Any one linear dimension of the stationary object, not necessarily the longest."
+    },
+    "5": {
+      "name": "Area of moving object",
+      "name_ru": "Площадь подвижного объекта",
+      "description": "A geometric characteristic described by the part of a surface enclosed within a perimeter of the moving object."
+    },
+    "6": {
+      "name": "Area of stationary object",
+      "name_ru": "Площадь неподвижного объекта",
+      "description": "A geometric characteristic described by the part of a surface enclosed within a perimeter of the stationary object."
+    },
+    "7": {
+      "name": "Volume of moving object",
+      "name_ru": "Объём подвижного объекта",
+      "description": "The cubic measure of space occupied by the moving object."
+    },
+    "8": {
+      "name": "Volume of stationary object",
+      "name_ru": "Объём неподвижного объекта",
+      "description": "The cubic measure of space occupied by the stationary object."
+    },
+    "9": {
+      "name": "Speed",
+      "name_ru": "Скорость",
+      "description": "The velocity of an object; the rate of a process or action in time."
+    },
+    "10": {
+      "name": "Force (Intensity)",
+      "name_ru": "Сила",
+      "description": "Force measures the interaction between systems. In Newtonian physics force = mass x acceleration. In TRIZ force is any interaction that is intended to change an object's condition."
+    },
+    "11": {
+      "name": "Stress or pressure",
+      "name_ru": "Напряжение, давление",
+      "description": "Force per unit area. Also, tension."
+    },
+    "12": {
+      "name": "Shape",
+      "name_ru": "Форма",
+      "description": "The external contours, appearance of a system."
+    },
+    "13": {
+      "name": "Stability of the object's composition",
+      "name_ru": "Устойчивость состава объекта",
+      "description": "The wholeness or integrity of the system; the relationship of the system's constituent elements. Wear, chemical decomposition, and disassembly are all decreases in stability."
+    },
+    "14": {
+      "name": "Strength",
+      "name_ru": "Прочность",
+      "description": "The extent to which the object is able to resist changing in response to force. Resistance to breaking."
+    },
+    "15": {
+      "name": "Duration of action of moving object",
+      "name_ru": "Продолжительность действия подвижного объекта",
+      "description": "The time that the moving object can perform the action. Service life. Mean time between failure is a measure of the duration of action."
+    },
+    "16": {
+      "name": "Duration of action of stationary object",
+      "name_ru": "Продолжительность действия неподвижного объекта",
+      "description": "The time that the stationary object can perform the action. Service life."
+    },
+    "17": {
+      "name": "Temperature",
+      "name_ru": "Температура",
+      "description": "The thermal condition of the object or system. Includes other thermal parameters, such as heat capacity, that affect the rate of change of temperature."
+    },
+    "18": {
+      "name": "Illumination intensity",
+      "name_ru": "Освещённость",
+      "description": "Light flux per unit area, or any other illumination characteristics of the system such as light quality, uniformity, etc."
+    },
+    "19": {
+      "name": "Use of energy by moving object",
+      "name_ru": "Расход энергии подвижного объекта",
+      "description": "The measure of the object's capacity for doing work. In classical mechanics, energy is the product of force x distance."
+    },
+    "20": {
+      "name": "Use of energy by stationary object",
+      "name_ru": "Расход энергии неподвижного объекта",
+      "description": "The measure of the object's capacity for doing work when stationary."
+    },
+    "21": {
+      "name": "Power",
+      "name_ru": "Мощность",
+      "description": "The time rate at which work is performed. The rate of use of energy."
+    },
+    "22": {
+      "name": "Loss of Energy",
+      "name_ru": "Потери энергии",
+      "description": "Use of energy that does not contribute to the job being done."
+    },
+    "23": {
+      "name": "Loss of substance",
+      "name_ru": "Потери вещества",
+      "description": "Partial or complete, permanent or temporary, loss of some of a system's material, substance, parts, or subsystems."
+    },
+    "24": {
+      "name": "Loss of Information",
+      "name_ru": "Потери информации",
+      "description": "Partial or complete, permanent or temporary, loss of data or access to data in or by a system."
+    },
+    "25": {
+      "name": "Loss of Time",
+      "name_ru": "Потери времени",
+      "description": "Time is the duration of an activity. Improving the loss of time means reducing the time taken for the activity."
+    },
+    "26": {
+      "name": "Quantity of substance/the matter",
+      "name_ru": "Количество вещества",
+      "description": "The number or amount of a system's materials, substances, parts or subsystems."
+    },
+    "27": {
+      "name": "Reliability",
+      "name_ru": "Надёжность",
+      "description": "A system's ability to perform its intended functions in predictable ways and conditions."
+    },
+    "28": {
+      "name": "Measurement accuracy",
+      "name_ru": "Точность измерения",
+      "description": "The closeness of the measured value to the actual value of a property of a system."
+    },
+    "29": {
+      "name": "Manufacturing precision",
+      "name_ru": "Точность изготовления",
+      "description": "The extent to which the actual characteristics of the system or object match the specified or required characteristics."
+    },
+    "30": {
+      "name": "Object-affected harmful factors",
+      "name_ru": "Вредные факторы, действующие на объект",
+      "description": "Susceptibility of a system to externally generated harmful effects."
+    },
+    "31": {
+      "name": "Object-generated harmful factors",
+      "name_ru": "Вредные факторы, создаваемые объектом",
+      "description": "A harmful effect is one that reduces the efficiency or quality of the functioning of the object or system."
+    },
+    "32": {
+      "name": "Ease of manufacture",
+      "name_ru": "Удобство изготовления",
+      "description": "The degree of facility, comfort or effortlessness in manufacturing or fabricating the object/system."
+    },
+    "33": {
+      "name": "Ease of operation",
+      "name_ru": "Удобство эксплуатации",
+      "description": "Simplicity: the process is NOT difficult to operate or requires excessive effort."
+    },
+    "34": {
+      "name": "Ease of repair",
+      "name_ru": "Удобство ремонта",
+      "description": "Quality characteristics such as convenience, comfort, simplicity, and time to repair faults, failures, or defects in a system."
+    },
+    "35": {
+      "name": "Adaptability or versatility",
+      "name_ru": "Адаптивность, универсальность",
+      "description": "The extent to which a system/object positively responds to external changes. Also, a system that can be used in multiple ways under a variety of circumstances."
+    },
+    "36": {
+      "name": "Device complexity",
+      "name_ru": "Сложность устройства",
+      "description": "The number and diversity of elements and element interrelationships within a system."
+    },
+    "37": {
+      "name": "Difficulty of detecting and measuring",
+      "name_ru": "Сложность контроля и измерения",
+      "description": "Measuring or monitoring systems that are complex, costly, require much time and labor to set up and use, or that have complex relationships between components."
+    },
+    "38": {
+      "name": "Extent of automation",
+      "name_ru": "Степень автоматизации",
+      "description": "The extent to which a system or object performs its functions without human interface."
+    },
+    "39": {
+      "name": "Productivity",
+      "name_ru": "Производительность",
+      "description": "The number of functions or operations performed by a system per unit time. The output per unit time, or the cost per unit output."
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "description": "Divide an object into independent parts.",
+      "sub_principles": [
+        "a) Divide an object into independent parts.",
+        "b) Make an object easy to disassemble.",
+        "c) Increase the degree of fragmentation or segmentation."
+      ],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "2": {
+      "name": "Taking out",
+      "description": "Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object.",
+      "sub_principles": [
+        "a) Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object."
+      ],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "3": {
+      "name": "Local quality",
+      "description": "Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+      "sub_principles": [
+        "a) Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+        "b) Make each part of an object function in conditions most suitable for its operation.",
+        "c) Make each part of an object fulfill a different and useful function."
+      ],
+      "canonical_id": "P_LOCAL_QUALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "description": "Change the shape of an object from symmetrical to asymmetrical.",
+      "sub_principles": [
+        "a) Change the shape of an object from symmetrical to asymmetrical.",
+        "b) If an object is asymmetrical, increase its degree of asymmetry."
+      ],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "5": {
+      "name": "Merging",
+      "description": "Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+      "sub_principles": [
+        "a) Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+        "b) Make operations contiguous or parallel; bring them together in time."
+      ],
+      "canonical_id": "P_MERGING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "6": {
+      "name": "Universality",
+      "description": "Make a part or object perform multiple functions; eliminate the need for other parts.",
+      "sub_principles": [
+        "a) Make a part or object perform multiple functions; eliminate the need for other parts."
+      ],
+      "canonical_id": "P_UNIVERSALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "7": {
+      "name": "Nested doll",
+      "description": "Place one object inside another; place each object, in turn, inside the other.",
+      "sub_principles": [
+        "a) Place one object inside another; place each object, in turn, inside the other.",
+        "b) Make one part pass through a cavity in the other."
+      ],
+      "canonical_id": "P_NESTED_DOLL",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "8": {
+      "name": "Anti-weight",
+      "description": "To compensate for the weight of an object, merge it with other objects that provide lift.",
+      "sub_principles": [
+        "a) To compensate for the weight of an object, merge it with other objects that provide lift.",
+        "b) To compensate for the weight of an object, make it interact with the environment (e.g. use aerodynamic, hydrodynamic, buoyancy and other forces)."
+      ],
+      "canonical_id": "P_ANTI_WEIGHT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "9": {
+      "name": "Preliminary anti-action",
+      "description": "If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+      "sub_principles": [
+        "a) If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+        "b) Create beforehand stresses in an object that will oppose known undesirable working stresses later on."
+      ],
+      "canonical_id": "P_PRELIMINARY_ANTI_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "10": {
+      "name": "Preliminary action",
+      "description": "Perform, before it is needed, the required change of an object (either fully or partially).",
+      "sub_principles": [
+        "a) Perform, before it is needed, the required change of an object (either fully or partially).",
+        "b) Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery."
+      ],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "11": {
+      "name": "Beforehand cushioning",
+      "description": "Prepare emergency means beforehand to compensate for the relatively low reliability of an object.",
+      "sub_principles": [
+        "a) Prepare emergency means beforehand to compensate for the relatively low reliability of an object."
+      ],
+      "canonical_id": "P_BEFOREHAND_CUSHIONING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "12": {
+      "name": "Equipotentiality",
+      "description": "In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field).",
+      "sub_principles": [
+        "a) In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field)."
+      ],
+      "canonical_id": "P_EQUIPOTENTIALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "13": {
+      "name": "The other way round",
+      "description": "Invert the action(s) used to solve the problem.",
+      "sub_principles": [
+        "a) Invert the action(s) used to solve the problem (e.g. instead of cooling an object, heat it).",
+        "b) Make movable parts (or the external environment) fixed, and fixed parts movable.",
+        "c) Turn the object (or process) upside down."
+      ],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "14": {
+      "name": "Spheroidality - Loss of curvature",
+      "description": "Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones; from parts shaped as a cube (parallelepiped) to ball-shaped structures.",
+      "sub_principles": [
+        "a) Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones.",
+        "b) Use rollers, balls, spirals, domes.",
+        "c) Go from linear to rotary motion, use centrifugal forces."
+      ],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "15": {
+      "name": "Dynamics",
+      "description": "Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+      "sub_principles": [
+        "a) Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+        "b) Divide an object into parts capable of movement relative to each other.",
+        "c) If an object (or process) is rigid or inflexible, make it movable or adaptive."
+      ],
+      "canonical_id": "P_DYNAMICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "16": {
+      "name": "Partial or excessive actions",
+      "description": "If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve.",
+      "sub_principles": [
+        "a) If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve."
+      ],
+      "canonical_id": "P_PARTIAL_OR_EXCESSIVE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "17": {
+      "name": "Another dimension",
+      "description": "To move an object in two- or three-dimensional space.",
+      "sub_principles": [
+        "a) To move an object in two- or three-dimensional space.",
+        "b) Use a multi-story arrangement of objects instead of a single-story arrangement.",
+        "c) Tilt or re-orient the object, lay it on its side.",
+        "d) Use another side of a given area."
+      ],
+      "canonical_id": "P_ANOTHER_DIMENSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "description": "Cause an object to oscillate or vibrate.",
+      "sub_principles": [
+        "a) Cause an object to oscillate or vibrate.",
+        "b) Increase its frequency (even up to the ultrasonic).",
+        "c) Use an object's resonant frequency.",
+        "d) Use piezoelectric vibrators instead of mechanical ones.",
+        "e) Use combined ultrasonic and electromagnetic field oscillations."
+      ],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "19": {
+      "name": "Periodic action",
+      "description": "Instead of continuous action, use periodic or pulsating actions.",
+      "sub_principles": [
+        "a) Instead of continuous action, use periodic or pulsating actions.",
+        "b) If an action is already periodic, change the periodic magnitude or frequency.",
+        "c) Use pauses between impulses to perform a different action."
+      ],
+      "canonical_id": "P_PERIODIC_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "20": {
+      "name": "Continuity of useful action",
+      "description": "Carry on work continuously; make all parts of an object work at full load, all the time.",
+      "sub_principles": [
+        "a) Carry on work continuously; make all parts of an object work at full load, all the time.",
+        "b) Eliminate all idle or intermittent actions or work."
+      ],
+      "canonical_id": "P_CONTINUITY_OF_USEFUL_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "21": {
+      "name": "Skipping",
+      "description": "Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed.",
+      "sub_principles": [
+        "a) Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed."
+      ],
+      "canonical_id": "P_SKIPPING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "22": {
+      "name": "Blessing in disguise",
+      "description": "Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+      "sub_principles": [
+        "a) Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+        "b) Eliminate the primary harmful action by adding it to another harmful action to resolve the problem.",
+        "c) Amplify a harmful factor to such a degree that it is no longer harmful."
+      ],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "23": {
+      "name": "Feedback",
+      "description": "Introduce feedback (referring back, cross-checking) to improve a process or action.",
+      "sub_principles": [
+        "a) Introduce feedback (referring back, cross-checking) to improve a process or action.",
+        "b) If feedback is already used, change its magnitude or influence."
+      ],
+      "canonical_id": "P_FEEDBACK",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "24": {
+      "name": "Intermediary",
+      "description": "Use an intermediary carrier article or intermediary process.",
+      "sub_principles": [
+        "a) Use an intermediary carrier article or intermediary process.",
+        "b) Merge one object temporarily with another (which can be easily removed)."
+      ],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "description": "Make an object serve itself by performing auxiliary helpful functions.",
+      "sub_principles": [
+        "a) Make an object serve itself by performing auxiliary helpful functions.",
+        "b) Use waste resources, energy, or substances."
+      ],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "26": {
+      "name": "Copying",
+      "description": "Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+      "sub_principles": [
+        "a) Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+        "b) Replace an object, or process with optical copies.",
+        "c) If visible optical copies are already used, move to infrared or ultraviolet copies."
+      ],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "27": {
+      "name": "Cheap short-living objects",
+      "description": "Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance).",
+      "sub_principles": [
+        "a) Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance)."
+      ],
+      "canonical_id": "P_CHEAP_SHORT_LIVING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "28": {
+      "name": "Mechanics substitution",
+      "description": "Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+      "sub_principles": [
+        "a) Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+        "b) Use electric, magnetic and electromagnetic fields to interact with the object.",
+        "c) Change from static to movable fields, from unstructured fields to those having structure.",
+        "d) Use fields in conjunction with field-activated (e.g. ferromagnetic) particles."
+      ],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "29": {
+      "name": "Pneumatics and hydraulics",
+      "description": "Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive).",
+      "sub_principles": [
+        "a) Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive)."
+      ],
+      "canonical_id": "P_PNEUMATICS_HYDRAULICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "description": "Use flexible shells and thin films instead of three dimensional structures.",
+      "sub_principles": [
+        "a) Use flexible shells and thin films instead of three dimensional structures.",
+        "b) Isolate the object from the external environment using flexible shells and thin films."
+      ],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "31": {
+      "name": "Porous materials",
+      "description": "Make an object porous or add porous elements (inserts, coatings, etc.).",
+      "sub_principles": [
+        "a) Make an object porous or add porous elements (inserts, coatings, etc.).",
+        "b) If an object is already porous, use the pores to introduce a useful substance or function."
+      ],
+      "canonical_id": "P_POROUS_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "32": {
+      "name": "Color changes",
+      "description": "Change the color of an object or its external environment.",
+      "sub_principles": [
+        "a) Change the color of an object or its external environment.",
+        "b) Change the transparency of an object or its external environment."
+      ],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "33": {
+      "name": "Homogeneity",
+      "description": "Make objects interacting with a given object of the same material (or material with identical properties).",
+      "sub_principles": [
+        "a) Make objects interacting with a given object of the same material (or material with identical properties)."
+      ],
+      "canonical_id": "P_HOMOGENEITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "34": {
+      "name": "Discarding and recovering",
+      "description": "Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+      "sub_principles": [
+        "a) Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+        "b) Conversely, restore consumable parts of an object directly in operation."
+      ],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "35": {
+      "name": "Parameter changes",
+      "description": "Change an object's physical state (e.g. to a gas, liquid, or solid).",
+      "sub_principles": [
+        "a) Change an object's physical state (e.g. to a gas, liquid, or solid).",
+        "b) Change the concentration or consistency.",
+        "c) Change the degree of flexibility.",
+        "d) Change the temperature."
+      ],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "description": "Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.).",
+      "sub_principles": [
+        "a) Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.)."
+      ],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "37": {
+      "name": "Thermal expansion",
+      "description": "Use thermal expansion (or contraction) of materials.",
+      "sub_principles": [
+        "a) Use thermal expansion (or contraction) of materials.",
+        "b) If thermal expansion is being used, use multiple materials with different coefficients of thermal expansion."
+      ],
+      "canonical_id": "P_THERMAL_EXPANSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "38": {
+      "name": "Strong oxidants",
+      "description": "Replace common air with oxygen-enriched air.",
+      "sub_principles": [
+        "a) Replace common air with oxygen-enriched air.",
+        "b) Replace enriched air with pure oxygen.",
+        "c) Expose air or oxygen to ionizing radiation.",
+        "d) Use ionized oxygen.",
+        "e) Replace ozonized (or ionized) oxygen with ozone."
+      ],
+      "canonical_id": "P_STRONG_OXIDANTS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "39": {
+      "name": "Inert atmosphere",
+      "description": "Replace a normal environment with an inert one.",
+      "sub_principles": [
+        "a) Replace a normal environment with an inert one.",
+        "b) Add neutral parts, or inert additives to an object."
+      ],
+      "canonical_id": "P_INERT_ATMOSPHERE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "40": {
+      "name": "Composite materials",
+      "description": "Change from uniform to composite (multiple) materials.",
+      "sub_principles": [
+        "a) Change from uniform to composite (multiple) materials."
+      ],
+      "canonical_id": "P_COMPOSITE_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    }
+  },
+  "matrix": {
+    "1": {
+      "3": [
+        15,
+        8,
+        29,
+        34
+      ],
+      "5": [
+        29,
+        17,
+        38,
+        34
+      ],
+      "7": [
+        29,
+        2,
+        40,
+        28
+      ],
+      "9": [
+        2,
+        8,
+        15,
+        38
+      ],
+      "10": [
+        8,
+        10,
+        18,
+        37
+      ],
+      "11": [
+        10,
+        36,
+        37,
+        40
+      ],
+      "12": [
+        10,
+        14,
+        35,
+        40
+      ],
+      "13": [
+        1,
+        35,
+        19,
+        39
+      ],
+      "14": [
+        28,
+        27,
+        18,
+        40
+      ],
+      "15": [
+        5,
+        34,
+        31,
+        35
+      ],
+      "17": [
+        6,
+        29,
+        4,
+        38
+      ],
+      "18": [
+        19,
+        1,
+        32
+      ],
+      "19": [
+        35,
+        12,
+        34,
+        31
+      ],
+      "20": [
+        12,
+        36,
+        18,
+        31
+      ],
+      "21": [
+        6,
+        2,
+        34,
+        19
+      ],
+      "22": [
+        5,
+        35,
+        3,
+        31
+      ],
+      "23": [
+        10,
+        24,
+        35
+      ],
+      "24": [
+        10,
+        35,
+        20,
+        28
+      ],
+      "25": [
+        3,
+        26,
+        18,
+        31
+      ],
+      "26": [
+        1,
+        3,
+        11,
+        27
+      ],
+      "27": [
+        28,
+        27,
+        35,
+        26
+      ],
+      "28": [
+        28,
+        35,
+        26,
+        18
+      ],
+      "29": [
+        22,
+        21,
+        18,
+        27
+      ],
+      "30": [
+        22,
+        35,
+        31,
+        39
+      ],
+      "31": [
+        27,
+        28,
+        1,
+        36
+      ],
+      "32": [
+        35,
+        3,
+        2,
+        24
+      ],
+      "33": [
+        2,
+        27,
+        28,
+        11
+      ],
+      "34": [
+        29,
+        5,
+        15,
+        8
+      ],
+      "35": [
+        26,
+        30,
+        36,
+        34
+      ],
+      "36": [
+        28,
+        29,
+        26,
+        32
+      ],
+      "37": [
+        26,
+        35,
+        18,
+        19
+      ],
+      "38": [
+        35,
+        3,
+        24,
+        37
+      ]
+    },
+    "2": {
+      "4": [
+        10,
+        1,
+        29,
+        35
+      ],
+      "6": [
+        35,
+        30,
+        13,
+        2
+      ],
+      "8": [
+        5,
+        35,
+        14,
+        2
+      ],
+      "10": [
+        8,
+        10,
+        19,
+        35
+      ],
+      "11": [
+        13,
+        29,
+        10,
+        18
+      ],
+      "12": [
+        13,
+        10,
+        29,
+        14
+      ],
+      "13": [
+        26,
+        39,
+        1,
+        40
+      ],
+      "14": [
+        28,
+        2,
+        10,
+        27
+      ],
+      "16": [
+        2,
+        27,
+        19,
+        6
+      ],
+      "17": [
+        28,
+        19,
+        32,
+        22
+      ],
+      "18": [
+        19,
+        32,
+        35
+      ],
+      "20": [
+        18,
+        19,
+        28,
+        1
+      ],
+      "21": [
+        15,
+        19,
+        18,
+        22
+      ],
+      "22": [
+        18,
+        19,
+        28,
+        15
+      ],
+      "23": [
+        5,
+        8,
+        13,
+        30
+      ],
+      "24": [
+        10,
+        15,
+        35
+      ],
+      "25": [
+        10,
+        20,
+        35,
+        26
+      ],
+      "26": [
+        19,
+        6,
+        18,
+        26
+      ],
+      "27": [
+        10,
+        28,
+        8,
+        3
+      ],
+      "28": [
+        18,
+        26,
+        28
+      ],
+      "29": [
+        10,
+        1,
+        35,
+        17
+      ],
+      "30": [
+        2,
+        19,
+        22,
+        37
+      ],
+      "31": [
+        35,
+        22,
+        1,
+        39
+      ],
+      "32": [
+        28,
+        1,
+        9
+      ],
+      "33": [
+        6,
+        13,
+        1,
+        32
+      ],
+      "34": [
+        2,
+        27,
+        28,
+        11
+      ],
+      "35": [
+        19,
+        15,
+        29
+      ],
+      "36": [
+        1,
+        10,
+        26,
+        39
+      ],
+      "37": [
+        25,
+        28,
+        17,
+        15
+      ],
+      "38": [
+        2,
+        26,
+        35
+      ],
+      "39": [
+        1,
+        28,
+        15,
+        35
+      ]
+    },
+    "3": {
+      "1": [
+        8,
+        15,
+        29,
+        34
+      ],
+      "4": [
+        15,
+        17,
+        4
+      ],
+      "6": [
+        7,
+        17,
+        4,
+        35
+      ],
+      "8": [
+        13,
+        4,
+        8
+      ],
+      "9": [
+        17,
+        10,
+        4
+      ],
+      "10": [
+        1,
+        8,
+        35
+      ],
+      "11": [
+        1,
+        8,
+        10,
+        29
+      ],
+      "12": [
+        8,
+        35,
+        29,
+        34
+      ],
+      "13": [
+        19
+      ],
+      "15": [
+        10,
+        15,
+        19
+      ],
+      "16": [
+        32
+      ],
+      "17": [
+        8,
+        35,
+        24
+      ],
+      "19": [
+        1,
+        35
+      ],
+      "20": [
+        7,
+        2,
+        35,
+        39
+      ],
+      "21": [
+        4,
+        29,
+        23,
+        10
+      ],
+      "22": [
+        1,
+        24
+      ],
+      "23": [
+        15,
+        2,
+        29
+      ],
+      "24": [
+        29,
+        35
+      ],
+      "25": [
+        10,
+        14,
+        29,
+        40
+      ],
+      "26": [
+        28,
+        32,
+        4
+      ],
+      "27": [
+        10,
+        28,
+        29,
+        37
+      ],
+      "28": [
+        1,
+        15,
+        17,
+        24
+      ],
+      "29": [
+        17,
+        15
+      ],
+      "30": [
+        1,
+        29,
+        17
+      ],
+      "31": [
+        15,
+        29,
+        35,
+        4
+      ],
+      "32": [
+        1,
+        28,
+        10
+      ],
+      "33": [
+        14,
+        15,
+        1,
+        16
+      ],
+      "34": [
+        1,
+        19,
+        26,
+        24
+      ],
+      "35": [
+        35,
+        1,
+        26,
+        24
+      ],
+      "36": [
+        17,
+        24,
+        26,
+        16
+      ],
+      "37": [
+        14,
+        4,
+        28,
+        29
+      ],
+      "39": [
+        30,
+        14,
+        7,
+        26
+      ]
+    },
+    "4": {
+      "2": [
+        35,
+        28,
+        40,
+        29
+      ],
+      "5": [
+        17,
+        7,
+        10,
+        40
+      ],
+      "7": [
+        35,
+        8,
+        2,
+        14
+      ],
+      "9": [
+        28,
+        10
+      ],
+      "10": [
+        1,
+        14,
+        35
+      ],
+      "11": [
+        13,
+        14,
+        15,
+        7
+      ],
+      "12": [
+        39,
+        37,
+        35
+      ],
+      "13": [
+        15,
+        14,
+        28,
+        26
+      ],
+      "15": [
+        1,
+        10,
+        35
+      ],
+      "16": [
+        3,
+        35,
+        38,
+        18
+      ],
+      "17": [
+        3,
+        25
+      ],
+      "20": [
+        12,
+        8
+      ],
+      "21": [
+        6,
+        28
+      ],
+      "22": [
+        10,
+        28,
+        24,
+        35
+      ],
+      "23": [
+        24,
+        26
+      ],
+      "24": [
+        30,
+        29,
+        14
+      ],
+      "26": [
+        15,
+        29,
+        28
+      ],
+      "27": [
+        32,
+        28,
+        3
+      ],
+      "28": [
+        2,
+        32,
+        10
+      ],
+      "29": [
+        1,
+        18
+      ],
+      "31": [
+        15,
+        17,
+        27
+      ],
+      "32": [
+        2,
+        25
+      ],
+      "33": [
+        3
+      ],
+      "34": [
+        1,
+        35
+      ],
+      "35": [
+        1,
+        26
+      ],
+      "36": [
+        26
+      ],
+      "38": [
+        30,
+        14,
+        7,
+        26
+      ]
+    },
+    "5": {
+      "1": [
+        2,
+        17,
+        29,
+        4
+      ],
+      "3": [
+        14,
+        15,
+        18,
+        4
+      ],
+      "6": [
+        7,
+        14,
+        17,
+        4
+      ],
+      "8": [
+        29,
+        30,
+        4,
+        34
+      ],
+      "9": [
+        19,
+        30,
+        35,
+        2
+      ],
+      "10": [
+        10,
+        15,
+        36,
+        28
+      ],
+      "11": [
+        5,
+        34,
+        29,
+        4
+      ],
+      "12": [
+        11,
+        2,
+        13,
+        39
+      ],
+      "13": [
+        3,
+        15,
+        40,
+        14
+      ],
+      "14": [
+        6,
+        3
+      ],
+      "16": [
+        2,
+        15,
+        16
+      ],
+      "17": [
+        15,
+        32,
+        19,
+        13
+      ],
+      "18": [
+        19,
+        32
+      ],
+      "20": [
+        19,
+        10,
+        32,
+        18
+      ],
+      "21": [
+        15,
+        17,
+        30,
+        26
+      ],
+      "22": [
+        10,
+        35,
+        2,
+        39
+      ],
+      "23": [
+        30,
+        26
+      ],
+      "24": [
+        26,
+        4
+      ],
+      "25": [
+        29,
+        30,
+        6,
+        13
+      ],
+      "26": [
+        29,
+        9
+      ],
+      "27": [
+        26,
+        28,
+        32,
+        3
+      ],
+      "28": [
+        2,
+        32
+      ],
+      "29": [
+        22,
+        33,
+        28,
+        1
+      ],
+      "30": [
+        17,
+        2,
+        18,
+        39
+      ],
+      "31": [
+        13,
+        1,
+        26,
+        24
+      ],
+      "32": [
+        15,
+        17,
+        13,
+        16
+      ],
+      "33": [
+        15,
+        13,
+        10,
+        1
+      ],
+      "34": [
+        15,
+        30
+      ],
+      "35": [
+        14,
+        1,
+        13
+      ],
+      "36": [
+        2,
+        36,
+        26,
+        18
+      ],
+      "37": [
+        14,
+        30,
+        28,
+        23
+      ],
+      "38": [
+        10,
+        26,
+        34,
+        2
+      ]
+    },
+    "6": {
+      "2": [
+        30,
+        2,
+        14,
+        18
+      ],
+      "4": [
+        26,
+        7,
+        9,
+        39
+      ],
+      "9": [
+        1,
+        18,
+        35,
+        36
+      ],
+      "10": [
+        10,
+        15,
+        36,
+        37
+      ],
+      "12": [
+        2,
+        38
+      ],
+      "13": [
+        40
+      ],
+      "15": [
+        2,
+        10,
+        19,
+        30
+      ],
+      "16": [
+        35,
+        39,
+        38
+      ],
+      "20": [
+        17,
+        32
+      ],
+      "21": [
+        17,
+        7,
+        30
+      ],
+      "22": [
+        10,
+        14,
+        18,
+        39
+      ],
+      "23": [
+        30,
+        16
+      ],
+      "24": [
+        10,
+        35,
+        4,
+        18
+      ],
+      "25": [
+        2,
+        18,
+        40,
+        4
+      ],
+      "26": [
+        32,
+        35,
+        40,
+        4
+      ],
+      "27": [
+        26,
+        28,
+        32,
+        3
+      ],
+      "28": [
+        2,
+        29,
+        18,
+        36
+      ],
+      "29": [
+        27,
+        2,
+        39,
+        35
+      ],
+      "30": [
+        22,
+        1,
+        40
+      ],
+      "31": [
+        40,
+        16
+      ],
+      "32": [
+        16,
+        4
+      ],
+      "33": [
+        16
+      ],
+      "34": [
+        15,
+        16
+      ],
+      "35": [
+        1,
+        18,
+        36
+      ],
+      "36": [
+        2,
+        35,
+        30,
+        18
+      ],
+      "37": [
+        23
+      ],
+      "38": [
+        10,
+        15,
+        17,
+        7
+      ]
+    },
+    "7": {
+      "1": [
+        2,
+        26,
+        29,
+        40
+      ],
+      "3": [
+        1,
+        7,
+        4,
+        35
+      ],
+      "5": [
+        1,
+        7,
+        4,
+        17
+      ],
+      "8": [
+        29,
+        4,
+        38,
+        34
+      ],
+      "9": [
+        15,
+        35,
+        36,
+        37
+      ],
+      "10": [
+        6,
+        35,
+        36,
+        37
+      ],
+      "11": [
+        1,
+        15,
+        29,
+        4
+      ],
+      "12": [
+        28,
+        10,
+        1,
+        39
+      ],
+      "13": [
+        9,
+        14,
+        15,
+        7
+      ],
+      "14": [
+        6,
+        35,
+        4
+      ],
+      "16": [
+        34,
+        39,
+        10,
+        18
+      ],
+      "17": [
+        2,
+        13,
+        10
+      ],
+      "18": [
+        35
+      ],
+      "20": [
+        35,
+        6,
+        13,
+        18
+      ],
+      "21": [
+        7,
+        15,
+        13,
+        16
+      ],
+      "22": [
+        36,
+        39,
+        34,
+        10
+      ],
+      "23": [
+        2,
+        22
+      ],
+      "24": [
+        2,
+        6,
+        34,
+        10
+      ],
+      "25": [
+        29,
+        30,
+        7
+      ],
+      "26": [
+        14,
+        1,
+        40,
+        11
+      ],
+      "27": [
+        25,
+        26,
+        28
+      ],
+      "28": [
+        25,
+        28,
+        2,
+        16
+      ],
+      "29": [
+        22,
+        21,
+        27,
+        35
+      ],
+      "30": [
+        17,
+        2,
+        40,
+        1
+      ],
+      "31": [
+        29,
+        1,
+        40
+      ],
+      "32": [
+        15,
+        13,
+        30,
+        12
+      ],
+      "33": [
+        10
+      ],
+      "34": [
+        15,
+        29
+      ],
+      "35": [
+        26,
+        1
+      ],
+      "36": [
+        29,
+        26,
+        4
+      ],
+      "37": [
+        35,
+        34,
+        16,
+        24
+      ],
+      "38": [
+        10,
+        6,
+        2,
+        34
+      ]
+    },
+    "8": {
+      "2": [
+        35,
+        10,
+        19,
+        14
+      ],
+      "3": [
+        19,
+        14
+      ],
+      "4": [
+        35,
+        8,
+        2,
+        14
+      ],
+      "9": [
+        2,
+        18,
+        37
+      ],
+      "10": [
+        24,
+        35
+      ],
+      "11": [
+        7,
+        2,
+        35
+      ],
+      "12": [
+        34,
+        28,
+        35,
+        40
+      ],
+      "13": [
+        9,
+        14,
+        17,
+        15
+      ],
+      "15": [
+        35,
+        34,
+        38
+      ],
+      "16": [
+        35,
+        6,
+        4
+      ],
+      "20": [
+        30,
+        6
+      ],
+      "22": [
+        10,
+        39,
+        35,
+        34
+      ],
+      "24": [
+        35,
+        16,
+        32,
+        18
+      ],
+      "25": [
+        35,
+        3
+      ],
+      "26": [
+        2,
+        35,
+        16
+      ],
+      "28": [
+        35,
+        10,
+        25
+      ],
+      "29": [
+        34,
+        39,
+        19,
+        27
+      ],
+      "30": [
+        30,
+        18,
+        35,
+        4
+      ],
+      "31": [
+        35
+      ],
+      "33": [
+        1
+      ],
+      "35": [
+        1,
+        31
+      ],
+      "36": [
+        2,
+        17,
+        26
+      ],
+      "38": [
+        35,
+        37,
+        10,
+        2
+      ]
+    },
+    "9": {
+      "1": [
+        2,
+        28,
+        13,
+        38
+      ],
+      "3": [
+        13,
+        14,
+        8
+      ],
+      "5": [
+        29,
+        30,
+        34
+      ],
+      "7": [
+        7,
+        29,
+        34
+      ],
+      "10": [
+        13,
+        28,
+        15,
+        19
+      ],
+      "11": [
+        6,
+        18,
+        38,
+        40
+      ],
+      "12": [
+        35,
+        15,
+        18,
+        34
+      ],
+      "13": [
+        28,
+        33,
+        1,
+        18
+      ],
+      "14": [
+        8,
+        3,
+        26,
+        14
+      ],
+      "15": [
+        3,
+        19,
+        35,
+        5
+      ],
+      "17": [
+        28,
+        30,
+        36,
+        2
+      ],
+      "18": [
+        10,
+        13,
+        19
+      ],
+      "19": [
+        8,
+        15,
+        35,
+        38
+      ],
+      "21": [
+        19,
+        35,
+        38,
+        2
+      ],
+      "22": [
+        14,
+        20,
+        19,
+        35
+      ],
+      "23": [
+        10,
+        13,
+        28,
+        38
+      ],
+      "24": [
+        13,
+        26
+      ],
+      "26": [
+        10,
+        19,
+        29,
+        38
+      ],
+      "27": [
+        11,
+        35,
+        27,
+        28
+      ],
+      "28": [
+        28,
+        32,
+        1,
+        24
+      ],
+      "29": [
+        10,
+        28,
+        32,
+        25
+      ],
+      "30": [
+        1,
+        28,
+        35,
+        23
+      ],
+      "31": [
+        2,
+        24,
+        35,
+        21
+      ],
+      "32": [
+        35,
+        13,
+        8,
+        1
+      ],
+      "33": [
+        32,
+        28,
+        13,
+        12
+      ],
+      "34": [
+        34,
+        2,
+        28,
+        27
+      ],
+      "35": [
+        15,
+        10,
+        26
+      ],
+      "36": [
+        10,
+        28,
+        4,
+        34
+      ],
+      "37": [
+        3,
+        34,
+        27,
+        16
+      ],
+      "38": [
+        10,
+        18
+      ]
+    },
+    "10": {
+      "1": [
+        8,
+        1,
+        37,
+        18
+      ],
+      "2": [
+        18,
+        13,
+        1,
+        28
+      ],
+      "3": [
+        17,
+        19,
+        9,
+        36
+      ],
+      "4": [
+        28,
+        10
+      ],
+      "5": [
+        19,
+        10,
+        15
+      ],
+      "6": [
+        1,
+        18,
+        36,
+        37
+      ],
+      "7": [
+        15,
+        9,
+        12,
+        37
+      ],
+      "8": [
+        2,
+        36,
+        18,
+        37
+      ],
+      "9": [
+        13,
+        28,
+        15,
+        12
+      ],
+      "11": [
+        18,
+        21,
+        11
+      ],
+      "12": [
+        10,
+        35,
+        40,
+        34
+      ],
+      "13": [
+        35,
+        10,
+        21
+      ],
+      "14": [
+        35,
+        10,
+        14,
+        27
+      ],
+      "15": [
+        19,
+        2
+      ],
+      "17": [
+        35,
+        10,
+        21
+      ],
+      "19": [
+        19,
+        17,
+        10
+      ],
+      "20": [
+        1,
+        16,
+        36,
+        37
+      ],
+      "21": [
+        19,
+        35,
+        18,
+        37
+      ],
+      "22": [
+        14,
+        15
+      ],
+      "23": [
+        8,
+        35,
+        40,
+        5
+      ],
+      "25": [
+        10,
+        37,
+        36
+      ],
+      "26": [
+        14,
+        29,
+        18,
+        36
+      ],
+      "27": [
+        3,
+        35,
+        13,
+        21
+      ],
+      "28": [
+        35,
+        10,
+        23,
+        24
+      ],
+      "29": [
+        28,
+        29,
+        37,
+        36
+      ],
+      "30": [
+        1,
+        35,
+        40,
+        18
+      ],
+      "31": [
+        13,
+        3,
+        36,
+        24
+      ],
+      "32": [
+        15,
+        37,
+        18,
+        1
+      ],
+      "33": [
+        1,
+        28,
+        3,
+        25
+      ],
+      "34": [
+        15,
+        1,
+        11
+      ],
+      "35": [
+        15,
+        17,
+        18,
+        20
+      ],
+      "36": [
+        26,
+        35,
+        10,
+        18
+      ],
+      "37": [
+        36,
+        37,
+        10,
+        19
+      ],
+      "38": [
+        2,
+        35
+      ],
+      "39": [
+        3,
+        28,
+        35,
+        37
+      ]
+    },
+    "11": {
+      "1": [
+        10,
+        36,
+        37,
+        40
+      ],
+      "2": [
+        13,
+        29,
+        10,
+        18
+      ],
+      "3": [
+        35,
+        10,
+        36
+      ],
+      "4": [
+        35,
+        1,
+        14,
+        16
+      ],
+      "5": [
+        10,
+        15,
+        36,
+        28
+      ],
+      "6": [
+        10,
+        15,
+        36,
+        37
+      ],
+      "7": [
+        6,
+        35,
+        10
+      ],
+      "8": [
+        35,
+        24
+      ],
+      "9": [
+        6,
+        35,
+        36
+      ],
+      "10": [
+        36,
+        35,
+        21
+      ],
+      "12": [
+        35,
+        4,
+        15,
+        10
+      ],
+      "13": [
+        35,
+        33,
+        2,
+        40
+      ],
+      "14": [
+        9,
+        18,
+        3,
+        40
+      ],
+      "15": [
+        19,
+        3,
+        27
+      ],
+      "17": [
+        35,
+        39,
+        19,
+        2
+      ],
+      "19": [
+        14,
+        24,
+        10,
+        37
+      ],
+      "21": [
+        10,
+        35,
+        14
+      ],
+      "22": [
+        2,
+        36,
+        25
+      ],
+      "23": [
+        10,
+        36,
+        3,
+        37
+      ],
+      "25": [
+        37,
+        36,
+        4
+      ],
+      "26": [
+        10,
+        14,
+        36
+      ],
+      "27": [
+        10,
+        13,
+        19,
+        35
+      ],
+      "28": [
+        6,
+        28,
+        25
+      ],
+      "29": [
+        3,
+        35
+      ],
+      "30": [
+        22,
+        2,
+        37
+      ],
+      "31": [
+        2,
+        33,
+        27,
+        18
+      ],
+      "32": [
+        1,
+        35,
+        16
+      ],
+      "33": [
+        11
+      ],
+      "34": [
+        2
+      ],
+      "35": [
+        35
+      ],
+      "36": [
+        19,
+        1,
+        35
+      ],
+      "37": [
+        2,
+        36,
+        37
+      ],
+      "38": [
+        35,
+        24
+      ],
+      "39": [
+        10,
+        14,
+        35,
+        37
+      ]
+    },
+    "12": {
+      "1": [
+        8,
+        10,
+        29,
+        40
+      ],
+      "2": [
+        15,
+        10,
+        26,
+        3
+      ],
+      "3": [
+        29,
+        34,
+        5,
+        4
+      ],
+      "4": [
+        13,
+        14,
+        10,
+        7
+      ],
+      "5": [
+        5,
+        34,
+        4,
+        10
+      ],
+      "7": [
+        14,
+        4,
+        15,
+        22
+      ],
+      "8": [
+        7,
+        2,
+        35
+      ],
+      "9": [
+        35,
+        15,
+        18,
+        34
+      ],
+      "10": [
+        35,
+        10,
+        37,
+        40
+      ],
+      "11": [
+        34,
+        15,
+        10,
+        14
+      ],
+      "13": [
+        33,
+        1,
+        18,
+        4
+      ],
+      "14": [
+        30,
+        14,
+        10,
+        40
+      ],
+      "15": [
+        14,
+        26,
+        9,
+        25
+      ],
+      "17": [
+        22,
+        14,
+        19,
+        32
+      ],
+      "18": [
+        13,
+        15,
+        32
+      ],
+      "19": [
+        2,
+        6,
+        34,
+        14
+      ],
+      "21": [
+        4,
+        6,
+        2
+      ],
+      "22": [
+        14
+      ],
+      "23": [
+        35,
+        29,
+        3,
+        5
+      ],
+      "25": [
+        14,
+        10,
+        34,
+        17
+      ],
+      "26": [
+        36,
+        22
+      ],
+      "29": [
+        32,
+        30,
+        40
+      ],
+      "30": [
+        22,
+        1,
+        2,
+        35
+      ],
+      "31": [
+        35,
+        1
+      ],
+      "32": [
+        1,
+        32,
+        17,
+        28
+      ],
+      "33": [
+        32,
+        15,
+        26
+      ],
+      "34": [
+        2,
+        13,
+        1
+      ],
+      "35": [
+        1,
+        15,
+        29
+      ],
+      "36": [
+        16,
+        29,
+        1,
+        28
+      ],
+      "37": [
+        15,
+        13,
+        39
+      ],
+      "38": [
+        15,
+        1,
+        32
+      ],
+      "39": [
+        17,
+        26,
+        34,
+        10
+      ]
+    },
+    "13": {
+      "1": [
+        21,
+        35,
+        2,
+        39
+      ],
+      "2": [
+        26,
+        39,
+        1,
+        40
+      ],
+      "3": [
+        13,
+        15,
+        1,
+        28
+      ],
+      "4": [
+        37
+      ],
+      "5": [
+        2,
+        11,
+        13
+      ],
+      "6": [
+        39
+      ],
+      "7": [
+        28,
+        10,
+        19,
+        39
+      ],
+      "8": [
+        34,
+        28,
+        35,
+        40
+      ],
+      "9": [
+        33,
+        15,
+        28,
+        18
+      ],
+      "10": [
+        10,
+        35,
+        21,
+        16
+      ],
+      "11": [
+        2,
+        35,
+        40
+      ],
+      "12": [
+        22,
+        1,
+        18,
+        4
+      ],
+      "14": [
+        17,
+        9,
+        15
+      ],
+      "15": [
+        13,
+        27,
+        10,
+        35
+      ],
+      "16": [
+        39,
+        3,
+        35,
+        23
+      ],
+      "17": [
+        35,
+        1,
+        32
+      ],
+      "18": [
+        32,
+        3,
+        27,
+        16
+      ],
+      "19": [
+        13,
+        19
+      ],
+      "20": [
+        27,
+        4,
+        29,
+        18
+      ],
+      "21": [
+        32,
+        35,
+        27,
+        31
+      ],
+      "22": [
+        14,
+        2,
+        39,
+        6
+      ],
+      "23": [
+        2,
+        14,
+        30,
+        40
+      ],
+      "25": [
+        35,
+        27
+      ],
+      "26": [
+        15,
+        32,
+        35
+      ],
+      "27": [
+        35,
+        27
+      ],
+      "28": [
+        13
+      ],
+      "29": [
+        18
+      ],
+      "30": [
+        35,
+        24,
+        30,
+        18
+      ],
+      "31": [
+        35,
+        40,
+        27,
+        39
+      ],
+      "32": [
+        35,
+        19
+      ],
+      "33": [
+        32,
+        35,
+        30
+      ],
+      "34": [
+        2,
+        35,
+        10,
+        16
+      ],
+      "35": [
+        35,
+        30,
+        34,
+        2
+      ],
+      "36": [
+        2,
+        35,
+        22,
+        26
+      ],
+      "37": [
+        35,
+        22,
+        39,
+        23
+      ],
+      "38": [
+        1,
+        8,
+        35
+      ],
+      "39": [
+        23,
+        35,
+        40,
+        3
+      ]
+    },
+    "14": {
+      "1": [
+        1,
+        8,
+        40,
+        15
+      ],
+      "2": [
+        40,
+        26,
+        27,
+        1
+      ],
+      "3": [
+        1,
+        15,
+        8,
+        35
+      ],
+      "4": [
+        15,
+        14,
+        28,
+        26
+      ],
+      "5": [
+        3,
+        34,
+        40,
+        29
+      ],
+      "6": [
+        9,
+        40,
+        28
+      ],
+      "7": [
+        10,
+        15,
+        14,
+        7
+      ],
+      "8": [
+        9,
+        14,
+        17,
+        15
+      ],
+      "9": [
+        8,
+        13,
+        26,
+        14
+      ],
+      "10": [
+        10,
+        18,
+        3,
+        14
+      ],
+      "11": [
+        10,
+        3,
+        18,
+        40
+      ],
+      "12": [
+        10,
+        30,
+        35,
+        40
+      ],
+      "13": [
+        13,
+        17,
+        35
+      ],
+      "15": [
+        27,
+        3,
+        26
+      ],
+      "17": [
+        30,
+        10,
+        40
+      ],
+      "18": [
+        35,
+        19
+      ],
+      "19": [
+        19,
+        35,
+        10
+      ],
+      "20": [
+        35
+      ],
+      "21": [
+        10,
+        26,
+        35,
+        28
+      ],
+      "22": [
+        35
+      ],
+      "23": [
+        35,
+        28,
+        31,
+        40
+      ],
+      "25": [
+        29,
+        3,
+        28,
+        10
+      ],
+      "26": [
+        29,
+        10,
+        27
+      ],
+      "27": [
+        11,
+        3
+      ],
+      "28": [
+        3,
+        27,
+        16
+      ],
+      "29": [
+        3,
+        27
+      ],
+      "30": [
+        18,
+        35,
+        37,
+        1
+      ],
+      "31": [
+        15,
+        35,
+        22,
+        2
+      ],
+      "32": [
+        11,
+        3,
+        10,
+        32
+      ],
+      "33": [
+        32,
+        40,
+        25,
+        2
+      ],
+      "34": [
+        27,
+        11,
+        3
+      ],
+      "35": [
+        15,
+        3,
+        32
+      ],
+      "36": [
+        2,
+        13,
+        25,
+        28
+      ],
+      "37": [
+        27,
+        3,
+        15,
+        40
+      ],
+      "38": [
+        15
+      ],
+      "39": [
+        29,
+        35,
+        10,
+        14
+      ]
+    },
+    "15": {
+      "1": [
+        19,
+        5,
+        34,
+        31
+      ],
+      "3": [
+        2,
+        19,
+        9
+      ],
+      "5": [
+        3,
+        17,
+        19
+      ],
+      "7": [
+        10,
+        2,
+        19,
+        30
+      ],
+      "9": [
+        3,
+        35,
+        5
+      ],
+      "10": [
+        19,
+        2,
+        16
+      ],
+      "11": [
+        19,
+        3,
+        27
+      ],
+      "12": [
+        14,
+        26,
+        28,
+        25
+      ],
+      "13": [
+        13,
+        3,
+        35
+      ],
+      "14": [
+        27,
+        3,
+        10
+      ],
+      "17": [
+        19,
+        35,
+        39
+      ],
+      "18": [
+        2,
+        19,
+        4,
+        35
+      ],
+      "19": [
+        28,
+        6,
+        35,
+        18
+      ],
+      "20": [
+        10
+      ],
+      "21": [
+        20,
+        10,
+        28,
+        18
+      ],
+      "22": [
+        3,
+        35,
+        10,
+        40
+      ],
+      "23": [
+        11,
+        2,
+        13
+      ],
+      "24": [
+        3
+      ],
+      "25": [
+        3,
+        27,
+        16,
+        40
+      ],
+      "26": [
+        22,
+        15,
+        33,
+        28
+      ],
+      "27": [
+        21,
+        39,
+        16,
+        22
+      ],
+      "28": [
+        27,
+        1,
+        4
+      ],
+      "29": [
+        12,
+        27
+      ],
+      "30": [
+        29,
+        10,
+        27
+      ],
+      "31": [
+        1,
+        35,
+        13
+      ],
+      "32": [
+        10,
+        4,
+        29,
+        15
+      ],
+      "33": [
+        19,
+        29,
+        39,
+        35
+      ],
+      "34": [
+        6,
+        10
+      ],
+      "35": [
+        35,
+        17,
+        14,
+        19
+      ],
+      "36": [
+        15,
+        1
+      ],
+      "37": [
+        6
+      ],
+      "38": [
+        35,
+        17,
+        14,
+        19
+      ],
+      "39": [
+        15
+      ]
+    },
+    "16": {
+      "2": [
+        6,
+        27,
+        19,
+        16
+      ],
+      "4": [
+        1,
+        40,
+        35
+      ],
+      "8": [
+        35,
+        34,
+        38
+      ],
+      "12": [
+        39,
+        3,
+        35,
+        23
+      ],
+      "15": [
+        19,
+        18,
+        36,
+        40
+      ],
+      "19": [
+        16
+      ],
+      "21": [
+        27,
+        16,
+        18,
+        38
+      ],
+      "22": [
+        10
+      ],
+      "23": [
+        28,
+        20,
+        10,
+        16
+      ],
+      "24": [
+        3,
+        35,
+        31
+      ],
+      "25": [
+        34,
+        27,
+        6,
+        40
+      ],
+      "26": [
+        10,
+        26,
+        24
+      ],
+      "28": [
+        17,
+        1,
+        40,
+        33
+      ],
+      "29": [
+        22
+      ],
+      "30": [
+        35,
+        10
+      ],
+      "31": [
+        1
+      ],
+      "32": [
+        1
+      ],
+      "33": [
+        2
+      ],
+      "35": [
+        25,
+        34,
+        6,
+        35
+      ],
+      "37": [
+        20,
+        10,
+        16,
+        38
+      ]
+    },
+    "17": {
+      "1": [
+        36,
+        22,
+        6,
+        38
+      ],
+      "2": [
+        22,
+        35,
+        32
+      ],
+      "3": [
+        15,
+        19,
+        9
+      ],
+      "4": [
+        15,
+        19,
+        9
+      ],
+      "5": [
+        3,
+        35,
+        39,
+        18
+      ],
+      "6": [
+        35,
+        38
+      ],
+      "7": [
+        34,
+        39,
+        40,
+        18
+      ],
+      "8": [
+        35,
+        6,
+        4
+      ],
+      "9": [
+        2,
+        28,
+        36,
+        30
+      ],
+      "10": [
+        35,
+        10,
+        3,
+        21
+      ],
+      "11": [
+        35,
+        39,
+        19,
+        2
+      ],
+      "12": [
+        14,
+        22,
+        19,
+        32
+      ],
+      "13": [
+        1,
+        35,
+        32
+      ],
+      "14": [
+        10,
+        30,
+        22,
+        40
+      ],
+      "15": [
+        19,
+        13,
+        39
+      ],
+      "16": [
+        19,
+        18,
+        36,
+        40
+      ],
+      "18": [
+        32,
+        30,
+        21,
+        16
+      ],
+      "19": [
+        19,
+        15,
+        3,
+        17
+      ],
+      "20": [
+        2,
+        14,
+        17,
+        25
+      ],
+      "21": [
+        21,
+        17,
+        35,
+        38
+      ],
+      "22": [
+        21,
+        36,
+        29,
+        31
+      ],
+      "25": [
+        35,
+        28,
+        21,
+        18
+      ],
+      "26": [
+        3,
+        17,
+        30,
+        39
+      ],
+      "27": [
+        19,
+        35,
+        3,
+        10
+      ],
+      "28": [
+        32,
+        19,
+        24
+      ],
+      "29": [
+        24
+      ],
+      "30": [
+        22,
+        33,
+        35,
+        2
+      ],
+      "31": [
+        22,
+        35,
+        2,
+        24
+      ],
+      "32": [
+        26,
+        27
+      ],
+      "33": [
+        26,
+        27
+      ],
+      "34": [
+        4,
+        10,
+        16
+      ],
+      "35": [
+        2,
+        18,
+        27
+      ],
+      "36": [
+        2,
+        17,
+        16
+      ],
+      "37": [
+        3,
+        27,
+        35,
+        31
+      ],
+      "38": [
+        26,
+        2,
+        19,
+        16
+      ],
+      "39": [
+        15,
+        28,
+        35
+      ]
+    },
+    "18": {
+      "1": [
+        19,
+        1,
+        32
+      ],
+      "2": [
+        2,
+        35,
+        32
+      ],
+      "3": [
+        19,
+        32,
+        16
+      ],
+      "5": [
+        19,
+        32,
+        26
+      ],
+      "7": [
+        2,
+        13,
+        10
+      ],
+      "9": [
+        10,
+        13,
+        19
+      ],
+      "10": [
+        26,
+        19,
+        6
+      ],
+      "12": [
+        32,
+        30
+      ],
+      "13": [
+        32,
+        3,
+        27
+      ],
+      "14": [
+        35,
+        19
+      ],
+      "15": [
+        2,
+        19,
+        6
+      ],
+      "17": [
+        32,
+        35,
+        19
+      ],
+      "19": [
+        32,
+        1,
+        19
+      ],
+      "20": [
+        32,
+        35,
+        1,
+        15
+      ],
+      "21": [
+        32
+      ],
+      "22": [
+        13,
+        16,
+        1,
+        6
+      ],
+      "23": [
+        13,
+        1
+      ],
+      "24": [
+        1,
+        6
+      ],
+      "25": [
+        19,
+        1,
+        26,
+        17
+      ],
+      "26": [
+        1,
+        19
+      ],
+      "28": [
+        11,
+        15,
+        32
+      ],
+      "29": [
+        3,
+        32
+      ],
+      "30": [
+        15,
+        19
+      ],
+      "31": [
+        35,
+        19,
+        32,
+        39
+      ],
+      "32": [
+        19,
+        35,
+        28,
+        26
+      ],
+      "33": [
+        28,
+        26,
+        19
+      ],
+      "34": [
+        15,
+        17,
+        13,
+        16
+      ],
+      "35": [
+        15,
+        1,
+        19
+      ],
+      "36": [
+        6,
+        32,
+        13
+      ],
+      "37": [
+        32,
+        15
+      ],
+      "38": [
+        2,
+        26,
+        10
+      ],
+      "39": [
+        2,
+        25,
+        16
+      ]
+    },
+    "19": {
+      "1": [
+        12,
+        18,
+        28,
+        31
+      ],
+      "3": [
+        12,
+        28
+      ],
+      "5": [
+        15,
+        19,
+        25
+      ],
+      "7": [
+        35,
+        13,
+        18
+      ],
+      "9": [
+        8,
+        35
+      ],
+      "10": [
+        16,
+        26,
+        21,
+        2
+      ],
+      "11": [
+        23,
+        14,
+        25
+      ],
+      "12": [
+        12,
+        2,
+        29
+      ],
+      "13": [
+        19,
+        13,
+        17,
+        24
+      ],
+      "14": [
+        5,
+        19,
+        9,
+        35
+      ],
+      "15": [
+        28,
+        6,
+        35,
+        18
+      ],
+      "17": [
+        19,
+        24,
+        3,
+        14
+      ],
+      "18": [
+        2,
+        15,
+        19
+      ],
+      "20": [
+        6,
+        19,
+        37,
+        18
+      ],
+      "21": [
+        12,
+        22,
+        15,
+        24
+      ],
+      "22": [
+        35,
+        24,
+        18,
+        5
+      ],
+      "24": [
+        35,
+        38,
+        19,
+        18
+      ],
+      "25": [
+        34,
+        23,
+        16,
+        18
+      ],
+      "26": [
+        19,
+        21,
+        11,
+        27
+      ],
+      "27": [
+        3,
+        1,
+        32
+      ],
+      "29": [
+        1,
+        35,
+        6,
+        27
+      ],
+      "30": [
+        2,
+        35,
+        6
+      ],
+      "31": [
+        28,
+        26,
+        30
+      ],
+      "32": [
+        19,
+        35
+      ],
+      "33": [
+        1,
+        15,
+        17,
+        28
+      ],
+      "34": [
+        15,
+        17,
+        13,
+        16
+      ],
+      "35": [
+        2,
+        29,
+        27,
+        28
+      ],
+      "36": [
+        35,
+        38
+      ],
+      "37": [
+        32,
+        2
+      ],
+      "38": [
+        12,
+        28,
+        35
+      ]
+    },
+    "20": {
+      "2": [
+        19,
+        9,
+        6,
+        27
+      ],
+      "10": [
+        36,
+        37
+      ],
+      "13": [
+        27,
+        4,
+        29,
+        18
+      ],
+      "14": [
+        35
+      ],
+      "18": [
+        19,
+        2,
+        35,
+        32
+      ],
+      "21": [
+        28,
+        27,
+        18,
+        31
+      ],
+      "24": [
+        3,
+        35,
+        31
+      ],
+      "25": [
+        10,
+        36,
+        23
+      ],
+      "28": [
+        10,
+        2,
+        22,
+        37
+      ],
+      "29": [
+        19,
+        22,
+        18
+      ],
+      "30": [
+        1,
+        4
+      ],
+      "33": [
+        10,
+        2,
+        22,
+        37
+      ],
+      "34": [
+        19,
+        22,
+        18
+      ],
+      "35": [
+        1,
+        4
+      ],
+      "39": [
+        19,
+        35,
+        16,
+        25
+      ]
+    },
+    "21": {
+      "1": [
+        8,
+        36,
+        38,
+        31
+      ],
+      "2": [
+        19,
+        26,
+        17,
+        27
+      ],
+      "3": [
+        1,
+        10,
+        35,
+        37
+      ],
+      "5": [
+        19,
+        38
+      ],
+      "6": [
+        17,
+        32,
+        13,
+        38
+      ],
+      "7": [
+        35,
+        6,
+        38
+      ],
+      "8": [
+        30,
+        6,
+        25
+      ],
+      "9": [
+        15,
+        35,
+        2
+      ],
+      "10": [
+        26,
+        2,
+        36,
+        35
+      ],
+      "11": [
+        22,
+        10,
+        35
+      ],
+      "12": [
+        29,
+        14,
+        2,
+        40
+      ],
+      "13": [
+        35,
+        32,
+        15,
+        31
+      ],
+      "14": [
+        26,
+        10,
+        28
+      ],
+      "15": [
+        19,
+        35,
+        10,
+        38
+      ],
+      "17": [
+        16,
+        6,
+        19
+      ],
+      "18": [
+        16,
+        6,
+        19,
+        37
+      ],
+      "20": [
+        10,
+        35,
+        38
+      ],
+      "22": [
+        28,
+        27,
+        18,
+        38
+      ],
+      "23": [
+        10,
+        19
+      ],
+      "24": [
+        35,
+        20,
+        10,
+        6
+      ],
+      "25": [
+        4,
+        34,
+        19
+      ],
+      "26": [
+        19,
+        24,
+        26,
+        31
+      ],
+      "27": [
+        32,
+        15,
+        2
+      ],
+      "28": [
+        32,
+        2
+      ],
+      "29": [
+        19,
+        22,
+        31,
+        2
+      ],
+      "30": [
+        2,
+        35,
+        18
+      ],
+      "31": [
+        26,
+        10,
+        34
+      ],
+      "32": [
+        26,
+        35,
+        10
+      ],
+      "33": [
+        35,
+        2,
+        10,
+        34
+      ],
+      "34": [
+        19,
+        17,
+        34
+      ],
+      "35": [
+        20,
+        19,
+        30,
+        34
+      ],
+      "36": [
+        19,
+        35,
+        16
+      ],
+      "37": [
+        28,
+        2,
+        17
+      ],
+      "38": [
+        28,
+        35,
+        34
+      ],
+      "39": [
+        28,
+        35,
+        34
+      ]
+    },
+    "22": {
+      "1": [
+        15,
+        6,
+        19,
+        28
+      ],
+      "2": [
+        19,
+        6,
+        18,
+        9
+      ],
+      "3": [
+        7,
+        2,
+        6,
+        13
+      ],
+      "4": [
+        6,
+        38,
+        7
+      ],
+      "5": [
+        15,
+        26,
+        17,
+        30
+      ],
+      "6": [
+        17,
+        7,
+        30,
+        18
+      ],
+      "7": [
+        7,
+        18,
+        23
+      ],
+      "8": [
+        7
+      ],
+      "9": [
+        16,
+        35,
+        38
+      ],
+      "10": [
+        36,
+        38
+      ],
+      "13": [
+        14,
+        2,
+        39,
+        6
+      ],
+      "14": [
+        26
+      ],
+      "17": [
+        19,
+        38,
+        7
+      ],
+      "18": [
+        1,
+        13,
+        32,
+        15
+      ],
+      "23": [
+        3,
+        38
+      ],
+      "24": [
+        35,
+        27,
+        2,
+        37
+      ],
+      "25": [
+        19,
+        10
+      ],
+      "26": [
+        10,
+        18,
+        32,
+        7
+      ],
+      "27": [
+        7,
+        18,
+        25
+      ],
+      "28": [
+        11,
+        10,
+        35
+      ],
+      "30": [
+        32
+      ],
+      "32": [
+        21,
+        22,
+        35,
+        2
+      ],
+      "33": [
+        21,
+        35,
+        2,
+        22
+      ],
+      "35": [
+        35,
+        32,
+        1
+      ],
+      "36": [
+        2,
+        19
+      ],
+      "37": [
+        2
+      ],
+      "38": [
+        7,
+        23
+      ],
+      "39": [
+        35,
+        3,
+        15,
+        23
+      ]
+    },
+    "23": {
+      "1": [
+        35,
+        6,
+        23,
+        40
+      ],
+      "2": [
+        35,
+        6,
+        22,
+        32
+      ],
+      "3": [
+        14,
+        29,
+        10,
+        39
+      ],
+      "4": [
+        10,
+        28,
+        24
+      ],
+      "5": [
+        35,
+        2,
+        10,
+        31
+      ],
+      "6": [
+        10,
+        18,
+        39,
+        31
+      ],
+      "7": [
+        1,
+        29,
+        30,
+        36
+      ],
+      "8": [
+        3,
+        39,
+        18,
+        31
+      ],
+      "9": [
+        10,
+        13,
+        28,
+        38
+      ],
+      "10": [
+        14,
+        15,
+        18,
+        40
+      ],
+      "11": [
+        3,
+        36,
+        37,
+        10
+      ],
+      "12": [
+        29,
+        35,
+        3,
+        5
+      ],
+      "13": [
+        2,
+        14,
+        30,
+        40
+      ],
+      "14": [
+        35,
+        28,
+        31,
+        40
+      ],
+      "15": [
+        28,
+        27,
+        3,
+        18
+      ],
+      "16": [
+        27,
+        16,
+        18,
+        38
+      ],
+      "17": [
+        21,
+        36,
+        39,
+        31
+      ],
+      "18": [
+        1,
+        6,
+        13
+      ],
+      "19": [
+        35,
+        18,
+        24,
+        5
+      ],
+      "20": [
+        28,
+        27,
+        12,
+        31
+      ],
+      "21": [
+        28,
+        27,
+        18,
+        38
+      ],
+      "24": [
+        35,
+        27,
+        2,
+        31
+      ],
+      "25": [
+        15,
+        18,
+        35,
+        10
+      ],
+      "26": [
+        6,
+        3,
+        10,
+        24
+      ],
+      "27": [
+        10,
+        29,
+        39,
+        35
+      ],
+      "28": [
+        16,
+        34,
+        31,
+        28
+      ],
+      "29": [
+        35,
+        10,
+        24,
+        31
+      ],
+      "30": [
+        33,
+        22,
+        30,
+        40
+      ],
+      "31": [
+        10,
+        1,
+        34,
+        29
+      ],
+      "32": [
+        15,
+        34,
+        33
+      ],
+      "33": [
+        32,
+        28,
+        2,
+        24
+      ],
+      "34": [
+        2,
+        35,
+        34,
+        27
+      ],
+      "35": [
+        15,
+        10,
+        2
+      ],
+      "36": [
+        35,
+        10,
+        28,
+        24
+      ],
+      "37": [
+        35,
+        18,
+        10,
+        13
+      ],
+      "38": [
+        35,
+        10,
+        18
+      ],
+      "39": [
+        28,
+        35,
+        10,
+        23
+      ]
+    },
+    "24": {
+      "1": [
+        10,
+        24,
+        35
+      ],
+      "2": [
+        10,
+        35,
+        5
+      ],
+      "3": [
+        1,
+        26
+      ],
+      "4": [
+        26
+      ],
+      "5": [
+        30,
+        26
+      ],
+      "6": [
+        30,
+        16
+      ],
+      "13": [
+        10
+      ],
+      "14": [
+        10
+      ],
+      "18": [
+        19
+      ],
+      "25": [
+        10,
+        19
+      ],
+      "26": [
+        19,
+        10
+      ],
+      "27": [
+        10,
+        30,
+        4
+      ],
+      "28": [
+        24,
+        26,
+        28,
+        32
+      ],
+      "29": [
+        24,
+        28,
+        35
+      ],
+      "30": [
+        10,
+        28,
+        23
+      ],
+      "32": [
+        22,
+        10,
+        1
+      ],
+      "33": [
+        10,
+        21,
+        22
+      ],
+      "34": [
+        32
+      ],
+      "35": [
+        27,
+        22
+      ],
+      "36": [
+        35,
+        33
+      ],
+      "37": [
+        35
+      ],
+      "39": [
+        13,
+        23,
+        15
+      ]
+    },
+    "25": {
+      "1": [
+        10,
+        20,
+        37,
+        35
+      ],
+      "2": [
+        10,
+        20,
+        26,
+        5
+      ],
+      "3": [
+        15,
+        2,
+        29
+      ],
+      "4": [
+        30,
+        24,
+        14,
+        5
+      ],
+      "5": [
+        26,
+        4,
+        5,
+        16
+      ],
+      "6": [
+        10,
+        35,
+        17,
+        4
+      ],
+      "7": [
+        2,
+        5,
+        34,
+        10
+      ],
+      "8": [
+        35,
+        16,
+        32,
+        18
+      ],
+      "10": [
+        10,
+        37,
+        36,
+        5
+      ],
+      "11": [
+        37,
+        36,
+        4
+      ],
+      "12": [
+        4,
+        10,
+        34,
+        17
+      ],
+      "13": [
+        35,
+        3,
+        22,
+        5
+      ],
+      "14": [
+        29,
+        3,
+        28,
+        18
+      ],
+      "15": [
+        20,
+        10,
+        28,
+        18
+      ],
+      "16": [
+        28,
+        20,
+        10,
+        16
+      ],
+      "17": [
+        35,
+        29,
+        21,
+        18
+      ],
+      "18": [
+        1,
+        19,
+        26,
+        17
+      ],
+      "19": [
+        35,
+        38,
+        19,
+        18
+      ],
+      "21": [
+        1
+      ],
+      "23": [
+        35,
+        20,
+        10,
+        6
+      ],
+      "24": [
+        10,
+        5,
+        18,
+        32
+      ],
+      "26": [
+        35,
+        18,
+        10,
+        39
+      ],
+      "27": [
+        24,
+        26,
+        28,
+        32
+      ],
+      "28": [
+        35,
+        38,
+        18,
+        16
+      ],
+      "29": [
+        10,
+        30,
+        4
+      ],
+      "30": [
+        24,
+        34,
+        28,
+        32
+      ],
+      "31": [
+        24,
+        26,
+        28,
+        18
+      ],
+      "32": [
+        35,
+        18,
+        34
+      ],
+      "33": [
+        35,
+        22,
+        18,
+        39
+      ],
+      "34": [
+        35,
+        28,
+        34,
+        4
+      ],
+      "35": [
+        4,
+        28,
+        10,
+        34
+      ],
+      "36": [
+        32,
+        1,
+        10
+      ],
+      "37": [
+        35,
+        28
+      ],
+      "38": [
+        6,
+        29
+      ],
+      "39": [
+        18,
+        28,
+        32,
+        10
+      ]
+    },
+    "26": {
+      "1": [
+        35,
+        6,
+        18,
+        31
+      ],
+      "2": [
+        27,
+        26,
+        18,
+        35
+      ],
+      "3": [
+        29,
+        14,
+        35,
+        18
+      ],
+      "5": [
+        15,
+        14,
+        29
+      ],
+      "6": [
+        2,
+        18,
+        40,
+        4
+      ],
+      "7": [
+        15,
+        20,
+        29
+      ],
+      "9": [
+        35,
+        29,
+        34,
+        28
+      ],
+      "10": [
+        35,
+        14,
+        3
+      ],
+      "11": [
+        10,
+        36,
+        14,
+        3
+      ],
+      "12": [
+        35,
+        14
+      ],
+      "13": [
+        15,
+        2,
+        17,
+        40
+      ],
+      "14": [
+        14,
+        35,
+        34,
+        10
+      ],
+      "15": [
+        3,
+        35,
+        10,
+        40
+      ],
+      "16": [
+        3,
+        35,
+        31
+      ],
+      "17": [
+        3,
+        17,
+        39
+      ],
+      "19": [
+        34,
+        29,
+        16,
+        18
+      ],
+      "20": [
+        3,
+        35,
+        31
+      ],
+      "21": [
+        35
+      ],
+      "22": [
+        7,
+        18,
+        25
+      ],
+      "23": [
+        6,
+        3,
+        10,
+        24
+      ],
+      "24": [
+        24,
+        28,
+        35
+      ],
+      "25": [
+        35,
+        38,
+        18,
+        16
+      ],
+      "27": [
+        18,
+        3,
+        28,
+        40
+      ],
+      "28": [
+        13,
+        2,
+        28
+      ],
+      "29": [
+        33,
+        30
+      ],
+      "30": [
+        35,
+        33,
+        29,
+        31
+      ],
+      "31": [
+        3,
+        35,
+        40,
+        39
+      ],
+      "32": [
+        29,
+        1,
+        35,
+        27
+      ],
+      "33": [
+        35,
+        29,
+        25,
+        10
+      ],
+      "34": [
+        2,
+        32,
+        10,
+        25
+      ],
+      "35": [
+        15,
+        3,
+        29
+      ],
+      "36": [
+        3,
+        13,
+        27,
+        10
+      ],
+      "37": [
+        3,
+        27,
+        29,
+        18
+      ],
+      "38": [
+        8,
+        35
+      ],
+      "39": [
+        13,
+        29,
+        3,
+        27
+      ]
+    },
+    "27": {
+      "1": [
+        3,
+        8,
+        10,
+        40
+      ],
+      "2": [
+        3,
+        10,
+        8,
+        28
+      ],
+      "3": [
+        15,
+        9,
+        14,
+        4
+      ],
+      "4": [
+        15,
+        29,
+        28,
+        11
+      ],
+      "5": [
+        17,
+        10,
+        14,
+        16
+      ],
+      "6": [
+        32,
+        35,
+        40,
+        4
+      ],
+      "7": [
+        3,
+        10,
+        14,
+        24
+      ],
+      "8": [
+        2,
+        35,
+        24
+      ],
+      "9": [
+        21,
+        35,
+        11,
+        28
+      ],
+      "10": [
+        8,
+        28,
+        10,
+        3
+      ],
+      "11": [
+        10,
+        24,
+        35,
+        19
+      ],
+      "12": [
+        35,
+        1,
+        16,
+        11
+      ],
+      "14": [
+        11,
+        28
+      ],
+      "15": [
+        2,
+        35,
+        3,
+        25
+      ],
+      "16": [
+        34,
+        27,
+        6,
+        40
+      ],
+      "17": [
+        3,
+        35,
+        10
+      ],
+      "18": [
+        11,
+        32,
+        13
+      ],
+      "19": [
+        21,
+        11,
+        27,
+        19
+      ],
+      "20": [
+        36,
+        23
+      ],
+      "21": [
+        21,
+        11,
+        26,
+        31
+      ],
+      "22": [
+        10,
+        11,
+        35
+      ],
+      "24": [
+        10,
+        35,
+        29,
+        39
+      ],
+      "25": [
+        10,
+        28
+      ],
+      "26": [
+        10,
+        30,
+        4
+      ],
+      "28": [
+        21,
+        28,
+        40,
+        3
+      ],
+      "29": [
+        32,
+        3,
+        11,
+        23
+      ],
+      "30": [
+        11,
+        32,
+        1
+      ],
+      "31": [
+        27,
+        35,
+        2,
+        40
+      ],
+      "32": [
+        35,
+        2,
+        40,
+        26
+      ],
+      "34": [
+        27,
+        17,
+        40
+      ],
+      "35": [
+        1,
+        11
+      ],
+      "36": [
+        13,
+        35,
+        8,
+        24
+      ],
+      "37": [
+        13,
+        35,
+        1
+      ],
+      "38": [
+        27,
+        40,
+        28
+      ],
+      "39": [
+        11,
+        13,
+        27
+      ]
+    },
+    "28": {
+      "1": [
+        32,
+        35,
+        26,
+        28
+      ],
+      "2": [
+        28,
+        35,
+        25,
+        26
+      ],
+      "3": [
+        28,
+        26,
+        5,
+        16
+      ],
+      "4": [
+        32,
+        28,
+        3,
+        16
+      ],
+      "5": [
+        26,
+        28,
+        32,
+        3
+      ],
+      "6": [
+        26,
+        28,
+        32,
+        3
+      ],
+      "7": [
+        32,
+        13,
+        6
+      ],
+      "9": [
+        28,
+        13,
+        32,
+        24
+      ],
+      "10": [
+        32,
+        2
+      ],
+      "11": [
+        6,
+        28,
+        32
+      ],
+      "12": [
+        6,
+        28,
+        32
+      ],
+      "13": [
+        32,
+        35,
+        13
+      ],
+      "14": [
+        28,
+        6,
+        32
+      ],
+      "15": [
+        28,
+        6,
+        32
+      ],
+      "18": [
+        10,
+        26,
+        24
+      ],
+      "19": [
+        6,
+        19,
+        28,
+        24
+      ],
+      "20": [
+        6,
+        1,
+        32
+      ],
+      "22": [
+        3,
+        6,
+        32
+      ],
+      "24": [
+        3,
+        6,
+        32
+      ],
+      "25": [
+        26,
+        32,
+        27
+      ],
+      "26": [
+        10,
+        16,
+        31,
+        28
+      ],
+      "29": [
+        24,
+        34,
+        28,
+        32
+      ],
+      "30": [
+        2,
+        6,
+        32
+      ],
+      "31": [
+        5,
+        11,
+        1,
+        23
+      ],
+      "32": [
+        28,
+        24,
+        22,
+        26
+      ],
+      "33": [
+        3,
+        33,
+        39,
+        10
+      ],
+      "34": [
+        6,
+        35,
+        25,
+        18
+      ],
+      "35": [
+        1,
+        13,
+        17,
+        34
+      ],
+      "36": [
+        1,
+        32,
+        13,
+        11
+      ],
+      "37": [
+        13,
+        35,
+        2
+      ],
+      "38": [
+        27,
+        35,
+        10,
+        34
+      ],
+      "39": [
+        26,
+        24,
+        32,
+        28
+      ]
+    },
+    "29": {
+      "1": [
+        28,
+        32,
+        13,
+        18
+      ],
+      "2": [
+        28,
+        35,
+        27,
+        9
+      ],
+      "3": [
+        10,
+        28,
+        29,
+        37
+      ],
+      "4": [
+        2,
+        32,
+        10
+      ],
+      "5": [
+        28,
+        33,
+        29,
+        32
+      ],
+      "6": [
+        2,
+        29,
+        18,
+        36
+      ],
+      "7": [
+        32,
+        23,
+        2
+      ],
+      "8": [
+        25,
+        10,
+        35
+      ],
+      "9": [
+        10,
+        28,
+        32
+      ],
+      "10": [
+        28,
+        19,
+        34,
+        36
+      ],
+      "11": [
+        3,
+        35
+      ],
+      "12": [
+        32,
+        30,
+        40
+      ],
+      "13": [
+        30,
+        18
+      ],
+      "14": [
+        3,
+        27
+      ],
+      "15": [
+        3,
+        27,
+        40
+      ],
+      "17": [
+        19,
+        26
+      ],
+      "18": [
+        3,
+        32
+      ],
+      "19": [
+        32,
+        2
+      ],
+      "21": [
+        13,
+        32,
+        2
+      ],
+      "22": [
+        35,
+        31,
+        10,
+        24
+      ],
+      "24": [
+        32,
+        26,
+        28,
+        18
+      ],
+      "25": [
+        32,
+        30
+      ],
+      "26": [
+        11,
+        32,
+        1
+      ],
+      "28": [
+        26,
+        28,
+        10,
+        36
+      ],
+      "30": [
+        4,
+        17,
+        34,
+        26
+      ],
+      "32": [
+        1,
+        32,
+        35,
+        23
+      ],
+      "33": [
+        25,
+        10
+      ],
+      "34": [
+        26,
+        2,
+        18
+      ],
+      "36": [
+        26,
+        28,
+        18,
+        23
+      ],
+      "37": [
+        10,
+        18,
+        32,
+        39
+      ],
+      "38": [
+        35,
+        31,
+        10,
+        24
+      ],
+      "39": [
+        35,
+        26,
+        27,
+        10
+      ]
+    },
+    "30": {
+      "1": [
+        22,
+        21,
+        27,
+        39
+      ],
+      "2": [
+        2,
+        22,
+        13,
+        24
+      ],
+      "3": [
+        17,
+        1,
+        39,
+        4
+      ],
+      "4": [
+        1,
+        18
+      ],
+      "5": [
+        22,
+        1,
+        33,
+        28
+      ],
+      "6": [
+        27,
+        2,
+        39,
+        35
+      ],
+      "7": [
+        22,
+        23,
+        37,
+        35
+      ],
+      "8": [
+        34,
+        39,
+        19,
+        27
+      ],
+      "9": [
+        21,
+        22,
+        35,
+        28
+      ],
+      "10": [
+        13,
+        35,
+        39,
+        18
+      ],
+      "11": [
+        22,
+        2,
+        37
+      ],
+      "12": [
+        22,
+        1,
+        3,
+        35
+      ],
+      "13": [
+        35,
+        24,
+        30,
+        18
+      ],
+      "14": [
+        18,
+        35,
+        37,
+        1
+      ],
+      "15": [
+        22,
+        15,
+        33,
+        28
+      ],
+      "16": [
+        17,
+        1,
+        40,
+        33
+      ],
+      "17": [
+        22,
+        33,
+        35,
+        2
+      ],
+      "18": [
+        1,
+        19,
+        32,
+        13
+      ],
+      "19": [
+        1,
+        24,
+        6,
+        27
+      ],
+      "20": [
+        10,
+        2,
+        22,
+        37
+      ],
+      "21": [
+        19,
+        22,
+        31,
+        2
+      ],
+      "22": [
+        21,
+        22,
+        35,
+        2
+      ],
+      "23": [
+        33,
+        22,
+        19,
+        40
+      ],
+      "24": [
+        22,
+        10,
+        2
+      ],
+      "25": [
+        35,
+        18,
+        34
+      ],
+      "26": [
+        35,
+        33,
+        29,
+        31
+      ],
+      "27": [
+        27,
+        24,
+        2,
+        40
+      ],
+      "28": [
+        28,
+        33,
+        23,
+        26
+      ],
+      "29": [
+        26,
+        28,
+        10,
+        18
+      ],
+      "31": [
+        24,
+        35,
+        2
+      ],
+      "32": [
+        2,
+        25,
+        28,
+        39
+      ],
+      "33": [
+        35,
+        10,
+        2
+      ],
+      "34": [
+        35,
+        11,
+        22,
+        31
+      ],
+      "35": [
+        22,
+        19,
+        29,
+        40
+      ],
+      "36": [
+        22,
+        19,
+        29,
+        40
+      ],
+      "37": [
+        33,
+        3,
+        34
+      ],
+      "38": [
+        22,
+        35,
+        13,
+        24
+      ],
+      "39": [
+        22,
+        35,
+        13,
+        24
+      ]
+    },
+    "31": {
+      "1": [
+        19,
+        22,
+        15,
+        39
+      ],
+      "2": [
+        35,
+        22,
+        1,
+        39
+      ],
+      "3": [
+        17,
+        15,
+        16,
+        22
+      ],
+      "5": [
+        17,
+        2,
+        18,
+        39
+      ],
+      "6": [
+        22,
+        1,
+        40
+      ],
+      "7": [
+        17,
+        2,
+        40
+      ],
+      "8": [
+        30,
+        18,
+        35,
+        4
+      ],
+      "9": [
+        35,
+        28,
+        3,
+        23
+      ],
+      "10": [
+        35,
+        28,
+        1,
+        40
+      ],
+      "11": [
+        2,
+        33,
+        27,
+        18
+      ],
+      "12": [
+        35,
+        1
+      ],
+      "13": [
+        35,
+        40,
+        27,
+        39
+      ],
+      "14": [
+        15,
+        35,
+        22,
+        2
+      ],
+      "15": [
+        15,
+        22,
+        33,
+        31
+      ],
+      "16": [
+        21,
+        39,
+        16,
+        22
+      ],
+      "17": [
+        22,
+        35,
+        2,
+        24
+      ],
+      "18": [
+        19,
+        24,
+        39,
+        32
+      ],
+      "19": [
+        2,
+        35,
+        6
+      ],
+      "20": [
+        19,
+        22,
+        18
+      ],
+      "21": [
+        2,
+        35,
+        18
+      ],
+      "22": [
+        21,
+        35,
+        2,
+        22
+      ],
+      "23": [
+        10,
+        1,
+        34
+      ],
+      "24": [
+        10,
+        21,
+        29
+      ],
+      "25": [
+        1,
+        22
+      ],
+      "26": [
+        3,
+        24,
+        39,
+        1
+      ],
+      "27": [
+        24,
+        2,
+        40,
+        39
+      ],
+      "28": [
+        3,
+        33,
+        26
+      ],
+      "29": [
+        4,
+        17,
+        34,
+        26
+      ],
+      "32": [
+        1,
+        35,
+        12,
+        18
+      ],
+      "34": [
+        24,
+        2
+      ],
+      "39": [
+        19,
+        1,
+        31
+      ]
+    },
+    "32": {
+      "1": [
+        28,
+        29,
+        15,
+        16
+      ],
+      "2": [
+        1,
+        27,
+        36,
+        13
+      ],
+      "3": [
+        1,
+        29,
+        13,
+        17
+      ],
+      "4": [
+        15,
+        17,
+        27
+      ],
+      "5": [
+        13,
+        1,
+        26,
+        12
+      ],
+      "6": [
+        16,
+        40
+      ],
+      "7": [
+        13,
+        29,
+        1,
+        40
+      ],
+      "8": [
+        35
+      ],
+      "9": [
+        35,
+        13,
+        8,
+        1
+      ],
+      "10": [
+        35,
+        12
+      ],
+      "11": [
+        35,
+        19,
+        1,
+        37
+      ],
+      "12": [
+        1,
+        28,
+        13,
+        27
+      ],
+      "13": [
+        11,
+        13,
+        1
+      ],
+      "14": [
+        1,
+        3,
+        10,
+        32
+      ],
+      "15": [
+        27,
+        1,
+        4
+      ],
+      "16": [
+        35,
+        16
+      ],
+      "17": [
+        27,
+        26,
+        18
+      ],
+      "18": [
+        28,
+        24,
+        27,
+        1
+      ],
+      "19": [
+        28,
+        26,
+        27,
+        1
+      ],
+      "20": [
+        1,
+        4
+      ],
+      "21": [
+        27,
+        1,
+        12,
+        24
+      ],
+      "22": [
+        19,
+        35
+      ],
+      "23": [
+        15,
+        34,
+        33
+      ],
+      "24": [
+        32,
+        24,
+        18,
+        16
+      ],
+      "25": [
+        35,
+        28,
+        34,
+        4
+      ],
+      "26": [
+        35,
+        23,
+        1,
+        24
+      ],
+      "28": [
+        1,
+        35,
+        12,
+        18
+      ],
+      "30": [
+        24,
+        2
+      ],
+      "33": [
+        2,
+        5,
+        13,
+        16
+      ],
+      "34": [
+        35,
+        1,
+        11,
+        9
+      ],
+      "35": [
+        2,
+        13,
+        15
+      ],
+      "36": [
+        27,
+        26,
+        1
+      ],
+      "37": [
+        6,
+        28,
+        11,
+        1
+      ],
+      "38": [
+        8,
+        28,
+        1
+      ],
+      "39": [
+        35,
+        1,
+        10,
+        28
+      ]
+    },
+    "33": {
+      "1": [
+        25,
+        2,
+        13,
+        15
+      ],
+      "2": [
+        6,
+        13,
+        1,
+        25
+      ],
+      "3": [
+        1,
+        17,
+        13,
+        12
+      ],
+      "5": [
+        1,
+        17,
+        13,
+        16
+      ],
+      "6": [
+        18,
+        16,
+        15,
+        39
+      ],
+      "7": [
+        1,
+        16,
+        35,
+        15
+      ],
+      "8": [
+        4,
+        18,
+        39,
+        31
+      ],
+      "9": [
+        18,
+        13,
+        34
+      ],
+      "10": [
+        28,
+        13,
+        35
+      ],
+      "11": [
+        2,
+        32,
+        12
+      ],
+      "12": [
+        15,
+        34,
+        29,
+        28
+      ],
+      "13": [
+        32,
+        35,
+        30
+      ],
+      "14": [
+        32,
+        40,
+        3,
+        28
+      ],
+      "15": [
+        29,
+        3,
+        8,
+        25
+      ],
+      "16": [
+        1,
+        16,
+        25
+      ],
+      "17": [
+        26,
+        27,
+        13
+      ],
+      "18": [
+        13,
+        17,
+        1,
+        24
+      ],
+      "19": [
+        1,
+        13,
+        24
+      ],
+      "21": [
+        35,
+        34,
+        2,
+        10
+      ],
+      "22": [
+        2,
+        19,
+        13
+      ],
+      "23": [
+        28,
+        32,
+        2,
+        24
+      ],
+      "24": [
+        4,
+        10,
+        27,
+        22
+      ],
+      "25": [
+        4,
+        28,
+        10,
+        34
+      ],
+      "26": [
+        12,
+        35
+      ],
+      "27": [
+        17,
+        27,
+        8,
+        40
+      ],
+      "28": [
+        25,
+        13,
+        2,
+        34
+      ],
+      "29": [
+        1,
+        32,
+        35,
+        23
+      ],
+      "30": [
+        2,
+        25,
+        28,
+        39
+      ],
+      "32": [
+        2,
+        5,
+        12
+      ],
+      "34": [
+        12,
+        26,
+        1,
+        32
+      ],
+      "35": [
+        15,
+        34,
+        1,
+        16
+      ],
+      "36": [
+        32,
+        26,
+        12,
+        17
+      ],
+      "38": [
+        1,
+        34,
+        12,
+        3
+      ],
+      "39": [
+        15,
+        1,
+        28
+      ]
+    },
+    "34": {
+      "1": [
+        2,
+        27,
+        35,
+        11
+      ],
+      "2": [
+        2,
+        27,
+        35,
+        11
+      ],
+      "3": [
+        1,
+        28,
+        10,
+        25
+      ],
+      "4": [
+        3,
+        18,
+        31
+      ],
+      "5": [
+        15,
+        13,
+        32
+      ],
+      "6": [
+        16,
+        25
+      ],
+      "7": [
+        25,
+        2,
+        35,
+        11
+      ],
+      "8": [
+        1
+      ],
+      "9": [
+        34,
+        9
+      ],
+      "10": [
+        1,
+        11,
+        10
+      ],
+      "11": [
+        13
+      ],
+      "12": [
+        1,
+        13,
+        2,
+        4
+      ],
+      "13": [
+        2,
+        35
+      ],
+      "14": [
+        11,
+        1,
+        2,
+        9
+      ],
+      "15": [
+        11,
+        29,
+        28,
+        27
+      ],
+      "16": [
+        1
+      ],
+      "17": [
+        4,
+        10
+      ],
+      "18": [
+        15,
+        1,
+        13
+      ],
+      "19": [
+        15,
+        1,
+        28,
+        16
+      ],
+      "21": [
+        15,
+        10,
+        32,
+        2
+      ],
+      "22": [
+        15,
+        1,
+        32,
+        19
+      ],
+      "23": [
+        2,
+        35,
+        34,
+        27
+      ],
+      "25": [
+        32,
+        1,
+        10,
+        25
+      ],
+      "26": [
+        2,
+        28,
+        10,
+        25
+      ],
+      "27": [
+        11,
+        10,
+        1,
+        16
+      ],
+      "28": [
+        10,
+        2,
+        13
+      ],
+      "29": [
+        25,
+        10
+      ],
+      "30": [
+        35,
+        10,
+        2,
+        16
+      ],
+      "32": [
+        1,
+        35,
+        11,
+        10
+      ],
+      "33": [
+        1,
+        12,
+        26,
+        15
+      ],
+      "35": [
+        7,
+        1,
+        4,
+        16
+      ],
+      "36": [
+        35,
+        1,
+        13,
+        11
+      ],
+      "38": [
+        34,
+        35,
+        7,
+        13
+      ],
+      "39": [
+        1,
+        32,
+        10
+      ]
+    },
+    "35": {
+      "1": [
+        1,
+        6,
+        15,
+        8
+      ],
+      "2": [
+        19,
+        15,
+        29,
+        16
+      ],
+      "3": [
+        35,
+        1,
+        29,
+        2
+      ],
+      "4": [
+        1,
+        35,
+        16
+      ],
+      "5": [
+        35,
+        30,
+        29,
+        7
+      ],
+      "6": [
+        15,
+        16
+      ],
+      "7": [
+        15,
+        35,
+        29
+      ],
+      "9": [
+        35,
+        10,
+        14
+      ],
+      "10": [
+        15,
+        17,
+        20
+      ],
+      "11": [
+        35,
+        16
+      ],
+      "12": [
+        15,
+        37,
+        1,
+        8
+      ],
+      "13": [
+        35,
+        30,
+        14
+      ],
+      "14": [
+        35,
+        3,
+        32,
+        6
+      ],
+      "15": [
+        13,
+        1,
+        35
+      ],
+      "16": [
+        2,
+        16
+      ],
+      "17": [
+        27,
+        2,
+        3,
+        35
+      ],
+      "18": [
+        6,
+        22,
+        26,
+        1
+      ],
+      "19": [
+        19,
+        35,
+        29,
+        13
+      ],
+      "21": [
+        19,
+        1,
+        29
+      ],
+      "22": [
+        18,
+        15,
+        1
+      ],
+      "23": [
+        15,
+        10,
+        2,
+        13
+      ],
+      "25": [
+        35,
+        28
+      ],
+      "26": [
+        3,
+        35,
+        15
+      ],
+      "27": [
+        35,
+        13,
+        8,
+        24
+      ],
+      "28": [
+        35,
+        5,
+        1,
+        10
+      ],
+      "30": [
+        35,
+        11,
+        32,
+        31
+      ],
+      "32": [
+        1,
+        13,
+        31
+      ],
+      "33": [
+        15,
+        34,
+        1,
+        16
+      ],
+      "34": [
+        1,
+        16,
+        7,
+        4
+      ],
+      "36": [
+        15,
+        29,
+        37,
+        28
+      ],
+      "37": [
+        1
+      ],
+      "38": [
+        27,
+        34,
+        35
+      ],
+      "39": [
+        35,
+        28,
+        6,
+        37
+      ]
+    },
+    "36": {
+      "1": [
+        26,
+        30,
+        34,
+        36
+      ],
+      "2": [
+        2,
+        26,
+        35,
+        39
+      ],
+      "3": [
+        1,
+        19,
+        26,
+        24
+      ],
+      "4": [
+        26
+      ],
+      "5": [
+        14,
+        1,
+        13,
+        16
+      ],
+      "6": [
+        6,
+        36
+      ],
+      "7": [
+        34,
+        26,
+        6
+      ],
+      "8": [
+        1,
+        16
+      ],
+      "9": [
+        34,
+        10,
+        28
+      ],
+      "10": [
+        26,
+        16
+      ],
+      "11": [
+        19,
+        1,
+        35
+      ],
+      "12": [
+        29,
+        13,
+        28,
+        15
+      ],
+      "13": [
+        2,
+        22,
+        17,
+        19
+      ],
+      "14": [
+        2,
+        13,
+        28
+      ],
+      "15": [
+        10,
+        4,
+        28,
+        15
+      ],
+      "17": [
+        2,
+        17,
+        13
+      ],
+      "18": [
+        24,
+        17,
+        13
+      ],
+      "19": [
+        27,
+        2,
+        29,
+        28
+      ],
+      "21": [
+        20,
+        19,
+        30,
+        34
+      ],
+      "22": [
+        10,
+        35,
+        13,
+        2
+      ],
+      "23": [
+        35,
+        10,
+        28,
+        29
+      ],
+      "25": [
+        6,
+        29
+      ],
+      "26": [
+        13,
+        3,
+        27,
+        10
+      ],
+      "27": [
+        13,
+        35,
+        1
+      ],
+      "28": [
+        2,
+        26,
+        10,
+        34
+      ],
+      "29": [
+        26,
+        24,
+        32
+      ],
+      "30": [
+        22,
+        19,
+        29,
+        40
+      ],
+      "31": [
+        19,
+        1
+      ],
+      "32": [
+        27,
+        26,
+        1,
+        13
+      ],
+      "33": [
+        27,
+        9,
+        26,
+        24
+      ],
+      "34": [
+        1,
+        13
+      ],
+      "35": [
+        29,
+        15,
+        28,
+        37
+      ],
+      "37": [
+        15,
+        10,
+        37,
+        28
+      ],
+      "38": [
+        15,
+        1,
+        24
+      ],
+      "39": [
+        12,
+        17,
+        28
+      ]
+    },
+    "37": {
+      "1": [
+        27,
+        26,
+        28,
+        13
+      ],
+      "2": [
+        6,
+        13,
+        28,
+        1
+      ],
+      "3": [
+        16,
+        17,
+        26,
+        24
+      ],
+      "4": [
+        26
+      ],
+      "5": [
+        2,
+        13,
+        18,
+        17
+      ],
+      "6": [
+        2,
+        39,
+        30,
+        16
+      ],
+      "7": [
+        29,
+        1,
+        4,
+        16
+      ],
+      "8": [
+        2,
+        18,
+        26,
+        31
+      ],
+      "9": [
+        3,
+        4,
+        16,
+        35
+      ],
+      "10": [
+        30,
+        28,
+        40,
+        19
+      ],
+      "11": [
+        35,
+        36,
+        37,
+        32
+      ],
+      "12": [
+        27,
+        13,
+        1,
+        39
+      ],
+      "13": [
+        11,
+        22,
+        39,
+        30
+      ],
+      "14": [
+        27,
+        3,
+        15,
+        28
+      ],
+      "15": [
+        19,
+        29,
+        39,
+        25
+      ],
+      "16": [
+        25,
+        34,
+        6,
+        35
+      ],
+      "17": [
+        3,
+        27,
+        35,
+        16
+      ],
+      "18": [
+        2,
+        24,
+        26
+      ],
+      "19": [
+        35,
+        38
+      ],
+      "20": [
+        19,
+        35,
+        16
+      ],
+      "21": [
+        18,
+        1,
+        16,
+        10
+      ],
+      "22": [
+        35,
+        3,
+        15,
+        19
+      ],
+      "23": [
+        1,
+        18,
+        10,
+        24
+      ],
+      "24": [
+        35,
+        33,
+        27,
+        22
+      ],
+      "25": [
+        18,
+        28,
+        32,
+        9
+      ],
+      "26": [
+        3,
+        27,
+        29,
+        18
+      ],
+      "27": [
+        27,
+        40,
+        28,
+        8
+      ],
+      "28": [
+        26,
+        24,
+        32,
+        28
+      ],
+      "30": [
+        22,
+        19,
+        29,
+        28
+      ],
+      "31": [
+        2,
+        21
+      ],
+      "32": [
+        5,
+        28,
+        11,
+        29
+      ],
+      "33": [
+        2,
+        5
+      ],
+      "34": [
+        12,
+        26
+      ],
+      "35": [
+        1,
+        15
+      ],
+      "36": [
+        15,
+        10,
+        37,
+        28
+      ],
+      "38": [
+        34,
+        21
+      ],
+      "39": [
+        35,
+        18
+      ]
+    },
+    "38": {
+      "1": [
+        28,
+        26,
+        18,
+        35
+      ],
+      "2": [
+        28,
+        26,
+        35,
+        10
+      ],
+      "3": [
+        14,
+        13,
+        17,
+        28
+      ],
+      "4": [
+        23
+      ],
+      "5": [
+        17,
+        14,
+        13
+      ],
+      "7": [
+        35,
+        13,
+        16
+      ],
+      "9": [
+        28,
+        10
+      ],
+      "10": [
+        2,
+        35
+      ],
+      "11": [
+        13,
+        35
+      ],
+      "12": [
+        15,
+        32,
+        1,
+        13
+      ],
+      "13": [
+        18,
+        1
+      ],
+      "14": [
+        25,
+        13
+      ],
+      "15": [
+        6,
+        9
+      ],
+      "17": [
+        26,
+        2,
+        19
+      ],
+      "18": [
+        8,
+        32,
+        19
+      ],
+      "19": [
+        2,
+        32,
+        13
+      ],
+      "21": [
+        28,
+        2,
+        27
+      ],
+      "22": [
+        23,
+        28
+      ],
+      "23": [
+        35,
+        10,
+        18,
+        5
+      ],
+      "24": [
+        35,
+        33
+      ],
+      "25": [
+        24,
+        28,
+        35,
+        30
+      ],
+      "26": [
+        35,
+        13
+      ],
+      "27": [
+        11,
+        27,
+        32
+      ],
+      "28": [
+        28,
+        26,
+        10,
+        34
+      ],
+      "29": [
+        28,
+        26,
+        18,
+        23
+      ],
+      "30": [
+        2,
+        33
+      ],
+      "31": [
+        2
+      ],
+      "32": [
+        1,
+        26,
+        13
+      ],
+      "33": [
+        1,
+        12,
+        34,
+        3
+      ],
+      "34": [
+        1,
+        35,
+        13
+      ],
+      "35": [
+        27,
+        4,
+        1,
+        35
+      ],
+      "36": [
+        15,
+        24,
+        10
+      ],
+      "37": [
+        34,
+        27,
+        25
+      ],
+      "39": [
+        5,
+        12,
+        35,
+        26
+      ]
+    },
+    "39": {
+      "1": [
+        35,
+        26,
+        24,
+        37
+      ],
+      "2": [
+        28,
+        27,
+        15,
+        3
+      ],
+      "3": [
+        18,
+        4,
+        28,
+        38
+      ],
+      "4": [
+        30,
+        7,
+        14,
+        26
+      ],
+      "5": [
+        10,
+        26,
+        34,
+        31
+      ],
+      "6": [
+        10,
+        35,
+        17,
+        7
+      ],
+      "7": [
+        2,
+        6,
+        34,
+        10
+      ],
+      "8": [
+        35,
+        37,
+        10,
+        2
+      ],
+      "10": [
+        28,
+        15,
+        10,
+        36
+      ],
+      "11": [
+        10,
+        37,
+        14
+      ],
+      "12": [
+        14,
+        10,
+        34,
+        40
+      ],
+      "13": [
+        35,
+        3,
+        22,
+        39
+      ],
+      "14": [
+        29,
+        28,
+        10,
+        18
+      ],
+      "15": [
+        35,
+        10,
+        2,
+        18
+      ],
+      "16": [
+        20,
+        10,
+        16,
+        38
+      ],
+      "17": [
+        35,
+        21,
+        28,
+        10
+      ],
+      "18": [
+        26,
+        17,
+        19,
+        1
+      ],
+      "19": [
+        35,
+        10,
+        38,
+        19
+      ],
+      "20": [
+        1
+      ],
+      "21": [
+        35,
+        20,
+        10
+      ],
+      "22": [
+        28,
+        10,
+        29,
+        35
+      ],
+      "23": [
+        28,
+        10,
+        35,
+        23
+      ],
+      "24": [
+        13,
+        15,
+        23
+      ],
+      "26": [
+        35,
+        38
+      ],
+      "27": [
+        1,
+        35,
+        10,
+        38
+      ],
+      "28": [
+        1,
+        10,
+        34,
+        28
+      ],
+      "29": [
+        18,
+        10,
+        32,
+        1
+      ],
+      "30": [
+        22,
+        35,
+        13,
+        24
+      ],
+      "31": [
+        35,
+        22,
+        18,
+        39
+      ],
+      "32": [
+        35,
+        28,
+        2,
+        24
+      ],
+      "33": [
+        1,
+        28,
+        7,
+        10
+      ],
+      "34": [
+        1,
+        32,
+        10,
+        25
+      ],
+      "35": [
+        1,
+        35,
+        28,
+        37
+      ],
+      "36": [
+        12,
+        17,
+        28,
+        24
+      ],
+      "37": [
+        35,
+        18,
+        27,
+        2
+      ],
+      "38": [
+        5,
+        12,
+        35,
+        26
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-23-secondary-loop"
+  ],
+  "run_id": "fix-23-secondary-loop",
+  "expected_artifact": "final-report.md"
+}

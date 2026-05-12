@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d07-clarify-proceed",
+    "--user-input",
+    "{\"choice\": \"accept_as_is\"}"
+  ],
+  "user_input": "accept_as_is"
+}

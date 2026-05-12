@@ -1,0 +1,10 @@
+{
+  "fixture_name": "03_framer-low-confidence",
+  "kind": "states",
+  "run_id": "fix-03-framer-low",
+  "description": "01_problem.json with framing_confidence=low. Expect ask_user clarify_framing.",
+  "files": [
+    "01_problem.json",
+    "state.json"
+  ]
+}

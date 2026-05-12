@@ -1,0 +1,11 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-d08-clarify-abandon",
+    "--no_resolution"
+  ],
+  "run_id": "fix-d08-clarify-abandon",
+  "expected_artifact": "final-report.md"
+}

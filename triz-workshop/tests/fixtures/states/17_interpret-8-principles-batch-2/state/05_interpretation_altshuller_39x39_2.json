@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "matrix_id": "altshuller_39x39",
+  "principle_id": "2",
+  "principle_canonical_id": "P_PRINCIPLE_2",
+  "interpretation_lineage": "altshuller-40",
+  "principle_name": "P2",
+  "concrete_suggestion": "Concrete suggestion text.",
+  "applies_how": "Applies how text."
+}

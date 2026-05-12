@@ -1,0 +1,87 @@
+{
+  "matrix_id": "drug_safety_18x18",
+  "schema_version": 1,
+  "what_it_is": "TRIZ contradiction matrix used for Pharmaceutical governance, Drug safety regulation, Public health policy problem framing.",
+  "when_to_use": {
+    "ideal_user_profile": "Pharmaceutical regulators, public health policy designers, drug safety governance researchers, compliance officers, and multi-stakeholder governance consultants working on systemic reform of drug safety systems.",
+    "best_for": [
+      "Resolving contradictions between drug affordability and quality enforcement",
+      "Designing governance structures that balance government oversight with industry self-regulation",
+      "Improving drug safety informatisation while managing systemic complexity",
+      "Increasing public participation in drug governance without increasing institutional burden",
+      "Balancing media responsiveness with information reliability in drug safety incidents",
+      "Reforming regulatory frameworks to be adaptive without losing legal standardization",
+      "Harmonizing multi-sectoral cooperation in pharmaceutical supply chains"
+    ],
+    "not_suitable_for": [
+      "Drug formulation or pharmaceutical engineering problems",
+      "Clinical trial design optimization",
+      "Medical device engineering or product-level design contradictions",
+      "Single-enterprise operational efficiency problems without governance context",
+      "Software system design or IT architecture problems",
+      "Problems requiring physical or material science parameters"
+    ],
+    "prefer_over_alternatives_when": "Use this matrix when the contradiction involves institutional actors (government, industry, media, public) in pharmaceutical or health governance contexts, especially when improving one governance parameter (e.g., regulatory speed) degrades another (e.g., reliability or cost). It is the only matrix that models responsiveness-vs-experience, legalisation-vs-adaptability, and social-responsibility-vs-productivity contradictions.",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "governance",
+      "regulatory",
+      "public-health",
+      "policy",
+      "compliance",
+      "pharmaceutical",
+      "drug-safety"
+    ],
+    "problem_classes": [
+      "governance-tension",
+      "multi-stakeholder-coordination",
+      "regulatory-design"
+    ],
+    "tags": [
+      "governance-reframed"
+    ],
+    "excludes": [
+      "mechanical",
+      "manufacturing",
+      "software",
+      "ai-ml",
+      "consumer-product",
+      "biomedical-device"
+    ]
+  },
+  "coverage": {},
+  "strengths": [
+    {
+      "area": "Multi-stakeholder governance contradiction resolution",
+      "why": "The matrix is explicitly built around 7 governance subjects (government, enterprises, medical institutions, third parties, industry associations, media, public), capturing the real-world tensions between regulatory actors that no engineering-focused matrix addresses."
+    },
+    {
+      "area": "Balancing regulatory strictness with industry viability",
+      "why": "Parameters like Cost, Productivity, Stability, and Legalisation explicitly encode the tension between economic sustainability and public safety enforcement, a contradiction unique to pharmaceutical governance."
+    },
+    {
+      "area": "Institutional and systemic reform design",
+      "why": "Parameters such as Systemic Complexity, Legalisation and Institutionalisation, and Intellectualise directly model the structural and digital-transformation challenges facing governance bodies."
+    },
+    {
+      "area": "Public trust and social responsibility trade-offs",
+      "why": "The presence of Social Responsibility, Reliability (credibility), Positivity (public engagement), and Public Demand creates a framework for resolving contradictions between transparency, public perception, and operational constraints."
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "Technical engineering or product design problems",
+      "why": "None of the 18 parameters map to physical dimensions, forces, temperatures, or material properties. The matrix is entirely socio-institutional."
+    },
+    {
+      "area": "Single-actor optimization problems",
+      "why": "The matrix assumes multi-stakeholder dynamics. Problems involving a single entity optimizing its own performance gain little from governance-centric parameters."
+    },
+    {
+      "area": "Rapid prototyping or product innovation",
+      "why": "The inventive principles are reinterpreted for governance (e.g., Pneumatics reinterpreted as hierarchical buffering). Direct product-design guidance is absent."
+    }
+  ]
+}

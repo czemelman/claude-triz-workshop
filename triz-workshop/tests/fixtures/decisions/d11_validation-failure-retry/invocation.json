@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d11-validation-retry",
+    "--user-input",
+    "{\"choice\": \"edit_artifact\"}"
+  ],
+  "user_input": "edit_artifact"
+}

@@ -1,0 +1,43 @@
+{
+  "matrix_id": "mann_matrix2003_48x48",
+  "schema_version": 1,
+  "what_it_is": "TRIZ contradiction matrix used for general engineering problem framing.",
+  "when_to_use": {
+    "ideal_user_profile": "",
+    "best_for": [],
+    "not_suitable_for": [],
+    "prefer_over_alternatives_when": "",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "mechanical",
+      "manufacturing",
+      "industrial-design",
+      "consumer-product",
+      "general-engineering"
+    ],
+    "problem_classes": [
+      "engineering-contradiction"
+    ],
+    "tags": [
+      "patent-derived",
+      "patent-1985-2002",
+      "extended-50-param",
+      "shell-only"
+    ],
+    "excludes": [
+      "software",
+      "ai-ml",
+      "cybersecurity",
+      "ux",
+      "service",
+      "governance",
+      "bio",
+      "pharmaceutical"
+    ]
+  },
+  "coverage": {},
+  "strengths": [],
+  "weaknesses": []
+}

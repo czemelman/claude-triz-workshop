@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d03-try-mat",
+    "--user-input",
+    "{\"choice\": \"try_different_matrix\", \"matrix_id\": \"heinrich_39x39\"}"
+  ],
+  "user_input": "try_different_matrix"
+}

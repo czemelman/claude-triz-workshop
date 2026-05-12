@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d05_abandon-with-writeup",
+  "kind": "decisions",
+  "run_id": "fix-d05-abandon-writeup",
+  "description": "User abandons; expect run_script assemble_report --no_resolution.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

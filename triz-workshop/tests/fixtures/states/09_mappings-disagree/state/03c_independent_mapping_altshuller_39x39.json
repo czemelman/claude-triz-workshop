@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "matrix_id": "altshuller_39x39",
+  "improving_param_id": "11",
+  "worsening_param_id": "16",
+  "rationale": "independent rationale",
+  "confidence": "high",
+  "no_clean_mapping": false
+}

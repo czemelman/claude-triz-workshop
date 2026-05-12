@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d15-abandon",
+    "--user-input",
+    "{\"choice\": \"abandon_with_writeup\"}"
+  ],
+  "user_input": "abandon_with_writeup"
+}

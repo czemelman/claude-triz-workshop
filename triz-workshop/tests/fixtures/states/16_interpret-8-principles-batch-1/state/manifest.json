@@ -1,0 +1,14 @@
+{
+  "fixture_name": "16_interpret-8-principles-batch-1",
+  "kind": "states",
+  "run_id": "fix-16-interpret-8-b1",
+  "description": "8 principles, none done. Expect dispatch_subagents_parallel (action contains 8 dispatches; orchestrator chunks by batch_size=7).",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "state.json"
+  ]
+}

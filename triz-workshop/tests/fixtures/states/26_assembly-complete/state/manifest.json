@@ -1,0 +1,10 @@
+{
+  "fixture_name": "26_assembly-complete",
+  "kind": "states",
+  "run_id": "fix-26-assembly-complete",
+  "description": "final-report.md exists; expect done.",
+  "files": [
+    "final-report.md",
+    "state.json"
+  ]
+}

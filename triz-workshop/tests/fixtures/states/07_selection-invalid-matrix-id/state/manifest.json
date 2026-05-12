@@ -1,0 +1,11 @@
+{
+  "fixture_name": "07_selection-invalid-matrix-id",
+  "kind": "states",
+  "run_id": "fix-07-sel-bad-id",
+  "description": "Selection lists a matrix_id not in the registry. Current code does NOT self-correct \u2014 it dispatches mapper+critic for the bogus id. (Behavior gap vs design: the design said 'expect self_correct or ask_user' but the state driver has no registry-validation step at this seam.)",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "state.json"
+  ]
+}

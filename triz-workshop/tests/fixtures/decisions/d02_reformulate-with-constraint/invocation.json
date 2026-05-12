@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d02-reformulate",
+    "--user-input",
+    "{\"choice\": \"reformulate_with_constraint\", \"constraint_text\": \"must not store PII\"}"
+  ],
+  "user_input": "reformulate_with_constraint"
+}

@@ -1,0 +1,80 @@
+{
+  "matrix_id": "healthcare_servqual",
+  "schema_version": 1,
+  "what_it_is": "TRIZ contradiction matrix used for Healthcare service delivery, Hospital operations management, Patient experience optimization problem framing.",
+  "when_to_use": {
+    "ideal_user_profile": "Hospital administrators, healthcare quality improvement teams, patient experience officers, telehealth platform designers, and service design consultants working on healthcare delivery systems.",
+    "best_for": [
+      "Improving patient access to care without increasing system complexity",
+      "Enhancing communication quality while reducing administrative time loss",
+      "Balancing empathy in care delivery with process speed requirements",
+      "Improving service reliability when system complexity is a constraint",
+      "Optimizing responsiveness (time and speed) while maintaining measurement accuracy",
+      "Enhancing staff competence perception without increasing device complexity",
+      "Designing assurance mechanisms that also improve repairability of service failures"
+    ],
+    "not_suitable_for": [
+      "Drug development or pharmaceutical engineering",
+      "Medical device hardware design",
+      "Clinical protocol optimization (dosing, treatment plans)",
+      "Healthcare facility architectural design",
+      "Supply chain or logistics optimization in healthcare",
+      "Problems where both improving and worsening parameters are purely technical"
+    ],
+    "prefer_over_alternatives_when": "Use this matrix when the contradiction explicitly involves patient-perceived service quality (what the patient experiences) versus operational or engineering constraints (what the system faces). It is the only matrix that treats SERVQUAL dimensions as formal TRIZ parameters, making it uniquely suited for healthcare service design where human perception and system capability collide.",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "healthcare",
+      "service",
+      "telehealth",
+      "hospitality"
+    ],
+    "problem_classes": [
+      "service-quality-gap"
+    ],
+    "tags": [
+      "service-quality-hybrid"
+    ],
+    "excludes": [
+      "mechanical",
+      "manufacturing",
+      "ai-ml",
+      "cybersecurity",
+      "consumer-product",
+      "governance",
+      "pharmaceutical",
+      "bio"
+    ]
+  },
+  "coverage": {},
+  "strengths": [
+    {
+      "area": "Bridging service quality perception gaps with engineering constraints",
+      "why": "The hybrid SERVQUAL-TRIZ design uniquely maps subjective patient experience dimensions (Access, Empathy, Communication) to classical engineering worsening parameters (Speed, Complexity, Reliability), enabling systematic resolution of contradictions between what patients want and what systems can deliver."
+    },
+    {
+      "area": "Patient-centric process redesign",
+      "why": "SERVQUAL parameters like Access, Empathy, Understanding, and Assurance encode the patient journey, not just operational metrics, making this the only matrix that treats patient perception as a first-class improving parameter."
+    },
+    {
+      "area": "Targeted, high-signal contradiction resolution",
+      "why": "With only 13 populated cells in a 10x9 space, the matrix is highly curated rather than exhaustive. Each cell represents a validated, research-backed contradiction from a Delphi-method study, reducing noise."
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "Comprehensive coverage of all healthcare contradictions",
+      "why": "Only 13 of 90 possible cells are populated. Many plausible improving-worsening combinations are unaddressed, requiring supplementary matrices or expert judgment."
+    },
+    {
+      "area": "Clinical or medical science problems",
+      "why": "Parameters address service delivery and patient experience, not clinical outcomes, drug efficacy, or diagnostic accuracy."
+    },
+    {
+      "area": "Manufacturing or supply chain problems in healthcare",
+      "why": "The matrix focuses on the service encounter, not upstream logistics, procurement, or production."
+    }
+  ]
+}

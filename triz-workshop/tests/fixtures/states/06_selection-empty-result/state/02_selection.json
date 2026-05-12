@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "weights_version": "v0",
+  "selected_matrices": [],
+  "rejected_matrices": [
+    {
+      "matrix_id": "altshuller_39x39",
+      "stage": "B",
+      "reason": "no domain match"
+    }
+  ],
+  "run_strategy": "single",
+  "stage_e_invoked": false
+}

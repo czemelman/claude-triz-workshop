@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d08-clarify-abandon",
+    "--user-input",
+    "{\"choice\": \"abort\"}"
+  ],
+  "user_input": "abort"
+}

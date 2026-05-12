@@ -1,0 +1,11 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-d04-accept-ovr",
+    "--override_logged"
+  ],
+  "run_id": "fix-d04-accept-ovr",
+  "expected_artifact": "final-report.md"
+}

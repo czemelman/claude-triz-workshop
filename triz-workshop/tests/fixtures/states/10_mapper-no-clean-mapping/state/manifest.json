@@ -1,0 +1,13 @@
+{
+  "fixture_name": "10_mapper-no-clean-mapping",
+  "kind": "states",
+  "run_id": "fix-10-mapper-noclean",
+  "description": "Mapper says no_clean_mapping=true. Branch to no-resolution.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "state.json"
+  ]
+}

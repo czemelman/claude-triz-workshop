@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d01-drop-fatal",
+    "--user-input",
+    "{\"choice\": \"drop_fatal_proceed\", \"fatal_candidates\": [\"A\"]}"
+  ],
+  "user_input": "drop_fatal_proceed"
+}

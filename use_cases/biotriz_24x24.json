@@ -1,0 +1,86 @@
+{
+  "matrix_id": "biotriz_24x24",
+  "schema_version": 1,
+  "what_it_is": "TRIZ contradiction matrix used for Biomimetics, Bio-inspired engineering, Academic TRIZ research problem framing.",
+  "when_to_use": {
+    "ideal_user_profile": "Academic researchers in biomimetics and bio-inspired design, PhD students working on BioTRIZ methodology, innovation methodology researchers comparing biological and technological problem-solving strategies, and advanced practitioners conducting systematic biomimetic transfer studies.",
+    "best_for": [
+      "Systematic comparison of biological vs. technological solution strategies for the same contradiction",
+      "Identifying high-divergence cells where biomimetic transfer is most likely to yield novel solutions",
+      "Generating biologically-grounded analogies for each of the 40 TRIZ principles",
+      "Academic research on the BioTRIZ methodology and its empirical basis",
+      "Understanding which biological strategies are under-utilized by technology",
+      "Mapping classical 39-parameter problems to the 6 operational fields for biomimetic framing",
+      "Exploring the 28 NEP sub-parameter structure for deeper biological parameter resolution"
+    ],
+    "not_suitable_for": [
+      "Quick contradiction resolution in time-pressed design sessions",
+      "Non-biological engineering domains without biomimetic intent",
+      "Service, governance, or organizational problems",
+      "Problems requiring parameters beyond the 6 operational fields without biological analogy interest",
+      "Users unfamiliar with TRIZ methodology (the dense supplementary data assumes expertise)"
+    ],
+    "prefer_over_alternatives_when": "Use this matrix instead of biotriz_6x6 when you need the full scholarly context: similarity scores, technology comparison, biological relevance annotations, and parameter mapping notes. Prefer it for research, systematic reviews, or when you want to quantitatively assess whether a biomimetic transfer is likely to yield novel results (low similarity score = high novelty potential).",
+    "skip_in_favor_of": [
+      {
+        "target_matrix_id": "biotriz_6x6_bio",
+        "if": {
+          "exotic_signal": "bio-analogy"
+        }
+      }
+    ]
+  },
+  "selector_tags": {
+    "domains": [
+      "bio",
+      "biology",
+      "biomimetics",
+      "ecology"
+    ],
+    "problem_classes": [
+      "biological-design"
+    ],
+    "tags": [
+      "biology-derived",
+      "operational-fields-6"
+    ],
+    "excludes": [
+      "governance",
+      "service",
+      "pharmaceutical"
+    ]
+  },
+  "coverage": {},
+  "strengths": [
+    {
+      "area": "Comprehensive BioTRIZ reference with full scholarly context",
+      "why": "This file is the definitive extended version of BioTRIZ, containing the primary biology-derived 6x6 matrix plus the complete technology-derived PRIZM matrix, the cell-by-cell similarity matrix (quantifying bio-tech overlap), the approximate mapping of 39 classical parameters to 6 operational fields, detailed biological relevance annotations for all 40 principles, and notes on the 28 NEPs. It is the richest single BioTRIZ resource."
+    },
+    {
+      "area": "Quantified biology-technology divergence analysis",
+      "why": "The similarity_matrix (0.12 overall, ranging from 0.00 to 0.73 per cell) enables users to identify exactly where biology and technology align or diverge, guiding biomimetic transfer decisions with data rather than intuition."
+    },
+    {
+      "area": "Biological principle relevance mapping",
+      "why": "Every one of the 40 principles has a bio_relevance annotation (e.g., principle 22 Blessing in disguise maps to hormesis, toxin resistance, co-opting parasites), providing concrete biological examples that accelerate analogy generation."
+    },
+    {
+      "area": "Identifying under-explored biomimetic opportunities",
+      "why": "The rarely_used_in_biology list (Anti-weight, Equipotentiality, Skipping, Mechanics substitution, Thermal expansion, Strong oxidants, Inert atmosphere) combined with zero-similarity cells identifies where engineering and biology have the greatest divergence, pointing to unexplored innovation territory."
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "Not actually a 24x24 matrix despite the filename",
+      "why": "The meta section explicitly states that 'a 24x24 BioTRIZ matrix does not exist in the published literature.' The file contains the same 6x6 matrix as biotriz_6x6.json, enriched with supplementary data. Users expecting 24 distinct parameters will be confused."
+    },
+    {
+      "area": "Practical rapid problem-solving",
+      "why": "The extensive supplementary data makes this more of a research reference than a quick-lookup tool. For rapid ideation, the simpler biotriz_6x6.json is more efficient."
+    },
+    {
+      "area": "Non-academic or non-research use cases",
+      "why": "The detailed annotations, frequency notes, and similarity matrices are most valuable for researchers writing papers or conducting systematic biomimetic studies, not for practitioners needing quick answers."
+    }
+  ]
+}

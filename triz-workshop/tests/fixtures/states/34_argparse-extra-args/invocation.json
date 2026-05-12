@@ -1,0 +1,8 @@
+{
+  "args": [
+    "--run-id",
+    "fix-34-argparse-extra",
+    "stray_positional"
+  ],
+  "user_input": null
+}

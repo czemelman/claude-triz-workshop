@@ -1,0 +1,9 @@
+{
+  "fixture_name": "d13_validation-failure-abandon",
+  "kind": "decisions",
+  "run_id": "fix-d13-validation-abandon",
+  "description": "User aborts after retry-cap exhausted. Expect run_script assemble_report --no_resolution (driver routes abort via assemble).",
+  "files": [
+    "state.json"
+  ]
+}

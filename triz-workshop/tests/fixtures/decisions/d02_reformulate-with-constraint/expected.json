@@ -1,0 +1,7 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-solution-synthesizer",
+  "run_id": "fix-d02-reformulate",
+  "expected_artifact": "06_solutions.json",
+  "prompt": "Synthesize 1-4 candidate solutions for run `fix-d02-reformulate`. Read `.triz/runs/fix-d02-reformulate/01_problem.json` and `.triz/runs/fix-d02-reformulate/05_interpretations.json`. Per design v6 \u00a79.6a: principles_applied is deduped on canonical_id; interpretation_refs preserves every contributing interpretation including multiple from the same canonical_id with different interpretation_lineages. Write to `.triz/runs/fix-d02-reformulate/06_solutions.json` per 06_solutions.schema.json."
+}

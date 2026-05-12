@@ -1,0 +1,388 @@
+[
+  {
+    "matrix": "drug_safety_18x18",
+    "primary_domains": [
+      "Pharmaceutical governance",
+      "Drug safety regulation",
+      "Public health policy"
+    ],
+    "secondary_domains": [
+      "Food safety governance",
+      "Environmental regulation",
+      "Multi-stakeholder policy design",
+      "Regulatory compliance systems",
+      "Healthcare supply chain oversight"
+    ],
+    "strength_areas": [
+      {
+        "area": "Multi-stakeholder governance contradiction resolution",
+        "why": "The matrix is explicitly built around 7 governance subjects (government, enterprises, medical institutions, third parties, industry associations, media, public), capturing the real-world tensions between regulatory actors that no engineering-focused matrix addresses."
+      },
+      {
+        "area": "Balancing regulatory strictness with industry viability",
+        "why": "Parameters like Cost, Productivity, Stability, and Legalisation explicitly encode the tension between economic sustainability and public safety enforcement, a contradiction unique to pharmaceutical governance."
+      },
+      {
+        "area": "Institutional and systemic reform design",
+        "why": "Parameters such as Systemic Complexity, Legalisation and Institutionalisation, and Intellectualise directly model the structural and digital-transformation challenges facing governance bodies."
+      },
+      {
+        "area": "Public trust and social responsibility trade-offs",
+        "why": "The presence of Social Responsibility, Reliability (credibility), Positivity (public engagement), and Public Demand creates a framework for resolving contradictions between transparency, public perception, and operational constraints."
+      }
+    ],
+    "weakness_areas": [
+      {
+        "area": "Technical engineering or product design problems",
+        "why": "None of the 18 parameters map to physical dimensions, forces, temperatures, or material properties. The matrix is entirely socio-institutional."
+      },
+      {
+        "area": "Single-actor optimization problems",
+        "why": "The matrix assumes multi-stakeholder dynamics. Problems involving a single entity optimizing its own performance gain little from governance-centric parameters."
+      },
+      {
+        "area": "Rapid prototyping or product innovation",
+        "why": "The inventive principles are reinterpreted for governance (e.g., Pneumatics reinterpreted as hierarchical buffering). Direct product-design guidance is absent."
+      }
+    ],
+    "ideal_user_profile": "Pharmaceutical regulators, public health policy designers, drug safety governance researchers, compliance officers, and multi-stakeholder governance consultants working on systemic reform of drug safety systems.",
+    "best_for": [
+      "Resolving contradictions between drug affordability and quality enforcement",
+      "Designing governance structures that balance government oversight with industry self-regulation",
+      "Improving drug safety informatisation while managing systemic complexity",
+      "Increasing public participation in drug governance without increasing institutional burden",
+      "Balancing media responsiveness with information reliability in drug safety incidents",
+      "Reforming regulatory frameworks to be adaptive without losing legal standardization",
+      "Harmonizing multi-sectoral cooperation in pharmaceutical supply chains"
+    ],
+    "not_suitable_for": [
+      "Drug formulation or pharmaceutical engineering problems",
+      "Clinical trial design optimization",
+      "Medical device engineering or product-level design contradictions",
+      "Single-enterprise operational efficiency problems without governance context",
+      "Software system design or IT architecture problems",
+      "Problems requiring physical or material science parameters"
+    ],
+    "when_to_prefer": "Use this matrix when the contradiction involves institutional actors (government, industry, media, public) in pharmaceutical or health governance contexts, especially when improving one governance parameter (e.g., regulatory speed) degrades another (e.g., reliability or cost). It is the only matrix that models responsiveness-vs-experience, legalisation-vs-adaptability, and social-responsibility-vs-productivity contradictions.",
+    "when_to_skip": "Skip when the problem is technical, product-focused, or involves a single organization optimizing internal processes without multi-stakeholder regulatory dynamics.",
+    "unique_parameters": [
+      "Responsiveness (governance/media timeliness)",
+      "Public demand (citizen needs for policy understanding and drug knowledge)",
+      "Social responsibility (multi-actor accountability and social image)",
+      "Positivity (public willingness to participate in governance)",
+      "Legalisation and institutionalisation (regulatory framework maturity)",
+      "Programme design and R&D capability (department relationships and generic drug efficacy)",
+      "External unfavourable factors (new tech disruption, administrative dependence)",
+      "Internal conflict (trade associations acting against norms)",
+      "Intellectualise (informatisation and regulatory big data capability)",
+      "Professionalisation (enforcement and review personnel competency)"
+    ],
+    "cross_domain_potential": "High. The governance-specific parameters (Responsiveness, Public demand, Social responsibility, Internal conflict, External unfavourable factors) could serve as templates for any multi-stakeholder regulation domain: environmental policy, food safety, cybersecurity governance, financial regulation, or education policy. The concept of encoding media reliability and public engagement as TRIZ parameters is novel and transferable to any domain where public trust shapes system effectiveness."
+  },
+  {
+    "matrix": "healthcare_servqual",
+    "primary_domains": [
+      "Healthcare service delivery",
+      "Hospital operations management",
+      "Patient experience optimization"
+    ],
+    "secondary_domains": [
+      "Service industry quality management",
+      "Hospitality and customer service",
+      "Telehealth system design",
+      "Clinic workflow optimization",
+      "Healthcare IT system design"
+    ],
+    "strength_areas": [
+      {
+        "area": "Bridging service quality perception gaps with engineering constraints",
+        "why": "The hybrid SERVQUAL-TRIZ design uniquely maps subjective patient experience dimensions (Access, Empathy, Communication) to classical engineering worsening parameters (Speed, Complexity, Reliability), enabling systematic resolution of contradictions between what patients want and what systems can deliver."
+      },
+      {
+        "area": "Patient-centric process redesign",
+        "why": "SERVQUAL parameters like Access, Empathy, Understanding, and Assurance encode the patient journey, not just operational metrics, making this the only matrix that treats patient perception as a first-class improving parameter."
+      },
+      {
+        "area": "Targeted, high-signal contradiction resolution",
+        "why": "With only 13 populated cells in a 10x9 space, the matrix is highly curated rather than exhaustive. Each cell represents a validated, research-backed contradiction from a Delphi-method study, reducing noise."
+      }
+    ],
+    "weakness_areas": [
+      {
+        "area": "Comprehensive coverage of all healthcare contradictions",
+        "why": "Only 13 of 90 possible cells are populated. Many plausible improving-worsening combinations are unaddressed, requiring supplementary matrices or expert judgment."
+      },
+      {
+        "area": "Clinical or medical science problems",
+        "why": "Parameters address service delivery and patient experience, not clinical outcomes, drug efficacy, or diagnostic accuracy."
+      },
+      {
+        "area": "Manufacturing or supply chain problems in healthcare",
+        "why": "The matrix focuses on the service encounter, not upstream logistics, procurement, or production."
+      }
+    ],
+    "ideal_user_profile": "Hospital administrators, healthcare quality improvement teams, patient experience officers, telehealth platform designers, and service design consultants working on healthcare delivery systems.",
+    "best_for": [
+      "Improving patient access to care without increasing system complexity",
+      "Enhancing communication quality while reducing administrative time loss",
+      "Balancing empathy in care delivery with process speed requirements",
+      "Improving service reliability when system complexity is a constraint",
+      "Optimizing responsiveness (time and speed) while maintaining measurement accuracy",
+      "Enhancing staff competence perception without increasing device complexity",
+      "Designing assurance mechanisms that also improve repairability of service failures"
+    ],
+    "not_suitable_for": [
+      "Drug development or pharmaceutical engineering",
+      "Medical device hardware design",
+      "Clinical protocol optimization (dosing, treatment plans)",
+      "Healthcare facility architectural design",
+      "Supply chain or logistics optimization in healthcare",
+      "Problems where both improving and worsening parameters are purely technical"
+    ],
+    "when_to_prefer": "Use this matrix when the contradiction explicitly involves patient-perceived service quality (what the patient experiences) versus operational or engineering constraints (what the system faces). It is the only matrix that treats SERVQUAL dimensions as formal TRIZ parameters, making it uniquely suited for healthcare service design where human perception and system capability collide.",
+    "when_to_skip": "Skip when the problem is purely clinical (treatment efficacy), purely technical (device engineering), or when both sides of the contradiction are objective engineering parameters without a patient-experience dimension.",
+    "unique_parameters": [
+      "Access (approachability and ease of contact with healthcare service)",
+      "Communication (keeping patients informed in understandable language)",
+      "Understanding (effort to know customers and their needs)",
+      "Empathy (caring, individualized attention)",
+      "Tangibles (physical facilities, equipment, appearance)",
+      "Responsiveness: Time (willingness and time aspects of prompt service)",
+      "Responsiveness: Speed (throughput aspects of prompt service)",
+      "Competence (possession of required skills and knowledge)",
+      "Assurance (knowledge, courtesy, ability to inspire trust)"
+    ],
+    "cross_domain_potential": "Moderate to High. The SERVQUAL-TRIZ hybrid approach is a methodological innovation transferable to any service industry. The same framework could generate matrices for education quality (teacher empathy vs. class size), financial services (access vs. fraud complexity), legal services (responsiveness vs. case accuracy), or hospitality (personalization vs. throughput). The key insight -- encoding subjective quality perception as formal TRIZ improving parameters -- is domain-agnostic."
+  },
+  {
+    "matrix": "biotriz_6x6",
+    "primary_domains": [
+      "Biomimetics",
+      "Bio-inspired engineering",
+      "Sustainable design"
+    ],
+    "secondary_domains": [
+      "Materials science",
+      "Architectural design",
+      "Robotics and soft robotics",
+      "Environmental engineering",
+      "Product design innovation",
+      "Agricultural technology"
+    ],
+    "strength_areas": [
+      {
+        "area": "Nature-inspired problem solving at a high abstraction level",
+        "why": "The 6 operational fields (Substance, Structure, Space, Time, Energy, Information) are derived from analysis of ~500 biological phenomena and ~2500 contradictions, providing a fundamentally different lens from engineering TRIZ. Biology solves problems using Information and Structure where technology uses Energy."
+      },
+      {
+        "area": "Revealing blind spots in conventional engineering thinking",
+        "why": "Only 12% similarity with the technology-derived PRIZM matrix proves that biology and technology solve the same contradictions with radically different strategies, making this matrix ideal for breaking engineering fixation."
+      },
+      {
+        "area": "Rapid high-level ideation and conceptual exploration",
+        "why": "The compact 6x6 format enables quick traversal of all 36 contradiction intersections, including self-contradictions (diagonal cells). Each cell contains 3-8 principles, providing rich but manageable suggestion sets."
+      },
+      {
+        "area": "Sustainability-oriented innovation",
+        "why": "Biological solutions inherently tend toward low energy, material efficiency, and closed-loop systems. Principles like Self-service (25), Dynamics (15), and Blessing in disguise (22) appear frequently, reflecting biology's preference for adaptive, waste-minimizing strategies."
+      }
+    ],
+    "weakness_areas": [
+      {
+        "area": "Detailed engineering parameter-level guidance",
+        "why": "Condensing 39 classical parameters into 6 fields sacrifices specificity. 'Energy' covers force, stress, temperature, power, noise, and harmful effects -- too broad for fine-grained engineering trade-offs."
+      },
+      {
+        "area": "Manufacturing and production process optimization",
+        "why": "The matrix lacks parameters for manufacturing precision, ease of repair, or production cost. It is concept-oriented, not process-oriented."
+      },
+      {
+        "area": "Software or digital system design",
+        "why": "The biological analogies map poorly to purely digital or informational systems, despite the Information parameter."
+      }
+    ],
+    "ideal_user_profile": "Biomimetics researchers, industrial designers seeking nature-inspired solutions, sustainability engineers, materials scientists exploring bio-inspired composites, architects interested in biological structural principles, and innovation consultants looking to break engineering fixation.",
+    "best_for": [
+      "Finding nature-inspired solutions to engineering contradictions",
+      "Breaking design fixation by viewing problems through a biological lens",
+      "Substance-vs-Energy trade-offs (lightweight but strong, like bone or nacre)",
+      "Information-vs-Structure contradictions (smart materials, responsive architectures)",
+      "Designing self-repairing, self-cleaning, or self-adapting systems",
+      "Exploring how biology handles Time-vs-Space trade-offs (growth, morphogenesis)",
+      "Generating sustainability-oriented concepts in early-stage design",
+      "Comparing biological vs. technological solution strategies for the same contradiction"
+    ],
+    "not_suitable_for": [
+      "Detailed engineering parameter trade-offs requiring 39-parameter specificity",
+      "Healthcare service delivery or governance problems",
+      "Financial or business process optimization",
+      "Regulatory or policy design problems",
+      "Problems where the solution must avoid biological metaphors (e.g., sterile environments)"
+    ],
+    "when_to_prefer": "Use this matrix when seeking fundamentally different solution strategies by asking 'how does biology solve this?' Prefer it for early-stage conceptual design, biomimetic research, or when standard TRIZ solutions feel stale. The included matrix_technology data enables direct side-by-side comparison of how biology and technology resolve the same contradiction differently.",
+    "when_to_skip": "Skip when you need precise engineering parameter mapping (use classical 39x39), when the domain is purely organizational or service-oriented (use healthcare_servqual or drug_safety_18x18), or when the problem requires parameters not captured in the 6 operational fields.",
+    "unique_parameters": [
+      "Substance (hierarchically structured material -- biological framing)",
+      "Structure (material composition and organization -- biological framing)",
+      "Space (spatial arrangement -- biological framing)",
+      "Time (temporal dynamics and sequences -- biological framing)",
+      "Energy (power requirements and regulation -- biological framing)",
+      "Information (data, signals, and control mechanisms -- biological framing)"
+    ],
+    "cross_domain_potential": "Very High. The fundamental insight -- that biology solves problems through Information and Structure manipulation rather than Energy -- is a paradigm-shifting concept applicable to any engineering domain. The operational field abstraction (6 fields instead of 39 parameters) could inspire simplified matrices for any domain where a high-level contradiction map is needed before drilling into specifics. The dual-matrix format (biology vs. technology) is a reusable methodology for cross-domain analogy generation."
+  },
+  {
+    "matrix": "biotriz_24x24",
+    "primary_domains": [
+      "Biomimetics",
+      "Bio-inspired engineering",
+      "Academic TRIZ research"
+    ],
+    "secondary_domains": [
+      "Materials science",
+      "Sustainable product design",
+      "Robotics",
+      "Ecological engineering",
+      "Architecture and structural design"
+    ],
+    "strength_areas": [
+      {
+        "area": "Comprehensive BioTRIZ reference with full scholarly context",
+        "why": "This file is the definitive extended version of BioTRIZ, containing the primary biology-derived 6x6 matrix plus the complete technology-derived PRIZM matrix, the cell-by-cell similarity matrix (quantifying bio-tech overlap), the approximate mapping of 39 classical parameters to 6 operational fields, detailed biological relevance annotations for all 40 principles, and notes on the 28 NEPs. It is the richest single BioTRIZ resource."
+      },
+      {
+        "area": "Quantified biology-technology divergence analysis",
+        "why": "The similarity_matrix (0.12 overall, ranging from 0.00 to 0.73 per cell) enables users to identify exactly where biology and technology align or diverge, guiding biomimetic transfer decisions with data rather than intuition."
+      },
+      {
+        "area": "Biological principle relevance mapping",
+        "why": "Every one of the 40 principles has a bio_relevance annotation (e.g., principle 22 Blessing in disguise maps to hormesis, toxin resistance, co-opting parasites), providing concrete biological examples that accelerate analogy generation."
+      },
+      {
+        "area": "Identifying under-explored biomimetic opportunities",
+        "why": "The rarely_used_in_biology list (Anti-weight, Equipotentiality, Skipping, Mechanics substitution, Thermal expansion, Strong oxidants, Inert atmosphere) combined with zero-similarity cells identifies where engineering and biology have the greatest divergence, pointing to unexplored innovation territory."
+      }
+    ],
+    "weakness_areas": [
+      {
+        "area": "Not actually a 24x24 matrix despite the filename",
+        "why": "The meta section explicitly states that 'a 24x24 BioTRIZ matrix does not exist in the published literature.' The file contains the same 6x6 matrix as biotriz_6x6.json, enriched with supplementary data. Users expecting 24 distinct parameters will be confused."
+      },
+      {
+        "area": "Practical rapid problem-solving",
+        "why": "The extensive supplementary data makes this more of a research reference than a quick-lookup tool. For rapid ideation, the simpler biotriz_6x6.json is more efficient."
+      },
+      {
+        "area": "Non-academic or non-research use cases",
+        "why": "The detailed annotations, frequency notes, and similarity matrices are most valuable for researchers writing papers or conducting systematic biomimetic studies, not for practitioners needing quick answers."
+      }
+    ],
+    "ideal_user_profile": "Academic researchers in biomimetics and bio-inspired design, PhD students working on BioTRIZ methodology, innovation methodology researchers comparing biological and technological problem-solving strategies, and advanced practitioners conducting systematic biomimetic transfer studies.",
+    "best_for": [
+      "Systematic comparison of biological vs. technological solution strategies for the same contradiction",
+      "Identifying high-divergence cells where biomimetic transfer is most likely to yield novel solutions",
+      "Generating biologically-grounded analogies for each of the 40 TRIZ principles",
+      "Academic research on the BioTRIZ methodology and its empirical basis",
+      "Understanding which biological strategies are under-utilized by technology",
+      "Mapping classical 39-parameter problems to the 6 operational fields for biomimetic framing",
+      "Exploring the 28 NEP sub-parameter structure for deeper biological parameter resolution"
+    ],
+    "not_suitable_for": [
+      "Quick contradiction resolution in time-pressed design sessions",
+      "Non-biological engineering domains without biomimetic intent",
+      "Service, governance, or organizational problems",
+      "Problems requiring parameters beyond the 6 operational fields without biological analogy interest",
+      "Users unfamiliar with TRIZ methodology (the dense supplementary data assumes expertise)"
+    ],
+    "when_to_prefer": "Use this matrix instead of biotriz_6x6 when you need the full scholarly context: similarity scores, technology comparison, biological relevance annotations, and parameter mapping notes. Prefer it for research, systematic reviews, or when you want to quantitatively assess whether a biomimetic transfer is likely to yield novel results (low similarity score = high novelty potential).",
+    "when_to_skip": "Skip in favor of biotriz_6x6.json for rapid ideation. Skip entirely when the problem has no biological analogy dimension or when the user needs a larger parameter space (use classical 39x39 or the innovatetriz_extended instead).",
+    "unique_parameters": [
+      "Substance (with approximate mapping to 13 classical TRIZ parameters)",
+      "Structure (with approximate mapping to 7 classical TRIZ parameters including reliability and durability)",
+      "Space (with approximate mapping to 10 classical TRIZ parameters)",
+      "Time (with approximate mapping to 5 classical TRIZ parameters)",
+      "Energy (with approximate mapping to 10 classical TRIZ parameters including noise and harmful effects)",
+      "Information (with approximate mapping to 10 classical TRIZ parameters including measurement and manufacturing precision)"
+    ],
+    "cross_domain_potential": "Very High, especially methodologically. The dual-matrix comparison approach (biology vs. technology, with quantified similarity) is a reusable research framework. One could build analogous dual matrices for any two domains: Eastern medicine vs. Western medicine, agile vs. waterfall software development, centralized vs. decentralized governance. The biological principle relevance annotations serve as a template for how to annotate domain-specific principle interpretations in any specialized matrix. The key finding -- that biology uses Information and Structure where technology uses Energy -- has implications for software architecture (favoring data-driven over compute-driven solutions), urban planning (information-rich adaptive systems over energy-intensive infrastructure), and organizational design (structure and communication over resource expenditure)."
+  },
+  {
+    "matrix": "innovatetriz_extended",
+    "primary_domains": [
+      "General engineering",
+      "AI-enhanced innovation tools",
+      "Product design and development"
+    ],
+    "secondary_domains": [
+      "Software and system architecture",
+      "Manufacturing process optimization",
+      "Consumer product design",
+      "Industrial automation",
+      "Chinese-language TRIZ education and practice"
+    ],
+    "strength_areas": [
+      {
+        "area": "Simplified, modern, accessible entry point to TRIZ",
+        "why": "With 18 clearly named parameters (Weight, Strength, Speed, Precision, Cost, Quality, Complexity, Volume, Safety, Efficiency, Reliability, Maintenance, Automation, Functionality, Energy consumption, Convenience, Intelligence, Performance) and bilingual Chinese/English support, this matrix is far more approachable than the classical 39x39 for newcomers and AI-assisted tools."
+      },
+      {
+        "area": "AI-integration readiness",
+        "why": "Each parameter includes Chinese keyword arrays for NLP matching, and the system is designed to work with AI keyword-based parameter detection as a fallback when no matrix entry exists. This makes it uniquely suited for integration into LLM-powered or chatbot-driven innovation tools."
+      },
+      {
+        "area": "Modern engineering vocabulary including automation and intelligence",
+        "why": "Parameters like Automation, Intelligence, Convenience, and Energy consumption reflect contemporary engineering concerns absent from the 1960s-era classical matrix, making the contradiction framing more natural for modern product development."
+      },
+      {
+        "area": "Rich principle documentation with practical examples",
+        "why": "All 40 principles include detailed descriptions, real-world examples, implementation steps, benefits, and category labels in both Chinese and English -- far richer than any other matrix in the collection."
+      }
+    ],
+    "weakness_areas": [
+      {
+        "area": "Sparse matrix coverage",
+        "why": "Only 16 entries populate a potential 18x18 space (306 possible combinations). The vast majority of parameter pairs have no matrix entry, forcing reliance on AI fallback rather than systematic contradiction resolution."
+      },
+      {
+        "area": "Lacks empirical validation",
+        "why": "Unlike the peer-reviewed drug_safety and healthcare_servqual matrices, this is a community/open-source project without published validation studies. The 16 entries may reflect author intuition rather than systematic patent or case analysis."
+      },
+      {
+        "area": "Uneven parameter specification",
+        "why": "Parameters 15-18 (Energy consumption, Convenience, Intelligence, Performance) appear in the matrix but have no keyword arrays, suggesting they were added to fill gaps rather than being part of the original systematic design."
+      }
+    ],
+    "ideal_user_profile": "Engineering teams using AI-assisted innovation tools, Chinese-speaking TRIZ practitioners, product designers seeking a simplified TRIZ entry point, software developers building TRIZ-based ideation platforms, and educators teaching introductory TRIZ courses.",
+    "best_for": [
+      "Quick AI-assisted contradiction identification from natural language problem descriptions",
+      "Weight-vs-Strength trade-offs in mechanical and structural design",
+      "Speed-vs-Precision contradictions in manufacturing and automation",
+      "Cost-vs-Quality trade-offs in product development",
+      "Complexity-vs-Reliability contradictions in system architecture",
+      "Automation-vs-Cost contradictions in manufacturing modernization",
+      "Energy consumption-vs-Efficiency trade-offs in sustainable design",
+      "Building or extending AI-powered TRIZ tools with NLP parameter detection",
+      "Bilingual TRIZ practice and education (Chinese/English)"
+    ],
+    "not_suitable_for": [
+      "Comprehensive contradiction matrix lookups requiring high coverage",
+      "Pharmaceutical governance or healthcare service quality problems",
+      "Biomimetic or nature-inspired design",
+      "Academic research requiring empirically validated matrices",
+      "Problems involving domain-specific parameters not in the 18-parameter set",
+      "Situations requiring provenance and traceability to patent databases"
+    ],
+    "when_to_prefer": "Use this matrix when building or using AI-powered TRIZ tools that need NLP-friendly parameter definitions with keyword arrays, when working in bilingual Chinese/English contexts, or when the classical 39x39 matrix feels overwhelming and a modern, simplified parameter set is desired. It is the only matrix in the collection with implementation-ready keyword arrays and principle-level example/application documentation.",
+    "when_to_skip": "Skip when comprehensive coverage is needed (only 16 of 306+ possible entries exist), when empirical rigor is required (no peer-reviewed validation), or when the problem domain requires specialized parameters (use drug_safety for governance, healthcare_servqual for patient experience, or BioTRIZ for biomimetics).",
+    "unique_parameters": [
+      "Automation (degree of automation, mechanical control, intelligence)",
+      "Functionality (features, capabilities, utility)",
+      "Energy consumption (as a standalone named parameter)",
+      "Convenience (ease of use as a formal parameter)",
+      "Intelligence (degree of smart behavior as a formal parameter)",
+      "Maintenance (servicing, repair, inspection effort as a standalone parameter)",
+      "Performance (general performance level as a standalone parameter)"
+    ],
+    "cross_domain_potential": "Moderate. The simplified parameter naming convention (Weight, Speed, Cost, Quality, etc.) and bilingual design make this matrix a good template for creating domain-specific simplified matrices in other fields. The keyword-array approach for AI parameter detection is a technical innovation transferable to any domain-specific TRIZ tool. The principle-level documentation format (with examples, applications, implementation steps, and benefits) could serve as a gold-standard template for documenting principles in any specialized matrix."
+  }
+]

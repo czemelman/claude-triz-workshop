@@ -1,0 +1,15 @@
+{
+  "action": "ask_user",
+  "kind": "state_corrupted",
+  "run_id": "fix-31-state-corrupt",
+  "options": [
+    {
+      "id": "abort",
+      "label": "Abort the run."
+    },
+    {
+      "id": "attempt_repair",
+      "label": "Attempt to repair state.json (manual edit)."
+    }
+  ]
+}

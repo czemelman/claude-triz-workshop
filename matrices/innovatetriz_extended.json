@@ -1,0 +1,1429 @@
+{
+  "meta": {
+    "name": "InnovateTRIZ Extended Matrix",
+    "version": "1.0",
+    "author": "ligj1706",
+    "year": "2025",
+    "domain": "General engineering / AI-enhanced innovation",
+    "dimensions": {
+      "rows": 18,
+      "cols": 18,
+      "populated_cells": 16
+    },
+    "source_url": "https://github.com/ligj1706/InnovateTRIZ",
+    "license": "MIT",
+    "notes": "This is NOT a standard 39x39 Altshuller matrix. The repo defines a custom simplified contradiction matrix using 14 named engineering parameters (in Chinese) with 16 sparse entries. Parameters are identified by Chinese names rather than numbered IDs. The system relies on AI keyword-based parameter detection as a fallback when no matrix entry exists. All 40 TRIZ principles are included with full bilingual (zh/en) definitions. Parameter IDs below are assigned for this export and do not originate from the source. The matrix keys are mapped from Chinese parameter name tuples to these assigned IDs.",
+    "id": "innovatetriz_extended",
+    "status": "experimental",
+    "parameter_id_style": "alphanumeric",
+    "diagonal_cells": "excluded",
+    "principle_taxonomy": "altshuller-40",
+    "interpretation_lineage": "altshuller-40",
+    "language": [
+      "zh",
+      "en"
+    ],
+    "lineage": {
+      "derived_from": null,
+      "supersedes": [],
+      "identical_to": []
+    }
+  },
+  "parameters": {
+    "1": {
+      "name": "Weight",
+      "name_zh": "重量",
+      "description": "Mass or weight of an object",
+      "keywords": [
+        "重",
+        "轻",
+        "质量",
+        "重量",
+        "载重"
+      ]
+    },
+    "2": {
+      "name": "Strength",
+      "name_zh": "强度",
+      "description": "Strength, hardness, rigidity, or durability of an object",
+      "keywords": [
+        "强度",
+        "硬度",
+        "刚性",
+        "坚固",
+        "耐用"
+      ]
+    },
+    "3": {
+      "name": "Speed",
+      "name_zh": "速度",
+      "description": "Speed, efficiency, or response time",
+      "keywords": [
+        "快",
+        "慢",
+        "速度",
+        "效率",
+        "响应"
+      ]
+    },
+    "4": {
+      "name": "Precision",
+      "name_zh": "精度",
+      "description": "Accuracy, precision, or deviation tolerance",
+      "keywords": [
+        "精确",
+        "准确",
+        "精度",
+        "误差",
+        "偏差"
+      ]
+    },
+    "5": {
+      "name": "Cost",
+      "name_zh": "成本",
+      "description": "Price, expense, or cost of an object or process",
+      "keywords": [
+        "价格",
+        "费用",
+        "成本",
+        "便宜",
+        "昂贵"
+      ]
+    },
+    "6": {
+      "name": "Quality",
+      "name_zh": "质量",
+      "description": "Quality, grade, reliability, or stability of output",
+      "keywords": [
+        "质量",
+        "品质",
+        "优质",
+        "可靠",
+        "稳定"
+      ]
+    },
+    "7": {
+      "name": "Complexity",
+      "name_zh": "复杂性",
+      "description": "Complexity, difficulty, or intricacy of a system",
+      "keywords": [
+        "复杂",
+        "简单",
+        "复杂度",
+        "难度",
+        "繁琐"
+      ]
+    },
+    "8": {
+      "name": "Volume",
+      "name_zh": "体积",
+      "description": "Size, volume, dimensions, or space occupied",
+      "keywords": [
+        "大小",
+        "体积",
+        "尺寸",
+        "占地",
+        "空间"
+      ]
+    },
+    "9": {
+      "name": "Safety",
+      "name_zh": "安全",
+      "description": "Safety, risk level, or protection capability",
+      "keywords": [
+        "安全",
+        "危险",
+        "风险",
+        "保护",
+        "防护"
+      ]
+    },
+    "10": {
+      "name": "Efficiency",
+      "name_zh": "效率",
+      "description": "Efficiency, performance, productivity, or throughput",
+      "keywords": [
+        "效率",
+        "性能",
+        "生产率",
+        "吞吐量",
+        "产能"
+      ]
+    },
+    "11": {
+      "name": "Reliability",
+      "name_zh": "可靠性",
+      "description": "Reliability, stability, failure rate, or durability",
+      "keywords": [
+        "可靠",
+        "稳定",
+        "故障",
+        "失效",
+        "持久"
+      ]
+    },
+    "12": {
+      "name": "Maintenance",
+      "name_zh": "维护",
+      "description": "Maintenance, servicing, repair, or inspection effort",
+      "keywords": [
+        "维护",
+        "保养",
+        "修理",
+        "维修",
+        "检修"
+      ]
+    },
+    "13": {
+      "name": "Automation",
+      "name_zh": "自动化",
+      "description": "Degree of automation, mechanical control, or intelligence",
+      "keywords": [
+        "自动",
+        "手动",
+        "机械",
+        "智能",
+        "控制"
+      ]
+    },
+    "14": {
+      "name": "Functionality",
+      "name_zh": "功能性",
+      "description": "Functionality, features, capabilities, or utility",
+      "keywords": [
+        "功能",
+        "特性",
+        "能力",
+        "用途",
+        "作用"
+      ]
+    },
+    "15": {
+      "name": "Energy consumption",
+      "name_zh": "能耗",
+      "description": "Energy consumption (parameter used in matrix but not in keyword map)",
+      "keywords": []
+    },
+    "16": {
+      "name": "Convenience",
+      "name_zh": "便利",
+      "description": "Convenience or ease of use (parameter used in matrix but not in keyword map)",
+      "keywords": []
+    },
+    "17": {
+      "name": "Intelligence",
+      "name_zh": "智能化",
+      "description": "Degree of intelligence or smart behavior (parameter used in matrix but not in keyword map)",
+      "keywords": []
+    },
+    "18": {
+      "name": "Performance",
+      "name_zh": "性能",
+      "description": "General performance level (parameter used in matrix but not in keyword map)",
+      "keywords": []
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "name_zh": "分割",
+      "description": "Divide an object into independent parts",
+      "description_zh": "将对象分成独立的部分",
+      "detailed": "Divide an object into independent parts, make parts easy to disassemble and assemble. This approach improves system flexibility, maintainability and scalability.",
+      "detailed_zh": "将物体分解为独立的部分，使各部分易于拆卸和组装，增加分解的程度。这种方法可以提高系统的灵活性、可维护性和可扩展性。",
+      "examples": [
+        "Modular design",
+        "Detachable furniture",
+        "Component architecture",
+        "Microservices"
+      ],
+      "examples_zh": [
+        "模块化设计",
+        "可拆卸家具",
+        "组件化软件架构",
+        "微服务架构"
+      ],
+      "applications": [
+        "IKEA modular furniture design",
+        "Automotive parts standardization",
+        "Software plugin architecture",
+        "Building block toy design"
+      ],
+      "applications_zh": [
+        "IKEA家具的模块化设计",
+        "汽车零部件标准化",
+        "软件插件架构",
+        "积木玩具设计"
+      ],
+      "implementation_steps": [
+        "1. Identify functional units in system",
+        "2. Define interface standards between modules",
+        "3. Design independently testable modules",
+        "4. Establish module assembly specifications"
+      ],
+      "benefits": [
+        "Improve system maintainability",
+        "Reduce development complexity",
+        "Enhance reusability",
+        "Enable parallel development"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "2": {
+      "name": "Taking out",
+      "name_zh": "抽取",
+      "description": "Separate an interfering part or property from an object",
+      "description_zh": "从对象中取出干扰的部分或特性",
+      "detailed": "Separate harmful or unnecessary parts, or conversely, separate useful parts. This method improves system efficiency by eliminating interfering factors.",
+      "detailed_zh": "分离出有害或不必要的部分/特性，或相反，单独分离出有用的部分/特性。这种方法通过消除干扰因素来提高系统效率。",
+      "examples": [
+        "Noise cancellation",
+        "Impurity filtering",
+        "Core function extraction",
+        "Exception isolation"
+      ],
+      "examples_zh": [
+        "噪音消除",
+        "杂质过滤",
+        "核心功能提取",
+        "异常处理隔离"
+      ],
+      "applications": [
+        "Air purifier filtration system",
+        "Noise-canceling headphone technology",
+        "Water treatment purification process",
+        "Software error isolation mechanism"
+      ],
+      "applications_zh": [
+        "空气净化器过滤系统",
+        "降噪耳机技术",
+        "水处理净化工艺",
+        "软件错误隔离机制"
+      ],
+      "implementation_steps": [
+        "1. Identify interfering or harmful factors",
+        "2. Design separation mechanism",
+        "3. Verify separation effectiveness",
+        "4. Optimize separation process"
+      ],
+      "benefits": [
+        "Improve product purity",
+        "Reduce system interference",
+        "Enhance performance stability",
+        "Lower maintenance costs"
+      ],
+      "category": "Function Optimization",
+      "category_zh": "功能优化",
+      "sub_principles": [],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "3": {
+      "name": "Local quality",
+      "name_zh": "局部质量",
+      "description": "Make different parts of an object have different functions",
+      "description_zh": "使对象的不同部分具有不同功能",
+      "detailed": "Change from uniform to non-uniform structure, make each part optimal for its function",
+      "detailed_zh": "从均匀结构转变为非均匀结构，使对象或系统的各个部分具有各自最适合的功能",
+      "examples": [
+        "Ergonomic design",
+        "Differentiated services",
+        "Customized functions",
+        "Local optimization"
+      ],
+      "examples_zh": [
+        "人体工学设计",
+        "差异化服务",
+        "定制化功能",
+        "局部优化"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_LOCAL_QUALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "name_zh": "不对称",
+      "description": "Change from symmetrical to asymmetrical",
+      "description_zh": "从对称转变为不对称",
+      "detailed": "If an object is already asymmetrical, increase its degree of asymmetry",
+      "detailed_zh": "如果对象已经是不对称的，增加其不对称程度",
+      "examples": [
+        "Asymmetric design",
+        "Differential layout",
+        "Non-uniform distribution",
+        "Tilted structure"
+      ],
+      "examples_zh": [
+        "不对称设计",
+        "差异化布局",
+        "非均匀分布",
+        "倾斜结构"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "5": {
+      "name": "Merging",
+      "name_zh": "合并",
+      "description": "Merge identical or similar objects",
+      "description_zh": "合并相同或相似的对象",
+      "detailed": "Merge identical objects spatially or design objects for identical operations",
+      "detailed_zh": "在空间上合并相同的对象或设计用于相同操作的对象",
+      "examples": [
+        "Function merging",
+        "Resource integration",
+        "Unified interface",
+        "Integrated design"
+      ],
+      "examples_zh": [
+        "功能合并",
+        "资源整合",
+        "统一接口",
+        "集成设计"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_MERGING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "6": {
+      "name": "Universality",
+      "name_zh": "通用性",
+      "description": "Make an object perform multiple functions",
+      "description_zh": "使对象能够执行多种功能",
+      "detailed": "Make an object perform multiple functions, eliminating the need for other objects",
+      "detailed_zh": "使对象能执行多种功能，从而不需要其他对象",
+      "examples": [
+        "Multi-function tools",
+        "Universal interface",
+        "Platform design",
+        "Standardized components"
+      ],
+      "examples_zh": [
+        "多功能工具",
+        "通用接口",
+        "平台化设计",
+        "标准化组件"
+      ],
+      "category": "Function Optimization",
+      "category_zh": "功能优化",
+      "sub_principles": [],
+      "canonical_id": "P_UNIVERSALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "7": {
+      "name": "Nesting",
+      "name_zh": "嵌套",
+      "description": "Place one object inside another",
+      "description_zh": "将一个对象放置在另一个对象内部",
+      "detailed": "Place one object inside another, which is placed inside a third, and so on",
+      "detailed_zh": "将一个对象放在另一个对象的内部，后者再放在第三个对象的内部，以此类推",
+      "examples": [
+        "Nested structure",
+        "Hierarchical design",
+        "Recursive calls",
+        "Layered architecture"
+      ],
+      "examples_zh": [
+        "嵌套结构",
+        "层次设计",
+        "递归调用",
+        "分层架构"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_NESTED_DOLL",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "8": {
+      "name": "Anti-weight",
+      "name_zh": "反重量",
+      "description": "Compensate for weight by merging with other objects",
+      "description_zh": "通过与其他对象合并来补偿重量",
+      "detailed": "Compensate for the weight of an object by merging with other objects that provide lift",
+      "detailed_zh": "通过与具有升力的其他对象合并来补偿对象的重量",
+      "examples": [
+        "Weight balance",
+        "Buoyancy utilization",
+        "Counter force",
+        "Balanced design"
+      ],
+      "examples_zh": [
+        "重量平衡",
+        "浮力利用",
+        "反向力",
+        "平衡设计"
+      ],
+      "category": "Mechanical Optimization",
+      "category_zh": "力学优化",
+      "sub_principles": [],
+      "canonical_id": "P_ANTI_WEIGHT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "9": {
+      "name": "Preliminary anti-action",
+      "name_zh": "预先反作用",
+      "description": "Perform anti-action in advance",
+      "description_zh": "提前进行反作用",
+      "detailed": "If an action and its counter-action are needed, perform the counter-action in advance",
+      "detailed_zh": "如果需要同时进行一个作用和它的反作用，预先进行反作用",
+      "examples": [
+        "Preventive measures",
+        "Pre-compensation",
+        "Reverse operation",
+        "Advance processing"
+      ],
+      "examples_zh": [
+        "预防措施",
+        "预先补偿",
+        "反向操作",
+        "提前处理"
+      ],
+      "category": "Control Optimization",
+      "category_zh": "控制优化",
+      "sub_principles": [],
+      "canonical_id": "P_PRELIMINARY_ANTI_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "10": {
+      "name": "Preliminary action",
+      "name_zh": "预先作用",
+      "description": "Perform required changes in advance",
+      "description_zh": "预先进行所需的变化",
+      "detailed": "Perform the required change of an object (fully or partially) in advance",
+      "detailed_zh": "预先进行对象的全部或部分所需变化",
+      "examples": [
+        "Preprocessing",
+        "Pre-configuration",
+        "Preloading",
+        "Advance preparation"
+      ],
+      "examples_zh": [
+        "预处理",
+        "预配置",
+        "预加载",
+        "提前准备"
+      ],
+      "category": "Control Optimization",
+      "category_zh": "控制优化",
+      "sub_principles": [],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "11": {
+      "name": "Beforehand cushioning",
+      "name_zh": "事先缓解",
+      "description": "Prepare emergency means beforehand",
+      "description_zh": "事先准备应急手段",
+      "detailed": "Compensate for relatively low reliability of an object by emergency means prepared beforehand",
+      "detailed_zh": "通过事先准备应急手段来补偿对象相对较低的可靠性",
+      "examples": [
+        "Backup systems",
+        "Emergency plans",
+        "Failover",
+        "Redundant design"
+      ],
+      "examples_zh": [
+        "备份系统",
+        "应急预案",
+        "故障转移",
+        "冗余设计"
+      ],
+      "category": "Reliability Optimization",
+      "category_zh": "可靠性优化",
+      "sub_principles": [],
+      "canonical_id": "P_BEFOREHAND_CUSHIONING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "12": {
+      "name": "Equipotentiality",
+      "name_zh": "等势",
+      "description": "Change working conditions in gravitational field",
+      "description_zh": "在重力场中改变工作条件",
+      "detailed": "Change working conditions in gravitational field to eliminate the need to raise or lower objects",
+      "detailed_zh": "在重力场中改变工作条件，以消除升降对象的需要",
+      "examples": [
+        "Horizontal movement",
+        "Level design",
+        "Gravity balance",
+        "Horizontal transport"
+      ],
+      "examples_zh": [
+        "水平移动",
+        "等高设计",
+        "重力平衡",
+        "水平传输"
+      ],
+      "category": "Mechanical Optimization",
+      "category_zh": "力学优化",
+      "sub_principles": [],
+      "canonical_id": "P_EQUIPOTENTIALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "13": {
+      "name": "Inversion",
+      "name_zh": "反向",
+      "description": "Invert the action or process",
+      "description_zh": "颠倒行动或过程",
+      "detailed": "Invert the action used to solve the problem: make movable parts fixed and fixed parts movable",
+      "detailed_zh": "颠倒用来解决问题的行动：使可动部分固定，使固定部分可动",
+      "examples": [
+        "Reverse thinking",
+        "Reverse engineering",
+        "Inverted order",
+        "Reverse operation"
+      ],
+      "examples_zh": [
+        "反向思维",
+        "逆向工程",
+        "颠倒顺序",
+        "反向操作"
+      ],
+      "category": "Thinking Optimization",
+      "category_zh": "思维优化",
+      "sub_principles": [],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "14": {
+      "name": "Spheroidality",
+      "name_zh": "球面化",
+      "description": "Replace linear parts with spherical ones",
+      "description_zh": "用球面代替线性部分",
+      "detailed": "Replace linear parts with curved surfaces; replace cubes with spheres, ellipsoids, paraboloids",
+      "detailed_zh": "用弯曲的表面代替直线部分；用球体、椭球体、抛物面等代替立方体",
+      "examples": [
+        "Smooth design",
+        "Spherical structure",
+        "Curved interface",
+        "Rounded corners"
+      ],
+      "examples_zh": [
+        "圆滑设计",
+        "球形结构",
+        "曲面界面",
+        "圆角处理"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "15": {
+      "name": "Dynamics",
+      "name_zh": "动态性",
+      "description": "Make an object or system adapt automatically to optimal working conditions",
+      "description_zh": "使对象或系统能够自动适应工作的最佳状态",
+      "detailed": "Characteristics of an object should change to be optimal in each stage of operation; divide an object into parts capable of movement",
+      "detailed_zh": "对象的特性应改变，以便在工作的每个阶段都是最佳的；将对象分成能够相互移动的部分",
+      "examples": [
+        "Adaptive systems",
+        "Dynamic adjustment",
+        "Smart response",
+        "Elastic scaling"
+      ],
+      "examples_zh": [
+        "自适应系统",
+        "动态调整",
+        "智能响应",
+        "弹性伸缩"
+      ],
+      "category": "Adaptability Optimization",
+      "category_zh": "适应性优化",
+      "sub_principles": [],
+      "canonical_id": "P_DYNAMICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "16": {
+      "name": "Partial or excessive actions",
+      "name_zh": "部分或过度的行动",
+      "description": "Use partial or excessive actions",
+      "description_zh": "采用部分或过度的行动",
+      "detailed": "If it's hard to get 100% of desired effect, get slightly more or slightly less",
+      "detailed_zh": "如果很难获得100%的期望效果，应该获得稍多一点或稍少一点",
+      "examples": [
+        "Over-engineering",
+        "Step-by-step implementation",
+        "Progressive optimization",
+        "Phased achievement"
+      ],
+      "examples_zh": [
+        "过度设计",
+        "分步实现",
+        "渐进优化",
+        "阶段达成"
+      ],
+      "category": "Control Optimization",
+      "category_zh": "控制优化",
+      "sub_principles": [],
+      "canonical_id": "P_PARTIAL_OR_EXCESSIVE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "17": {
+      "name": "Another dimension",
+      "name_zh": "另一个维度",
+      "description": "Move to another dimension",
+      "description_zh": "移到另一个维度",
+      "detailed": "Move or arrange objects along a path perpendicular to the given direction",
+      "detailed_zh": "沿着垂直于给定方向的路径移动或布置对象",
+      "examples": [
+        "3D thinking",
+        "Vertical layout",
+        "Spatial design",
+        "Multi-dimensional space"
+      ],
+      "examples_zh": [
+        "三维思维",
+        "垂直布局",
+        "立体设计",
+        "多维空间"
+      ],
+      "category": "Spatial Optimization",
+      "category_zh": "空间优化",
+      "sub_principles": [],
+      "canonical_id": "P_ANOTHER_DIMENSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "name_zh": "机械振动",
+      "description": "Make an object oscillate",
+      "description_zh": "使对象振动",
+      "detailed": "Make an object oscillate; increase its frequency; use ultrasonic frequency; use resonant frequency",
+      "detailed_zh": "使对象振动；增加其振动频率；使用超声频率；使用共振频率",
+      "examples": [
+        "Vibration cleaning",
+        "Ultrasonic",
+        "Resonance technology",
+        "Vibration transmission"
+      ],
+      "examples_zh": [
+        "振动清理",
+        "超声波",
+        "共振技术",
+        "振动传输"
+      ],
+      "category": "Physical Optimization",
+      "category_zh": "物理优化",
+      "sub_principles": [],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "19": {
+      "name": "Periodic action",
+      "name_zh": "周期性行动",
+      "description": "Replace continuous action with periodic action",
+      "description_zh": "用周期性行动代替连续行动",
+      "detailed": "Replace continuous action with periodic or pulsing action; if already periodic, change the periodicity",
+      "detailed_zh": "用周期性或脉冲行动代替连续行动；如果行动已经是周期性的，改变其周期性",
+      "examples": [
+        "Regular maintenance",
+        "Pulse signals",
+        "Periodic checks",
+        "Intermittent operation"
+      ],
+      "examples_zh": [
+        "定期维护",
+        "脉冲信号",
+        "周期检查",
+        "间歇操作"
+      ],
+      "category": "Time Optimization",
+      "category_zh": "时间优化",
+      "sub_principles": [],
+      "canonical_id": "P_PERIODIC_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "20": {
+      "name": "Continuity of useful action",
+      "name_zh": "有用行动的连续性",
+      "description": "Carry on useful action continuously",
+      "description_zh": "连续进行有用的行动",
+      "detailed": "Carry on work continuously; make all parts of an object work at full load all the time",
+      "detailed_zh": "连续进行工作，使对象的所有部分始终以全负荷工作",
+      "examples": [
+        "Continuous operation",
+        "Full load work",
+        "Continuous production",
+        "Uninterrupted service"
+      ],
+      "examples_zh": [
+        "持续运行",
+        "全负荷工作",
+        "连续生产",
+        "不间断服务"
+      ],
+      "category": "Efficiency Optimization",
+      "category_zh": "效率优化",
+      "sub_principles": [],
+      "canonical_id": "P_CONTINUITY_OF_USEFUL_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "21": {
+      "name": "Skipping",
+      "name_zh": "急速",
+      "description": "Conduct a process or certain stages at high speed",
+      "description_zh": "高速执行有害或危险的过程",
+      "detailed": "Conduct a process, or certain stages (e.g., harmful or hazardous ones) at high speed",
+      "detailed_zh": "高速执行有害或危险的过程",
+      "examples": [
+        "Rapid processing",
+        "High-speed transit",
+        "Quick completion",
+        "Instant operation"
+      ],
+      "examples_zh": [
+        "快速处理",
+        "高速通过",
+        "急速完成",
+        "瞬间操作"
+      ],
+      "category": "Speed Optimization",
+      "category_zh": "速度优化",
+      "sub_principles": [],
+      "canonical_id": "P_SKIPPING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "22": {
+      "name": "Blessing in disguise",
+      "name_zh": "变害为利",
+      "description": "Use harmful factors to achieve positive effects",
+      "description_zh": "利用有害因素获得积极效果",
+      "detailed": "Use harmful factors to achieve positive effects; eliminate harm by combining with other harmful factors",
+      "detailed_zh": "利用有害因素获得积极效果；通过有害因素与其他有害因素结合来消除有害性",
+      "examples": [
+        "Waste utilization",
+        "Two negatives make positive",
+        "Turn crisis into opportunity",
+        "Transform harm into benefit"
+      ],
+      "examples_zh": [
+        "废物利用",
+        "负负得正",
+        "转危为机",
+        "化害为益"
+      ],
+      "category": "Transformation Optimization",
+      "category_zh": "转化优化",
+      "sub_principles": [],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "23": {
+      "name": "Feedback",
+      "name_zh": "反馈",
+      "description": "Introduce feedback",
+      "description_zh": "引入反馈",
+      "detailed": "Introduce feedback to improve a process or action; if feedback exists, change its magnitude or influence",
+      "detailed_zh": "引入反馈以改进过程或行动；如果反馈已经存在，改变其幅度或影响",
+      "examples": [
+        "Feedback control",
+        "Closed-loop system",
+        "Self-regulation",
+        "Monitoring feedback"
+      ],
+      "examples_zh": [
+        "反馈控制",
+        "闭环系统",
+        "自我调节",
+        "监控反馈"
+      ],
+      "category": "Control Optimization",
+      "category_zh": "控制优化",
+      "sub_principles": [],
+      "canonical_id": "P_FEEDBACK",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "24": {
+      "name": "Intermediary",
+      "name_zh": "中介",
+      "description": "Use an intermediary object or process",
+      "description_zh": "使用中介对象或过程",
+      "detailed": "Use an intermediary object or process; merge one object temporarily with another easily removed one",
+      "detailed_zh": "使用中介对象或过程；暂时将对象与另一个容易去除的对象合并",
+      "examples": [
+        "Intermediate layer",
+        "Proxy pattern",
+        "Buffer",
+        "Adapter"
+      ],
+      "examples_zh": [
+        "中间层",
+        "代理模式",
+        "缓冲区",
+        "转接器"
+      ],
+      "category": "Structure Optimization",
+      "category_zh": "结构优化",
+      "sub_principles": [],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "name_zh": "自服务",
+      "description": "Make an object serve itself",
+      "description_zh": "对象应该自己为自己服务",
+      "detailed": "Make an object serve itself by performing auxiliary and repair operations",
+      "detailed_zh": "使对象自己为自己服务，执行辅助和维修操作",
+      "examples": [
+        "Automation",
+        "Self-repair",
+        "Self-adaptation",
+        "Self-management"
+      ],
+      "examples_zh": [
+        "自动化",
+        "自修复",
+        "自适应",
+        "自主管理"
+      ],
+      "category": "Automation Optimization",
+      "category_zh": "自动化优化",
+      "sub_principles": [],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "26": {
+      "name": "Copying",
+      "name_zh": "复制",
+      "description": "Use simple and inexpensive copies",
+      "description_zh": "使用简单而廉价的复制品",
+      "detailed": "Use simple and inexpensive copies instead of unavailable, expensive, or fragile objects",
+      "detailed_zh": "使用简单而廉价的复制品代替不可获得、昂贵或脆弱的对象",
+      "examples": [
+        "Simulator",
+        "Virtual reality",
+        "Digital twin",
+        "Simulation model"
+      ],
+      "examples_zh": [
+        "模拟器",
+        "虚拟现实",
+        "数字孪生",
+        "仿真模型"
+      ],
+      "category": "Substitution Optimization",
+      "category_zh": "替代优化",
+      "sub_principles": [],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "27": {
+      "name": "Cheap short-living objects",
+      "name_zh": "廉价替代",
+      "description": "Replace expensive objects with cheap ones",
+      "description_zh": "用便宜的对象代替昂贵的对象",
+      "detailed": "Replace expensive objects with cheap ones, compromising on certain qualities (like service life)",
+      "detailed_zh": "用便宜的对象来代替昂贵的，在某些特性（如使用寿命）上有所损失",
+      "examples": [
+        "Open source alternatives",
+        "Low-cost solutions",
+        "Simplified versions",
+        "Economy design"
+      ],
+      "examples_zh": [
+        "开源替代",
+        "低成本方案",
+        "简化版本",
+        "经济型设计"
+      ],
+      "category": "Cost Optimization",
+      "category_zh": "成本优化",
+      "sub_principles": [],
+      "canonical_id": "P_CHEAP_SHORT_LIVING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "28": {
+      "name": "Mechanics substitution",
+      "name_zh": "机械系统替代",
+      "description": "Replace mechanical systems with sensory ones",
+      "description_zh": "用其他感知系统替代机械系统",
+      "detailed": "Replace mechanical systems with optical, acoustic, or olfactory systems",
+      "detailed_zh": "用光学、声学或嗅觉系统替代机械系统",
+      "examples": [
+        "Sensor detection",
+        "Optical recognition",
+        "Sound monitoring",
+        "Smart sensing"
+      ],
+      "examples_zh": [
+        "传感器检测",
+        "光学识别",
+        "声音监控",
+        "智能感知"
+      ],
+      "category": "Technology Substitution",
+      "category_zh": "技术替代",
+      "sub_principles": [],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "29": {
+      "name": "Pneumatics and hydraulics",
+      "name_zh": "气动和液压结构",
+      "description": "Use pneumatic and hydraulic constructions",
+      "description_zh": "使用气动和液压结构",
+      "detailed": "Use gas and liquid parts instead of solid parts of an object",
+      "detailed_zh": "用气体和液体部分代替对象的固体部分",
+      "examples": [
+        "Pneumatic control",
+        "Hydraulic systems",
+        "Fluid drive",
+        "Soft robotics"
+      ],
+      "examples_zh": [
+        "气动控制",
+        "液压系统",
+        "流体驱动",
+        "软体机器人"
+      ],
+      "category": "Physical Substitution",
+      "category_zh": "物理替代",
+      "sub_principles": [],
+      "canonical_id": "P_PNEUMATICS_HYDRAULICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "name_zh": "柔性壳体和薄膜",
+      "description": "Use flexible shells and thin films",
+      "description_zh": "使用柔性壳体和薄膜",
+      "detailed": "Use flexible shells and thin films instead of three-dimensional structures",
+      "detailed_zh": "用柔性壳体和薄膜代替通常的结构",
+      "examples": [
+        "Film materials",
+        "Flexible screens",
+        "Soft packaging",
+        "Elastic shells"
+      ],
+      "examples_zh": [
+        "薄膜材料",
+        "柔性屏幕",
+        "软包装",
+        "弹性外壳"
+      ],
+      "category": "Material Optimization",
+      "category_zh": "材料优化",
+      "sub_principles": [],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "31": {
+      "name": "Porous materials",
+      "name_zh": "多孔材料",
+      "description": "Make objects porous or add porous elements",
+      "description_zh": "使对象多孔或添加多孔元素",
+      "detailed": "Make objects porous or add porous elements; if already porous, fill pores with some substance",
+      "detailed_zh": "使对象多孔或添加多孔元素；如果对象已经多孔，预先用某种物质填充孔隙",
+      "examples": [
+        "Porous structure",
+        "Honeycomb materials",
+        "Foam materials",
+        "Filter materials"
+      ],
+      "examples_zh": [
+        "多孔结构",
+        "蜂窝材料",
+        "泡沫材料",
+        "过滤材料"
+      ],
+      "category": "Material Optimization",
+      "category_zh": "材料优化",
+      "sub_principles": [],
+      "canonical_id": "P_POROUS_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "32": {
+      "name": "Color changes",
+      "name_zh": "颜色改变",
+      "description": "Change the color of an object or its external environment",
+      "description_zh": "改变对象或其环境的颜色",
+      "detailed": "Change the color of an object or its environment; change the transparency of an object or its environment",
+      "detailed_zh": "改变对象或其环境的颜色；改变对象或其环境的透明度",
+      "examples": [
+        "Color coding",
+        "Status indication",
+        "Visual feedback",
+        "Transparency adjustment"
+      ],
+      "examples_zh": [
+        "颜色编码",
+        "状态指示",
+        "可视化反馈",
+        "透明度调节"
+      ],
+      "category": "Visual Optimization",
+      "category_zh": "视觉优化",
+      "sub_principles": [],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "33": {
+      "name": "Homogeneity",
+      "name_zh": "同质性",
+      "description": "Make objects interacting with a given object of the same material",
+      "description_zh": "使与主要对象相互作用的对象由相同的材料制成",
+      "detailed": "Make objects interacting with a given object of the same material or material with identical properties",
+      "detailed_zh": "使与主要对象相互作用的对象由相同的材料制成",
+      "examples": [
+        "Material unification",
+        "Compatibility design",
+        "Homogenization",
+        "Consistency"
+      ],
+      "examples_zh": [
+        "材料统一",
+        "兼容性设计",
+        "同质化",
+        "一致性"
+      ],
+      "category": "Material Optimization",
+      "category_zh": "材料优化",
+      "sub_principles": [],
+      "canonical_id": "P_HOMOGENEITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "34": {
+      "name": "Discarding and recovering",
+      "name_zh": "丢弃和再生",
+      "description": "Make portions of an object disappear after fulfilling their functions",
+      "description_zh": "使完成功能的部分消失",
+      "detailed": "Make portions of an object that have fulfilled their functions disappear or modify them during the process",
+      "detailed_zh": "使完成功能的对象部分消失或在过程中直接修改",
+      "examples": [
+        "Disposable components",
+        "Degradable materials",
+        "Temporary structures",
+        "Consumable parts"
+      ],
+      "examples_zh": [
+        "一次性组件",
+        "可降解材料",
+        "临时结构",
+        "消耗性部件"
+      ],
+      "category": "Lifecycle Optimization",
+      "category_zh": "生命周期优化",
+      "sub_principles": [],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "35": {
+      "name": "Parameter changes",
+      "name_zh": "参数改变",
+      "description": "Change the physical or chemical state of an object",
+      "description_zh": "改变对象的物理或化学状态",
+      "detailed": "Change physical or chemical state; change concentration or consistency; change degree of flexibility; change temperature",
+      "detailed_zh": "改变对象的物理或化学状态；改变浓度或稠度；改变柔性的程度；改变温度",
+      "examples": [
+        "State transition",
+        "Parameter adjustment",
+        "Phase change utilization",
+        "Property modification"
+      ],
+      "examples_zh": [
+        "状态转换",
+        "参数调整",
+        "相变利用",
+        "属性修改"
+      ],
+      "category": "State Optimization",
+      "category_zh": "状态优化",
+      "sub_principles": [],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "name_zh": "相变",
+      "description": "Use phenomena occurring during phase transitions",
+      "description_zh": "利用相变现象",
+      "detailed": "Use phenomena occurring during phase transitions: volume changes, heat liberation or absorption",
+      "detailed_zh": "利用相变过程中发生的现象，如体积变化、热量释放或吸收",
+      "examples": [
+        "Phase change materials",
+        "Heat pipe technology",
+        "Evaporative cooling",
+        "Solidification forming"
+      ],
+      "examples_zh": [
+        "相变材料",
+        "热管技术",
+        "蒸发冷却",
+        "凝固成型"
+      ],
+      "category": "Physical Optimization",
+      "category_zh": "物理优化",
+      "sub_principles": [],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "37": {
+      "name": "Thermal expansion",
+      "name_zh": "热膨胀",
+      "description": "Use thermal expansion or contraction of materials",
+      "description_zh": "利用材料的热膨胀或收缩",
+      "detailed": "Use thermal expansion or contraction; if already using thermal expansion, use different coefficients of thermal expansion",
+      "detailed_zh": "利用材料的热膨胀或收缩；如果已经使用热膨胀，使用各种材料的不同热膨胀系数",
+      "examples": [
+        "Thermal elements",
+        "Bimetallic strips",
+        "Thermal compensation",
+        "Temperature switches"
+      ],
+      "examples_zh": [
+        "热敏元件",
+        "双金属片",
+        "热补偿",
+        "温控开关"
+      ],
+      "category": "Thermal Optimization",
+      "category_zh": "热学优化",
+      "sub_principles": [],
+      "canonical_id": "P_THERMAL_EXPANSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "38": {
+      "name": "Strong oxidants",
+      "name_zh": "强氧化剂",
+      "description": "Use strong oxidants",
+      "description_zh": "使用强氧化剂",
+      "detailed": "Replace common air with oxygen-enriched air; replace enriched air with oxygen; use ionizing radiation on air or oxygen",
+      "detailed_zh": "用富氧空气代替普通空气；用氧气代替富氧空气；用电离辐射作用于空气或氧气",
+      "examples": [
+        "Oxidation treatment",
+        "Oxygen-enriched combustion",
+        "Plasma",
+        "Ionizing radiation"
+      ],
+      "examples_zh": [
+        "氧化处理",
+        "富氧燃烧",
+        "等离子体",
+        "电离辐射"
+      ],
+      "category": "Chemical Optimization",
+      "category_zh": "化学优化",
+      "sub_principles": [],
+      "canonical_id": "P_STRONG_OXIDANTS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "39": {
+      "name": "Inert atmosphere",
+      "name_zh": "惰性气氛",
+      "description": "Replace a normal environment with an inert one",
+      "description_zh": "用惰性气氛代替普通环境",
+      "detailed": "Replace a normal environment with an inert one; add neutral parts or inert additives to an object",
+      "detailed_zh": "用惰性气氛代替普通环境；在真空中进行过程",
+      "examples": [
+        "Inert protection",
+        "Vacuum environment",
+        "Nitrogen protection",
+        "Oxygen-free processing"
+      ],
+      "examples_zh": [
+        "惰性保护",
+        "真空环境",
+        "充氮保护",
+        "无氧处理"
+      ],
+      "category": "Environment Optimization",
+      "category_zh": "环境优化",
+      "sub_principles": [],
+      "canonical_id": "P_INERT_ATMOSPHERE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "40": {
+      "name": "Composite materials",
+      "name_zh": "复合材料",
+      "description": "Replace homogeneous materials with composite ones",
+      "description_zh": "用复合材料代替均质材料",
+      "detailed": "Change from homogeneous to composite materials",
+      "detailed_zh": "从均质材料转向复合材料",
+      "examples": [
+        "Composite materials",
+        "Multi-layer structure",
+        "Hybrid systems",
+        "Combined solutions"
+      ],
+      "examples_zh": [
+        "复合材料",
+        "多层结构",
+        "混合系统",
+        "组合方案"
+      ],
+      "category": "Material Optimization",
+      "category_zh": "材料优化",
+      "sub_principles": [],
+      "canonical_id": "P_COMPOSITE_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    }
+  },
+  "matrix": {
+    "1": {
+      "2": [
+        1,
+        8,
+        15,
+        40
+      ],
+      "3": [
+        2,
+        14,
+        15,
+        35
+      ]
+    },
+    "2": {
+      "1": [
+        1,
+        8,
+        36,
+        40
+      ]
+    },
+    "4": {
+      "3": [
+        10,
+        18,
+        32,
+        39
+      ]
+    },
+    "3": {
+      "4": [
+        10,
+        18,
+        32,
+        39
+      ]
+    },
+    "5": {
+      "6": [
+        13,
+        26,
+        27,
+        35
+      ]
+    },
+    "7": {
+      "11": [
+        1,
+        26,
+        27,
+        40
+      ]
+    },
+    "8": {
+      "14": [
+        7,
+        17,
+        29,
+        40
+      ]
+    },
+    "9": {
+      "16": [
+        11,
+        24,
+        25,
+        35
+      ]
+    },
+    "10": {
+      "9": [
+        11,
+        23,
+        25,
+        35
+      ]
+    },
+    "11": {
+      "7": [
+        1,
+        11,
+        25,
+        27
+      ]
+    },
+    "12": {
+      "7": [
+        1,
+        2,
+        25,
+        35
+      ]
+    },
+    "13": {
+      "5": [
+        25,
+        26,
+        27,
+        35
+      ]
+    },
+    "15": {
+      "10": [
+        2,
+        6,
+        19,
+        36
+      ]
+    },
+    "17": {
+      "11": [
+        15,
+        23,
+        25,
+        35
+      ]
+    },
+    "18": {
+      "5": [
+        1,
+        2,
+        27,
+        35
+      ]
+    }
+  },
+  "_matrix_key_legend": {
+    "description": "Parameter ID to Chinese name mapping used as matrix keys in the source code. The source uses Chinese string tuples as keys (e.g. ('重量', '强度')), which have been mapped to the parameter IDs defined in the parameters section above.",
+    "mapping": {
+      "1": "重量 (Weight)",
+      "2": "强度 (Strength)",
+      "3": "速度 (Speed)",
+      "4": "精度 (Precision)",
+      "5": "成本 (Cost)",
+      "6": "质量 (Quality)",
+      "7": "复杂性 (Complexity)",
+      "8": "体积 (Volume)",
+      "9": "安全 (Safety)",
+      "10": "效率 (Efficiency)",
+      "11": "可靠性 (Reliability)",
+      "12": "维护 (Maintenance)",
+      "13": "自动化 (Automation)",
+      "14": "功能性 (Functionality)",
+      "15": "能耗 (Energy consumption)",
+      "16": "便利 (Convenience)",
+      "17": "智能化 (Intelligence)",
+      "18": "性能 (Performance)"
+    },
+    "source_format": "Python dict with tuple keys: {('improving_param_zh', 'worsening_param_zh'): [principle_ids]}",
+    "total_entries": 16
+  }
+}

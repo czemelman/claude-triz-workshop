@@ -1,0 +1,12 @@
+{
+  "fixture_name": "d02_reformulate-with-constraint",
+  "kind": "decisions",
+  "run_id": "fix-d02-reformulate",
+  "description": "User adds constraint and re-synthesizes. State resets to synthesize.",
+  "files": [
+    "01_problem.json",
+    "06_solutions.json",
+    "07_critique.json",
+    "state.json"
+  ]
+}

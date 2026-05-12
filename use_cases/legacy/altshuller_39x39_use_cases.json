@@ -1,0 +1,161 @@
+{
+  "matrix": "altshuller_39x39",
+  "primary_domains": [
+    "Mechanical engineering",
+    "Manufacturing engineering",
+    "Industrial design",
+    "Materials science",
+    "Aerospace and automotive engineering",
+    "Chemical and process engineering"
+  ],
+  "secondary_domains": [
+    "Electrical engineering (partial — force, energy, thermal parameters apply)",
+    "Civil and structural engineering",
+    "Biomedical device design",
+    "Consumer product design",
+    "Quality engineering and Six Sigma",
+    "Systems engineering (physical systems only)"
+  ],
+  "strength_areas": [
+    {
+      "area": "Usability and manufacturing optimization (parameters 32-39)",
+      "why": "Highest group density at 91.4%. Ease of manufacture, ease of operation, adaptability, device complexity, automation, and productivity are almost fully cross-populated. This is where the matrix gives the richest guidance — essentially every trade-off between a usability/manufacturing parameter and any other parameter has recommended principles."
+    },
+    {
+      "area": "Mechanical property trade-offs (parameters 9-14: speed, force, stress, shape, stability, strength)",
+      "why": "89.5% group density. 100% self-cross density — every mechanical-vs-mechanical contradiction has guidance. These are the core parameters Altshuller mined from patent data, and the coverage reflects it."
+    },
+    {
+      "area": "Quality and system-level contradictions (parameters 27-31: reliability, accuracy, precision, harmful factors)",
+      "why": "88.4% group density. These parameters connect strongly to almost every other group, especially mechanical (96.7% cross-density) and usability/manufacturing (82.5%). Ideal for problems like 'improve reliability without increasing complexity.'"
+    },
+    {
+      "area": "Material and substance trade-offs (parameters 23, 26: loss of substance, quantity of matter)",
+      "why": "Loss of substance has 37 populated cells as a row (97.4% of possible), and Quantity of substance appears as a worsening parameter in 37 rows (97.4%). These are extremely well-covered, making the matrix strong for material efficiency problems."
+    },
+    {
+      "area": "Harmful-factor management (parameter 30: object-affected harmful factors)",
+      "why": "The single densest row in the entire matrix — 38 out of 38 possible cells populated (100%). Also 36/38 as a column. Any problem framed as 'reduce susceptibility to external harm' gets maximal guidance."
+    },
+    {
+      "area": "Force, stress, and structural integrity trade-offs (parameters 10, 11, 13, 14)",
+      "why": "These four parameters are among the most connected in the matrix (totals of 71, 66, 73, 69 respectively). Classic engineering problems — making something stronger without making it heavier, reducing stress without losing shape — are the matrix's sweet spot."
+    }
+  ],
+  "weakness_areas": [
+    {
+      "area": "Stationary object parameters (2, 4, 6, 8, 16, 20)",
+      "why": "Only 62.7% row density vs 83.8% for their moving counterparts. The matrix was built primarily from patents involving dynamic/moving systems. Stationary structures (buildings, bridges, storage) get noticeably weaker guidance. Duration of stationary object (param 16) is the sparsest row at 20 cells, and Use of energy by stationary object (param 20) has only 15 row cells."
+    },
+    {
+      "area": "Physical geometry self-cross (parameters 1-8 vs each other)",
+      "why": "Only 46.4% density — 30 out of 56 possible cells are empty. Contradictions like 'reduce weight without increasing volume' or 'shorten length without losing area' within the geometry group are poorly served. The matrix largely treats these as dimensional trade-offs that need external reasoning."
+    },
+    {
+      "area": "Information loss (parameter 24)",
+      "why": "Only 22 row cells (57.9%) and 29 column cells. This is the most abstract, non-physical parameter in the original 39, and Altshuller had limited patent data for pure information problems. Any information-centric problem (data integrity, signal fidelity, knowledge management) gets weak coverage."
+    },
+    {
+      "area": "Energy/thermal self-cross (parameters 17-22 vs each other)",
+      "why": "Only 41.7% internal density. Trade-offs purely within the energy domain — e.g., 'increase power without increasing energy loss' or 'raise temperature without illumination side effects' — are sparsely populated."
+    },
+    {
+      "area": "Temporal/durability parameters (15-16)",
+      "why": "Lowest group density at 69.7% overall, with the temporal self-cross at only 50%. Duration and service-life problems have gaps, especially for stationary objects."
+    }
+  ],
+  "ideal_user_profile": "A mechanical, manufacturing, or product engineer facing a technical contradiction in a physical system — where improving one measurable engineering parameter (weight, strength, speed, precision, etc.) degrades another. The user should be comfortable thinking in terms of physical parameters and willing to interpret abstract inventive principles as concrete design moves. Best suited for engineers at the concept-design or problem-reframing stage, not for detailed optimization. Works well in TRIZ workshops, design reviews, and patent-circumvention exercises.",
+  "best_for": [
+    "Resolving classic mechanical contradictions: lighter but stronger, faster but more precise, simpler but more reliable",
+    "Manufacturing trade-off problems: ease of manufacture vs precision, productivity vs quality",
+    "Material and weight optimization in physical products",
+    "Reducing harmful side effects of a system while maintaining performance",
+    "Product design where physical form factors (size, shape, volume) conflict with functional requirements",
+    "Increasing automation level without sacrificing adaptability or increasing complexity",
+    "Structural integrity vs weight trade-offs in aerospace, automotive, and civil applications",
+    "TRIZ training and education — the 39x39 is the canonical teaching matrix",
+    "Patent analysis and invention benchmarking against the classical 40 principles",
+    "Cross-functional design reviews where a shared contradiction framework helps bridge disciplines"
+  ],
+  "not_suitable_for": [
+    "Software architecture contradictions (no parameters for latency, throughput, code complexity, coupling, or technical debt)",
+    "AI/ML system design (no parameters for model accuracy, training cost, inference speed, data quality, bias, or explainability)",
+    "UX and human-factors design (no parameters for cognitive load, learnability, satisfaction, accessibility, or aesthetic quality)",
+    "Cybersecurity trade-offs (no parameters for attack surface, encryption overhead, access granularity, or threat resilience)",
+    "Sustainability and circular economy problems (no parameters for carbon footprint, recyclability, lifecycle impact, or resource depletion)",
+    "Business model and organizational contradictions (no parameters for market reach, cost structure, innovation speed, or team scalability)",
+    "Biological and pharmaceutical system design (no parameters for biocompatibility, dosage precision, metabolic rate, or toxicity)",
+    "Pure information systems (data architecture, search relevance, content quality) — parameter 24 is too thin to carry these",
+    "Financial engineering and risk management trade-offs",
+    "Supply chain and logistics optimization (no parameters for lead time, inventory turns, network resilience, or demand variability)"
+  ],
+  "when_to_prefer": "Use the classic 39x39 when (1) your problem is a physical/engineering contradiction with clearly identifiable improving and worsening parameters from the original 39 list, (2) you want the most widely validated and published matrix — virtually all TRIZ textbooks, training programs, and case study databases reference this version, (3) you need interoperability with TRIZ software tools (most implement the 39x39 as their default), (4) you are teaching or learning TRIZ and want the canonical foundation before moving to extended matrices, or (5) your team is cross-functional and you need a common contradiction language that everyone can learn quickly.",
+  "when_to_skip": "Skip the 39x39 in favor of the extended 50x50 (Matrix 2003/2010) when your problem involves parameters not in the original 39 — such as system-generated information, noise, compatibility, security, or environmental harm. Use domain-specific matrices (e.g., for software, biotechnology, or business) when your problem is fundamentally non-physical and would require excessive metaphorical stretching to map onto the 39 parameters. Use Heinrich's curated subset when you want a pre-filtered, higher-signal matrix for a specific industry vertical rather than the full general-purpose table. Skip entirely when your contradiction is not technical (e.g., organizational politics, market strategy) or when you need quantitative optimization rather than conceptual direction.",
+  "coverage_stats": {
+    "total_cells": 1244,
+    "total_possible_cells": 1482,
+    "coverage_percentage": 83.9,
+    "densest_rows": [
+      {"parameter": 30, "name": "Object-affected harmful factors", "cells": 38, "pct": 100.0},
+      {"parameter": 13, "name": "Stability of the object's composition", "cells": 37, "pct": 97.4},
+      {"parameter": 23, "name": "Loss of substance", "cells": 37, "pct": 97.4},
+      {"parameter": 37, "name": "Difficulty of detecting and measuring", "cells": 37, "pct": 97.4},
+      {"parameter": 14, "name": "Strength", "cells": 36, "pct": 94.7},
+      {"parameter": 17, "name": "Temperature", "cells": 36, "pct": 94.7},
+      {"parameter": 39, "name": "Productivity", "cells": 36, "pct": 94.7}
+    ],
+    "sparsest_rows": [
+      {"parameter": 20, "name": "Use of energy by stationary object", "cells": 15, "pct": 39.5},
+      {"parameter": 16, "name": "Duration of action of stationary object", "cells": 20, "pct": 52.6},
+      {"parameter": 24, "name": "Loss of Information", "cells": 22, "pct": 57.9},
+      {"parameter": 8, "name": "Volume of stationary object", "cells": 23, "pct": 60.5},
+      {"parameter": 4, "name": "Length of stationary object", "cells": 27, "pct": 71.1},
+      {"parameter": 6, "name": "Area of stationary object", "cells": 27, "pct": 71.1},
+      {"parameter": 22, "name": "Loss of Energy", "cells": 28, "pct": 73.7}
+    ],
+    "densest_columns": [
+      {"parameter": 26, "name": "Quantity of substance/the matter", "cells": 37, "pct": 97.4},
+      {"parameter": 10, "name": "Force (Intensity)", "cells": 36, "pct": 94.7},
+      {"parameter": 13, "name": "Stability of the object's composition", "cells": 36, "pct": 94.7},
+      {"parameter": 28, "name": "Measurement accuracy", "cells": 36, "pct": 94.7},
+      {"parameter": 30, "name": "Object-affected harmful factors", "cells": 36, "pct": 94.7},
+      {"parameter": 32, "name": "Ease of manufacture", "cells": 36, "pct": 94.7},
+      {"parameter": 33, "name": "Ease of operation", "cells": 36, "pct": 94.7}
+    ],
+    "sparsest_columns": [
+      {"parameter": 16, "name": "Duration of action of stationary object", "cells": 21, "pct": 55.3},
+      {"parameter": 8, "name": "Volume of stationary object", "cells": 25, "pct": 65.8},
+      {"parameter": 20, "name": "Use of energy by stationary object", "cells": 25, "pct": 65.8},
+      {"parameter": 4, "name": "Length of stationary object", "cells": 26, "pct": 68.4},
+      {"parameter": 6, "name": "Area of stationary object", "cells": 26, "pct": 68.4}
+    ],
+    "most_recommended_principles": [
+      {"principle": 35, "name": "Parameter changes", "frequency": 415},
+      {"principle": 10, "name": "Preliminary action", "frequency": 273},
+      {"principle": 1, "name": "Segmentation", "frequency": 229},
+      {"principle": 28, "name": "Mechanics substitution", "frequency": 224},
+      {"principle": 2, "name": "Taking out", "frequency": 218}
+    ],
+    "least_recommended_principles": [
+      {"principle": 20, "name": "Continuity of useful action", "frequency": 19},
+      {"principle": 9, "name": "Preliminary anti-action", "frequency": 26},
+      {"principle": 33, "name": "Homogeneity", "frequency": 31},
+      {"principle": 12, "name": "Equipotentiality", "frequency": 33},
+      {"principle": 5, "name": "Merging", "frequency": 35}
+    ],
+    "group_densities": {
+      "physical_geometry_1_8": {"density_pct": 77.6, "self_cross_pct": 46.4},
+      "mechanical_9_14": {"density_pct": 89.5, "self_cross_pct": 100.0},
+      "temporal_durability_15_16": {"density_pct": 69.7, "self_cross_pct": 50.0},
+      "energy_thermal_17_22": {"density_pct": 77.2, "self_cross_pct": 41.7},
+      "loss_quantity_23_26": {"density_pct": 84.9, "self_cross_pct": 91.7},
+      "quality_system_27_31": {"density_pct": 88.4, "self_cross_pct": 80.0},
+      "usability_manufacturing_32_39": {"density_pct": 91.4, "self_cross_pct": 96.4}
+    },
+    "stationary_vs_moving_bias": {
+      "stationary_params_row_density_pct": 62.7,
+      "moving_params_row_density_pct": 83.8,
+      "note": "Significant bias toward moving/dynamic systems — reflects the patent corpus Altshuller analyzed"
+    }
+  }
+}

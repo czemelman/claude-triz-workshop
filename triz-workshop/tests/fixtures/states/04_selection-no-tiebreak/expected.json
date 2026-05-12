@@ -1,0 +1,18 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-04-sel-no-e",
+  "dispatches": [
+    {
+      "subagent": "triz-parameter-mapper",
+      "run_id": "fix-04-sel-no-e",
+      "expected_artifact": "03_mapping_altshuller_39x39.json",
+      "prompt": "Map this contradiction onto matrix `altshuller_39x39`. Read the matrix file from registry to learn its parameter set and meta.parameter_id_style. Honor that style verbatim. Output to `.triz/runs/fix-04-sel-no-e/03_mapping_altshuller_39x39.json` per 03_mapping.schema.json. Provide 1-3 alternative FULL pairs (improving, worsening) in `alternatives`. Set no_clean_mapping=true if no parameter pair fits well.\n\nProblem:\n{\n  \"improving_concept\": \"improve flexibility\",\n  \"worsening_concept\": \"increase complexity\",\n  \"domain_signals\": [\n    \"software\"\n  ],\n  \"exotic_signals\": [],\n  \"contradiction_type\": \"engineering-contradiction\",\n  \"domain_class\": \"software\",\n  \"constraints\": []\n}"
+    },
+    {
+      "subagent": "triz-mapping-critic",
+      "run_id": "fix-04-sel-no-e",
+      "expected_artifact": "03c_independent_mapping_altshuller_39x39.json",
+      "prompt": "Independently produce your own mapping of this contradiction onto matrix `altshuller_39x39` (Phase 1 \u2014 INDEPENDENT, blind to any prior mapping). Output to `.triz/runs/fix-04-sel-no-e/03c_independent_mapping_altshuller_39x39.json` per 03c_independent_mapping.schema.json.\n\nProblem:\n{\n  \"improving_concept\": \"improve flexibility\",\n  \"worsening_concept\": \"increase complexity\",\n  \"domain_signals\": [\n    \"software\"\n  ],\n  \"exotic_signals\": [],\n  \"contradiction_type\": \"engineering-contradiction\",\n  \"domain_class\": \"software\",\n  \"constraints\": []\n}"
+    }
+  ]
+}

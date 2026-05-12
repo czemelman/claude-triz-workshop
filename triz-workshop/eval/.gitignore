@@ -1,0 +1,8 @@
+# Auto-generated eval reports — keep history out of VCS; CI artifacts upload
+# them separately if needed.
+reports/
+
+# Developer-local labeled cases that shouldn't be shared (e.g. internal
+# customer scenarios). The runner picks these up automatically when you
+# pass --include-local.
+labeled_problems.local.jsonl

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    {
+      "name": "A",
+      "summary": "x",
+      "principles_applied": [
+        "P_SEG"
+      ],
+      "interpretation_refs": [],
+      "novelty_estimate": "medium",
+      "effort_estimate": "medium",
+      "implementation_sketch": "do x"
+    }
+  ]
+}

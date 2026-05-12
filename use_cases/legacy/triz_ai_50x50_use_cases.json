@@ -1,0 +1,341 @@
+{
+  "matrix_ref": "triz_ai_50x50.json",
+  "matrix_name": "triz-ai Extended TRIZ Matrix",
+  "dimensions": "50x50",
+  "total_cells": 2345,
+  "extended_cells": 863,
+  "classic_cells": 1482,
+  "generated": "2026-03-26",
+
+  "domain_fit": {
+    "summary": "Parameters 40-50 extend TRIZ into modern engineering and technology domains that Altshuller's 1971 patent analysis could not anticipate. They address system-level concerns (security, sustainability, scalability) and quality attributes (aesthetics, controllability, information capacity) that dominate 21st-century product and software design.",
+    "extended_parameters": {
+      "40": {
+        "name": "Function efficiency",
+        "domain_coverage": "Systems engineering, lean manufacturing, energy systems, software performance optimization",
+        "new_problem_types": [
+          "Improving energy conversion ratios without increasing system complexity",
+          "Optimizing algorithmic efficiency vs resource consumption tradeoffs",
+          "Reducing waste in manufacturing processes while maintaining throughput"
+        ]
+      },
+      "41": {
+        "name": "Noise/vibration (harmful)",
+        "domain_coverage": "Acoustics, EMI/EMC engineering, signal processing, urban planning, consumer electronics",
+        "new_problem_types": [
+          "Reducing electromagnetic interference in dense electronic assemblies",
+          "Minimizing acoustic noise in electric vehicles while maintaining performance",
+          "Signal-to-noise ratio optimization in communications systems"
+        ]
+      },
+      "42": {
+        "name": "Harmful emissions",
+        "domain_coverage": "Environmental engineering, green chemistry, industrial ecology, carbon capture, regulatory compliance",
+        "new_problem_types": [
+          "Reducing carbon footprint without sacrificing manufacturing capacity",
+          "Eliminating toxic byproducts in chemical processes",
+          "Managing thermal emissions in data center design"
+        ]
+      },
+      "43": {
+        "name": "Compatibility/connectability",
+        "domain_coverage": "Systems integration, API design, IoT interoperability, standards compliance, plug-and-play architectures",
+        "new_problem_types": [
+          "Achieving backward compatibility without constraining new feature development",
+          "Integrating legacy systems with modern cloud platforms",
+          "Cross-platform interoperability vs platform-specific optimization"
+        ]
+      },
+      "44": {
+        "name": "Security/vulnerability",
+        "domain_coverage": "Cybersecurity, physical security, information assurance, privacy engineering, threat modeling",
+        "new_problem_types": [
+          "Hardening system security without degrading usability or performance",
+          "Balancing data accessibility with data protection requirements",
+          "Securing IoT devices with constrained computational resources"
+        ]
+      },
+      "45": {
+        "name": "Safety",
+        "domain_coverage": "Functional safety (IEC 61508), autonomous systems, medical devices, consumer product safety, fail-safe design",
+        "new_problem_types": [
+          "Achieving safety integrity levels without prohibitive cost or complexity",
+          "Designing fail-safe modes for autonomous vehicle systems",
+          "Balancing safety interlocks with operational efficiency"
+        ]
+      },
+      "46": {
+        "name": "Environmental impact/sustainability",
+        "domain_coverage": "Lifecycle assessment, circular economy, ESG compliance, green design, carbon-neutral manufacturing",
+        "new_problem_types": [
+          "Designing for recyclability without compromising structural performance",
+          "Reducing lifecycle environmental footprint while keeping unit cost competitive",
+          "Sourcing sustainable materials without supply chain disruption"
+        ]
+      },
+      "47": {
+        "name": "Amount of information",
+        "domain_coverage": "Data engineering, bandwidth optimization, storage systems, information density, AI/ML data pipelines",
+        "new_problem_types": [
+          "Increasing data throughput without proportional infrastructure scaling",
+          "Compressing information without losing critical fidelity",
+          "Managing data volume growth in ML training pipelines"
+        ]
+      },
+      "48": {
+        "name": "Controllability/responsiveness",
+        "domain_coverage": "Control systems, UX design, real-time systems, adaptive systems, human-machine interfaces",
+        "new_problem_types": [
+          "Achieving sub-millisecond response times without over-provisioning hardware",
+          "Improving user control granularity without overwhelming cognitive load",
+          "Designing adaptive control for systems with high parameter uncertainty"
+        ]
+      },
+      "49": {
+        "name": "Scalability",
+        "domain_coverage": "Cloud architecture, distributed systems, microservices, manufacturing scale-up, organizational design",
+        "new_problem_types": [
+          "Scaling horizontally without introducing coordination overhead or consistency issues",
+          "Transitioning from prototype to mass production without redesign",
+          "Scaling ML model inference without proportional cost increase"
+        ]
+      },
+      "50": {
+        "name": "Aesthetics/appearance",
+        "domain_coverage": "Industrial design, UX/UI, consumer electronics, architecture, branding, sensory engineering",
+        "new_problem_types": [
+          "Improving visual appeal without increasing manufacturing complexity or cost",
+          "Balancing minimalist design with functional indicator requirements",
+          "Maintaining brand aesthetic across diverse product lines with different constraints"
+        ]
+      }
+    }
+  },
+
+  "strength_areas": [
+    {
+      "area": "Cybersecurity and information assurance",
+      "relevant_parameters": [44, 47, 48],
+      "description": "The matrix provides contradiction resolution paths for security vs usability, security vs performance, and security vs scalability — tradeoffs that dominate modern system design. No classic TRIZ parameter directly addresses security.",
+      "example_contradiction": "Improving Security (44) worsens Ease of operation (33): the matrix suggests principles like Segmentation (1), Nesting (7), and Copying (26) — map to micro-segmentation, sandboxing, and security tokens/proxies."
+    },
+    {
+      "area": "Environmental sustainability and green engineering",
+      "relevant_parameters": [42, 46],
+      "description": "Dedicated parameters for harmful emissions and lifecycle sustainability fill a major gap. Classic TRIZ has 'object-generated harmful factors' (31) but lacks explicit environmental lifecycle thinking.",
+      "example_contradiction": "Improving Environmental impact (46) worsens Weight of moving object (1): principles 8, 19, 23, 25 suggest counterweighting with renewable materials, periodic-action energy recovery, feedback-based optimization, and self-service recycling."
+    },
+    {
+      "area": "Software and cloud architecture scalability",
+      "relevant_parameters": [49, 47, 43],
+      "description": "Scalability (49) directly targets the defining challenge of cloud-native and distributed systems. Combined with Amount of information (47) and Compatibility (43), it enables contradiction analysis for microservice decomposition, data sharding, and API versioning.",
+      "example_contradiction": "Improving Scalability (49) worsens Device complexity (36): the matrix suggests Segmentation (1), Nesting (7), Partial action (16), Copying (26) — directly analogous to microservices, containerization, partial replication, and read replicas."
+    },
+    {
+      "area": "UX and human-machine interaction",
+      "relevant_parameters": [48, 50, 33],
+      "description": "Controllability/responsiveness (48) and Aesthetics (50) combined with classic Ease of operation (33) create a richer parameter space for UI/UX contradiction resolution — enabling analysis of control fidelity vs simplicity, and visual appeal vs information density.",
+      "example_contradiction": "Improving Aesthetics (50) worsens Amount of information (47): explore principles for progressive disclosure, information layering, and context-adaptive display."
+    },
+    {
+      "area": "Safety-critical and autonomous systems",
+      "relevant_parameters": [45, 48, 44],
+      "description": "Safety (45) as a first-class parameter enables direct contradiction modeling for autonomous vehicles, medical devices, and industrial robotics — domains where safety vs performance and safety vs cost are existential tradeoffs.",
+      "example_contradiction": "Improving Safety (45) worsens Speed (9): principles suggest protective buffering, redundancy, and staged acceleration — mapping to safety envelopes and graceful degradation in autonomous systems."
+    },
+    {
+      "area": "IoT and systems integration",
+      "relevant_parameters": [43, 44, 49, 47],
+      "description": "Compatibility/connectability (43) directly addresses interoperability challenges in IoT ecosystems, smart buildings, and industrial automation where heterogeneous systems must cooperate without centralized control.",
+      "example_contradiction": "Improving Compatibility (43) worsens Security (44): the classic tension between openness and protection in API design, federated identity, and protocol bridging."
+    },
+    {
+      "area": "AI/ML system design",
+      "relevant_parameters": [47, 49, 40, 48],
+      "description": "Amount of information (47), Scalability (49), Function efficiency (40), and Controllability (48) together span the key ML tradeoffs: data volume vs training cost, model size vs inference latency, accuracy vs explainability, and hyperparameter control vs automation.",
+      "example_contradiction": "Improving Amount of information (47) worsens Function efficiency (40): explore data distillation, curriculum learning, and active sampling as inventive strategies."
+    }
+  ],
+
+  "llm_generation_assessment": {
+    "severity": "high",
+    "classic_region_match": "17.6% against canonical Altshuller 39x39",
+    "summary": "The entire matrix — including the nominally 'classic' 1-39 region — was effectively LLM-generated. The 17.6% match rate against Altshuller's patent-derived data means 82.4% of classic-region cells contain principle recommendations that differ from the empirical original. This is not a minor calibration issue; it is a fundamental data provenance problem.",
+    "when_llm_data_is_useful": [
+      "Brainstorming and ideation: LLM-generated cells can serve as creative prompts that expand the solution space, even if they lack empirical grounding. Treating them as 'suggestions worth exploring' rather than 'validated solutions' is appropriate.",
+      "Modern domain parameters (40-50): Since no patent-derived data exists for these parameters, LLM-generated cells are the best available starting point. They encode plausible analogical reasoning about how inventive principles might apply to security, scalability, sustainability, etc.",
+      "Cross-domain exploration: When mapping physical-engineering principles to software or organizational problems, the LLM's tendency to generalize may actually help bridge conceptual gaps that literal patent data cannot.",
+      "Rapid prototyping of contradiction analyses: When speed matters more than rigor, the full 50x50 matrix provides fast lookup without needing to assess whether a parameter falls in the classic or extended region.",
+      "Educational contexts: For teaching TRIZ methodology, the extended matrix demonstrates how the framework can be adapted — with explicit caveats about data quality."
+    ],
+    "when_llm_data_is_dangerous": [
+      "Safety-critical engineering decisions: Using unvalidated principle recommendations for structural, medical, chemical, or aerospace design contradictions could lead to overlooking proven solutions or pursuing unsound ones.",
+      "Replacing empirical Altshuller data: The classic 39x39 region of this matrix should NOT be used as a substitute for the canonical matrix. The 82.4% divergence means users are getting different (and unvalidated) recommendations for well-studied contradictions.",
+      "Authoritative reference: Citing this matrix as 'TRIZ-based' without disclosing its LLM-generated provenance is misleading. The inventive principles are genuine Altshuller, but the cell assignments are not.",
+      "Systematic innovation processes: In structured TRIZ workflows (e.g., ARIZ, patent circumvention), cell accuracy matters. LLM-generated cells may suggest principles that are plausible-sounding but miss the specific empirical patterns Altshuller found in patent analysis.",
+      "Benchmarking or academic research: Studies comparing TRIZ effectiveness or principle utilization patterns would produce misleading results if based on this matrix's classic-region data."
+    ],
+    "risk_mitigation": [
+      "Always cross-reference the classic 39x39 region against altshuller_39x39.json before relying on any cell",
+      "Treat all cells as hypothesis-generating, not prescriptive",
+      "Label outputs clearly as 'extended TRIZ (LLM-seeded)' to maintain intellectual honesty",
+      "Validate principle recommendations against domain expertise before implementation",
+      "Use the extended region (40-50) as a structured brainstorming aid, not as an engineering standard"
+    ]
+  },
+
+  "when_to_use": {
+    "summary": "Use this matrix when the problem involves modern technology parameters (40-50) that classic TRIZ does not cover, or when you need a single unified lookup across both classic and modern domains.",
+    "recommended_scenarios": [
+      {
+        "scenario": "AI/ML system architecture tradeoffs",
+        "parameters_involved": [47, 49, 40, 48, 36],
+        "rationale": "Classic TRIZ has no parameters for data volume, scalability, or algorithmic efficiency. This matrix enables direct contradiction analysis for ML pipeline design: e.g., improving model accuracy (Amount of information, 47) while controlling inference latency (Speed, 9)."
+      },
+      {
+        "scenario": "Cybersecurity hardening of connected systems",
+        "parameters_involved": [44, 43, 33, 47],
+        "rationale": "Security (44) and Compatibility (43) are absent from classic TRIZ. This matrix provides inventive principle suggestions for the ubiquitous security-vs-usability and security-vs-interoperability contradictions."
+      },
+      {
+        "scenario": "Sustainable product design and circular economy",
+        "parameters_involved": [46, 42, 22, 23, 26],
+        "rationale": "Environmental impact (46) and Harmful emissions (42) enable explicit sustainability contradiction modeling. E.g., reducing lifecycle emissions while maintaining product durability and cost competitiveness."
+      },
+      {
+        "scenario": "UX/UI design for complex systems",
+        "parameters_involved": [50, 48, 33, 36, 47],
+        "rationale": "Aesthetics (50) and Controllability (48) fill critical gaps for interaction design. The matrix can suggest inventive approaches to contradictions like 'increase information density without cluttering the interface.'"
+      },
+      {
+        "scenario": "Cloud-native and distributed systems design",
+        "parameters_involved": [49, 43, 27, 36, 38],
+        "rationale": "Scalability (49) directly addresses horizontal/vertical scaling contradictions. Combined with Compatibility (43) and Reliability (27), it covers microservice decomposition, fault tolerance, and API versioning tradeoffs."
+      },
+      {
+        "scenario": "Autonomous vehicle and robotics safety",
+        "parameters_involved": [45, 44, 9, 48, 36],
+        "rationale": "Safety (45) as a first-class parameter enables contradiction modeling for fail-safe design, sensor redundancy vs weight/cost, and response time vs safety verification overhead."
+      },
+      {
+        "scenario": "IoT and edge computing device design",
+        "parameters_involved": [44, 43, 49, 47, 19],
+        "rationale": "IoT devices face unique multi-parameter contradictions: security with constrained resources, compatibility across protocols, scalability of fleet management, and energy efficiency. Extended parameters address all of these."
+      },
+      {
+        "scenario": "Cross-domain innovation workshops",
+        "parameters_involved": "all 50",
+        "rationale": "When the goal is creative exploration rather than rigorous engineering, the full 50-parameter space encourages participants to consider contradictions they might not have framed otherwise. The LLM-generated nature is acceptable in a brainstorming context."
+      }
+    ]
+  },
+
+  "when_not_to_use": {
+    "summary": "Do not use this matrix when authoritative, patent-derived TRIZ data is required — particularly for the classic 39-parameter domain. The 17.6% match rate against Altshuller makes the classic region unreliable as a primary reference.",
+    "contraindicated_scenarios": [
+      {
+        "scenario": "Classical mechanical/structural engineering",
+        "rationale": "For contradictions involving only parameters 1-39 (weight, strength, speed, shape, etc.), the canonical altshuller_39x39.json is far more authoritative. The triz_ai matrix's classic cells diverge from patent-derived data in 82.4% of cases.",
+        "use_instead": "altshuller_39x39.json"
+      },
+      {
+        "scenario": "Patent circumvention and IP strategy",
+        "rationale": "Patent-around strategies require the specific inventive principles that Altshuller extracted from actual patent analysis. LLM-generated principle assignments may suggest approaches that are plausible but not grounded in real patent patterns.",
+        "use_instead": "altshuller_39x39.json or mann_matrix2003_48x48.json"
+      },
+      {
+        "scenario": "Safety-critical engineering without independent validation",
+        "rationale": "In aerospace, medical, nuclear, or chemical engineering, contradiction resolution recommendations must be traceable to validated sources. LLM-generated cells lack this traceability.",
+        "use_instead": "altshuller_39x39.json for classic params; domain-specific matrices (e.g., drug_safety_18x18.json) for specialized domains"
+      },
+      {
+        "scenario": "Academic research and benchmarking",
+        "rationale": "Studies on TRIZ effectiveness, principle distribution, or contradiction patterns will produce misleading results if based on LLM-generated data presented as empirical. Researchers should use canonical sources.",
+        "use_instead": "altshuller_39x39.json, altshuller_russian_original.json"
+      },
+      {
+        "scenario": "Teaching classical TRIZ methodology",
+        "rationale": "Students should learn the canonical matrix first. Introducing LLM-generated variants without clear provenance labeling creates confusion about what TRIZ actually prescribes vs what an AI model interpolated.",
+        "use_instead": "altshuller_39x39.json"
+      },
+      {
+        "scenario": "Regulatory or standards compliance arguments",
+        "rationale": "If using TRIZ to justify design decisions in a regulatory context, the data must be traceable to recognized sources. LLM-generated matrices have no recognized standing.",
+        "use_instead": "altshuller_39x39.json"
+      }
+    ]
+  },
+
+  "ideal_approach": {
+    "summary": "Use a hybrid strategy: leverage the triz_ai 50x50 matrix for its EXTENDED region (parameters 40-50) where no empirical alternative exists, but always cross-reference the classic region (parameters 1-39) against the canonical altshuller_39x39.json.",
+    "strategy": {
+      "step_1": {
+        "action": "Classify the contradiction parameters",
+        "detail": "Determine whether the improving and worsening parameters both fall in the classic range (1-39), the extended range (40-50), or span both regions."
+      },
+      "step_2_classic_only": {
+        "condition": "Both parameters are in range 1-39",
+        "action": "Use altshuller_39x39.json as the primary source",
+        "fallback": "Optionally consult triz_ai_50x50 as a secondary brainstorming input, but flag that its recommendations differ from canonical in 82.4% of cases."
+      },
+      "step_2_extended_involved": {
+        "condition": "One or both parameters are in range 40-50",
+        "action": "Use triz_ai_50x50.json — it is the only matrix in this collection that covers these parameters",
+        "caveat": "Treat recommendations as LLM-generated hypotheses. Validate against domain expertise. Consider also consulting mann_matrix2003_48x48.json which covers some overlapping extended parameters (if populated)."
+      },
+      "step_3": {
+        "action": "Apply inventive principles with appropriate confidence calibration",
+        "detail": "For patent-derived cells (from altshuller_39x39): treat as empirically supported starting points. For LLM-generated cells (from triz_ai_50x50): treat as plausible analogical suggestions that require validation."
+      },
+      "step_4": {
+        "action": "Document provenance in any output",
+        "detail": "When recommending inventive principles to stakeholders, clearly indicate whether the recommendation comes from canonical Altshuller data or LLM-generated extensions. This maintains intellectual honesty and calibrates stakeholder expectations."
+      }
+    },
+    "matrix_selection_decision_tree": {
+      "both_params_1_to_39": "altshuller_39x39.json (primary) + triz_ai_50x50.json (secondary/brainstorm)",
+      "one_param_40_to_50": "triz_ai_50x50.json (primary, with LLM-data caveats)",
+      "both_params_40_to_50": "triz_ai_50x50.json (only available source; 67 cells in this region)",
+      "domain_specific_need": "Check drug_safety_18x18.json, biotriz_24x24.json, healthcare_servqual.json for specialized domains before falling back to general matrices"
+    }
+  },
+
+  "statistical_profile": {
+    "extended_region_principle_frequency_top_10": [
+      {"principle": 28, "name": "Mechanics substitution", "count": 277, "note": "Heavily overrepresented vs classic TRIZ; LLM bias toward 'replace mechanism with field/signal' abstraction"},
+      {"principle": 23, "name": "Feedback", "count": 196, "note": "Second most frequent — reflects modern control-systems thinking in LLM training data"},
+      {"principle": 15, "name": "Dynamics", "count": 184, "note": "Reasonable: adaptability is central to modern system concerns"},
+      {"principle": 1, "name": "Segmentation", "count": 161, "note": "Consistent with microservices/modularization thinking"},
+      {"principle": 39, "name": "Inert atmosphere", "count": 161, "note": "Suspiciously high for extended params; possible LLM over-generalization of 'isolation' concept"},
+      {"principle": 30, "name": "Flexible shells and thin films", "count": 142, "note": "Likely mapped by LLM as 'abstraction layer' or 'wrapper' for software contexts"},
+      {"principle": 26, "name": "Copying", "count": 131, "note": "Maps well to caching, replication, and redundancy in modern systems"},
+      {"principle": 6, "name": "Universality", "count": 114, "note": "Platform/framework thinking"},
+      {"principle": 33, "name": "Homogeneity", "count": 107, "note": "Standardization and interface uniformity"},
+      {"principle": 19, "name": "Periodic action", "count": 103, "note": "Batch processing, polling, heartbeats in distributed systems"}
+    ],
+    "notable_distribution_anomalies": [
+      "Principle 28 (Mechanics substitution) is the #1 principle in the extended region but only #3 in the classic region — the LLM appears to over-apply the 'replace physical mechanism with field/signal' abstraction to modern domains",
+      "Principle 23 (Feedback) is #2 in the extended region but only #35 in canonical Altshuller — a massive over-representation suggesting the LLM projects modern control-theory thinking onto all extended parameters",
+      "Principle 35 (Parameter changes) drops from #1 in the classic region to #11 in extended — the LLM underweights the most empirically frequent classic principle",
+      "Principle 39 (Inert atmosphere) at rank #5 in extended is anomalous — likely the LLM over-generalizes 'isolation/containment' metaphors"
+    ]
+  },
+
+  "comparison_with_other_matrices": {
+    "vs_altshuller_39x39": {
+      "overlap": "Parameters 1-39 nominally identical, but cell data diverges at 82.4%",
+      "advantage": "11 additional parameters covering modern domains",
+      "disadvantage": "Classic region data is unreliable; cannot serve as Altshuller substitute"
+    },
+    "vs_mann_matrix2003_48x48": {
+      "overlap": "Both extend beyond 39 parameters; Mann adds params 40-48 covering some similar concepts",
+      "advantage": "triz_ai adds Scalability (49) and Aesthetics (50); has populated cells (Mann's matrix in this collection has 0 populated cells)",
+      "disadvantage": "Mann's matrix was developed by TRIZ practitioners with domain expertise; triz_ai's was LLM-generated"
+    },
+    "vs_domain_specific_matrices": {
+      "overlap": "drug_safety_18x18 and healthcare_servqual cover specialized domains that params 44-46 partially address",
+      "advantage": "triz_ai provides a single general-purpose matrix; domain-specific matrices require identifying the right specialized matrix",
+      "disadvantage": "Domain-specific matrices were developed by domain experts with validated parameters and principles"
+    }
+  }
+}

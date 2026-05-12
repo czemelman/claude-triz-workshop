@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d10_secondary-contradiction-finalize",
+  "kind": "decisions",
+  "run_id": "fix-d10-finalize",
+  "description": "User offers a 'secondary_contradiction_finalize' choice (per design wording, finalize without iterating).\n\nBehavior gap vs design: this choice is NOT implemented; current code returns self_correct.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

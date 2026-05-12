@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "improving_concept": "x",
+  "worsening_concept": "y",
+  "domain_signals": [
+    "software"
+  ],
+  "exotic_signals": [],
+  "contradiction_type": "engineering-contradiction",
+  "domain_class": "software",
+  "framing_confidence": "high",
+  "constraints": []
+}

@@ -1,0 +1,746 @@
+{
+  "meta": {
+    "name": "BioTRIZ / PRIZM Contradiction Matrix (Biology-derived)",
+    "version": "2006",
+    "author": "Julian Vincent, Darrell Mann, Olga Bogatyreva",
+    "year": "2006",
+    "domain": "Biology vs Technology problem solving",
+    "dimensions": {
+      "rows": 6,
+      "cols": 6,
+      "populated_cells": 36
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1664643/",
+    "license": "Creative Commons (PMC Open Access)",
+    "notes": "Biology-derived contradiction resolutions. Diagonal cells included (same-field contradictions are meaningful in biological systems). Split from original biotriz_6x6.json in matrix-storage v1.1; tech-derived submatrix is biotriz_6x6_tech.",
+    "id": "biotriz_6x6_bio",
+    "status": "domain",
+    "diagonal_cells": "included",
+    "parameter_id_style": "numeric",
+    "principle_taxonomy": "biotriz-40",
+    "interpretation_lineage": "biotriz-40",
+    "language": [
+      "en"
+    ],
+    "lineage": {
+      "derived_from": null,
+      "supersedes": [
+        "biotriz_6x6 (legacy bundled file)"
+      ],
+      "identical_to": []
+    }
+  },
+  "parameters": {
+    "1": {
+      "name": "Substance",
+      "description": "Hierarchically structured material"
+    },
+    "2": {
+      "name": "Structure",
+      "description": "Material composition and organization"
+    },
+    "3": {
+      "name": "Space",
+      "description": "Spatial arrangement and dimensions"
+    },
+    "4": {
+      "name": "Time",
+      "description": "Temporal dynamics and sequences"
+    },
+    "5": {
+      "name": "Energy",
+      "description": "Power requirements and regulation"
+    },
+    "6": {
+      "name": "Information",
+      "description": "Data, signals, and control mechanisms"
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "description": "Divide an object into independent parts.",
+      "sub_principles": [
+        "a) Divide an object into independent parts.",
+        "b) Make an object easy to disassemble.",
+        "c) Increase the degree of fragmentation or segmentation."
+      ],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "2": {
+      "name": "Taking out",
+      "description": "Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object.",
+      "sub_principles": [
+        "a) Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object."
+      ],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "3": {
+      "name": "Local quality",
+      "description": "Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+      "sub_principles": [
+        "a) Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+        "b) Make each part of an object function in conditions most suitable for its operation.",
+        "c) Make each part of an object fulfill a different and useful function."
+      ],
+      "canonical_id": "P_LOCAL_QUALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "description": "Change the shape of an object from symmetrical to asymmetrical.",
+      "sub_principles": [
+        "a) Change the shape of an object from symmetrical to asymmetrical.",
+        "b) If an object is asymmetrical, increase its degree of asymmetry."
+      ],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "5": {
+      "name": "Merging",
+      "description": "Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+      "sub_principles": [
+        "a) Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+        "b) Make operations contiguous or parallel; bring them together in time."
+      ],
+      "canonical_id": "P_MERGING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "6": {
+      "name": "Universality",
+      "description": "Make a part or object perform multiple functions; eliminate the need for other parts.",
+      "sub_principles": [
+        "a) Make a part or object perform multiple functions; eliminate the need for other parts."
+      ],
+      "canonical_id": "P_UNIVERSALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "7": {
+      "name": "Nested doll",
+      "description": "Place one object inside another; place each object, in turn, inside the other.",
+      "sub_principles": [
+        "a) Place one object inside another; place each object, in turn, inside the other.",
+        "b) Make one part pass through a cavity in the other."
+      ],
+      "canonical_id": "P_NESTED_DOLL",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "8": {
+      "name": "Anti-weight",
+      "description": "To compensate for the weight of an object, merge it with other objects that provide lift.",
+      "sub_principles": [
+        "a) To compensate for the weight of an object, merge it with other objects that provide lift.",
+        "b) To compensate for the weight of an object, make it interact with the environment (e.g. use aerodynamic, hydrodynamic, buoyancy and other forces)."
+      ],
+      "canonical_id": "P_ANTI_WEIGHT",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "9": {
+      "name": "Preliminary anti-action",
+      "description": "If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+      "sub_principles": [
+        "a) If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+        "b) Create beforehand stresses in an object that will oppose known undesirable working stresses later on."
+      ],
+      "canonical_id": "P_PRELIMINARY_ANTI_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "10": {
+      "name": "Preliminary action",
+      "description": "Perform, before it is needed, the required change of an object (either fully or partially).",
+      "sub_principles": [
+        "a) Perform, before it is needed, the required change of an object (either fully or partially).",
+        "b) Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery."
+      ],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "11": {
+      "name": "Beforehand cushioning",
+      "description": "Prepare emergency means beforehand to compensate for the relatively low reliability of an object.",
+      "sub_principles": [
+        "a) Prepare emergency means beforehand to compensate for the relatively low reliability of an object."
+      ],
+      "canonical_id": "P_BEFOREHAND_CUSHIONING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "12": {
+      "name": "Equipotentiality",
+      "description": "In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field).",
+      "sub_principles": [
+        "a) In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field)."
+      ],
+      "canonical_id": "P_EQUIPOTENTIALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "13": {
+      "name": "The other way round",
+      "description": "Invert the action(s) used to solve the problem.",
+      "sub_principles": [
+        "a) Invert the action(s) used to solve the problem (e.g. instead of cooling an object, heat it).",
+        "b) Make movable parts (or the external environment) fixed, and fixed parts movable.",
+        "c) Turn the object (or process) upside down."
+      ],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "14": {
+      "name": "Spheroidality - Loss of curvature",
+      "description": "Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones; from parts shaped as a cube (parallelepiped) to ball-shaped structures.",
+      "sub_principles": [
+        "a) Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones.",
+        "b) Use rollers, balls, spirals, domes.",
+        "c) Go from linear to rotary motion, use centrifugal forces."
+      ],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "15": {
+      "name": "Dynamics",
+      "description": "Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+      "sub_principles": [
+        "a) Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+        "b) Divide an object into parts capable of movement relative to each other.",
+        "c) If an object (or process) is rigid or inflexible, make it movable or adaptive."
+      ],
+      "canonical_id": "P_DYNAMICS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "16": {
+      "name": "Partial or excessive actions",
+      "description": "If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve.",
+      "sub_principles": [
+        "a) If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve."
+      ],
+      "canonical_id": "P_PARTIAL_OR_EXCESSIVE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "17": {
+      "name": "Another dimension",
+      "description": "To move an object in two- or three-dimensional space.",
+      "sub_principles": [
+        "a) To move an object in two- or three-dimensional space.",
+        "b) Use a multi-story arrangement of objects instead of a single-story arrangement.",
+        "c) Tilt or re-orient the object, lay it on its side.",
+        "d) Use another side of a given area."
+      ],
+      "canonical_id": "P_ANOTHER_DIMENSION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "description": "Cause an object to oscillate or vibrate.",
+      "sub_principles": [
+        "a) Cause an object to oscillate or vibrate.",
+        "b) Increase its frequency (even up to the ultrasonic).",
+        "c) Use an object's resonant frequency.",
+        "d) Use piezoelectric vibrators instead of mechanical ones.",
+        "e) Use combined ultrasonic and electromagnetic field oscillations."
+      ],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "19": {
+      "name": "Periodic action",
+      "description": "Instead of continuous action, use periodic or pulsating actions.",
+      "sub_principles": [
+        "a) Instead of continuous action, use periodic or pulsating actions.",
+        "b) If an action is already periodic, change the periodic magnitude or frequency.",
+        "c) Use pauses between impulses to perform a different action."
+      ],
+      "canonical_id": "P_PERIODIC_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "20": {
+      "name": "Continuity of useful action",
+      "description": "Carry on work continuously; make all parts of an object work at full load, all the time.",
+      "sub_principles": [
+        "a) Carry on work continuously; make all parts of an object work at full load, all the time.",
+        "b) Eliminate all idle or intermittent actions or work."
+      ],
+      "canonical_id": "P_CONTINUITY_OF_USEFUL_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "21": {
+      "name": "Skipping",
+      "description": "Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed.",
+      "sub_principles": [
+        "a) Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed."
+      ],
+      "canonical_id": "P_SKIPPING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "22": {
+      "name": "Blessing in disguise",
+      "description": "Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+      "sub_principles": [
+        "a) Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+        "b) Eliminate the primary harmful action by adding it to another harmful action to resolve the problem.",
+        "c) Amplify a harmful factor to such a degree that it is no longer harmful."
+      ],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "23": {
+      "name": "Feedback",
+      "description": "Introduce feedback (referring back, cross-checking) to improve a process or action.",
+      "sub_principles": [
+        "a) Introduce feedback (referring back, cross-checking) to improve a process or action.",
+        "b) If feedback is already used, change its magnitude or influence."
+      ],
+      "canonical_id": "P_FEEDBACK",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "24": {
+      "name": "Intermediary",
+      "description": "Use an intermediary carrier article or intermediary process.",
+      "sub_principles": [
+        "a) Use an intermediary carrier article or intermediary process.",
+        "b) Merge one object temporarily with another (which can be easily removed)."
+      ],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "description": "Make an object serve itself by performing auxiliary helpful functions.",
+      "sub_principles": [
+        "a) Make an object serve itself by performing auxiliary helpful functions.",
+        "b) Use waste resources, energy, or substances."
+      ],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "26": {
+      "name": "Copying",
+      "description": "Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+      "sub_principles": [
+        "a) Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+        "b) Replace an object, or process with optical copies.",
+        "c) If visible optical copies are already used, move to infrared or ultraviolet copies."
+      ],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "27": {
+      "name": "Cheap short-living objects",
+      "description": "Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance).",
+      "sub_principles": [
+        "a) Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance)."
+      ],
+      "canonical_id": "P_CHEAP_SHORT_LIVING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "28": {
+      "name": "Mechanics substitution",
+      "description": "Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+      "sub_principles": [
+        "a) Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+        "b) Use electric, magnetic and electromagnetic fields to interact with the object.",
+        "c) Change from static to movable fields, from unstructured fields to those having structure.",
+        "d) Use fields in conjunction with field-activated (e.g. ferromagnetic) particles."
+      ],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "29": {
+      "name": "Pneumatics and hydraulics",
+      "description": "Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive).",
+      "sub_principles": [
+        "a) Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive)."
+      ],
+      "canonical_id": "P_PNEUMATICS_HYDRAULICS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "description": "Use flexible shells and thin films instead of three dimensional structures.",
+      "sub_principles": [
+        "a) Use flexible shells and thin films instead of three dimensional structures.",
+        "b) Isolate the object from the external environment using flexible shells and thin films."
+      ],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "31": {
+      "name": "Porous materials",
+      "description": "Make an object porous or add porous elements (inserts, coatings, etc.).",
+      "sub_principles": [
+        "a) Make an object porous or add porous elements (inserts, coatings, etc.).",
+        "b) If an object is already porous, use the pores to introduce a useful substance or function."
+      ],
+      "canonical_id": "P_POROUS_MATERIALS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "32": {
+      "name": "Color changes",
+      "description": "Change the color of an object or its external environment.",
+      "sub_principles": [
+        "a) Change the color of an object or its external environment.",
+        "b) Change the transparency of an object or its external environment."
+      ],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "33": {
+      "name": "Homogeneity",
+      "description": "Make objects interacting with a given object of the same material (or material with identical properties).",
+      "sub_principles": [
+        "a) Make objects interacting with a given object of the same material (or material with identical properties)."
+      ],
+      "canonical_id": "P_HOMOGENEITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "34": {
+      "name": "Discarding and recovering",
+      "description": "Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+      "sub_principles": [
+        "a) Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+        "b) Conversely, restore consumable parts of an object directly in operation."
+      ],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "35": {
+      "name": "Parameter changes",
+      "description": "Change an object's physical state (e.g. to a gas, liquid, or solid).",
+      "sub_principles": [
+        "a) Change an object's physical state (e.g. to a gas, liquid, or solid).",
+        "b) Change the concentration or consistency.",
+        "c) Change the degree of flexibility.",
+        "d) Change the temperature."
+      ],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "description": "Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.).",
+      "sub_principles": [
+        "a) Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.)."
+      ],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "37": {
+      "name": "Thermal expansion",
+      "description": "Use thermal expansion (or contraction) of materials.",
+      "sub_principles": [
+        "a) Use thermal expansion (or contraction) of materials.",
+        "b) If thermal expansion is being used, use multiple materials with different coefficients of thermal expansion."
+      ],
+      "canonical_id": "P_THERMAL_EXPANSION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "38": {
+      "name": "Strong oxidants",
+      "description": "Replace common air with oxygen-enriched air.",
+      "sub_principles": [
+        "a) Replace common air with oxygen-enriched air.",
+        "b) Replace enriched air with pure oxygen.",
+        "c) Expose air or oxygen to ionizing radiation.",
+        "d) Use ionized oxygen.",
+        "e) Replace ozonized (or ionized) oxygen with ozone."
+      ],
+      "canonical_id": "P_STRONG_OXIDANTS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "39": {
+      "name": "Inert atmosphere",
+      "description": "Replace a normal environment with an inert one.",
+      "sub_principles": [
+        "a) Replace a normal environment with an inert one.",
+        "b) Add neutral parts, or inert additives to an object."
+      ],
+      "canonical_id": "P_INERT_ATMOSPHERE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "40": {
+      "name": "Composite materials",
+      "description": "Change from uniform to composite (multiple) materials.",
+      "sub_principles": [
+        "a) Change from uniform to composite (multiple) materials."
+      ],
+      "canonical_id": "P_COMPOSITE_MATERIALS",
+      "interpretation_lineage": "biotriz-40"
+    }
+  },
+  "matrix": {
+    "1": {
+      "1": [
+        13,
+        15,
+        17,
+        20,
+        31,
+        40
+      ],
+      "2": [
+        1,
+        2,
+        3,
+        15,
+        24,
+        26
+      ],
+      "3": [
+        1,
+        5,
+        13,
+        15,
+        31
+      ],
+      "4": [
+        15,
+        19,
+        27,
+        29,
+        30
+      ],
+      "5": [
+        3,
+        6,
+        9,
+        25,
+        31,
+        35
+      ],
+      "6": [
+        3,
+        25,
+        26
+      ]
+    },
+    "2": {
+      "1": [
+        1,
+        10,
+        15,
+        19
+      ],
+      "2": [
+        1,
+        15,
+        19,
+        24,
+        34
+      ],
+      "3": [
+        10
+      ],
+      "4": [
+        1,
+        2,
+        4
+      ],
+      "5": [
+        1,
+        2,
+        4
+      ],
+      "6": [
+        1,
+        3,
+        4,
+        15,
+        19,
+        24,
+        25,
+        35
+      ]
+    },
+    "3": {
+      "1": [
+        3,
+        14,
+        15,
+        25
+      ],
+      "2": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        19
+      ],
+      "3": [
+        4,
+        5,
+        14,
+        17,
+        36
+      ],
+      "4": [
+        1,
+        19,
+        29
+      ],
+      "5": [
+        1,
+        3,
+        4,
+        15,
+        19
+      ],
+      "6": [
+        3,
+        15,
+        21,
+        24
+      ]
+    },
+    "4": {
+      "1": [
+        1,
+        3,
+        15,
+        20,
+        25,
+        38
+      ],
+      "2": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        15,
+        17,
+        19
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        38
+      ],
+      "4": [
+        2,
+        3,
+        11,
+        20,
+        26
+      ],
+      "5": [
+        3,
+        9,
+        15,
+        20,
+        22,
+        25
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        10,
+        19,
+        23
+      ]
+    },
+    "5": {
+      "1": [
+        1,
+        3,
+        13,
+        14,
+        17,
+        25,
+        31
+      ],
+      "2": [
+        1,
+        3,
+        5,
+        6,
+        25,
+        35,
+        36,
+        40
+      ],
+      "3": [
+        1,
+        3,
+        4,
+        15,
+        25
+      ],
+      "4": [
+        3,
+        10,
+        23,
+        25,
+        35
+      ],
+      "5": [
+        3,
+        5,
+        9,
+        22,
+        25,
+        32,
+        37
+      ],
+      "6": [
+        1,
+        3,
+        4,
+        15,
+        16,
+        25
+      ]
+    },
+    "6": {
+      "1": [
+        1,
+        6,
+        22
+      ],
+      "2": [
+        1,
+        3,
+        6,
+        18,
+        22,
+        24,
+        32,
+        34,
+        40
+      ],
+      "3": [
+        3,
+        20,
+        22,
+        25,
+        33
+      ],
+      "4": [
+        2,
+        3,
+        9,
+        17,
+        22
+      ],
+      "5": [
+        1,
+        3,
+        6,
+        22,
+        32
+      ],
+      "6": [
+        3,
+        10,
+        16,
+        23,
+        25
+      ]
+    }
+  }
+}

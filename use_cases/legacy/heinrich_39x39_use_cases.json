@@ -1,0 +1,253 @@
+{
+  "matrix_ref": "matrices/heinrich_39x39.json",
+  "matrix_name": "Heinrich 'The Inventing Machine' TRIZ Matrix",
+  "analysis_date": "2026-03-26",
+  "coverage_summary": {
+    "populated_cells": 109,
+    "full_grid_cells": 1482,
+    "coverage_pct": 7.4,
+    "improving_parameters_used": 19,
+    "worsening_parameters_used": 33,
+    "unique_principles_used": 30,
+    "principles_never_used": [5, 6, 9, 10, 12, 20, 21, 24, 26, 27],
+    "principles_never_used_names": [
+      "Merging", "Universality", "Preliminary anti-action", "Preliminary action",
+      "Equipotentiality", "Continuity of useful action", "Skipping",
+      "Intermediary", "Copying", "Cheap short-living objects"
+    ],
+    "avg_principles_per_cell": 3.1,
+    "cells_unique_to_heinrich": 22,
+    "cells_shared_with_altshuller": 87,
+    "exact_agreement_with_altshuller": 0,
+    "partial_overlap_with_altshuller": 46,
+    "zero_overlap_with_altshuller": 41
+  },
+
+  "domain_fit": {
+    "summary": "The Heinrich matrix is purpose-built for AI-assisted inventive problem solving, curated to service an automated 'Inventing Machine' system. It focuses on the most frequently encountered engineering contradictions in mechanical, structural, and energy-related design — not the full taxonomy of all possible conflicts.",
+    "problem_types": [
+      "Structural integrity vs. geometric constraints (strength vs. weight/length/area/volume)",
+      "Energy efficiency vs. physical and performance parameters",
+      "Speed/performance vs. reliability, energy, and measurement quality",
+      "Geometric trade-offs between moving and stationary object properties",
+      "Durability and service life vs. weight and strength",
+      "Thermal and illumination management under structural and energy constraints"
+    ],
+    "selection_rationale": "The 109 cells were selected as the contradiction pairs most actionable by an AI system — pairs where the recommended principles are concrete, differentiating, and repeatedly validated. The author excluded cells where Altshuller's original data was ambiguous, contradictory across sources, or where the inventive principles offered little discriminating guidance. This is a confidence-filtered subset: only cells where the Heinrich knowledge base had high-conviction, independently derived recommendations."
+  },
+
+  "strength_areas": {
+    "summary": "Two parameters dominate the matrix as improving features: Strength (param 14, 30 cells) and Use of Energy by Moving Object (param 19, 23 cells). Together they account for 53 of 109 cells (49%). On the worsening side, Weight of Moving Object (param 1, 17 cells) and Strength (param 14, 18 cells) are the most frequent trade-off targets.",
+    "dominant_improving_parameters": [
+      {
+        "param_id": 14,
+        "name": "Strength",
+        "cell_count": 30,
+        "pct_of_matrix": 27.5,
+        "pattern": "Strength is paired against nearly every other parameter. For geometric worsening (params 1-8), it recommends Segmentation (1), Anti-weight (8), and Spheroidality (14). For non-geometric worsening (params 17+), it shifts to Dynamics (15) and Parameter Changes (35), often combined with the worsening parameter's own principle number — a formulaic but effective pattern."
+      },
+      {
+        "param_id": 19,
+        "name": "Use of energy by moving object",
+        "cell_count": 23,
+        "pct_of_matrix": 21.1,
+        "pattern": "Energy optimization is mapped against 23 worsening parameters with remarkably uniform recommendations: Dynamics (15) + Parameter Changes (35) appear in every single cell. The third principle rotates between Phase Transitions (36) for geometric/thermal worsening and Mechanical Vibration (18) for dynamic/structural worsening."
+      }
+    ],
+    "dominant_worsening_parameters": [
+      {"param_id": 1, "name": "Weight of moving object", "cell_count": 17},
+      {"param_id": 14, "name": "Strength", "cell_count": 18},
+      {"param_id": 19, "name": "Use of energy by moving object", "cell_count": 9},
+      {"param_id": 27, "name": "Reliability", "cell_count": 7}
+    ],
+    "dominant_principles": [
+      {"principle_id": 15, "name": "Dynamics", "frequency": 78, "note": "Appears in 72% of all cells — the universal solver in this matrix"},
+      {"principle_id": 35, "name": "Parameter changes", "frequency": 70, "note": "Appears in 64% of all cells — paired with Dynamics as the default duo"},
+      {"principle_id": 8, "name": "Anti-weight", "frequency": 36, "note": "Dominant for geometric/physical contradictions"},
+      {"principle_id": 1, "name": "Segmentation", "frequency": 27, "note": "Primary structural decomposition strategy"},
+      {"principle_id": 18, "name": "Mechanical vibration", "frequency": 19, "note": "Preferred for energy and dynamic contradictions"},
+      {"principle_id": 14, "name": "Spheroidality", "frequency": 16, "note": "Strength-specific geometry optimization"},
+      {"principle_id": 36, "name": "Phase transitions", "frequency": 15, "note": "Energy/thermal state change strategy"}
+    ],
+    "cluster_analysis": {
+      "geometric_vs_geometric": "10 cells — core physical trade-offs between dimensions, weight, and volume",
+      "structural_vs_geometric": "10 cells — strength/shape/stability vs. physical size/weight",
+      "energy_vs_geometric": "8 cells — energy efficiency vs. physical parameters",
+      "geometric_vs_structural": "8 cells — size/weight optimization that risks structural integrity",
+      "structural_vs_quality": "4 cells — strength vs. reliability, accuracy, precision",
+      "structural_vs_complexity": "4 cells — strength vs. device complexity, automation, productivity"
+    }
+  },
+
+  "unique_value": {
+    "summary": "Zero cells have identical recommendations to Altshuller. Of 87 shared cells, 41 have completely different principle sets (zero overlap) and 46 have partial overlap. This makes Heinrich a genuinely independent second opinion, not a copy or refinement of the canonical matrix.",
+    "key_differentiators": [
+      {
+        "aspect": "Independent derivation",
+        "detail": "The principle recommendations were derived from the Heinrich 'Inventing Machine' knowledge base — a separate analysis of inventive patterns, not a re-encoding of Altshuller. This means every cell represents an independent expert judgment about which principles resolve each contradiction."
+      },
+      {
+        "aspect": "Dynamics-first philosophy",
+        "detail": "Heinrich heavily favors Dynamics (15) and Parameter Changes (35), recommending them in the vast majority of cells. Altshuller's matrix distributes recommendations more evenly across all 40 principles. This suggests Heinrich identifies adaptability and state-change as universally relevant meta-strategies."
+      },
+      {
+        "aspect": "Excluded principles reveal philosophy",
+        "detail": "Ten principles are never used: Merging (5), Universality (6), Preliminary anti-action (9), Preliminary action (10), Equipotentiality (12), Continuity of useful action (20), Skipping (21), Intermediary (24), Copying (26), Cheap short-living objects (27). These tend to be process-oriented and organizational principles. Heinrich focuses on physical-transformation principles, suggesting a material-science and mechanical-engineering bias."
+      },
+      {
+        "aspect": "22 novel cells",
+        "detail": "Heinrich includes 22 parameter pairs that do not appear in the standard Altshuller 39x39 matrix at all. These represent contradictions the Heinrich system identified as important but which the classic matrix leaves unaddressed — particularly stationary-object parameters vs. strength, and energy vs. stationary-object dimensions."
+      },
+      {
+        "aspect": "Formulaic consistency",
+        "detail": "Many cells in the Strength (14) row follow a pattern: [15, worsen_param_id, 35] — embedding the worsening parameter's own number as a principle. This is a systematic encoding strategy not found in Altshuller, suggesting the Heinrich system was designed for algorithmic lookup rather than purely human consultation."
+      }
+    ]
+  },
+
+  "when_to_use": {
+    "summary": "Use Heinrich as a second opinion when working on strength-dominated or energy-efficiency contradictions. Cross-reference against Altshuller to triangulate. Disagreement between them is not a defect — it expands the solution space.",
+    "recommended_scenarios": [
+      {
+        "scenario": "Strength vs. everything",
+        "rationale": "Heinrich has 30 cells for Strength as the improving parameter — more granular coverage than most other parameters. If your problem is 'make it stronger without worsening X', Heinrich likely has a specific recommendation."
+      },
+      {
+        "scenario": "Energy optimization under constraints",
+        "rationale": "With 23 cells for energy efficiency, Heinrich provides broad guidance on reducing energy consumption while managing trade-offs against almost every physical parameter."
+      },
+      {
+        "scenario": "Cross-validation with Altshuller",
+        "rationale": "For the 87 shared cells, run both matrices. If they agree on some principles (46 cells have partial overlap), those shared principles have strong cross-validated support. If they completely disagree (41 cells), you have two independent sets of candidate principles to explore — doubling your solution space."
+      },
+      {
+        "scenario": "AI-assisted inventive problem solving",
+        "rationale": "Heinrich was designed for machine consumption. Its formulaic patterns (Dynamics + Parameter Changes as a baseline, with context-specific third principles) make it well-suited for automated suggestion systems that need consistent, parseable recommendations."
+      },
+      {
+        "scenario": "Exploring Altshuller blind spots",
+        "rationale": "The 22 cells unique to Heinrich cover parameter pairs the classic matrix does not address. Use these when Altshuller returns an empty cell for your contradiction."
+      }
+    ],
+    "interpreting_disagreement": {
+      "both_agree": "Strong signal. The principle is likely highly relevant to the contradiction. Prioritize it.",
+      "partial_overlap": "The shared principles are high-confidence anchors. The non-shared principles from each matrix represent alternative solution paths worth exploring in parallel.",
+      "complete_disagreement": "Neither matrix is 'wrong' — they represent different analytical traditions. Treat all recommended principles from both as candidate solutions. Complete disagreement often signals that the contradiction is complex enough to admit multiple valid resolution strategies.",
+      "heinrich_only_cell": "Altshuller has no opinion on this pair. Heinrich's recommendation is the only structured guidance available — use it as a starting point but validate with Su-Field analysis or other TRIZ tools."
+    }
+  },
+
+  "limitations": {
+    "summary": "At 7.4% grid coverage, Heinrich is a sniper rifle, not a shotgun. It excels in its chosen niches but leaves 92.6% of the contradiction space unaddressed.",
+    "specific_limitations": [
+      {
+        "limitation": "Extreme sparsity",
+        "detail": "Only 109 of 1482 possible cells are populated. For most parameter pairs, Heinrich offers no guidance. Users must fall back to Altshuller, Mann 2003, or other matrices.",
+        "impact": "high"
+      },
+      {
+        "limitation": "Narrow improving-parameter coverage",
+        "detail": "Only 19 of 39 parameters appear as improving features. Twenty parameters (including Loss of Information, Loss of Time, Quantity of Substance, Adaptability, Ease of operation, Ease of repair, and Productivity) are never used as the feature to improve. Problems centered on these parameters get zero guidance.",
+        "impact": "high"
+      },
+      {
+        "limitation": "Heavy concentration in two parameters",
+        "detail": "Strength (14) and Energy (19) account for 49% of all cells. The matrix is essentially a specialized Strength-and-Energy contradiction resolver with thin coverage elsewhere.",
+        "impact": "medium"
+      },
+      {
+        "limitation": "Principle homogeneity",
+        "detail": "Dynamics (15) and Parameter Changes (35) dominate to the point of saturation — appearing in 72% and 64% of cells respectively. This risks recommending the same strategies regardless of the specific contradiction, reducing discriminating power.",
+        "impact": "medium"
+      },
+      {
+        "limitation": "Ten principles completely excluded",
+        "detail": "Principles 5, 6, 9, 10, 12, 20, 21, 24, 26, 27 are never recommended. Problems best solved by Merging, Universality, Preliminary action/anti-action, or Intermediary approaches will not surface from this matrix.",
+        "impact": "medium"
+      },
+      {
+        "limitation": "No coverage of modern parameters",
+        "detail": "Uses the classic 39-parameter framework. Does not address information-age parameters (data throughput, latency, security) or sustainability parameters (carbon footprint, recyclability) that newer matrices like Mann 2003 (48x48) or TRIZ-AI (50x50) include.",
+        "impact": "low"
+      },
+      {
+        "limitation": "Formulaic patterns may reduce insight",
+        "detail": "The systematic encoding in Strength row (where the worsening parameter's ID number is embedded as a principle) suggests algorithmic generation rather than case-by-case expert analysis for some cells. This could mean some recommendations are structural artifacts rather than validated inventive patterns.",
+        "impact": "medium"
+      }
+    ]
+  },
+
+  "use_cases": [
+    {
+      "id": "UC-H01",
+      "title": "Lightweight structural design",
+      "description": "Designing components that must be strong yet lightweight — aerospace, automotive, sporting equipment. Heinrich excels here with dense coverage of Strength vs. Weight/Volume/Area contradictions.",
+      "improving_params": [14],
+      "worsening_params": [1, 2, 3, 4, 5, 6, 7, 8],
+      "relevant_cells": 8,
+      "key_principles": [1, 7, 8, 14, 15],
+      "example": "Aircraft wing spar that must resist bending loads (Strength) without increasing Weight of moving object. Heinrich recommends Segmentation (1), Anti-weight (8), Spheroidality (14)."
+    },
+    {
+      "id": "UC-H02",
+      "title": "Energy-efficient mechanical systems",
+      "description": "Reducing energy consumption in moving systems without degrading physical, structural, or performance parameters. Heinrich's broadest coverage area with 23 cells.",
+      "improving_params": [19],
+      "worsening_params": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 27, 28, 39],
+      "relevant_cells": 23,
+      "key_principles": [15, 35, 36, 18],
+      "example": "Electric vehicle drivetrain that must minimize energy use (param 19) without increasing weight (param 1) or sacrificing speed (param 9). Heinrich consistently recommends Dynamics (15) + Parameter Changes (35)."
+    },
+    {
+      "id": "UC-H03",
+      "title": "Strength under non-physical constraints",
+      "description": "Improving structural strength when the trade-off is not geometric but involves reliability, precision, manufacturability, repairability, or complexity. Heinrich uniquely covers Strength vs. 15 non-physical worsening parameters.",
+      "improving_params": [14],
+      "worsening_params": [17, 19, 21, 22, 23, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39],
+      "relevant_cells": 17,
+      "key_principles": [15, 35, 13, 22],
+      "example": "Increasing bridge girder strength (param 14) without making it harder to manufacture (param 32). Heinrich recommends Dynamics (15), Ease of manufacture (32), Parameter Changes (35)."
+    },
+    {
+      "id": "UC-H04",
+      "title": "Speed optimization with side-effect management",
+      "description": "Improving speed or process rate while controlling energy loss, reliability degradation, or measurement accuracy. Heinrich covers 8 cells for Speed as the improving parameter.",
+      "improving_params": [9],
+      "worsening_params": [1, 14, 19, 21, 22, 27, 28, 39],
+      "relevant_cells": 8,
+      "key_principles": [15, 28, 35, 36, 13, 22],
+      "example": "Increasing production line speed (param 9) without sacrificing measurement accuracy (param 28). Heinrich recommends Mechanics Substitution (28), Color Changes (32), Parameter Changes (35)."
+    },
+    {
+      "id": "UC-H05",
+      "title": "Cross-validation with Altshuller for high-stakes decisions",
+      "description": "For the 87 shared cells, running both matrices produces two independent recommendation sets. Use this when the cost of choosing the wrong inventive principle is high — safety-critical systems, expensive prototyping, or irreversible design decisions.",
+      "improving_params": "any shared",
+      "worsening_params": "any shared",
+      "relevant_cells": 87,
+      "key_principles": "varies",
+      "example": "For Strength (14) vs. Reliability (27): Heinrich recommends [13, 22, 35] (The other way round, Blessing in disguise, Parameter changes). Altshuller likely recommends a different set. Exploring both triples the candidate solution space for a critical trade-off."
+    },
+    {
+      "id": "UC-H06",
+      "title": "Filling Altshuller gaps with Heinrich-only cells",
+      "description": "22 parameter pairs exist only in Heinrich. Use these when the classic matrix returns empty and you need structured guidance rather than open brainstorming.",
+      "improving_params": [1, 2, 3, 4, 5, 6, 8, 9, 16, 19],
+      "worsening_params": [1, 2, 3, 6, 9, 14, 19, 23, 28, 39],
+      "relevant_cells": 22,
+      "key_principles": "varies",
+      "example": "Weight of stationary object (2) vs. Speed (9) is not in Altshuller. Heinrich recommends Dynamics (15), Mechanical Vibration (18), Mechanics Substitution (28) — guidance unavailable from any other 39x39 source."
+    },
+    {
+      "id": "UC-H07",
+      "title": "AI/automated invention systems",
+      "description": "The matrix's formulaic structure (consistent Dynamics+Parameter Changes backbone with context-specific third principles) makes it ideal for embedding in automated TRIZ solvers, chatbots, or design-space exploration tools that need deterministic, machine-parseable recommendations.",
+      "improving_params": "all",
+      "worsening_params": "all",
+      "relevant_cells": 109,
+      "key_principles": [15, 35],
+      "example": "An AI design assistant receives a user contradiction 'improve energy efficiency without increasing weight'. It queries Heinrich for (19,1) and gets [2, 15, 35], then queries Altshuller for the same cell, merges results, and ranks principles by cross-matrix agreement."
+    }
+  ]
+}

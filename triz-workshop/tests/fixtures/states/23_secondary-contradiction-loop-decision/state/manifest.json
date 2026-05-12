@@ -1,0 +1,10 @@
+{
+  "fixture_name": "23_secondary-contradiction-loop-decision",
+  "kind": "states",
+  "run_id": "fix-23-secondary-loop",
+  "description": "07_critique has secondary_contradictions (no fatal severity). User opted into auto-loop (flags.auto_loop=true).\n\nBehavior gap vs design: the state-driver's _stage_check_fatal only inspects severity=='fatal' and ignores secondary_contradictions for loop iteration. With no fatal candidates, it advances directly to assemble. The 'loop iteration' branch is unimplemented in v0.1.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

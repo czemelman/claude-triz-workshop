@@ -1,0 +1,21 @@
+{
+  "fixture_name": "17_interpret-8-principles-batch-2",
+  "kind": "states",
+  "run_id": "fix-17-interpret-8-b2",
+  "description": "7 of 8 done; 1 remaining. Expect dispatch_subagents_parallel for the 8th.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "05_interpretation_altshuller_39x39_1.json",
+    "05_interpretation_altshuller_39x39_2.json",
+    "05_interpretation_altshuller_39x39_3.json",
+    "05_interpretation_altshuller_39x39_4.json",
+    "05_interpretation_altshuller_39x39_5.json",
+    "05_interpretation_altshuller_39x39_6.json",
+    "05_interpretation_altshuller_39x39_7.json",
+    "state.json"
+  ]
+}

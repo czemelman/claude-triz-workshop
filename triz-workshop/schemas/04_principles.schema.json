@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://triz-workshop.local/schemas/04_principles.schema.json",
+  "title": "04_principles",
+  "description": "Output of lookup_principles.py: the principles found in the matrix cell (or the empty result that triggers the no-clean-mapping branch). alternatives_tried is recorded for replay reproducibility.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matrix_id",
+    "populated",
+    "principles",
+    "alternatives_tried"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "matrix_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "populated": {
+      "type": "boolean",
+      "description": "False when the cell (and all alternatives) are empty; triggers the no-clean-mapping branch."
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "description": "Principle ids returned by the matrix cell. Empty when populated == false. Integer ids per the host matrix's principle table; canonical_id resolution happens at interpretation time."
+    },
+    "alternatives_tried": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["improving_param_id", "worsening_param_id", "found"],
+        "properties": {
+          "improving_param_id": {"type": "string", "minLength": 1},
+          "worsening_param_id": {"type": "string", "minLength": 1},
+          "found": {"type": "boolean"},
+          "principles": {
+            "type": "array",
+            "items": {"type": "integer", "minimum": 1}
+          }
+        },
+        "additionalProperties": true
+      },
+      "description": "Each (improving, worsening) pair attempted, in order. The first hit determines the populated principles; remaining entries are recorded for replay."
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,9 @@
+{
+  "fixture_name": "d12_validation-failure-skip",
+  "kind": "decisions",
+  "run_id": "fix-d12-skip",
+  "description": "User chose 'skip' (skip the failed stage) per design wording at validation-failure ask_user.\n\nBehavior gap: 'skip' / 'skip_stage' is NOT a recognized choice. Current code returns self_correct.",
+  "files": [
+    "state.json"
+  ]
+}

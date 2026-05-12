@@ -1,0 +1,10 @@
+{
+  "action": "run_script",
+  "script": "merge_interpretations.py",
+  "args": [
+    "--run-id",
+    "fix-18-interpret-merge"
+  ],
+  "run_id": "fix-18-interpret-merge",
+  "expected_artifact": "05_interpretations.json"
+}

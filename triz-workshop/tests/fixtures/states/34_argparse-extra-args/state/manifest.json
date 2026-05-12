@@ -1,0 +1,9 @@
+{
+  "fixture_name": "34_argparse-extra-args",
+  "kind": "states",
+  "run_id": "fix-34-argparse-extra",
+  "description": "args include unexpected positional arguments after the valid `--run-id`. argparse rejects positionals \u2192 self_correct.",
+  "files": [
+    "state.json"
+  ]
+}

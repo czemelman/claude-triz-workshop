@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "per_solution_critiques": [
+    {
+      "candidate_name": "Candidate A",
+      "secondary_contradictions": [],
+      "severity": "fatal",
+      "risks": [],
+      "recommendation": "do something"
+    },
+    {
+      "candidate_name": "Candidate B",
+      "secondary_contradictions": [],
+      "severity": "moderate",
+      "risks": [],
+      "recommendation": "do something"
+    }
+  ]
+}

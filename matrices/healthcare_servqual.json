@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "name": "Healthcare SERVQUAL TRIZ Contradiction Matrix",
+    "version": "1.0",
+    "author": "Jiun-Yih Lee, Pei-Shan Lee, Cheng-Hsien Chiang, Yi-Ping Chen, Chiung-Ju Chen, Yuan-Ming Huang, Jlan-Ren Chiu, Pei-Ching Yang, Chen-An Yeh, Jui-Ting Chang",
+    "year": "2024",
+    "domain": "Healthcare / Service Quality",
+    "dimensions": {
+      "rows": 10,
+      "cols": 9,
+      "populated_cells": 13
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11542035/",
+    "doi": "10.1038/s41598-024-78661-3",
+    "license": "CC BY 4.0",
+    "notes": "Hybrid matrix with two parameter types: S-prefixed SERVQUAL improving parameters (S1-S10) and T-prefixed classical TRIZ worsening parameters (T19, T25, T9, T36, T26, T27, T29, T28, T34). Matrix keys use these prefixes: matrix[S-param][T-param] = [principle IDs].",
+    "id": "healthcare_servqual",
+    "status": "domain",
+    "parameter_id_style": "prefixed",
+    "diagonal_cells": "excluded",
+    "principle_taxonomy": "altshuller-40",
+    "interpretation_lineage": "altshuller-40",
+    "language": [
+      "en"
+    ],
+    "lineage": {
+      "derived_from": "altshuller_39x39",
+      "supersedes": [],
+      "identical_to": []
+    }
+  },
+  "parameters": {
+    "S1": {
+      "name": "Access",
+      "description": "Approachability and ease of contact with the healthcare service."
+    },
+    "S2": {
+      "name": "Communication",
+      "description": "Keeping customers informed in language they can understand and listening to them."
+    },
+    "S3": {
+      "name": "Understanding",
+      "description": "Making the effort to know customers and their needs (understanding the customer)."
+    },
+    "S4": {
+      "name": "Empathy",
+      "description": "Caring, individualized attention the firm provides its customers."
+    },
+    "S5": {
+      "name": "Reliability",
+      "description": "Ability to perform the promised service dependably and accurately."
+    },
+    "S6": {
+      "name": "Tangibles",
+      "description": "Physical facilities, equipment, and appearance of personnel."
+    },
+    "S7": {
+      "name": "Responsiveness: Time",
+      "description": "Willingness to help customers and provide prompt service, with emphasis on time aspects."
+    },
+    "S8": {
+      "name": "Responsiveness: Speed",
+      "description": "Willingness to help customers and provide prompt service, with emphasis on speed/throughput aspects."
+    },
+    "S9": {
+      "name": "Competence",
+      "description": "Possession of the required skills and knowledge to perform the service."
+    },
+    "S10": {
+      "name": "Assurance",
+      "description": "Knowledge and courtesy of employees and their ability to inspire trust and confidence."
+    },
+    "T19": {
+      "name": "Energy spent by a moving object",
+      "description": "The measure of the object's capacity for doing work. Classical TRIZ parameter #19 (Use of energy by moving object). In healthcare context: energy/effort expenditure during service delivery processes."
+    },
+    "T25": {
+      "name": "Loss of time",
+      "description": "Time is the duration of an activity. Improving the loss of time means reducing the time taken for the activity. Classical TRIZ parameter #25. In healthcare context: time lost during service processes such as reporting or administrative tasks."
+    },
+    "T9": {
+      "name": "Speed",
+      "description": "The velocity of an object; the rate of a process or action in time. Classical TRIZ parameter #9. In healthcare context: rate at which service processes are completed."
+    },
+    "T36": {
+      "name": "Complexity of a device",
+      "description": "The number and diversity of elements and element interrelationships within a system. Classical TRIZ parameter #36 (Device complexity). In healthcare context: complexity of service delivery systems and processes."
+    },
+    "T26": {
+      "name": "Amount of substance",
+      "description": "The number or amount of a system's materials, substances, parts or subsystems. Classical TRIZ parameter #26 (Quantity of substance/the matter). In healthcare context: physical resources, materials, and supplies required."
+    },
+    "T27": {
+      "name": "Reliability",
+      "description": "A system's ability to perform its intended functions in predictable ways and conditions. Classical TRIZ parameter #27. In healthcare context: dependability and consistency of service systems."
+    },
+    "T29": {
+      "name": "Accuracy of manufacturing",
+      "description": "The extent to which the actual characteristics of the system or object match the specified or required characteristics. Classical TRIZ parameter #29 (Manufacturing precision). In healthcare context: precision and correctness of service delivery processes."
+    },
+    "T28": {
+      "name": "Accuracy of measurement",
+      "description": "The closeness of the measured value to the actual value of a property of a system. Classical TRIZ parameter #28 (Measurement accuracy). In healthcare context: accuracy of assessment, monitoring, and reporting systems."
+    },
+    "T34": {
+      "name": "Repairability",
+      "description": "Quality characteristics such as convenience, comfort, simplicity, and time to repair faults, failures, or defects in a system. Classical TRIZ parameter #34 (Ease of repair). In healthcare context: ability to correct and recover from service failures or process defects."
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "description": "Divide an object into independent parts.",
+      "sub_principles": [
+        "a) Divide an object into independent parts.",
+        "b) Make an object easy to disassemble.",
+        "c) Increase the degree of fragmentation or segmentation."
+      ],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "2": {
+      "name": "Taking out (Extraction)",
+      "description": "Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object.",
+      "sub_principles": [
+        "a) Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object."
+      ],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "description": "Change the shape of an object from symmetrical to asymmetrical.",
+      "sub_principles": [
+        "a) Change the shape of an object from symmetrical to asymmetrical.",
+        "b) If an object is asymmetrical, increase its degree of asymmetry."
+      ],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "10": {
+      "name": "Preliminary action (Prior action)",
+      "description": "Perform, before it is needed, the required change of an object (either fully or partially).",
+      "sub_principles": [
+        "a) Perform, before it is needed, the required change of an object (either fully or partially).",
+        "b) Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery."
+      ],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "13": {
+      "name": "The other way round (Doing it in reverse)",
+      "description": "Invert the action(s) used to obtain the desired effect.",
+      "sub_principles": [
+        "a) Invert the action(s) used to obtain the desired effect (e.g. instead of cooling an object, heat it).",
+        "b) Make movable parts (or the external environment) fixed, and fixed parts movable.",
+        "c) Turn the object (or process) upside down."
+      ],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "14": {
+      "name": "Spheroidality (Curvature)",
+      "description": "Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones.",
+      "sub_principles": [
+        "a) Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones; from parts shaped as a cube (parallelepiped) to ball-shaped structures.",
+        "b) Use rollers, balls, spirals, domes.",
+        "c) Go from linear to rotary motion, use centrifugal forces."
+      ],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "description": "Cause an object to oscillate or vibrate.",
+      "sub_principles": [
+        "a) Cause an object to oscillate or vibrate.",
+        "b) Increase its frequency (even up to the ultrasonic).",
+        "c) Use an object's resonant frequency.",
+        "d) Use piezoelectric vibrators instead of mechanical ones.",
+        "e) Use combined ultrasonic and electromagnetic field oscillations."
+      ],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "22": {
+      "name": "Blessing in disguise (Conversion of harm into benefit)",
+      "description": "Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+      "sub_principles": [
+        "a) Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+        "b) Eliminate the primary harmful action by adding it to another harmful action to resolve the problem.",
+        "c) Amplify a harmful factor to such a degree that it is no longer harmful."
+      ],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "24": {
+      "name": "Intermediary (Mediator)",
+      "description": "Use an intermediary carrier article or intermediary process.",
+      "sub_principles": [
+        "a) Use an intermediary carrier article or intermediary process.",
+        "b) Merge one object temporarily with another (which can be easily removed)."
+      ],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "description": "Make an object serve itself by performing auxiliary helpful functions.",
+      "sub_principles": [
+        "a) Make an object serve itself by performing auxiliary helpful functions.",
+        "b) Use waste resources, energy, or substances."
+      ],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "26": {
+      "name": "Copying",
+      "description": "Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+      "sub_principles": [
+        "a) Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+        "b) Replace an object, or process, with optical copies.",
+        "c) If visible optical copies are already used, move to infrared or ultraviolet copies."
+      ],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "28": {
+      "name": "Mechanics substitution (Replacement of mechanical system)",
+      "description": "Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+      "sub_principles": [
+        "a) Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+        "b) Use electric, magnetic and electromagnetic fields to interact with the object.",
+        "c) Change from static to movable fields, from unstructured fields to those having structure.",
+        "d) Use fields in conjunction with field-activated (e.g. ferromagnetic) particles."
+      ],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "description": "Use flexible shells and thin films instead of three-dimensional structures.",
+      "sub_principles": [
+        "a) Use flexible shells and thin films instead of three-dimensional structures.",
+        "b) Isolate the object from the external environment using flexible shells and thin films."
+      ],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "32": {
+      "name": "Color changes (Change of colour)",
+      "description": "Change the color of an object or its external environment.",
+      "sub_principles": [
+        "a) Change the color of an object or its external environment.",
+        "b) Change the transparency of an object or its external environment."
+      ],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "34": {
+      "name": "Discarding and recovering (Rejection and regeneration of parts)",
+      "description": "Make portions of an object that have fulfilled their functions go away or modify them directly during operation.",
+      "sub_principles": [
+        "a) Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify them directly during operation.",
+        "b) Conversely, restore consumable parts of an object directly in operation."
+      ],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "35": {
+      "name": "Parameter changes (Translation of properties)",
+      "description": "Change an object's physical state (e.g. to a gas, liquid, or solid).",
+      "sub_principles": [
+        "a) Change an object's physical state (e.g. to a gas, liquid, or solid).",
+        "b) Change the concentration or consistency.",
+        "c) Change the degree of flexibility.",
+        "d) Change the temperature."
+      ],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "description": "Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.).",
+      "sub_principles": [
+        "a) Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.)."
+      ],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "altshuller-40"
+    }
+  },
+  "matrix": {
+    "S1": {
+      "T19": [
+        1,
+        13,
+        24
+      ]
+    },
+    "S2": {
+      "T25": [
+        24,
+        34,
+        28,
+        32
+      ]
+    },
+    "S3": {
+      "T9": [
+        10,
+        28,
+        32
+      ]
+    },
+    "S4": {
+      "T9": [
+        35,
+        10,
+        14
+      ],
+      "T25": [
+        35,
+        28
+      ]
+    },
+    "S5": {
+      "T36": [
+        13,
+        35,
+        1
+      ]
+    },
+    "S6": {
+      "T26": [
+        36,
+        22
+      ]
+    },
+    "S7": {
+      "T27": [
+        10,
+        30,
+        4
+      ],
+      "T29": [
+        24,
+        26,
+        28,
+        18
+      ]
+    },
+    "S8": {
+      "T28": [
+        28,
+        32,
+        1,
+        24
+      ],
+      "T29": [
+        10,
+        28,
+        32,
+        25
+      ]
+    },
+    "S9": {
+      "T36": [
+        2,
+        13,
+        25,
+        28
+      ]
+    },
+    "S10": {
+      "T34": [
+        1,
+        32,
+        10,
+        25
+      ]
+    }
+  }
+}

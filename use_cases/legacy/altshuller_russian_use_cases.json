@@ -1,0 +1,106 @@
+{
+  "matrix": "altshuller_russian_original",
+  "primary_domains": [
+    "General engineering (mechanical, structural, thermal, chemical)",
+    "Classical TRIZ education and certification in Russian-speaking countries",
+    "Historical TRIZ research and scholarship",
+    "Patent analysis using original Soviet-era methodology",
+    "Cross-referencing with Altshuller Foundation source materials"
+  ],
+  "secondary_domains": [
+    "Bilingual TRIZ tooling and software development",
+    "Translation verification between Russian and English TRIZ terminology",
+    "Academic publishing in Russian-language TRIZ journals",
+    "CIS-region industrial innovation consulting",
+    "TRIZ pedagogy at Russian-speaking universities and institutes"
+  ],
+  "strength_areas": [
+    {
+      "area": "Authoritative Russian terminology",
+      "why": "The name_ru fields provide the original parameter names as formulated by Altshuller himself, eliminating translation ambiguity. Terms like 'Устойчивость состава объекта' carry nuances lost in English approximations."
+    },
+    {
+      "area": "Direct citation of Soviet-era literature",
+      "why": "Enables precise cross-referencing with original publications (e.g., 'Алгоритм изобретения', 'Творчество как точная наука') and the altshuller.ru foundation archive without needing a translation mapping."
+    },
+    {
+      "area": "Harmful-factors and stability analysis",
+      "why": "Densest rows are 'Вредные факторы, действующие на объект' (38 cells), 'Устойчивость состава объекта' (37 cells), and 'Потери вещества' (37 cells) — the matrix is richest for safety, durability, and material-loss contradictions."
+    },
+    {
+      "area": "Bilingual engineering workflows",
+      "why": "Having both name and name_ru side-by-side makes this the ideal data source for bilingual TRIZ software, enabling UI language switching without maintaining separate matrix files."
+    },
+    {
+      "area": "Full 39x39 classical coverage",
+      "why": "All 39 parameters and 40 inventive principles are present with 1244 populated cells (83.9% fill rate), identical to the canonical Altshuller matrix. No data is missing relative to the English version."
+    },
+    {
+      "area": "Measurement and control complexity problems",
+      "why": "'Сложность контроля и измерения' (Difficulty of detecting and measuring) has 37 populated cells, making it exceptionally well-covered for instrumentation and metrology contradictions."
+    }
+  ],
+  "weakness_areas": [
+    {
+      "area": "Stationary-object parameters are sparse",
+      "why": "'Расход энергии неподвижного объекта' has only 15 cells, 'Продолжительность действия неподвижного объекта' has 20, and 'Объём неподвижного объекта' has 23. Problems centered on static structures will find fewer suggested principles."
+    },
+    {
+      "area": "Information-loss contradictions",
+      "why": "'Потери информации' (Loss of Information) has only 22 populated cells — the matrix was built from mechanical/physical patent analysis and offers limited guidance for information-centric problems."
+    },
+    {
+      "area": "No Russian-language principle names",
+      "why": "While parameters carry name_ru, the 40 inventive principles themselves are listed only in English. Users seeking a fully Russian-language experience will need to supplement principle names from an external source."
+    },
+    {
+      "area": "Modern and non-engineering domains",
+      "why": "Like all classical Altshuller matrices, this does not cover software, business, or biological domains. The 39 parameters are rooted in 1970s-era physical/mechanical patent analysis."
+    },
+    {
+      "area": "No sub-principle Russian translations",
+      "why": "Sub-principles are English-only, which limits the usefulness for monolingual Russian speakers who need the full detail chain in their native language."
+    }
+  ],
+  "ideal_user_profile": "A Russian-speaking engineer, TRIZ practitioner, or researcher who needs the authoritative original parameter terminology for professional work — whether teaching TRIZ at a CIS-region university, publishing in Russian-language innovation journals, consulting for Russian-speaking industrial clients, cross-referencing with Altshuller's original texts and the altshuller.ru archive, or building bilingual TRIZ software. Also suitable for TRIZ historians and scholars studying the evolution of inventive-problem-solving methodology from its Soviet origins.",
+  "best_for": [
+    "Russian-speaking TRIZ practitioners who think and discuss contradictions in their native terminology",
+    "Building bilingual (RU/EN) TRIZ software tools with a single authoritative data source",
+    "Academic work requiring citation of original Altshuller parameter names",
+    "Cross-referencing matrix lookups against Soviet-era TRIZ publications and patent databases",
+    "TRIZ certification training programs conducted in Russian",
+    "Verifying English translations of TRIZ parameters against the canonical Russian originals",
+    "Mechanical, structural, and thermal engineering contradiction resolution in Russian-language contexts",
+    "Harmful-factor and reliability analysis — the densest coverage areas of this matrix"
+  ],
+  "not_suitable_for": [
+    "English-only teams with no need for Russian terminology",
+    "Software engineering, business, or management contradiction resolution (no domain-specific parameters)",
+    "Problems centered on stationary-object energy use (only 15 cells in that row)",
+    "Users who need fully Russian-language principles and sub-principles (only parameters have name_ru)",
+    "Modern extended matrices (Matrix 2003/2010) with expanded parameter sets",
+    "Information-system or data-centric contradictions (sparse coverage in Loss of Information)"
+  ],
+  "when_to_prefer": "Use this matrix instead of the English-only classic version when: (1) the user or audience reads/speaks Russian and benefits from seeing original Altshuller terminology; (2) the work product must cite or cross-reference original Soviet TRIZ sources; (3) a bilingual tool needs both EN and RU parameter names from a single file; (4) you are teaching or studying TRIZ history and need the authoritative naming. The underlying cell data is identical to the English classic, so the choice is purely about language context and traceability to the Russian-language TRIZ canon.",
+  "when_to_skip": "Skip this matrix when: (1) all stakeholders work exclusively in English and Russian labels add unnecessary complexity; (2) you need a modern expanded matrix (2003 or later) with more parameters; (3) you need fully Russian-language inventive principles (this file only has name_ru on parameters, not principles); (4) your problem domain is non-engineering (software, business, biology) where classical Altshuller parameters do not apply.",
+  "coverage_stats": {
+    "total_cells": 1244,
+    "fill_rate_percent": 83.9,
+    "total_parameters": 39,
+    "total_principles": 40,
+    "densest_rows": [
+      {"row": 30, "parameter": "Object-affected harmful factors", "parameter_ru": "Вредные факторы, действующие на объект", "cell_count": 38},
+      {"row": 13, "parameter": "Stability of the object's composition", "parameter_ru": "Устойчивость состава объекта", "cell_count": 37},
+      {"row": 23, "parameter": "Loss of substance", "parameter_ru": "Потери вещества", "cell_count": 37},
+      {"row": 37, "parameter": "Difficulty of detecting and measuring", "parameter_ru": "Сложность контроля и измерения", "cell_count": 37},
+      {"row": 14, "parameter": "Strength", "parameter_ru": "Прочность", "cell_count": 36}
+    ],
+    "sparsest_rows": [
+      {"row": 20, "parameter": "Use of energy by stationary object", "parameter_ru": "Расход энергии неподвижного объекта", "cell_count": 15},
+      {"row": 16, "parameter": "Duration of action of stationary object", "parameter_ru": "Продолжительность действия неподвижного объекта", "cell_count": 20},
+      {"row": 24, "parameter": "Loss of Information", "parameter_ru": "Потери информации", "cell_count": 22},
+      {"row": 8, "parameter": "Volume of stationary object", "parameter_ru": "Объём неподвижного объекта", "cell_count": 23},
+      {"row": 6, "parameter": "Area of stationary object", "parameter_ru": "Площадь неподвижного объекта", "cell_count": 27}
+    ]
+  }
+}

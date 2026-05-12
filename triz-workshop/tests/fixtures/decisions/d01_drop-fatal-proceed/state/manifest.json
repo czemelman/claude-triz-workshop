@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d01_drop-fatal-proceed",
+  "kind": "decisions",
+  "run_id": "fix-d01-drop-fatal",
+  "description": "User chooses drop_fatal_proceed. Expect run_script assemble_report.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

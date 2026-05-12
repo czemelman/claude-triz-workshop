@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d04-accept-ovr",
+    "--user-input",
+    "{\"choice\": \"accept_with_override\"}"
+  ],
+  "user_input": "accept_with_override"
+}

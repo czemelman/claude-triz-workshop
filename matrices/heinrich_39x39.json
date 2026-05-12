@@ -1,0 +1,1193 @@
+{
+  "meta": {
+    "name": "Heinrich 'The Inventing Machine' TRIZ Matrix",
+    "version": "Subset",
+    "author": "NickScherbakov (GitHub)",
+    "year": "2023",
+    "domain": "General engineering (curated subset)",
+    "dimensions": {
+      "rows": 39,
+      "cols": 39,
+      "populated_cells": 109
+    },
+    "source_url": "https://github.com/NickScherbakov/Heinrich-The-Inventing-Machine",
+    "license": "Apache-2.0",
+    "notes": "Curated subset of 113 cells from the classic matrix, extracted from the Heinrich knowledge base CSV. This is NOT the full classic matrix — it contains selected parameter pairs deemed most relevant for the Heinrich AI system. Data differs from the classic triz40.com version in many cells.",
+    "id": "heinrich_39x39",
+    "status": "derived",
+    "parameter_id_style": "numeric",
+    "diagonal_cells": "excluded",
+    "principle_taxonomy": "altshuller-40",
+    "interpretation_lineage": "altshuller-40",
+    "language": [
+      "en"
+    ],
+    "lineage": {
+      "derived_from": "altshuller_39x39",
+      "supersedes": [],
+      "identical_to": []
+    }
+  },
+  "parameters": {
+    "1": {
+      "name": "Weight of moving object",
+      "description": "The mass of the object, in a gravitational field. The force that the body exerts on its support or suspension."
+    },
+    "2": {
+      "name": "Weight of stationary object",
+      "description": "The mass of the object, in a gravitational field. The force that the body exerts on its support or suspension, when the object is not in motion."
+    },
+    "3": {
+      "name": "Length of moving object",
+      "description": "Any one linear dimension of the moving object, not necessarily the longest."
+    },
+    "4": {
+      "name": "Length of stationary object",
+      "description": "Any one linear dimension of the stationary object, not necessarily the longest."
+    },
+    "5": {
+      "name": "Area of moving object",
+      "description": "A geometric characteristic described by the part of a surface enclosed within a perimeter of the moving object."
+    },
+    "6": {
+      "name": "Area of stationary object",
+      "description": "A geometric characteristic described by the part of a surface enclosed within a perimeter of the stationary object."
+    },
+    "7": {
+      "name": "Volume of moving object",
+      "description": "The cubic measure of space occupied by the moving object."
+    },
+    "8": {
+      "name": "Volume of stationary object",
+      "description": "The cubic measure of space occupied by the stationary object."
+    },
+    "9": {
+      "name": "Speed",
+      "description": "The velocity of an object; the rate of a process or action in time."
+    },
+    "10": {
+      "name": "Force (Intensity)",
+      "description": "Force measures the interaction between systems. In Newtonian physics force = mass x acceleration. In TRIZ force is any interaction that is intended to change an object's condition."
+    },
+    "11": {
+      "name": "Stress or pressure",
+      "description": "Force per unit area. Also, tension."
+    },
+    "12": {
+      "name": "Shape",
+      "description": "The external contours, appearance of a system."
+    },
+    "13": {
+      "name": "Stability of the object's composition",
+      "description": "The wholeness or integrity of the system; the relationship of the system's constituent elements. Wear, chemical decomposition, and disassembly are all decreases in stability."
+    },
+    "14": {
+      "name": "Strength",
+      "description": "The extent to which the object is able to resist changing in response to force. Resistance to breaking."
+    },
+    "15": {
+      "name": "Duration of action of moving object",
+      "description": "The time that the moving object can perform the action. Service life. Mean time between failure is a measure of the duration of action."
+    },
+    "16": {
+      "name": "Duration of action of stationary object",
+      "description": "The time that the stationary object can perform the action. Service life."
+    },
+    "17": {
+      "name": "Temperature",
+      "description": "The thermal condition of the object or system. Includes other thermal parameters, such as heat capacity, that affect the rate of change of temperature."
+    },
+    "18": {
+      "name": "Illumination intensity",
+      "description": "Light flux per unit area, or any other illumination characteristics of the system such as light quality, uniformity, etc."
+    },
+    "19": {
+      "name": "Use of energy by moving object",
+      "description": "The measure of the object's capacity for doing work. In classical mechanics, energy is the product of force x distance."
+    },
+    "20": {
+      "name": "Use of energy by stationary object",
+      "description": "The measure of the object's capacity for doing work when stationary."
+    },
+    "21": {
+      "name": "Power",
+      "description": "The time rate at which work is performed. The rate of use of energy."
+    },
+    "22": {
+      "name": "Loss of Energy",
+      "description": "Use of energy that does not contribute to the job being done."
+    },
+    "23": {
+      "name": "Loss of substance",
+      "description": "Partial or complete, permanent or temporary, loss of some of a system's material, substance, parts, or subsystems."
+    },
+    "24": {
+      "name": "Loss of Information",
+      "description": "Partial or complete, permanent or temporary, loss of data or access to data in or by a system."
+    },
+    "25": {
+      "name": "Loss of Time",
+      "description": "Time is the duration of an activity. Improving the loss of time means reducing the time taken for the activity."
+    },
+    "26": {
+      "name": "Quantity of substance/the matter",
+      "description": "The number or amount of a system's materials, substances, parts or subsystems."
+    },
+    "27": {
+      "name": "Reliability",
+      "description": "A system's ability to perform its intended functions in predictable ways and conditions."
+    },
+    "28": {
+      "name": "Measurement accuracy",
+      "description": "The closeness of the measured value to the actual value of a property of a system."
+    },
+    "29": {
+      "name": "Manufacturing precision",
+      "description": "The extent to which the actual characteristics of the system or object match the specified or required characteristics."
+    },
+    "30": {
+      "name": "Object-affected harmful factors",
+      "description": "Susceptibility of a system to externally generated harmful effects."
+    },
+    "31": {
+      "name": "Object-generated harmful factors",
+      "description": "A harmful effect is one that reduces the efficiency or quality of the functioning of the object or system."
+    },
+    "32": {
+      "name": "Ease of manufacture",
+      "description": "The degree of facility, comfort or effortlessness in manufacturing or fabricating the object/system."
+    },
+    "33": {
+      "name": "Ease of operation",
+      "description": "Simplicity: the process is NOT difficult to operate or requires excessive effort."
+    },
+    "34": {
+      "name": "Ease of repair",
+      "description": "Quality characteristics such as convenience, comfort, simplicity, and time to repair faults, failures, or defects in a system."
+    },
+    "35": {
+      "name": "Adaptability or versatility",
+      "description": "The extent to which a system/object positively responds to external changes. Also, a system that can be used in multiple ways under a variety of circumstances."
+    },
+    "36": {
+      "name": "Device complexity",
+      "description": "The number and diversity of elements and element interrelationships within a system."
+    },
+    "37": {
+      "name": "Difficulty of detecting and measuring",
+      "description": "Measuring or monitoring systems that are complex, costly, require much time and labor to set up and use, or that have complex relationships between components."
+    },
+    "38": {
+      "name": "Extent of automation",
+      "description": "The extent to which a system or object performs its functions without human interface."
+    },
+    "39": {
+      "name": "Productivity",
+      "description": "The number of functions or operations performed by a system per unit time. The output per unit time, or the cost per unit output."
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "description": "Divide an object into independent parts.",
+      "sub_principles": [
+        "a) Divide an object into independent parts.",
+        "b) Make an object easy to disassemble.",
+        "c) Increase the degree of fragmentation or segmentation."
+      ],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "2": {
+      "name": "Taking out",
+      "description": "Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object.",
+      "sub_principles": [
+        "a) Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object."
+      ],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "3": {
+      "name": "Local quality",
+      "description": "Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+      "sub_principles": [
+        "a) Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+        "b) Make each part of an object function in conditions most suitable for its operation.",
+        "c) Make each part of an object fulfill a different and useful function."
+      ],
+      "canonical_id": "P_LOCAL_QUALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "description": "Change the shape of an object from symmetrical to asymmetrical.",
+      "sub_principles": [
+        "a) Change the shape of an object from symmetrical to asymmetrical.",
+        "b) If an object is asymmetrical, increase its degree of asymmetry."
+      ],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "5": {
+      "name": "Merging",
+      "description": "Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+      "sub_principles": [
+        "a) Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+        "b) Make operations contiguous or parallel; bring them together in time."
+      ],
+      "canonical_id": "P_MERGING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "6": {
+      "name": "Universality",
+      "description": "Make a part or object perform multiple functions; eliminate the need for other parts.",
+      "sub_principles": [
+        "a) Make a part or object perform multiple functions; eliminate the need for other parts."
+      ],
+      "canonical_id": "P_UNIVERSALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "7": {
+      "name": "Nested doll",
+      "description": "Place one object inside another; place each object, in turn, inside the other.",
+      "sub_principles": [
+        "a) Place one object inside another; place each object, in turn, inside the other.",
+        "b) Make one part pass through a cavity in the other."
+      ],
+      "canonical_id": "P_NESTED_DOLL",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "8": {
+      "name": "Anti-weight",
+      "description": "To compensate for the weight of an object, merge it with other objects that provide lift.",
+      "sub_principles": [
+        "a) To compensate for the weight of an object, merge it with other objects that provide lift.",
+        "b) To compensate for the weight of an object, make it interact with the environment (e.g. use aerodynamic, hydrodynamic, buoyancy and other forces)."
+      ],
+      "canonical_id": "P_ANTI_WEIGHT",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "9": {
+      "name": "Preliminary anti-action",
+      "description": "If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+      "sub_principles": [
+        "a) If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+        "b) Create beforehand stresses in an object that will oppose known undesirable working stresses later on."
+      ],
+      "canonical_id": "P_PRELIMINARY_ANTI_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "10": {
+      "name": "Preliminary action",
+      "description": "Perform, before it is needed, the required change of an object (either fully or partially).",
+      "sub_principles": [
+        "a) Perform, before it is needed, the required change of an object (either fully or partially).",
+        "b) Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery."
+      ],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "11": {
+      "name": "Beforehand cushioning",
+      "description": "Prepare emergency means beforehand to compensate for the relatively low reliability of an object.",
+      "sub_principles": [
+        "a) Prepare emergency means beforehand to compensate for the relatively low reliability of an object."
+      ],
+      "canonical_id": "P_BEFOREHAND_CUSHIONING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "12": {
+      "name": "Equipotentiality",
+      "description": "In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field).",
+      "sub_principles": [
+        "a) In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field)."
+      ],
+      "canonical_id": "P_EQUIPOTENTIALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "13": {
+      "name": "The other way round",
+      "description": "Invert the action(s) used to solve the problem.",
+      "sub_principles": [
+        "a) Invert the action(s) used to solve the problem (e.g. instead of cooling an object, heat it).",
+        "b) Make movable parts (or the external environment) fixed, and fixed parts movable.",
+        "c) Turn the object (or process) upside down."
+      ],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "14": {
+      "name": "Spheroidality - Loss of curvature",
+      "description": "Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones; from parts shaped as a cube (parallelepiped) to ball-shaped structures.",
+      "sub_principles": [
+        "a) Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones.",
+        "b) Use rollers, balls, spirals, domes.",
+        "c) Go from linear to rotary motion, use centrifugal forces."
+      ],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "15": {
+      "name": "Dynamics",
+      "description": "Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+      "sub_principles": [
+        "a) Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+        "b) Divide an object into parts capable of movement relative to each other.",
+        "c) If an object (or process) is rigid or inflexible, make it movable or adaptive."
+      ],
+      "canonical_id": "P_DYNAMICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "16": {
+      "name": "Partial or excessive actions",
+      "description": "If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve.",
+      "sub_principles": [
+        "a) If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve."
+      ],
+      "canonical_id": "P_PARTIAL_OR_EXCESSIVE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "17": {
+      "name": "Another dimension",
+      "description": "To move an object in two- or three-dimensional space.",
+      "sub_principles": [
+        "a) To move an object in two- or three-dimensional space.",
+        "b) Use a multi-story arrangement of objects instead of a single-story arrangement.",
+        "c) Tilt or re-orient the object, lay it on its side.",
+        "d) Use another side of a given area."
+      ],
+      "canonical_id": "P_ANOTHER_DIMENSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "description": "Cause an object to oscillate or vibrate.",
+      "sub_principles": [
+        "a) Cause an object to oscillate or vibrate.",
+        "b) Increase its frequency (even up to the ultrasonic).",
+        "c) Use an object's resonant frequency.",
+        "d) Use piezoelectric vibrators instead of mechanical ones.",
+        "e) Use combined ultrasonic and electromagnetic field oscillations."
+      ],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "19": {
+      "name": "Periodic action",
+      "description": "Instead of continuous action, use periodic or pulsating actions.",
+      "sub_principles": [
+        "a) Instead of continuous action, use periodic or pulsating actions.",
+        "b) If an action is already periodic, change the periodic magnitude or frequency.",
+        "c) Use pauses between impulses to perform a different action."
+      ],
+      "canonical_id": "P_PERIODIC_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "20": {
+      "name": "Continuity of useful action",
+      "description": "Carry on work continuously; make all parts of an object work at full load, all the time.",
+      "sub_principles": [
+        "a) Carry on work continuously; make all parts of an object work at full load, all the time.",
+        "b) Eliminate all idle or intermittent actions or work."
+      ],
+      "canonical_id": "P_CONTINUITY_OF_USEFUL_ACTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "21": {
+      "name": "Skipping",
+      "description": "Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed.",
+      "sub_principles": [
+        "a) Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed."
+      ],
+      "canonical_id": "P_SKIPPING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "22": {
+      "name": "Blessing in disguise",
+      "description": "Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+      "sub_principles": [
+        "a) Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+        "b) Eliminate the primary harmful action by adding it to another harmful action to resolve the problem.",
+        "c) Amplify a harmful factor to such a degree that it is no longer harmful."
+      ],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "23": {
+      "name": "Feedback",
+      "description": "Introduce feedback (referring back, cross-checking) to improve a process or action.",
+      "sub_principles": [
+        "a) Introduce feedback (referring back, cross-checking) to improve a process or action.",
+        "b) If feedback is already used, change its magnitude or influence."
+      ],
+      "canonical_id": "P_FEEDBACK",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "24": {
+      "name": "Intermediary",
+      "description": "Use an intermediary carrier article or intermediary process.",
+      "sub_principles": [
+        "a) Use an intermediary carrier article or intermediary process.",
+        "b) Merge one object temporarily with another (which can be easily removed)."
+      ],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "description": "Make an object serve itself by performing auxiliary helpful functions.",
+      "sub_principles": [
+        "a) Make an object serve itself by performing auxiliary helpful functions.",
+        "b) Use waste resources, energy, or substances."
+      ],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "26": {
+      "name": "Copying",
+      "description": "Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+      "sub_principles": [
+        "a) Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+        "b) Replace an object, or process with optical copies.",
+        "c) If visible optical copies are already used, move to infrared or ultraviolet copies."
+      ],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "27": {
+      "name": "Cheap short-living objects",
+      "description": "Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance).",
+      "sub_principles": [
+        "a) Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance)."
+      ],
+      "canonical_id": "P_CHEAP_SHORT_LIVING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "28": {
+      "name": "Mechanics substitution",
+      "description": "Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+      "sub_principles": [
+        "a) Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+        "b) Use electric, magnetic and electromagnetic fields to interact with the object.",
+        "c) Change from static to movable fields, from unstructured fields to those having structure.",
+        "d) Use fields in conjunction with field-activated (e.g. ferromagnetic) particles."
+      ],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "29": {
+      "name": "Pneumatics and hydraulics",
+      "description": "Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive).",
+      "sub_principles": [
+        "a) Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive)."
+      ],
+      "canonical_id": "P_PNEUMATICS_HYDRAULICS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "description": "Use flexible shells and thin films instead of three dimensional structures.",
+      "sub_principles": [
+        "a) Use flexible shells and thin films instead of three dimensional structures.",
+        "b) Isolate the object from the external environment using flexible shells and thin films."
+      ],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "31": {
+      "name": "Porous materials",
+      "description": "Make an object porous or add porous elements (inserts, coatings, etc.).",
+      "sub_principles": [
+        "a) Make an object porous or add porous elements (inserts, coatings, etc.).",
+        "b) If an object is already porous, use the pores to introduce a useful substance or function."
+      ],
+      "canonical_id": "P_POROUS_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "32": {
+      "name": "Color changes",
+      "description": "Change the color of an object or its external environment.",
+      "sub_principles": [
+        "a) Change the color of an object or its external environment.",
+        "b) Change the transparency of an object or its external environment."
+      ],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "33": {
+      "name": "Homogeneity",
+      "description": "Make objects interacting with a given object of the same material (or material with identical properties).",
+      "sub_principles": [
+        "a) Make objects interacting with a given object of the same material (or material with identical properties)."
+      ],
+      "canonical_id": "P_HOMOGENEITY",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "34": {
+      "name": "Discarding and recovering",
+      "description": "Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+      "sub_principles": [
+        "a) Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+        "b) Conversely, restore consumable parts of an object directly in operation."
+      ],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "35": {
+      "name": "Parameter changes",
+      "description": "Change an object's physical state (e.g. to a gas, liquid, or solid).",
+      "sub_principles": [
+        "a) Change an object's physical state (e.g. to a gas, liquid, or solid).",
+        "b) Change the concentration or consistency.",
+        "c) Change the degree of flexibility.",
+        "d) Change the temperature."
+      ],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "description": "Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.).",
+      "sub_principles": [
+        "a) Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.)."
+      ],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "37": {
+      "name": "Thermal expansion",
+      "description": "Use thermal expansion (or contraction) of materials.",
+      "sub_principles": [
+        "a) Use thermal expansion (or contraction) of materials.",
+        "b) If thermal expansion is being used, use multiple materials with different coefficients of thermal expansion."
+      ],
+      "canonical_id": "P_THERMAL_EXPANSION",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "38": {
+      "name": "Strong oxidants",
+      "description": "Replace common air with oxygen-enriched air.",
+      "sub_principles": [
+        "a) Replace common air with oxygen-enriched air.",
+        "b) Replace enriched air with pure oxygen.",
+        "c) Expose air or oxygen to ionizing radiation.",
+        "d) Use ionized oxygen.",
+        "e) Replace ozonized (or ionized) oxygen with ozone."
+      ],
+      "canonical_id": "P_STRONG_OXIDANTS",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "39": {
+      "name": "Inert atmosphere",
+      "description": "Replace a normal environment with an inert one.",
+      "sub_principles": [
+        "a) Replace a normal environment with an inert one.",
+        "b) Add neutral parts, or inert additives to an object."
+      ],
+      "canonical_id": "P_INERT_ATMOSPHERE",
+      "interpretation_lineage": "altshuller-40"
+    },
+    "40": {
+      "name": "Composite materials",
+      "description": "Change from uniform to composite (multiple) materials.",
+      "sub_principles": [
+        "a) Change from uniform to composite (multiple) materials."
+      ],
+      "canonical_id": "P_COMPOSITE_MATERIALS",
+      "interpretation_lineage": "altshuller-40"
+    }
+  },
+  "matrix": {
+    "1": {
+      "2": [
+        1,
+        8,
+        15
+      ],
+      "3": [
+        1,
+        3,
+        8
+      ],
+      "14": [
+        1,
+        8,
+        15,
+        40
+      ],
+      "19": [
+        2,
+        15,
+        35
+      ],
+      "27": [
+        13,
+        22,
+        35
+      ],
+      "36": [
+        1,
+        13,
+        22
+      ]
+    },
+    "2": {
+      "1": [
+        8,
+        15,
+        35
+      ],
+      "9": [
+        15,
+        18,
+        28
+      ],
+      "14": [
+        8,
+        14,
+        15
+      ],
+      "27": [
+        11,
+        25,
+        35
+      ]
+    },
+    "3": {
+      "1": [
+        1,
+        8,
+        14
+      ],
+      "4": [
+        1,
+        3,
+        4
+      ],
+      "14": [
+        1,
+        8,
+        14,
+        15
+      ],
+      "19": [
+        15,
+        35,
+        36
+      ]
+    },
+    "4": {
+      "3": [
+        3,
+        4,
+        14
+      ],
+      "14": [
+        4,
+        8,
+        14
+      ]
+    },
+    "5": {
+      "1": [
+        1,
+        8,
+        30
+      ],
+      "14": [
+        1,
+        8,
+        15
+      ],
+      "19": [
+        15,
+        28,
+        35
+      ]
+    },
+    "6": {
+      "1": [
+        1,
+        7,
+        30
+      ],
+      "14": [
+        1,
+        8,
+        15
+      ]
+    },
+    "7": {
+      "1": [
+        1,
+        7,
+        8
+      ],
+      "14": [
+        1,
+        7,
+        8,
+        15
+      ]
+    },
+    "8": {
+      "1": [
+        8,
+        15,
+        35
+      ],
+      "14": [
+        8,
+        14,
+        15
+      ]
+    },
+    "9": {
+      "1": [
+        15,
+        18,
+        28
+      ],
+      "14": [
+        15,
+        28,
+        35
+      ],
+      "19": [
+        15,
+        2,
+        35,
+        18
+      ],
+      "21": [
+        15,
+        19,
+        35
+      ],
+      "22": [
+        15,
+        35,
+        36
+      ],
+      "27": [
+        13,
+        22,
+        28
+      ],
+      "28": [
+        28,
+        32,
+        35
+      ],
+      "39": [
+        15,
+        35,
+        36
+      ]
+    },
+    "10": {
+      "1": [
+        1,
+        8,
+        15
+      ],
+      "14": [
+        8,
+        14,
+        15
+      ],
+      "19": [
+        15,
+        35,
+        18
+      ]
+    },
+    "11": {
+      "1": [
+        1,
+        15,
+        35
+      ],
+      "14": [
+        8,
+        15,
+        35
+      ]
+    },
+    "12": {
+      "1": [
+        1,
+        3,
+        15
+      ],
+      "14": [
+        3,
+        8,
+        15
+      ]
+    },
+    "13": {
+      "1": [
+        1,
+        13,
+        15
+      ],
+      "14": [
+        8,
+        13,
+        15
+      ],
+      "27": [
+        13,
+        22,
+        35
+      ]
+    },
+    "14": {
+      "1": [
+        1,
+        8,
+        14,
+        15
+      ],
+      "2": [
+        8,
+        14,
+        15
+      ],
+      "3": [
+        1,
+        8,
+        14
+      ],
+      "4": [
+        4,
+        8,
+        14
+      ],
+      "5": [
+        1,
+        8,
+        14
+      ],
+      "6": [
+        1,
+        8,
+        14
+      ],
+      "7": [
+        1,
+        7,
+        8,
+        14
+      ],
+      "8": [
+        8,
+        14,
+        15
+      ],
+      "9": [
+        15,
+        28,
+        35
+      ],
+      "10": [
+        8,
+        14,
+        15
+      ],
+      "11": [
+        8,
+        15,
+        35
+      ],
+      "12": [
+        3,
+        8,
+        15
+      ],
+      "13": [
+        8,
+        13,
+        15
+      ],
+      "17": [
+        15,
+        35,
+        36
+      ],
+      "19": [
+        15,
+        35,
+        18
+      ],
+      "21": [
+        15,
+        19,
+        35
+      ],
+      "22": [
+        15,
+        35,
+        36
+      ],
+      "23": [
+        15,
+        23,
+        35
+      ],
+      "27": [
+        13,
+        22,
+        35
+      ],
+      "28": [
+        28,
+        32,
+        35
+      ],
+      "29": [
+        15,
+        29,
+        35
+      ],
+      "30": [
+        15,
+        30,
+        35
+      ],
+      "31": [
+        15,
+        31,
+        35
+      ],
+      "32": [
+        15,
+        32,
+        35
+      ],
+      "33": [
+        15,
+        33,
+        35
+      ],
+      "34": [
+        15,
+        34,
+        35
+      ],
+      "36": [
+        1,
+        13,
+        22
+      ],
+      "37": [
+        15,
+        35,
+        37
+      ],
+      "38": [
+        15,
+        35,
+        38
+      ],
+      "39": [
+        15,
+        35,
+        39,
+        40
+      ]
+    },
+    "15": {
+      "1": [
+        1,
+        15,
+        35
+      ],
+      "14": [
+        8,
+        15,
+        35
+      ],
+      "19": [
+        15,
+        35,
+        18
+      ],
+      "27": [
+        13,
+        15,
+        35
+      ]
+    },
+    "16": {
+      "1": [
+        1,
+        16,
+        35
+      ],
+      "14": [
+        8,
+        16,
+        35
+      ]
+    },
+    "17": {
+      "1": [
+        1,
+        17,
+        35
+      ],
+      "14": [
+        8,
+        17,
+        35
+      ],
+      "19": [
+        17,
+        35,
+        36
+      ]
+    },
+    "18": {
+      "1": [
+        1,
+        18,
+        35
+      ],
+      "9": [
+        15,
+        18,
+        28
+      ],
+      "14": [
+        8,
+        18,
+        35
+      ],
+      "19": [
+        18,
+        35,
+        28
+      ]
+    },
+    "19": {
+      "1": [
+        2,
+        15,
+        35
+      ],
+      "2": [
+        15,
+        35,
+        36
+      ],
+      "3": [
+        15,
+        35,
+        36
+      ],
+      "4": [
+        15,
+        35,
+        36
+      ],
+      "5": [
+        15,
+        35,
+        36
+      ],
+      "6": [
+        15,
+        35,
+        36
+      ],
+      "7": [
+        15,
+        35,
+        36
+      ],
+      "8": [
+        15,
+        35,
+        18
+      ],
+      "9": [
+        15,
+        2,
+        35,
+        18
+      ],
+      "10": [
+        15,
+        35,
+        18
+      ],
+      "11": [
+        15,
+        35,
+        18
+      ],
+      "12": [
+        15,
+        35,
+        18
+      ],
+      "13": [
+        15,
+        35,
+        18
+      ],
+      "14": [
+        15,
+        35,
+        18
+      ],
+      "15": [
+        15,
+        35,
+        18
+      ],
+      "16": [
+        15,
+        35,
+        18
+      ],
+      "17": [
+        15,
+        35,
+        36
+      ],
+      "21": [
+        15,
+        19,
+        35
+      ],
+      "22": [
+        15,
+        35,
+        36
+      ],
+      "23": [
+        15,
+        23,
+        35
+      ],
+      "27": [
+        13,
+        22,
+        35
+      ],
+      "28": [
+        15,
+        28,
+        35
+      ],
+      "39": [
+        15,
+        35,
+        36
+      ]
+    }
+  }
+}

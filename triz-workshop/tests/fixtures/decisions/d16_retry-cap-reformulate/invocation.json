@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d16-reform",
+    "--user-input",
+    "{\"choice\": \"reformulate_with_constraint\", \"constraint_text\": \"must use only off-the-shelf parts\"}"
+  ],
+  "user_input": "reformulate_with_constraint"
+}

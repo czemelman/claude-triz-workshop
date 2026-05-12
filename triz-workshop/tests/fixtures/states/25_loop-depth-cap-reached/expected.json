@@ -1,0 +1,10 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-25-loop-cap"
+  ],
+  "run_id": "fix-25-loop-cap",
+  "expected_artifact": "final-report.md"
+}

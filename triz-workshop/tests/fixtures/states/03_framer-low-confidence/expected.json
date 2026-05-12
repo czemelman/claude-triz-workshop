@@ -1,0 +1,34 @@
+{
+  "action": "ask_user",
+  "kind": "clarify_framing",
+  "run_id": "fix-03-framer-low",
+  "stage_paused_at": "01_problem",
+  "current_problem": {
+    "schema_version": 1,
+    "improving_concept": "improve flexibility",
+    "worsening_concept": "increase complexity",
+    "domain_signals": [
+      "software"
+    ],
+    "exotic_signals": [],
+    "contradiction_type": "engineering-contradiction",
+    "domain_class": "software",
+    "framing_confidence": "low",
+    "constraints": []
+  },
+  "options": [
+    {
+      "id": "accept_as_is",
+      "label": "Accept the framing as-is and proceed."
+    },
+    {
+      "id": "provide_clarification",
+      "label": "Add clarification text to refine the framing.",
+      "prompts_user_for": "clarification_text"
+    },
+    {
+      "id": "abort",
+      "label": "Abort the run."
+    }
+  ]
+}

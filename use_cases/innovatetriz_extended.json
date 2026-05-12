@@ -1,0 +1,84 @@
+{
+  "matrix_id": "innovatetriz_extended",
+  "schema_version": 1,
+  "what_it_is": "TRIZ contradiction matrix used for General engineering, AI-enhanced innovation tools, Product design and development problem framing.",
+  "when_to_use": {
+    "ideal_user_profile": "Engineering teams using AI-assisted innovation tools, Chinese-speaking TRIZ practitioners, product designers seeking a simplified TRIZ entry point, software developers building TRIZ-based ideation platforms, and educators teaching introductory TRIZ courses.",
+    "best_for": [
+      "Quick AI-assisted contradiction identification from natural language problem descriptions",
+      "Weight-vs-Strength trade-offs in mechanical and structural design",
+      "Speed-vs-Precision contradictions in manufacturing and automation",
+      "Cost-vs-Quality trade-offs in product development",
+      "Complexity-vs-Reliability contradictions in system architecture",
+      "Automation-vs-Cost contradictions in manufacturing modernization",
+      "Energy consumption-vs-Efficiency trade-offs in sustainable design",
+      "Building or extending AI-powered TRIZ tools with NLP parameter detection",
+      "Bilingual TRIZ practice and education (Chinese/English)"
+    ],
+    "not_suitable_for": [
+      "Comprehensive contradiction matrix lookups requiring high coverage",
+      "Pharmaceutical governance or healthcare service quality problems",
+      "Biomimetic or nature-inspired design",
+      "Academic research requiring empirically validated matrices",
+      "Problems involving domain-specific parameters not in the 18-parameter set",
+      "Situations requiring provenance and traceability to patent databases"
+    ],
+    "prefer_over_alternatives_when": "Use this matrix when building or using AI-powered TRIZ tools that need NLP-friendly parameter definitions with keyword arrays, when working in bilingual Chinese/English contexts, or when the classical 39x39 matrix feels overwhelming and a modern, simplified parameter set is desired. It is the only matrix in the collection with implementation-ready keyword arrays and principle-level example/application documentation.",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "mechanical",
+      "manufacturing",
+      "consumer-product",
+      "general-engineering"
+    ],
+    "problem_classes": [
+      "engineering-contradiction"
+    ],
+    "tags": [
+      "bilingual",
+      "experimental"
+    ],
+    "excludes": [
+      "governance",
+      "service",
+      "pharmaceutical",
+      "bio",
+      "ai-ml"
+    ]
+  },
+  "coverage": {},
+  "strengths": [
+    {
+      "area": "Simplified, modern, accessible entry point to TRIZ",
+      "why": "With 18 clearly named parameters (Weight, Strength, Speed, Precision, Cost, Quality, Complexity, Volume, Safety, Efficiency, Reliability, Maintenance, Automation, Functionality, Energy consumption, Convenience, Intelligence, Performance) and bilingual Chinese/English support, this matrix is far more approachable than the classical 39x39 for newcomers and AI-assisted tools."
+    },
+    {
+      "area": "AI-integration readiness",
+      "why": "Each parameter includes Chinese keyword arrays for NLP matching, and the system is designed to work with AI keyword-based parameter detection as a fallback when no matrix entry exists. This makes it uniquely suited for integration into LLM-powered or chatbot-driven innovation tools."
+    },
+    {
+      "area": "Modern engineering vocabulary including automation and intelligence",
+      "why": "Parameters like Automation, Intelligence, Convenience, and Energy consumption reflect contemporary engineering concerns absent from the 1960s-era classical matrix, making the contradiction framing more natural for modern product development."
+    },
+    {
+      "area": "Rich principle documentation with practical examples",
+      "why": "All 40 principles include detailed descriptions, real-world examples, implementation steps, benefits, and category labels in both Chinese and English -- far richer than any other matrix in the collection."
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "Sparse matrix coverage",
+      "why": "Only 16 entries populate a potential 18x18 space (306 possible combinations). The vast majority of parameter pairs have no matrix entry, forcing reliance on AI fallback rather than systematic contradiction resolution."
+    },
+    {
+      "area": "Lacks empirical validation",
+      "why": "Unlike the peer-reviewed drug_safety and healthcare_servqual matrices, this is a community/open-source project without published validation studies. The 16 entries may reflect author intuition rather than systematic patent or case analysis."
+    },
+    {
+      "area": "Uneven parameter specification",
+      "why": "Parameters 15-18 (Energy consumption, Convenience, Intelligence, Performance) appear in the matrix but have no keyword arrays, suggesting they were added to fill gaps rather than being part of the original systematic design."
+    }
+  ]
+}

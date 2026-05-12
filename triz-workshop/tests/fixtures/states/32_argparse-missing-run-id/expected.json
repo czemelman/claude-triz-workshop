@@ -1,0 +1,5 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-problem-framer",
+  "expected_artifact": "01_problem.json"
+}

@@ -1,0 +1,10 @@
+{
+  "fixture_name": "21_critique-some-fatal",
+  "kind": "states",
+  "run_id": "fix-21-crit-some-fatal",
+  "description": "07_critique with one fatal of two. Expect ask_user including drop_fatal_proceed AND abandon_with_writeup.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

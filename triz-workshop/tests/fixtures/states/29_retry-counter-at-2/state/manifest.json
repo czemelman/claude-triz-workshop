@@ -1,0 +1,9 @@
+{
+  "fixture_name": "29_retry-counter-at-2",
+  "kind": "states",
+  "run_id": "fix-29-retry-at-2",
+  "description": "retry_counts.framer=2; bump to 3 which equals MAX_RETRIES_PER_STAGE. The cap check is `retries > MAX_RETRIES_PER_STAGE`, so 3 still permits one more dispatch. Expect dispatch_subagent triz-problem-framer.",
+  "files": [
+    "state.json"
+  ]
+}

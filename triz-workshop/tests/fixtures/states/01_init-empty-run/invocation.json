@@ -1,0 +1,8 @@
+{
+  "args": [
+    "--new-run",
+    "--user-prompt",
+    "Test problem"
+  ],
+  "user_input": null
+}

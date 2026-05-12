@@ -1,0 +1,34 @@
+{
+  "run_id": "fix-15-interpret-4",
+  "current_stage": "interpret",
+  "completed_stages": [
+    "init",
+    "framer",
+    "check_framing_confidence",
+    "select_matrix",
+    "stage_e_check",
+    "mapping_phase1",
+    "compare_mappings",
+    "lookup"
+  ],
+  "selected_matrices": [
+    "altshuller_39x39"
+  ],
+  "retry_counts": {},
+  "loop_depth": 0,
+  "max_loops": 2,
+  "flags": {
+    "matrix_overrides": [],
+    "matrices_overrides": [],
+    "auto_loop": false,
+    "max_loops": 2,
+    "no_critique": false,
+    "no_mapping_critic": false,
+    "active_matrices": [
+      "altshuller_39x39"
+    ]
+  },
+  "user_prompt": "Test problem",
+  "created_at": 1.0,
+  "compatibility_checked": true
+}

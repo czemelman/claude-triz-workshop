@@ -1,0 +1,14 @@
+{
+  "fixture_name": "12_phase2-deliberation-result",
+  "kind": "states",
+  "run_id": "fix-12-phase2-result",
+  "description": "Phase 2 critic wrote 03b_mapping_critique_*.json with verdict=disagree (override). State driver advances to lookup; next action is run_script lookup_principles using the resolved (chosen) mapping.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03b_mapping_critique_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "state.json"
+  ]
+}

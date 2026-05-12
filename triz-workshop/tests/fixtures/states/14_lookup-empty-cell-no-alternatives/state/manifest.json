@@ -1,0 +1,14 @@
+{
+  "fixture_name": "14_lookup-empty-cell-no-alternatives",
+  "kind": "states",
+  "run_id": "fix-14-lookup-empty",
+  "description": "lookup_principles found no populated cell and no alternative populated. populated=false; state-driver branches to no_resolution \u2192 assemble report with --no_resolution.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "state.json"
+  ]
+}

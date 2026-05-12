@@ -1,0 +1,11 @@
+{
+  "fixture_name": "05_selection-stage-e-invoked",
+  "kind": "states",
+  "run_id": "fix-05-sel-stage-e",
+  "description": "02_selection.json with stage_e_invoked=true. Expect dispatch_subagent triz-matrix-selector.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "state.json"
+  ]
+}

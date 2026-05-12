@@ -1,0 +1,9 @@
+{
+  "fixture_name": "d15_retry-cap-abandon",
+  "kind": "decisions",
+  "run_id": "fix-d15-abandon",
+  "description": "At retry cap (framer at 3), user chose abandon_with_writeup. State-driver sets flags.no_resolution and routes to assemble_report.py with --no_resolution; final-report.md will be a 'no acceptable resolution' writeup.",
+  "files": [
+    "state.json"
+  ]
+}

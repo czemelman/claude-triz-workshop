@@ -1,0 +1,13 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-17-interpret-8-b2",
+  "batch_size": 7,
+  "dispatches": [
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-17-interpret-8-b2",
+      "expected_artifact": "05_interpretation_altshuller_39x39_8.json",
+      "prompt": "Interpret principle `8` (canonical id `P_ANTI_WEIGHT`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-17-interpret-8-b2/05_interpretation_altshuller_39x39_8.json` per 05_interpretation_single.schema.json."
+    }
+  ]
+}

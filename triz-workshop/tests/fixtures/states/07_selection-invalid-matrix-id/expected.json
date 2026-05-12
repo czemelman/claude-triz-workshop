@@ -1,0 +1,14 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-07-sel-bad-id",
+  "dispatches": [
+    {
+      "subagent": "triz-parameter-mapper",
+      "expected_artifact": "03_mapping_fake_matrix_999.json"
+    },
+    {
+      "subagent": "triz-mapping-critic",
+      "expected_artifact": "03c_independent_mapping_fake_matrix_999.json"
+    }
+  ]
+}

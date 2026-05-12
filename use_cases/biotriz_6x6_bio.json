@@ -1,0 +1,83 @@
+{
+  "matrix_id": "biotriz_6x6_bio",
+  "schema_version": 1,
+  "what_it_is": "BioTRIZ biology-derived contradiction matrix. Six operational fields (substance, structure, space, time, energy, information). Cells encode principles abstracted from biological mechanisms; use when applying biomimetic analogies to engineering or systems problems.",
+  "when_to_use": {
+    "ideal_user_profile": "Biomimetics researchers, industrial designers seeking nature-inspired solutions, sustainability engineers, materials scientists exploring bio-inspired composites, architects interested in biological structural principles, and innovation consultants looking to break engineering fixation.",
+    "best_for": [
+      "Finding nature-inspired solutions to engineering contradictions",
+      "Breaking design fixation by viewing problems through a biological lens",
+      "Substance-vs-Energy trade-offs (lightweight but strong, like bone or nacre)",
+      "Information-vs-Structure contradictions (smart materials, responsive architectures)",
+      "Designing self-repairing, self-cleaning, or self-adapting systems",
+      "Exploring how biology handles Time-vs-Space trade-offs (growth, morphogenesis)",
+      "Generating sustainability-oriented concepts in early-stage design",
+      "Comparing biological vs. technological solution strategies for the same contradiction"
+    ],
+    "not_suitable_for": [
+      "Detailed engineering parameter trade-offs requiring 39-parameter specificity",
+      "Healthcare service delivery or governance problems",
+      "Financial or business process optimization",
+      "Regulatory or policy design problems",
+      "Problems where the solution must avoid biological metaphors (e.g., sterile environments)"
+    ],
+    "prefer_over_alternatives_when": "Use this matrix when seeking fundamentally different solution strategies by asking 'how does biology solve this?' Prefer it for early-stage conceptual design, biomimetic research, or when standard TRIZ solutions feel stale. The included matrix_technology data enables direct side-by-side comparison of how biology and technology resolve the same contradiction differently.",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "bio",
+      "biology",
+      "biomimetics",
+      "ecology",
+      "sustainability",
+      "biomedical-device"
+    ],
+    "problem_classes": [
+      "biological-design",
+      "engineering-contradiction"
+    ],
+    "tags": [
+      "biology-derived",
+      "operational-fields-6"
+    ],
+    "excludes": [
+      "governance",
+      "service",
+      "pharmaceutical"
+    ]
+  },
+  "coverage": {},
+  "strengths": [
+    {
+      "area": "Nature-inspired problem solving at a high abstraction level",
+      "why": "The 6 operational fields (Substance, Structure, Space, Time, Energy, Information) are derived from analysis of ~500 biological phenomena and ~2500 contradictions, providing a fundamentally different lens from engineering TRIZ. Biology solves problems using Information and Structure where technology uses Energy."
+    },
+    {
+      "area": "Revealing blind spots in conventional engineering thinking",
+      "why": "Only 12% similarity with the technology-derived PRIZM matrix proves that biology and technology solve the same contradictions with radically different strategies, making this matrix ideal for breaking engineering fixation."
+    },
+    {
+      "area": "Rapid high-level ideation and conceptual exploration",
+      "why": "The compact 6x6 format enables quick traversal of all 36 contradiction intersections, including self-contradictions (diagonal cells). Each cell contains 3-8 principles, providing rich but manageable suggestion sets."
+    },
+    {
+      "area": "Sustainability-oriented innovation",
+      "why": "Biological solutions inherently tend toward low energy, material efficiency, and closed-loop systems. Principles like Self-service (25), Dynamics (15), and Blessing in disguise (22) appear frequently, reflecting biology's preference for adaptive, waste-minimizing strategies."
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "Detailed engineering parameter-level guidance",
+      "why": "Condensing 39 classical parameters into 6 fields sacrifices specificity. 'Energy' covers force, stress, temperature, power, noise, and harmful effects -- too broad for fine-grained engineering trade-offs."
+    },
+    {
+      "area": "Manufacturing and production process optimization",
+      "why": "The matrix lacks parameters for manufacturing precision, ease of repair, or production cost. It is concept-oriented, not process-oriented."
+    },
+    {
+      "area": "Software or digital system design",
+      "why": "The biological analogies map poorly to purely digital or informational systems, despite the Information parameter."
+    }
+  ]
+}

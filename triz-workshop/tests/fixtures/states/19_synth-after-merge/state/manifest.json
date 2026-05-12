@@ -1,0 +1,15 @@
+{
+  "fixture_name": "19_synth-after-merge",
+  "kind": "states",
+  "run_id": "fix-19-synth-after-merge",
+  "description": "05_interpretations.json exists; no 06_solutions yet. Expect dispatch_subagent triz-solution-synthesizer.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "05_interpretations.json",
+    "state.json"
+  ]
+}

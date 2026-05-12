@@ -1,0 +1,17 @@
+[run]
+parallel = true
+data_file = .coverage
+# NOTE: do NOT use a relative `source` here. Subprocess coverage is invoked
+# with cwd != plugin_root (tests use isolated tmp dirs), so a relative
+# `source = scripts` path filters every line out (Coverage resolves it
+# against the *child's* cwd, where `scripts/` doesn't exist). We rely on
+# the parent's `--cov=scripts/...` for source filtering and on `[report]
+# include` patterns for path-based reporting.
+
+[report]
+show_missing = true
+skip_empty = true
+include =
+    */scripts/*
+omit =
+    */scripts/_coverage_init.py

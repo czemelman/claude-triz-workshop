@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d10-finalize",
+    "--user-input",
+    "{\"choice\": \"secondary_contradiction_finalize\"}"
+  ],
+  "user_input": "secondary_contradiction_finalize"
+}

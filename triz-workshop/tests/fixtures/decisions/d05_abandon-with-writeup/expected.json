@@ -1,0 +1,11 @@
+{
+  "action": "run_script",
+  "script": "assemble_report.py",
+  "args": [
+    "--run-id",
+    "fix-d05-abandon-writeup",
+    "--no_resolution"
+  ],
+  "run_id": "fix-d05-abandon-writeup",
+  "expected_artifact": "final-report.md"
+}

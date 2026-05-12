@@ -1,0 +1,9 @@
+{
+  "fixture_name": "30_retry-counter-at-cap",
+  "kind": "states",
+  "run_id": "fix-30-retry-cap",
+  "description": "retry_counts.framer=3 (== MAX_RETRIES_PER_STAGE). Next bump \u2192 4 > cap, triggers ask_user kind=stage_retry_exhausted. retry_subagent is NOT in the offered options because the design's option list at this seam only covers abort + edit_artifact.",
+  "files": [
+    "state.json"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d06-clarify-detail",
+    "--user-input",
+    "{\"choice\": \"provide_clarification\", \"clarification_text\": \"authorization is the entire request flow\"}"
+  ],
+  "user_input": "provide_clarification"
+}

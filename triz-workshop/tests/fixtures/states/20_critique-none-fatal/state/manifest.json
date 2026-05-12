@@ -1,0 +1,10 @@
+{
+  "fixture_name": "20_critique-none-fatal",
+  "kind": "states",
+  "run_id": "fix-20-crit-none-fatal",
+  "description": "07_critique with no fatal. Expect run_script assemble_report.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

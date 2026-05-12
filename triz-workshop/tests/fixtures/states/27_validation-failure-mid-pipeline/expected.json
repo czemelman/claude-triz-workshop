@@ -1,0 +1,6 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-problem-framer",
+  "run_id": "fix-27-validation-fail",
+  "expected_artifact": "01_problem.json"
+}

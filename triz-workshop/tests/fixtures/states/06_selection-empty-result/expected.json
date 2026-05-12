@@ -1,0 +1,17 @@
+{
+  "action": "ask_user",
+  "kind": "stage_retry_exhausted",
+  "run_id": "fix-06-sel-empty",
+  "stage_paused_at": "select_matrix",
+  "options": [
+    {
+      "id": "abort",
+      "label": "Abort the run."
+    },
+    {
+      "id": "override_matrix",
+      "label": "Force a matrix id.",
+      "prompts_user_for": "matrix_id"
+    }
+  ]
+}

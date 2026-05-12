@@ -1,0 +1,14 @@
+{
+  "fixture_name": "13_lookup-empty-cell-with-alternatives",
+  "kind": "states",
+  "run_id": "fix-13-lookup-alt",
+  "description": "lookup_principles fell back to an alternative (primary cell empty, alternative populated). 04_principles populated=true via alternatives_tried[1]. Expect interpret-stage dispatch.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "state.json"
+  ]
+}

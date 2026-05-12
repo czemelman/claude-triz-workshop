@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d07_clarify-framing-proceed-anyway",
+  "kind": "decisions",
+  "run_id": "fix-d07-clarify-proceed",
+  "description": "User accepts low-confidence framing. Expect run_script select_matrix.",
+  "files": [
+    "01_problem.json",
+    "state.json"
+  ]
+}

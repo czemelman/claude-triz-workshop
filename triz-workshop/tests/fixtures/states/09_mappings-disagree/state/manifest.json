@@ -1,0 +1,13 @@
+{
+  "fixture_name": "09_mappings-disagree",
+  "kind": "states",
+  "run_id": "fix-09-map-disagree",
+  "description": "Mapper and critic disagree (different axes). Expect Phase-2 critic dispatch.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "state.json"
+  ]
+}

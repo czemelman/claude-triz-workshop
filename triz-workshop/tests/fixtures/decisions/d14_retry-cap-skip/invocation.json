@@ -1,0 +1,9 @@
+{
+  "args": [
+    "--run-id",
+    "fix-d14-skip",
+    "--user-input",
+    "{\"choice\": \"skip_stage\"}"
+  ],
+  "user_input": "skip_stage"
+}

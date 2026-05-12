@@ -1,0 +1,14 @@
+{
+  "fixture_name": "15_interpret-4-principles",
+  "kind": "states",
+  "run_id": "fix-15-interpret-4",
+  "description": "04_principles with 4 ids. Expect dispatch_subagents_parallel for 4 interpreters.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "04_principles_altshuller_39x39.json",
+    "state.json"
+  ]
+}

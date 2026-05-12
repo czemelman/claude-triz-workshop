@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "per_solution_critiques": [
+    {
+      "candidate_name": "A",
+      "secondary_contradictions": [
+        {
+          "improving": "X",
+          "worsening": "Y",
+          "severity": "moderate"
+        }
+      ],
+      "severity": "moderate",
+      "risks": [],
+      "recommendation": "iterate"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "fixture_name": "04_selection-no-tiebreak",
+  "kind": "states",
+  "run_id": "fix-04-sel-no-e",
+  "description": "02_selection.json with stage_e_invoked=false. Expect mapping_phase1 dispatch.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "state.json"
+  ]
+}

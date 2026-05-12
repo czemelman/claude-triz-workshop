@@ -1,0 +1,7 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-problem-framer",
+  "run_id": "run-20260505-001013-6690333f",
+  "expected_artifact": "01_problem.json",
+  "prompt": "User problem:\n\nTest problem\n\nFrame this as a TRIZ contradiction. Write your output to `.triz/runs/run-20260505-001013-6690333f/01_problem.json`. Conform to 01_problem.schema.json: improving_concept, worsening_concept, domain_signals, exotic_signals (drawn from selector_tags_vocabulary.json), contradiction_type, domain_class, framing_confidence (high/medium/low), and constraints. Set framing_confidence=low if the problem is ambiguous."
+}

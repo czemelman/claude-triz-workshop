@@ -1,0 +1,10 @@
+{
+  "fixture_name": "27_validation-failure-mid-pipeline",
+  "kind": "states",
+  "run_id": "fix-27-validation-fail",
+  "description": "The most recent artifact (01_problem.json) fails schema validation. retry_counts.framer=2 \u2192 will bump to 3 (still under MAX_RETRIES_PER_STAGE=3 cap, so re-dispatch). Expect dispatch_subagent triz-problem-framer.\n\nNote: the state-driver only schema-validates 01_problem and 02_selection between stages. Mid-pipeline schema failures (e.g. invalid 06_solutions.json) would NOT be caught \u2014 that's a behavior gap vs design wording.",
+  "files": [
+    "01_problem.json",
+    "state.json"
+  ]
+}

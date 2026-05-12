@@ -1,0 +1,12 @@
+{
+  "fixture_name": "d03_try-different-matrix",
+  "kind": "decisions",
+  "run_id": "fix-d03-try-mat",
+  "description": "User chose try_different_matrix at fatal_severity_in_critique with matrix_id='heinrich_39x39'. State-driver wipes selection-and-downward artifacts and re-dispatches select_matrix.py with --matrix heinrich_39x39 forced.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "07_critique.json",
+    "state.json"
+  ]
+}

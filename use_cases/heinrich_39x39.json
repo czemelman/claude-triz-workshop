@@ -1,0 +1,112 @@
+{
+  "matrix_id": "heinrich_39x39",
+  "schema_version": 1,
+  "what_it_is": "The Heinrich matrix is purpose-built for AI-assisted inventive problem solving, curated to service an automated 'Inventing Machine' system. It focuses on the most frequently encountered engineering contradictions in mechanical, structural, and energy-related design — not the full taxonomy of all possible conflicts.",
+  "when_to_use": {
+    "ideal_user_profile": "",
+    "best_for": [],
+    "not_suitable_for": [],
+    "prefer_over_alternatives_when": "Use Heinrich as a second opinion when working on strength-dominated or energy-efficiency contradictions. Cross-reference against Altshuller to triangulate. Disagreement between them is not a defect — it expands the solution space.",
+    "skip_in_favor_of": []
+  },
+  "selector_tags": {
+    "domains": [
+      "mechanical",
+      "manufacturing",
+      "structural",
+      "energy-systems",
+      "aerospace",
+      "automotive",
+      "general-engineering"
+    ],
+    "problem_classes": [
+      "engineering-contradiction"
+    ],
+    "tags": [
+      "physical-product",
+      "curated-subset",
+      "structural-integrity-focus",
+      "ariz-companion"
+    ],
+    "excludes": [
+      "software",
+      "ai-ml",
+      "cybersecurity",
+      "ux",
+      "service",
+      "governance",
+      "bio",
+      "pharmaceutical"
+    ]
+  },
+  "coverage": {
+    "populated_cells": 109,
+    "full_grid_cells": 1482,
+    "coverage_pct": 7.4,
+    "improving_parameters_used": 19,
+    "worsening_parameters_used": 33,
+    "unique_principles_used": 30,
+    "principles_never_used": [
+      5,
+      6,
+      9,
+      10,
+      12,
+      20,
+      21,
+      24,
+      26,
+      27
+    ],
+    "principles_never_used_names": [
+      "Merging",
+      "Universality",
+      "Preliminary anti-action",
+      "Preliminary action",
+      "Equipotentiality",
+      "Continuity of useful action",
+      "Skipping",
+      "Intermediary",
+      "Copying",
+      "Cheap short-living objects"
+    ],
+    "avg_principles_per_cell": 3.1,
+    "cells_unique_to_heinrich": 22,
+    "cells_shared_with_altshuller": 87,
+    "exact_agreement_with_altshuller": 0,
+    "partial_overlap_with_altshuller": 46,
+    "zero_overlap_with_altshuller": 41
+  },
+  "strengths": [
+    {
+      "area": "summary",
+      "why": "Two parameters dominate the matrix as improving features: Strength (param 14, 30 cells) and Use of Energy by Moving Object (param 19, 23 cells). Together they account for 53 of 109 cells (49%). On the worsening side, Weight of Moving Object (param 1, 17 cells) and Strength (param 14, 18 cells) are the most frequent trade-off targets."
+    },
+    {
+      "area": "dominant_improving_parameters",
+      "why": "[{\"param_id\": 14, \"name\": \"Strength\", \"cell_count\": 30, \"pct_of_matrix\": 27.5, \"pattern\": \"Strength is paired against nearly every other parameter. For geometric worsening (params 1-8), it recommends Segmentation (1), Anti-weight (8), and Spheroidality (14). For non-geometric worsening (params 17+), it shifts to Dynamics (15) and Parameter Changes (35), often combined with the worsening parameter's own principle number \\u2014 a formulaic but effective pattern.\"}, {\"param_id\": 19, \"name\": \"Use of energy by moving object\", \"cell_count\": 23, \"pct_of_matrix\": 21.1, \"pattern\": \"Energy optimization is mapped against 23 worsening parameters with remarkably uniform recommendations: Dynamics (15) + Parameter Changes (35) appear in every single cell. The third principle rotates between Phase Transitions (36) for geometric/thermal worsening and Mechanical Vibration (18) for dynamic/structural worsening.\"}]"
+    },
+    {
+      "area": "dominant_worsening_parameters",
+      "why": "[{\"param_id\": 1, \"name\": \"Weight of moving object\", \"cell_count\": 17}, {\"param_id\": 14, \"name\": \"Strength\", \"cell_count\": 18}, {\"param_id\": 19, \"name\": \"Use of energy by moving object\", \"cell_count\": 9}, {\"param_id\": 27, \"name\": \"Reliability\", \"cell_count\": 7}]"
+    },
+    {
+      "area": "dominant_principles",
+      "why": "[{\"principle_id\": 15, \"name\": \"Dynamics\", \"frequency\": 78, \"note\": \"Appears in 72% of all cells \\u2014 the universal solver in this matrix\"}, {\"principle_id\": 35, \"name\": \"Parameter changes\", \"frequency\": 70, \"note\": \"Appears in 64% of all cells \\u2014 paired with Dynamics as the default duo\"}, {\"principle_id\": 8, \"name\": \"Anti-weight\", \"frequency\": 36, \"note\": \"Dominant for geometric/physical contradictions\"}, {\"principle_id\": 1, \"name\": \"Segmentation\", \"frequency\": 27, \"note\": \"Primary structural decomposition strategy\"}, {\"principle_id\": 18, \"name\": \"Mechanical vibration\", \"frequency\": 19, \"note\": \"Preferred for energy and dynamic contradictions\"}, {\"principle_id\": 14, \"name\": \"Spheroidality\", \"frequency\": 16, \"note\": \"Strength-specific geometry optimization\"}, {\"principle_id\": 36, \"name\": \"Phase transitions\", \"frequency\": 15, \"note\": \"Energy/thermal state change strategy\"}]"
+    },
+    {
+      "area": "cluster_analysis",
+      "why": "{\"geometric_vs_geometric\": \"10 cells \\u2014 core physical trade-offs between dimensions, weight, and volume\", \"structural_vs_geometric\": \"10 cells \\u2014 strength/shape/stability vs. physical size/weight\", \"energy_vs_geometric\": \"8 cells \\u2014 energy efficiency vs. physical parameters\", \"geometric_vs_structural\": \"8 cells \\u2014 size/weight optimization that risks structural integrity\", \"structural_vs_quality\": \"4 cells \\u2014 strength vs. reliability, accuracy, precision\", \"structural_vs_complexity\": \"4 cells \\u2014 strength vs. device complexity, automation, productivity\"}"
+    }
+  ],
+  "weaknesses": [
+    {
+      "area": "summary",
+      "why": "At 7.4% grid coverage, Heinrich is a sniper rifle, not a shotgun. It excels in its chosen niches but leaves 92.6% of the contradiction space unaddressed."
+    },
+    {
+      "area": "specific_limitations",
+      "why": "[{\"limitation\": \"Extreme sparsity\", \"detail\": \"Only 109 of 1482 possible cells are populated. For most parameter pairs, Heinrich offers no guidance. Users must fall back to Altshuller, Mann 2003, or other matrices.\", \"impact\": \"high\"}, {\"limitation\": \"Narrow improving-parameter coverage\", \"detail\": \"Only 19 of 39 parameters appear as improving features. Twenty parameters (including Loss of Information, Loss of Time, Quantity of Substance, Adaptability, Ease of operation, Ease of repair, and Productivity) are never used as the feature to improve. Problems centered on these parameters get zero guidance.\", \"impact\": \"high\"}, {\"limitation\": \"Heavy concentration in two parameters\", \"detail\": \"Strength (14) and Energy (19) account for 49% of all cells. The matrix is essentially a specialized Strength-and-Energy contradiction resolver with thin coverage elsewhere.\", \"impact\": \"medium\"}, {\"limitation\": \"Principle homogeneity\", \"detail\": \"Dynamics (15) and Parameter Changes (35) dominate to the point of saturation \\u2014 appearing in 72% and 64% of cells respectively. This risks recommending the same strategies regardless of the specific contradiction, reducing discriminating power.\", \"impact\": \"medium\"}, {\"limitation\": \"Ten principles completely excluded\", \"detail\": \"Principles 5, 6, 9, 10, 12, 20, 21, 24, 26, 27 are never recommended. Problems best solved by Merging, Universality, Preliminary action/anti-action, or Intermediary approaches will not surface from this matrix.\", \"impact\": \"medium\"}, {\"limitation\": \"No coverage of modern parameters\", \"detail\": \"Uses the classic 39-parameter framework. Does not address information-age parameters (data throughput, latency, security) or sustainability parameters (carbon footprint, recyclability) that newer matrices like Mann 2003 (48x48) or TRIZ-AI (50x50) include.\", \"impact\": \"low\"}, {\"limitation\": \"Formulaic patterns may reduce insight\", \"detail\": \"The systematic encoding in Strength row (where the worsening parameter's ID number is embedded as a principle) suggests algorithmic generation rather than case-by-case expert analysis for some cells. This could mean some recommendations are structural artifacts rather than validated inventive patterns.\", \"impact\": \"medium\"}]"
+    }
+  ]
+}

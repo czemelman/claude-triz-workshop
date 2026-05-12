@@ -1,0 +1,1337 @@
+{
+  "meta": {
+    "name": "BioTRIZ Contradiction Matrix (Extended)",
+    "version": "1.0",
+    "author": "Julian F.V. Vincent, Olga A. Bogatyreva, Nikolaj R. Bogatyrev, Adrian Bowyer, Anja-Karina Pahl",
+    "year": "2006",
+    "domain": "Biology / Biomimetics",
+    "dimensions": {
+      "rows": 6,
+      "cols": 6,
+      "populated_cells": 36
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1664643/",
+    "doi": "10.1098/rsif.2006.0127",
+    "license": "Academic / Open Access (PMC)",
+    "notes": "IMPORTANT: A 24x24 BioTRIZ matrix does not exist in the published literature. The original Vincent et al. (2006) paper presents the BioTRIZ matrix as a 6x6 matrix organized by operational fields (not the 39 Altshuller parameters). The 39 TRIZ engineering parameters were deliberately condensed into 6 operational fields for both the technology-derived PRIZM matrix and the biology-derived BioTRIZ matrix. Later work (Bai et al. 2020, MDPI Sustainability 12(10):4276) references 28 NEPs (Natural Engineering Parameters) as sub-parameters within these 6 fields, but no published 24x24 or 28x28 matrix exists. The supplementary material (Appendix 2) of the original paper contains the mapping of Altshuller's 39 parameters to PRIZM categories but is behind a paywall. This file contains the complete biology-derived BioTRIZ 6x6 matrix as the primary matrix. Additional data (technology matrix, similarity matrix, frequency notes, parameter mapping notes) is preserved in the supplementary section. The matrix was built from analysis of ~500 biological phenomena covering 270+ functions at multiple hierarchy levels, totaling ~2500 contradictions analyzed.",
+    "dataset_scope": "~500 biological phenomena, 270+ functions, ~2500 contradictions analyzed",
+    "similarity_to_classical_triz": "0.12 (12% overall similarity; identity = 1.0)",
+    "key_finding": "Technology solves problems largely by manipulating usage of energy; biology uses information and structure, two factors largely ignored by technology.",
+    "related_files": [
+      "biotriz_6x6.json"
+    ],
+    "id": "biotriz_24x24",
+    "status": "variant",
+    "parameter_id_style": "numeric",
+    "diagonal_cells": "included",
+    "principle_taxonomy": "biotriz-40",
+    "interpretation_lineage": "biotriz-40",
+    "language": [
+      "en"
+    ],
+    "lineage": {
+      "derived_from": "biotriz_6x6_bio",
+      "supersedes": [],
+      "identical_to": [
+        "biotriz_6x6_bio"
+      ]
+    }
+  },
+  "parameters": {
+    "1": {
+      "name": "Substance",
+      "description": "Hierarchically structured material, including material properties, composition, and physical characteristics. Maps to classical TRIZ parameters related to weight, volume, area, shape, and material properties of objects."
+    },
+    "2": {
+      "name": "Structure",
+      "description": "Material composition and organization, including sub-system/system/super-system hierarchy, structural integrity, stability, strength, reliability, and durability/robustness/life."
+    },
+    "3": {
+      "name": "Space",
+      "description": "Spatial arrangement and dimensions, including length, area, volume of both moving and stationary objects, and geometric configuration."
+    },
+    "4": {
+      "name": "Time",
+      "description": "Temporal dynamics and sequences, including speed, duration of action, loss of time, and temporal patterns."
+    },
+    "5": {
+      "name": "Energy",
+      "description": "Power requirements and regulation, including force, stress/pressure, temperature, use of energy, power, loss of energy, noise, and harmful effects."
+    },
+    "6": {
+      "name": "Information",
+      "description": "Data, signals, and control mechanisms, including measurement accuracy, manufacturing precision, amount of information, loss of information, ease of operation, adaptability, and complexity."
+    }
+  },
+  "principles": {
+    "1": {
+      "name": "Segmentation",
+      "description": "Divide an object into independent parts.",
+      "sub_principles": [
+        "a) Divide an object into independent parts.",
+        "b) Make an object easy to disassemble.",
+        "c) Increase the degree of fragmentation or segmentation."
+      ],
+      "canonical_id": "P_SEGMENTATION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "2": {
+      "name": "Taking out",
+      "description": "Separate an interfering part or property from an object, or single out the only necessary part or property.",
+      "sub_principles": [
+        "a) Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object."
+      ],
+      "canonical_id": "P_TAKING_OUT",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "3": {
+      "name": "Local quality",
+      "description": "Change an object's structure from uniform to non-uniform.",
+      "sub_principles": [
+        "a) Change an object's structure from uniform to non-uniform, change an external environment or external influence from uniform to non-uniform.",
+        "b) Make each part of an object function in conditions most suitable for its operation.",
+        "c) Make each part of an object fulfill a different and useful function."
+      ],
+      "canonical_id": "P_LOCAL_QUALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "4": {
+      "name": "Asymmetry",
+      "description": "Change the shape of an object from symmetrical to asymmetrical.",
+      "sub_principles": [
+        "a) Change the shape of an object from symmetrical to asymmetrical.",
+        "b) If an object is asymmetrical, increase its degree of asymmetry."
+      ],
+      "canonical_id": "P_ASYMMETRY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "5": {
+      "name": "Merging",
+      "description": "Bring closer together or merge identical or similar objects.",
+      "sub_principles": [
+        "a) Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations.",
+        "b) Make operations contiguous or parallel; bring them together in time."
+      ],
+      "canonical_id": "P_MERGING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "6": {
+      "name": "Universality",
+      "description": "Make a part or object perform multiple functions; eliminate the need for other parts.",
+      "sub_principles": [
+        "a) Make a part or object perform multiple functions; eliminate the need for other parts."
+      ],
+      "canonical_id": "P_UNIVERSALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "7": {
+      "name": "Nested doll",
+      "description": "Place one object inside another.",
+      "sub_principles": [
+        "a) Place one object inside another; place each object, in turn, inside the other.",
+        "b) Make one part pass through a cavity in the other."
+      ],
+      "canonical_id": "P_NESTED_DOLL",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "8": {
+      "name": "Anti-weight",
+      "description": "Compensate for weight by merging with objects that provide lift.",
+      "sub_principles": [
+        "a) To compensate for the weight of an object, merge it with other objects that provide lift.",
+        "b) To compensate for the weight of an object, make it interact with the environment (e.g. use aerodynamic, hydrodynamic, buoyancy and other forces)."
+      ],
+      "canonical_id": "P_ANTI_WEIGHT",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "9": {
+      "name": "Preliminary anti-action",
+      "description": "Replace an action with anti-actions to control harmful effects.",
+      "sub_principles": [
+        "a) If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects.",
+        "b) Create beforehand stresses in an object that will oppose known undesirable working stresses later on."
+      ],
+      "canonical_id": "P_PRELIMINARY_ANTI_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "10": {
+      "name": "Preliminary action",
+      "description": "Perform the required change before it is needed.",
+      "sub_principles": [
+        "a) Perform, before it is needed, the required change of an object (either fully or partially).",
+        "b) Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery."
+      ],
+      "canonical_id": "P_PRELIMINARY_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "11": {
+      "name": "Beforehand cushioning",
+      "description": "Prepare emergency means beforehand.",
+      "sub_principles": [
+        "a) Prepare emergency means beforehand to compensate for the relatively low reliability of an object."
+      ],
+      "canonical_id": "P_BEFOREHAND_CUSHIONING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "12": {
+      "name": "Equipotentiality",
+      "description": "Limit position changes in a potential field.",
+      "sub_principles": [
+        "a) In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field)."
+      ],
+      "canonical_id": "P_EQUIPOTENTIALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "13": {
+      "name": "The other way round",
+      "description": "Invert the action used to solve the problem.",
+      "sub_principles": [
+        "a) Invert the action(s) used to solve the problem (e.g. instead of cooling an object, heat it).",
+        "b) Make movable parts (or the external environment) fixed, and fixed parts movable.",
+        "c) Turn the object (or process) upside down."
+      ],
+      "canonical_id": "P_THE_OTHER_WAY_ROUND",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "14": {
+      "name": "Spheroidality - Curvature",
+      "description": "Use curvilinear forms instead of rectilinear ones.",
+      "sub_principles": [
+        "a) Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones.",
+        "b) Use rollers, balls, spirals, domes.",
+        "c) Go from linear to rotary motion, use centrifugal forces."
+      ],
+      "canonical_id": "P_SPHEROIDALITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "15": {
+      "name": "Dynamics",
+      "description": "Allow characteristics to change to be optimal or find an optimal operating condition.",
+      "sub_principles": [
+        "a) Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition.",
+        "b) Divide an object into parts capable of movement relative to each other.",
+        "c) If an object (or process) is rigid or inflexible, make it movable or adaptive."
+      ],
+      "canonical_id": "P_DYNAMICS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "16": {
+      "name": "Partial or excessive actions",
+      "description": "Use slightly less or slightly more of a method if 100% is hard to achieve.",
+      "sub_principles": [
+        "a) If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve."
+      ],
+      "canonical_id": "P_PARTIAL_OR_EXCESSIVE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "17": {
+      "name": "Another dimension",
+      "description": "Move an object in two- or three-dimensional space.",
+      "sub_principles": [
+        "a) To move an object in two- or three-dimensional space.",
+        "b) Use a multi-story arrangement of objects instead of a single-story arrangement.",
+        "c) Tilt or re-orient the object, lay it on its side.",
+        "d) Use another side of a given area."
+      ],
+      "canonical_id": "P_ANOTHER_DIMENSION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "18": {
+      "name": "Mechanical vibration",
+      "description": "Cause an object to oscillate or vibrate.",
+      "sub_principles": [
+        "a) Cause an object to oscillate or vibrate.",
+        "b) Increase its frequency (even up to the ultrasonic).",
+        "c) Use an object's resonant frequency.",
+        "d) Use piezoelectric vibrators instead of mechanical ones.",
+        "e) Use combined ultrasonic and electromagnetic field oscillations."
+      ],
+      "canonical_id": "P_MECHANICAL_VIBRATION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "19": {
+      "name": "Periodic action",
+      "description": "Instead of continuous action, use periodic or pulsating actions.",
+      "sub_principles": [
+        "a) Instead of continuous action, use periodic or pulsating actions.",
+        "b) If an action is already periodic, change the periodic magnitude or frequency.",
+        "c) Use pauses between impulses to perform a different action."
+      ],
+      "canonical_id": "P_PERIODIC_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "20": {
+      "name": "Continuity of useful action",
+      "description": "Carry on work continuously; make all parts work at full load.",
+      "sub_principles": [
+        "a) Carry on work continuously; make all parts of an object work at full load, all the time.",
+        "b) Eliminate all idle or intermittent actions or work."
+      ],
+      "canonical_id": "P_CONTINUITY_OF_USEFUL_ACTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "21": {
+      "name": "Skipping",
+      "description": "Conduct a process at high speed.",
+      "sub_principles": [
+        "a) Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed."
+      ],
+      "canonical_id": "P_SKIPPING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "22": {
+      "name": "Blessing in disguise",
+      "description": "Use harmful factors to achieve a positive effect.",
+      "sub_principles": [
+        "a) Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect.",
+        "b) Eliminate the primary harmful action by adding it to another harmful action to resolve the problem.",
+        "c) Amplify a harmful factor to such a degree that it is no longer harmful."
+      ],
+      "canonical_id": "P_BLESSING_IN_DISGUISE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "23": {
+      "name": "Feedback",
+      "description": "Introduce feedback to improve a process or action.",
+      "sub_principles": [
+        "a) Introduce feedback (referring back, cross-checking) to improve a process or action.",
+        "b) If feedback is already used, change its magnitude or influence."
+      ],
+      "canonical_id": "P_FEEDBACK",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "24": {
+      "name": "Intermediary",
+      "description": "Use an intermediary carrier or process.",
+      "sub_principles": [
+        "a) Use an intermediary carrier article or intermediary process.",
+        "b) Merge one object temporarily with another (which can be easily removed)."
+      ],
+      "canonical_id": "P_INTERMEDIARY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "25": {
+      "name": "Self-service",
+      "description": "Make an object serve itself by performing auxiliary helpful functions.",
+      "sub_principles": [
+        "a) Make an object serve itself by performing auxiliary helpful functions.",
+        "b) Use waste resources, energy, or substances."
+      ],
+      "canonical_id": "P_SELF_SERVICE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "26": {
+      "name": "Copying",
+      "description": "Use simpler and inexpensive copies instead of expensive originals.",
+      "sub_principles": [
+        "a) Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies.",
+        "b) Replace an object, or process with optical copies.",
+        "c) If visible optical copies are already used, move to infrared or ultraviolet copies."
+      ],
+      "canonical_id": "P_COPYING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "27": {
+      "name": "Cheap short-living objects",
+      "description": "Replace expensive objects with multiple inexpensive ones.",
+      "sub_principles": [
+        "a) Replace an inexpensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance)."
+      ],
+      "canonical_id": "P_CHEAP_SHORT_LIVING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "28": {
+      "name": "Mechanics substitution",
+      "description": "Replace mechanical means with sensory means.",
+      "sub_principles": [
+        "a) Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means.",
+        "b) Use electric, magnetic and electromagnetic fields to interact with the object.",
+        "c) Change from static to movable fields, from unstructured fields to those having structure.",
+        "d) Use fields in conjunction with field-activated (e.g. ferromagnetic) particles."
+      ],
+      "canonical_id": "P_MECHANICS_SUBSTITUTION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "29": {
+      "name": "Pneumatics and hydraulics",
+      "description": "Use gas and liquid parts instead of solid parts.",
+      "sub_principles": [
+        "a) Use gas and liquid parts of an object instead of solid parts (e.g. inflatable and filled, air cushion, hydrostatic, hydro-reactive)."
+      ],
+      "canonical_id": "P_PNEUMATICS_HYDRAULICS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "30": {
+      "name": "Flexible shells and thin films",
+      "description": "Use flexible shells and thin films instead of 3D structures.",
+      "sub_principles": [
+        "a) Use flexible shells and thin films instead of three dimensional structures.",
+        "b) Isolate the object from the external environment using flexible shells and thin films."
+      ],
+      "canonical_id": "P_FLEXIBLE_SHELLS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "31": {
+      "name": "Porous materials",
+      "description": "Make an object porous or add porous elements.",
+      "sub_principles": [
+        "a) Make an object porous or add porous elements (inserts, coatings, etc.).",
+        "b) If an object is already porous, use the pores to introduce a useful substance or function."
+      ],
+      "canonical_id": "P_POROUS_MATERIALS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "32": {
+      "name": "Color changes",
+      "description": "Change the color of an object or its environment.",
+      "sub_principles": [
+        "a) Change the color of an object or its external environment.",
+        "b) Change the transparency of an object or its external environment."
+      ],
+      "canonical_id": "P_COLOR_CHANGES",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "33": {
+      "name": "Homogeneity",
+      "description": "Make interacting objects of the same material.",
+      "sub_principles": [
+        "a) Make objects interacting with a given object of the same material (or material with identical properties)."
+      ],
+      "canonical_id": "P_HOMOGENEITY",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "34": {
+      "name": "Discarding and recovering",
+      "description": "Make fulfilled portions go away or restore consumable parts.",
+      "sub_principles": [
+        "a) Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation.",
+        "b) Conversely, restore consumable parts of an object directly in operation."
+      ],
+      "canonical_id": "P_DISCARDING_RECOVERING",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "35": {
+      "name": "Parameter changes",
+      "description": "Change an object's physical state.",
+      "sub_principles": [
+        "a) Change an object's physical state (e.g. to a gas, liquid, or solid).",
+        "b) Change the concentration or consistency.",
+        "c) Change the degree of flexibility.",
+        "d) Change the temperature."
+      ],
+      "canonical_id": "P_PARAMETER_CHANGES",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "36": {
+      "name": "Phase transitions",
+      "description": "Use phenomena occurring during phase transitions.",
+      "sub_principles": [
+        "a) Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.)."
+      ],
+      "canonical_id": "P_PHASE_TRANSITIONS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "37": {
+      "name": "Thermal expansion",
+      "description": "Use thermal expansion or contraction of materials.",
+      "sub_principles": [
+        "a) Use thermal expansion (or contraction) of materials.",
+        "b) If thermal expansion is being used, use multiple materials with different coefficients of thermal expansion."
+      ],
+      "canonical_id": "P_THERMAL_EXPANSION",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "38": {
+      "name": "Strong oxidants",
+      "description": "Replace common air with oxygen-enriched air.",
+      "sub_principles": [
+        "a) Replace common air with oxygen-enriched air.",
+        "b) Replace enriched air with pure oxygen.",
+        "c) Expose air or oxygen to ionizing radiation.",
+        "d) Use ionized oxygen.",
+        "e) Replace ozonized (or ionized) oxygen with ozone."
+      ],
+      "canonical_id": "P_STRONG_OXIDANTS",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "39": {
+      "name": "Inert atmosphere",
+      "description": "Replace a normal environment with an inert one.",
+      "sub_principles": [
+        "a) Replace a normal environment with an inert one.",
+        "b) Add neutral parts, or inert additives to an object."
+      ],
+      "canonical_id": "P_INERT_ATMOSPHERE",
+      "interpretation_lineage": "biotriz-40"
+    },
+    "40": {
+      "name": "Composite materials",
+      "description": "Change from uniform to composite materials.",
+      "sub_principles": [
+        "a) Change from uniform to composite (multiple) materials."
+      ],
+      "canonical_id": "P_COMPOSITE_MATERIALS",
+      "interpretation_lineage": "biotriz-40"
+    }
+  },
+  "matrix": {
+    "1": {
+      "1": [
+        13,
+        15,
+        17,
+        20,
+        31,
+        40
+      ],
+      "2": [
+        1,
+        2,
+        3,
+        15,
+        24,
+        26
+      ],
+      "3": [
+        1,
+        5,
+        13,
+        15,
+        31
+      ],
+      "4": [
+        15,
+        19,
+        27,
+        29,
+        30
+      ],
+      "5": [
+        3,
+        6,
+        9,
+        25,
+        31,
+        35
+      ],
+      "6": [
+        3,
+        25,
+        26
+      ]
+    },
+    "2": {
+      "1": [
+        1,
+        10,
+        15,
+        19
+      ],
+      "2": [
+        1,
+        15,
+        19,
+        24,
+        34
+      ],
+      "3": [
+        10
+      ],
+      "4": [
+        1,
+        2,
+        4
+      ],
+      "5": [
+        1,
+        2,
+        4
+      ],
+      "6": [
+        1,
+        3,
+        4,
+        15,
+        19,
+        24,
+        25,
+        35
+      ]
+    },
+    "3": {
+      "1": [
+        3,
+        14,
+        15,
+        25
+      ],
+      "2": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        19
+      ],
+      "3": [
+        4,
+        5,
+        14,
+        17,
+        36
+      ],
+      "4": [
+        1,
+        19,
+        29
+      ],
+      "5": [
+        1,
+        3,
+        4,
+        15,
+        19
+      ],
+      "6": [
+        3,
+        15,
+        21,
+        24
+      ]
+    },
+    "4": {
+      "1": [
+        1,
+        3,
+        15,
+        20,
+        25,
+        38
+      ],
+      "2": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        15,
+        17,
+        19
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        38
+      ],
+      "4": [
+        2,
+        3,
+        11,
+        20,
+        26
+      ],
+      "5": [
+        3,
+        9,
+        15,
+        20,
+        22,
+        25
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        10,
+        19,
+        23
+      ]
+    },
+    "5": {
+      "1": [
+        1,
+        3,
+        13,
+        14,
+        17,
+        25,
+        31
+      ],
+      "2": [
+        1,
+        3,
+        5,
+        6,
+        25,
+        35,
+        36,
+        40
+      ],
+      "3": [
+        1,
+        3,
+        4,
+        15,
+        25
+      ],
+      "4": [
+        3,
+        10,
+        23,
+        25,
+        35
+      ],
+      "5": [
+        3,
+        5,
+        9,
+        22,
+        25,
+        32,
+        37
+      ],
+      "6": [
+        1,
+        3,
+        4,
+        15,
+        16,
+        25
+      ]
+    },
+    "6": {
+      "1": [
+        1,
+        6,
+        22
+      ],
+      "2": [
+        1,
+        3,
+        6,
+        18,
+        22,
+        24,
+        32,
+        34,
+        40
+      ],
+      "3": [
+        3,
+        20,
+        22,
+        25,
+        33
+      ],
+      "4": [
+        2,
+        3,
+        9,
+        17,
+        22
+      ],
+      "5": [
+        1,
+        3,
+        6,
+        22,
+        32
+      ],
+      "6": [
+        3,
+        10,
+        16,
+        23,
+        25
+      ]
+    }
+  },
+  "supplementary": {
+    "matrix_technology": {
+      "_description": "PRIZM matrix: derived from standard TRIZ matrix (technology/engineering). Row = parameter to improve, Column = parameter that worsens. Cell values are inventive principle numbers. Source: Table 1 of Vincent et al. 2006. Provided for comparison with the biology-derived matrix.",
+      "1": {
+        "1": [
+          6,
+          10,
+          26,
+          27,
+          31,
+          40
+        ],
+        "2": [
+          27
+        ],
+        "3": [
+          14,
+          15,
+          29,
+          40
+        ],
+        "4": [
+          3,
+          27,
+          38
+        ],
+        "5": [
+          10,
+          12,
+          18,
+          19,
+          31
+        ],
+        "6": [
+          3,
+          15,
+          22,
+          27,
+          29
+        ]
+      },
+      "2": {
+        "1": [
+          15
+        ],
+        "2": [
+          18,
+          26
+        ],
+        "3": [
+          1,
+          13
+        ],
+        "4": [
+          27,
+          28
+        ],
+        "5": [
+          19,
+          36
+        ],
+        "6": [
+          1,
+          23,
+          24
+        ]
+      },
+      "3": {
+        "1": [
+          8,
+          14,
+          15,
+          29,
+          39,
+          40
+        ],
+        "2": [
+          1,
+          30
+        ],
+        "3": [
+          4,
+          5,
+          7,
+          8,
+          9,
+          14,
+          17
+        ],
+        "4": [
+          4,
+          14
+        ],
+        "5": [
+          6,
+          8,
+          15,
+          36,
+          37
+        ],
+        "6": [
+          1,
+          15,
+          16,
+          17,
+          30
+        ]
+      },
+      "4": {
+        "1": [
+          3,
+          38
+        ],
+        "2": [
+          4,
+          28
+        ],
+        "3": [
+          5,
+          14,
+          30,
+          34
+        ],
+        "4": [
+          10,
+          20,
+          38
+        ],
+        "5": [
+          19,
+          35,
+          36,
+          38
+        ],
+        "6": [
+          22,
+          24,
+          28,
+          34
+        ]
+      },
+      "5": {
+        "1": [
+          8,
+          9,
+          18,
+          19,
+          31,
+          36,
+          37,
+          38
+        ],
+        "2": [
+          32
+        ],
+        "3": [
+          12,
+          15,
+          19,
+          30,
+          36,
+          37,
+          38
+        ],
+        "4": [
+          6,
+          19,
+          35,
+          36,
+          37
+        ],
+        "5": [
+          14,
+          19,
+          21,
+          25,
+          36,
+          37,
+          38
+        ],
+        "6": [
+          2,
+          19,
+          22
+        ]
+      },
+      "6": {
+        "1": [
+          3,
+          11,
+          22,
+          25,
+          28,
+          35
+        ],
+        "2": [
+          30
+        ],
+        "3": [
+          1,
+          4,
+          16,
+          17,
+          39
+        ],
+        "4": [
+          9,
+          22,
+          25,
+          28,
+          34
+        ],
+        "5": [
+          2,
+          6,
+          19,
+          22,
+          32
+        ],
+        "6": [
+          2,
+          11,
+          12,
+          21,
+          22,
+          23,
+          27,
+          33,
+          34
+        ]
+      }
+    },
+    "similarity_matrix": {
+      "_description": "Degree of similarity in inventive principles between technology (PRIZM) and biology (BioTRIZ) matrices. Values range from 0 (no overlap) to 1 (identity). Source: Table 3 of Vincent et al. 2006. Overall similarity: 0.12.",
+      "1": {
+        "1": 0.18,
+        "2": 0.0,
+        "3": 0.22,
+        "4": 0.2,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "2": {
+        "1": 0.36,
+        "2": 0.0,
+        "3": 0.73,
+        "4": 0.25,
+        "5": 0.29,
+        "6": 0.28
+      },
+      "3": {
+        "1": 0.18,
+        "2": 0.17,
+        "3": 0.0,
+        "4": 0.25,
+        "5": 0.0,
+        "6": 0.0
+      },
+      "4": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2,
+        "4": 0.22,
+        "5": 0.18,
+        "6": 0.0
+      },
+      "5": {
+        "1": 0.22,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.36
+      },
+      "6": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "parameters_39_to_6_mapping_notes": "The exact mapping of all 39 Altshuller parameters to 6 operational fields is contained in Appendix 2 of the supplementary material (rsif20060127s01.pdf) of the original paper, which is behind a publisher paywall. The approximate mappings listed above under classical_triz_parameters_approximate are reconstructed from domain knowledge and are NOT from the original paper. Some parameters may map to multiple fields. The authoritative source is the supplementary material at https://royalsocietypublishing.org/doi/suppl/10.1098/rsif.2006.0127",
+    "parameter_operational_field_details": {
+      "1": {
+        "name": "Substance",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          23,
+          26,
+          29,
+          33
+        ]
+      },
+      "2": {
+        "name": "Structure",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          13,
+          14,
+          15,
+          16,
+          27,
+          30,
+          31
+        ]
+      },
+      "3": {
+        "name": "Space",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          17
+        ]
+      },
+      "4": {
+        "name": "Time",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          9,
+          15,
+          16,
+          25,
+          27
+        ]
+      },
+      "5": {
+        "name": "Energy",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          10,
+          11,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          30,
+          31
+        ]
+      },
+      "6": {
+        "name": "Information",
+        "type": "operational_field",
+        "classical_triz_parameters_approximate": [
+          24,
+          28,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      }
+    },
+    "neps_28_notes": "Bai et al. (2020) reference 28 NEPs (Natural Engineering Parameters) as sub-parameters within the 6 operational fields. Partial NEP names identified from literature: Structure field includes 'Durability/Robustness/Life'; Energy field includes 'Noise'; Time field includes 'Duration of Action'; Information field includes 'Amount of Information (Memory)'. The complete list of 28 NEPs is not available in open-access literature and would require access to the full Bai et al. 2020 paper (MDPI Sustainability 12(10):4276).",
+    "biological_principle_frequency_notes": {
+      "_description": "Key observations from the paper about which principles biology uses most and least compared to technology.",
+      "most_used_in_biology": [
+        1,
+        3,
+        15,
+        19,
+        22,
+        25
+      ],
+      "most_used_in_biology_names": [
+        "Segmentation",
+        "Local quality",
+        "Dynamics",
+        "Periodic action",
+        "Blessing in disguise",
+        "Self-service"
+      ],
+      "rarely_used_in_biology": [
+        8,
+        12,
+        16,
+        21,
+        28,
+        37,
+        38,
+        39
+      ],
+      "rarely_used_in_biology_names": [
+        "Anti-weight",
+        "Equipotentiality",
+        "Partial or excessive actions",
+        "Skipping",
+        "Mechanics substitution",
+        "Thermal expansion",
+        "Strong oxidants",
+        "Inert atmosphere"
+      ],
+      "biology_emphasis": "Biology prioritizes Information and Structure for problem-solving",
+      "technology_emphasis": "Technology prioritizes Energy manipulation (up to 60% at scales up to 1m)",
+      "highest_similarity_cell": "Structure-Space (0.73) - spatial composition is the most aligned area between biology and technology",
+      "zero_similarity_cells": "Many cells show 0.00 similarity, especially involving Information as either improving or worsening parameter from the technology side"
+    },
+    "principle_bio_relevance": {
+      "1": {
+        "name": "Segmentation",
+        "bio_relevance": "Widely used in biology; organisms frequently segment body plans, functions, and processes."
+      },
+      "2": {
+        "name": "Taking out",
+        "bio_relevance": "Biological systems extract and isolate functions, e.g., excretion, compartmentalization."
+      },
+      "3": {
+        "name": "Local quality",
+        "bio_relevance": "Extremely prevalent in biology. Biological structures are almost universally non-uniform and locally specialized."
+      },
+      "4": {
+        "name": "Asymmetry",
+        "bio_relevance": "Common in biological morphology; chirality, handedness in molecules and body plans."
+      },
+      "5": {
+        "name": "Merging",
+        "bio_relevance": "Colony formation, symbiosis, multi-cellular organization."
+      },
+      "6": {
+        "name": "Universality",
+        "bio_relevance": "Multi-functional biological structures, e.g., feathers (insulation, flight, display)."
+      },
+      "7": {
+        "name": "Nested doll",
+        "bio_relevance": "Hierarchical nesting in biological systems, e.g., organelles within cells within tissues."
+      },
+      "8": {
+        "name": "Anti-weight",
+        "bio_relevance": "Buoyancy control in marine organisms, pneumatic bones in birds."
+      },
+      "9": {
+        "name": "Preliminary anti-action",
+        "bio_relevance": "Immune system preemptive defenses, pre-stress in biological materials."
+      },
+      "10": {
+        "name": "Preliminary action",
+        "bio_relevance": "Pre-formed structures, stored enzymes, developmental preparation."
+      },
+      "11": {
+        "name": "Beforehand cushioning",
+        "bio_relevance": "Redundancy in biological systems, backup metabolic pathways."
+      },
+      "12": {
+        "name": "Equipotentiality",
+        "bio_relevance": "Energy minimization strategies in biological systems."
+      },
+      "13": {
+        "name": "The other way round",
+        "bio_relevance": "Counter-current exchange systems, reversible reactions in metabolism."
+      },
+      "14": {
+        "name": "Spheroidality - Curvature",
+        "bio_relevance": "Curved biological forms optimized for flow, stress distribution, and packing."
+      },
+      "15": {
+        "name": "Dynamics",
+        "bio_relevance": "Extremely prominent in biology. Biological systems are inherently dynamic and adaptive. This is one of the most frequently used biological principles."
+      },
+      "16": {
+        "name": "Partial or excessive actions",
+        "bio_relevance": "Biological regulation through over/under-expression, dose-response relationships."
+      },
+      "17": {
+        "name": "Another dimension",
+        "bio_relevance": "Three-dimensional biological architectures, surface area maximization."
+      },
+      "18": {
+        "name": "Mechanical vibration",
+        "bio_relevance": "Sound production, echolocation, cilia/flagella beating."
+      },
+      "19": {
+        "name": "Periodic action",
+        "bio_relevance": "Circadian rhythms, heartbeat, respiration cycles, seasonal behaviors."
+      },
+      "20": {
+        "name": "Continuity of useful action",
+        "bio_relevance": "Continuous metabolic processes, persistent cellular functions."
+      },
+      "21": {
+        "name": "Skipping",
+        "bio_relevance": "Rapid predator strikes, fast neural transmission, explosive seed dispersal."
+      },
+      "22": {
+        "name": "Blessing in disguise",
+        "bio_relevance": "Highly used in biological information systems. Toxin resistance, hormesis, co-opting parasites."
+      },
+      "23": {
+        "name": "Feedback",
+        "bio_relevance": "Homeostasis, endocrine feedback loops, predator-prey regulation."
+      },
+      "24": {
+        "name": "Intermediary",
+        "bio_relevance": "Enzymes as intermediaries, carrier molecules, symbiotic intermediaries."
+      },
+      "25": {
+        "name": "Self-service",
+        "bio_relevance": "Extremely prevalent in biology. Self-repair, self-cleaning, waste recycling, autocatalysis."
+      },
+      "26": {
+        "name": "Copying",
+        "bio_relevance": "DNA replication, mimicry, template-based synthesis."
+      },
+      "27": {
+        "name": "Cheap short-living objects",
+        "bio_relevance": "Expendable gametes, deciduous leaves, shed skin, disposable structures."
+      },
+      "28": {
+        "name": "Mechanics substitution",
+        "bio_relevance": "Chemical signaling replacing mechanical interaction, electroreception."
+      },
+      "29": {
+        "name": "Pneumatics and hydraulics",
+        "bio_relevance": "Hydraulic skeletons, turgor pressure, blood pressure systems."
+      },
+      "30": {
+        "name": "Flexible shells and thin films",
+        "bio_relevance": "Cell membranes, mucous layers, cuticles, bark."
+      },
+      "31": {
+        "name": "Porous materials",
+        "bio_relevance": "Spongy bone, lung alveoli, soil organisms exploiting porosity."
+      },
+      "32": {
+        "name": "Color changes",
+        "bio_relevance": "Camouflage, warning coloration, bioluminescence, chromatophores."
+      },
+      "33": {
+        "name": "Homogeneity",
+        "bio_relevance": "Biocompatibility, tissue homogeneity at interfaces."
+      },
+      "34": {
+        "name": "Discarding and recovering",
+        "bio_relevance": "Apoptosis, molting, wound healing, tissue regeneration."
+      },
+      "35": {
+        "name": "Parameter changes",
+        "bio_relevance": "Phase changes in biological materials, viscosity changes, gel-sol transitions."
+      },
+      "36": {
+        "name": "Phase transitions",
+        "bio_relevance": "Ice crystal formation avoidance (antifreeze proteins), evaporative cooling."
+      },
+      "37": {
+        "name": "Thermal expansion",
+        "bio_relevance": "Bi-material hygroscopic actuators in plants, pine cone opening."
+      },
+      "38": {
+        "name": "Strong oxidants",
+        "bio_relevance": "Reactive oxygen species in immune defense, oxidative metabolism."
+      },
+      "39": {
+        "name": "Inert atmosphere",
+        "bio_relevance": "Anaerobic environments, inert biological coatings and barriers."
+      },
+      "40": {
+        "name": "Composite materials",
+        "bio_relevance": "Extremely common in biology. Bone (mineral + collagen), wood (cellulose + lignin), nacre, silk."
+      }
+    }
+  }
+}

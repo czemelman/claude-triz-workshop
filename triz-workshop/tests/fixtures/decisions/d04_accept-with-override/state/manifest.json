@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d04_accept-with-override",
+  "kind": "decisions",
+  "run_id": "fix-d04-accept-ovr",
+  "description": "User chose accept_with_override at fatal_severity_in_critique. State-driver sets flags.override_logged and routes to assemble_report.py with --override_logged.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

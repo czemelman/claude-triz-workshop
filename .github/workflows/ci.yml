@@ -1,0 +1,188 @@
+# triz-workshop CI workflow (design v6 §20, §20.9, §20.11, §20.12).
+#
+# This workflow lives at the REPO ROOT — not inside triz-workshop/ — because
+# the matrix corpus (matrices/, use_cases/, registry.json) sits at the root
+# and the plugin code at triz-workshop/ shares it. The `paths` filter
+# narrows triggering to changes that could plausibly break the test suite.
+#
+# What this enforces:
+#   1. Unit / integration / property tests pass.
+#   2. The real-registry test (§20.11) loads the LIVE corpus and validates
+#      it against storage-design schema + amendments 2-5.
+#   3. The heterogeneity tests (§20.12) catch regressions in matrix
+#      selection / id-routing / lineage handling on edge-case matrices.
+#   4. validate_matrix.py --strict re-checks every matrix file head-to-head
+#      with the schema, since `validate_matrix` is the source of truth for
+#      corpus health.
+#   5. Coverage gate on scripts/next_action.py (§20.9).
+#
+# Subprocess coverage:
+#   The state-driver tests invoke next_action.py via subprocess.run(); a
+#   plain `pytest --cov=scripts/next_action` does NOT see those calls. We
+#   wire up subprocess coverage following the standard recipe:
+#     - .coveragerc (committed at triz-workshop/) sets parallel=true.
+#     - sitecustomize.py (committed at triz-workshop/) calls
+#       coverage.process_startup() at child-interpreter startup.
+#     - tests/conftest.py exports COVERAGE_PROCESS_START + PYTHONPATH so
+#       the child sees both the config and the sitecustomize shim.
+#   With this in place each subprocess writes its own .coverage.<pid>.<host>
+#   fragment; `coverage combine` merges them and `coverage report` enforces
+#   the gate.
+#
+# Coverage threshold:
+#   v0.1 ships with --fail-under=70 because the live-subagent failure paths
+#   in next_action.py are unreachable without a real Claude Code runtime.
+#   Target is 90% (v6 §20.9); raise to 90 when Phase 2 adds the live eval
+#   harness that exercises those paths.
+
+name: triz-workshop CI
+
+# `on:` is quoted to avoid YAML 1.1 parsers (e.g. PyYAML safe_load)
+# coercing it to the boolean True. GitHub Actions parses both forms;
+# quoting keeps lint tools happy.
+"on":
+  push:
+    paths:
+      - "triz-workshop/**"
+      - "matrices/**"
+      - "use_cases/**"
+      - "registry.json"
+      - "selector_tags_vocabulary.json"
+      - "validate_matrix.py"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    paths:
+      - "triz-workshop/**"
+      - "matrices/**"
+      - "use_cases/**"
+      - "registry.json"
+      - "selector_tags_vocabulary.json"
+      - "validate_matrix.py"
+      - ".github/workflows/ci.yml"
+
+jobs:
+  test:
+    name: pytest + coverage + corpus validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      # The plugin's helper scripts and tests both honor TRIZ_MATRICES_PATH
+      # to find the corpus. In CI the corpus is the repo root.
+      TRIZ_MATRICES_PATH: ${{ github.workspace }}
+      # Subprocess-coverage: tell every Python child to read the rc and
+      # write its fragments alongside the parent's data file.
+      COVERAGE_PROCESS_START: ${{ github.workspace }}/triz-workshop/.coveragerc
+      COVERAGE_FILE: ${{ github.workspace }}/triz-workshop/.coverage
+      # Keep PYTHONPATH so child processes pick up triz-workshop/sitecustomize.py.
+      PYTHONPATH: ${{ github.workspace }}/triz-workshop
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: triz-workshop/requirements.txt
+
+      - name: Install dependencies
+        working-directory: triz-workshop
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate matrix corpus (--strict)
+        # Layer 6 partner: catches schema drift in the live matrix files
+        # before any test logic runs. If this fails, the rest of the suite
+        # would produce confusing errors downstream.
+        run: |
+          python validate_matrix.py --strict
+
+      - name: Run unit tests
+        working-directory: triz-workshop
+        run: |
+          python -m pytest tests/unit -q
+
+      - name: Run integration tests (routing fixtures, user decisions)
+        # Real-registry test (§20.11) and heterogeneity tests (§20.12) live
+        # in tests/integration/. We run the entire integration directory in
+        # one pass so the per-test setup cost amortizes.
+        working-directory: triz-workshop
+        run: |
+          python -m pytest tests/integration -q
+
+      - name: Run property tests
+        working-directory: triz-workshop
+        run: |
+          python -m pytest tests/property -q
+
+      - name: Run real-registry test explicitly (§20.11)
+        # Belt-and-braces: even if a future PR moves test_real_registry
+        # under a different directory, this step ensures it runs.
+        working-directory: triz-workshop
+        run: |
+          python -m pytest tests/integration/test_real_registry.py -q
+
+      - name: Run heterogeneity tests explicitly (§20.12)
+        working-directory: triz-workshop
+        run: |
+          python -m pytest tests/integration/test_heterogeneity.py -q
+
+      - name: Coverage run with subprocess support
+        # We invoke pytest WITHOUT the pytest-cov plugin (`-p no:cacheprovider`
+        # is unrelated; we drop pytest-cov by passing no --cov flag). The
+        # subprocess fragments are produced by sitecustomize.py inside each
+        # child. After pytest finishes we explicitly `coverage combine` and
+        # `coverage report` to merge and gate.
+        working-directory: triz-workshop
+        run: |
+          # Clean any stale data from previous runs.
+          rm -f .coverage
+          find . -maxdepth 1 -name ".coverage.*" -delete
+          # Run the entire test suite. Subprocess-coverage fragments will be
+          # written to .coverage.<pid>.<host> in this directory because
+          # COVERAGE_FILE is set to triz-workshop/.coverage.
+          python -m pytest tests/ -q
+          # Combine the fragments into a single .coverage database.
+          python -m coverage combine
+          # Report on the entire scripts/ package — gives us context — but
+          # apply the gate to next_action.py specifically.
+          python -m coverage report
+          # Gate: design v6 §20.9 requires 90%; v0.1 holds at 70 because
+          # several live-subagent failure paths can't be exercised without
+          # the Phase 2 LIVE harness. TODO: raise to 90 in Phase 2.
+          # Use '**/next_action.py' (not '*scripts/next_action.py') because
+          # coverage's glob matches against full paths and the leading-star
+          # glob silently matches nothing.
+          python -m coverage report --include="**/next_action.py" --fail-under=70
+
+      - name: Run eval harness (synthetic v0.1)
+        # Smoke-test the eval runner: 10 labeled cases, no live LLM. If
+        # the runner crashes on the public cases, the routing layer has
+        # regressed even if the unit/integration tests pass.
+        working-directory: triz-workshop
+        run: |
+          python eval/run_eval.py
+
+      - name: Upload coverage report
+        # Lets reviewers inspect the full breakdown in the GitHub UI.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ github.run_id }}
+          path: |
+            triz-workshop/.coverage
+            triz-workshop/htmlcov/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report-${{ github.run_id }}
+          path: triz-workshop/eval/reports/
+          if-no-files-found: ignore
+          retention-days: 14

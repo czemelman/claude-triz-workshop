@@ -1,0 +1,13 @@
+{
+  "fixture_name": "08_mappings-agree",
+  "kind": "states",
+  "run_id": "fix-08-map-agree",
+  "description": "Mapper and critic agree (both 9,14). Expect run_script lookup_principles.",
+  "files": [
+    "01_problem.json",
+    "02_selection.json",
+    "03_mapping_altshuller_39x39.json",
+    "03c_independent_mapping_altshuller_39x39.json",
+    "state.json"
+  ]
+}

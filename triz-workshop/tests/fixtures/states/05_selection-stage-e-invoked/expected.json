@@ -1,0 +1,7 @@
+{
+  "action": "dispatch_subagent",
+  "subagent": "triz-matrix-selector",
+  "run_id": "fix-05-sel-stage-e",
+  "expected_artifact": "02_selection.json",
+  "prompt": "Stage D scoring produced a near-tie (top vs second margin <15%). Inspect `.triz/runs/fix-05-sel-stage-e/02_selection.json` and the candidate matrices' use_case files. You may rewrite 02_selection.json with: a different selected_matrices set; an updated run_strategy ('single' or 'parallel'); updated rationales. Preserve weights_version, schema_version, and stage_e_invoked=true."
+}

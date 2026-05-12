@@ -1,0 +1,10 @@
+{
+  "fixture_name": "d08_clarify-framing-abandon",
+  "kind": "decisions",
+  "run_id": "fix-d08-clarify-abandon",
+  "description": "User aborts at framing-clarify. Expect run_script assemble_report --no_resolution.",
+  "files": [
+    "01_problem.json",
+    "state.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "fix-06-sel-empty",
+  "current_stage": "select_matrix",
+  "completed_stages": [
+    "init",
+    "framer",
+    "check_framing_confidence"
+  ],
+  "selected_matrices": [],
+  "retry_counts": {
+    "select_matrix": 3
+  },
+  "loop_depth": 0,
+  "max_loops": 2,
+  "flags": {
+    "matrix_overrides": [],
+    "matrices_overrides": [],
+    "auto_loop": false,
+    "max_loops": 2,
+    "no_critique": false,
+    "no_mapping_critic": false
+  },
+  "user_prompt": "Test problem",
+  "created_at": 1.0,
+  "compatibility_checked": true
+}

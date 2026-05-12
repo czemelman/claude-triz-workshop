@@ -1,0 +1,10 @@
+{
+  "fixture_name": "02_framer-high-confidence",
+  "kind": "states",
+  "run_id": "fix-02-framer-high",
+  "description": "01_problem.json with framing_confidence=high. Expect run_script select_matrix.",
+  "files": [
+    "01_problem.json",
+    "state.json"
+  ]
+}

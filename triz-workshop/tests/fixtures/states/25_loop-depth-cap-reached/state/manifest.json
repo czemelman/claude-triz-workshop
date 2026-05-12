@@ -1,0 +1,10 @@
+{
+  "fixture_name": "25_loop-depth-cap-reached",
+  "kind": "states",
+  "run_id": "fix-25-loop-cap",
+  "description": "loop_depth equals max_loops (cap reached). Per design: should ask_user or assemble.\n\nActual current code: state-driver doesn't track loop_depth in any branch \u2014 assemble runs whenever no fatal candidates exist, regardless of loop_depth. Documenting v0.1 behavior.",
+  "files": [
+    "07_critique.json",
+    "state.json"
+  ]
+}

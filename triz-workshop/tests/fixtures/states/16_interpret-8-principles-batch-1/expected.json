@@ -1,0 +1,55 @@
+{
+  "action": "dispatch_subagents_parallel",
+  "run_id": "fix-16-interpret-8-b1",
+  "batch_size": 7,
+  "dispatches": [
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_1.json",
+      "prompt": "Interpret principle `1` (canonical id `P_SEGMENTATION`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_1.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_2.json",
+      "prompt": "Interpret principle `2` (canonical id `P_TAKING_OUT`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_2.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_3.json",
+      "prompt": "Interpret principle `3` (canonical id `P_LOCAL_QUALITY`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_3.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_4.json",
+      "prompt": "Interpret principle `4` (canonical id `P_ASYMMETRY`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_4.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_5.json",
+      "prompt": "Interpret principle `5` (canonical id `P_MERGING`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_5.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_6.json",
+      "prompt": "Interpret principle `6` (canonical id `P_UNIVERSALITY`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_6.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_7.json",
+      "prompt": "Interpret principle `7` (canonical id `P_NESTED_DOLL`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_7.json` per 05_interpretation_single.schema.json."
+    },
+    {
+      "subagent": "triz-principle-interpreter",
+      "run_id": "fix-16-interpret-8-b1",
+      "expected_artifact": "05_interpretation_altshuller_39x39_8.json",
+      "prompt": "Interpret principle `8` (canonical id `P_ANTI_WEIGHT`) from matrix `altshuller_39x39` for the user's problem. Read the principle's name, description, and sub_principles from the matrix file. Apply lineage `altshuller-40` (see triz-methodology skill for prompt variants). Write to `.triz/runs/fix-16-interpret-8-b1/05_interpretation_altshuller_39x39_8.json` per 05_interpretation_single.schema.json."
+    }
+  ]
+}
