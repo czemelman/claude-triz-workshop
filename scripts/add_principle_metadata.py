@@ -24,7 +24,7 @@ import glob
 import tempfile
 from typing import Optional
 
-ROOT = '/Users/constantinzemelman/Projects/Triz_matrixes/matrices'
+ROOT = '/Users/constantinzemelman/Projects/Triz_matrixes/prizm/data/matrices'
 
 # The Altshuller-40 canonical ordering (1-indexed). Each entry: (id, canonical_id, primary_name).
 # Canonical IDs follow the convention P_<UPPERCASE_NAME_WITH_UNDERSCORES>.

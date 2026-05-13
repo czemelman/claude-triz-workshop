@@ -21,10 +21,14 @@ import sys
 from typing import Any
 
 ROOT          = os.path.dirname(os.path.abspath(__file__))
-MATRICES_DIR  = os.path.join(ROOT, 'matrices')
-USECASES_DIR  = os.path.join(ROOT, 'use_cases')
-REGISTRY_PATH = os.path.join(ROOT, 'registry.json')
-VOCAB_PATH    = os.path.join(ROOT, 'selector_tags_vocabulary.json')
+# The matrix corpus is bundled inside the plugin at prizm/data/ so it ships
+# with the marketplace install. `validate_matrix.py` lives at repo root for
+# convenience but reads the corpus from its new home.
+_DATA_DIR     = os.path.join(ROOT, 'prizm', 'data')
+MATRICES_DIR  = os.path.join(_DATA_DIR, 'matrices')
+USECASES_DIR  = os.path.join(_DATA_DIR, 'use_cases')
+REGISTRY_PATH = os.path.join(_DATA_DIR, 'registry.json')
+VOCAB_PATH    = os.path.join(_DATA_DIR, 'selector_tags_vocabulary.json')
 
 # ---------------------------------------------------------------------------
 # Legacy validation (original behavior, lightly fixed for structured dims).
@@ -415,7 +419,7 @@ def run_strict() -> int:
     reg_errs = []
     reg_warns = []
     for entry in registry.get('matrices', []):
-        mp = os.path.join(ROOT, entry['matrix_file'])
+        mp = os.path.join(_DATA_DIR, entry['matrix_file'])
         if not os.path.exists(mp):
             if entry.get('bundled') is False:
                 reg_warns.append(

@@ -13,7 +13,7 @@ import json
 import os
 import sys
 
-ROOT      = '/Users/constantinzemelman/Projects/Triz_matrixes'
+ROOT      = '/Users/constantinzemelman/Projects/Triz_matrixes/prizm/data'
 USE_CASES = os.path.join(ROOT, 'use_cases')
 
 # ---------------------------------------------------------------------------

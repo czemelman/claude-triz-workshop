@@ -29,7 +29,7 @@ import os
 import sys
 from typing import Any
 
-ROOT      = '/Users/constantinzemelman/Projects/Triz_matrixes'
+ROOT      = '/Users/constantinzemelman/Projects/Triz_matrixes/prizm/data'
 USE_CASES = os.path.join(ROOT, 'use_cases')
 REGISTRY  = json.load(open(os.path.join(ROOT, 'registry.json')))
 VALID_IDS = {m['id'] for m in REGISTRY['matrices'] if m.get('status') != 'identical-duplicate'}

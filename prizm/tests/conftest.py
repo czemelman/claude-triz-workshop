@@ -35,7 +35,7 @@ PLUGIN_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = PLUGIN_ROOT / "scripts"
 TESTS_DIR = Path(__file__).resolve().parent
 FIXTURES_DIR = TESTS_DIR / "fixtures"
-LIVE_MATRICES_PATH = PLUGIN_ROOT.parent  # registry.json sits at project root.
+LIVE_MATRICES_PATH = PLUGIN_ROOT / "data"  # corpus is bundled inside the plugin (prizm/data/)
 
 # Make `scripts.<module>` and `_common` importable from anywhere.
 for p in (str(PLUGIN_ROOT), str(SCRIPTS_DIR)):

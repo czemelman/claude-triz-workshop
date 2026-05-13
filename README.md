@@ -19,29 +19,29 @@ Every step writes an auditable JSON artifact. Runs are replayable.
 
 ```
 .
-├── prizm/                # the Claude Code plugin (THIS is what /plugin install grabs)
+├── prizm/                            # the Claude Code plugin (THIS is what /plugin install grabs)
 │   ├── .claude-plugin/plugin.json
-│   ├── agents/                   # 7 LLM subagents
-│   ├── commands/                 # 4 slash commands
-│   ├── scripts/                  # 9 deterministic Python scripts (state-driver + selection + lookup + assembly)
-│   ├── schemas/                  # 11 JSON Schemas (artifact contracts)
-│   ├── skills/triz-methodology/  # TRIZ methodology skill
-│   ├── tests/                    # 145 tests (unit + integration + property + e2e_replay)
-│   └── eval/                     # 30 labeled cases + synthetic eval harness
+│   ├── agents/                       # 7 LLM subagents
+│   ├── commands/                     # 4 slash commands
+│   ├── scripts/                      # 9 deterministic Python scripts (state-driver + selection + lookup + assembly)
+│   ├── schemas/                      # 11 JSON Schemas (artifact contracts)
+│   ├── skills/triz-methodology/      # TRIZ methodology skill
+│   ├── tests/                        # 145 tests (unit + integration + property + e2e_replay)
+│   ├── eval/                         # 30 labeled cases + synthetic eval harness
+│   └── data/                         # bundled matrix corpus — ships with the plugin install
+│       ├── matrices/                 # 9 bundled matrix files + redundant/ provenance copies
+│       ├── use_cases/                # 11 v6-shaped use-case files (what each matrix is for)
+│       ├── registry.json             # single index of all matrices (loaded by the plugin)
+│       └── selector_tags_vocabulary.json
 │
-├── matrices/                     # 9 bundled matrix files + redundant/ provenance copies
-├── use_cases/                    # 11 v6-shaped use-case files (what each matrix is for)
-├── registry.json                 # single index of all matrices (loaded by the plugin)
-├── selector_tags_vocabulary.json # controlled vocab for selector_tags fields
-├── validate_matrix.py            # strict v6 validator for the corpus
-├── scripts/                      # corpus-maintenance scripts (migrate, normalize, regenerate registry)
-│
-├── triz_workshop_design.md       # full plugin design (v6)
-├── matrix_storage_design.md      # storage schema for the matrix corpus (v1.1)
-├── meta_analysis.md              # statistical analysis across matrices
-├── redundancy_analysis.md        # which matrices are identical to which
-├── LICENSES.md                   # per-matrix license matrix + attribution lines
-└── MATRICES_OPTIONAL.md          # how to fetch the 2 non-bundled matrices
+├── validate_matrix.py                # strict v6 validator (reads from prizm/data/)
+├── scripts/                          # corpus-maintenance scripts (migrate, normalize, regenerate registry)
+├── triz_workshop_design.md           # full plugin design (v6)
+├── matrix_storage_design.md          # storage schema for the matrix corpus (v1.1)
+├── meta_analysis.md                  # statistical analysis across matrices
+├── redundancy_analysis.md            # which matrices are identical to which
+├── LICENSES.md                       # per-matrix license matrix + attribution lines
+└── MATRICES_OPTIONAL.md              # how to fetch the 2 non-bundled matrices
 ```
 
 ## Install
@@ -53,23 +53,25 @@ Inside Claude Code:
 ```
 /plugin marketplace add czemelman/claude-triz-workshop
 /plugin install prizm@prizm
+/reload-plugins
 ```
 
-Then point the plugin at the bundled matrix corpus by setting an env var **before launching Claude Code** (the plugin's scripts read this at startup):
-
-```bash
-export TRIZ_MATRICES_PATH=~/.claude/plugins/marketplaces/claude-triz-workshop  # repo dir name unchanged
-```
-
-(That path is where Claude Code clones the marketplace — adjust if yours differs. Run `/plugin list` to confirm.)
+That's it. The matrix corpus is bundled inside the plugin (`prizm/data/`) so no env var is required — `_common.py` finds it automatically.
 
 ### Option 2 — Local dev install (symlink)
 
 ```bash
 git clone git@github.com:czemelman/claude-triz-workshop.git ~/dev/claude-triz-workshop
 ln -s ~/dev/claude-triz-workshop/prizm ~/.claude/plugins/prizm
-export TRIZ_MATRICES_PATH=~/dev/claude-triz-workshop
 # Restart Claude Code so it picks up the new plugin manifest.
+```
+
+### Override the corpus location (optional)
+
+If you maintain your own customized matrix corpus elsewhere, point the plugin at it:
+
+```bash
+export TRIZ_MATRICES_PATH=/path/to/your/corpus  # must contain registry.json
 ```
 
 ### Using it

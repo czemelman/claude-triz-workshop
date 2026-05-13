@@ -5,7 +5,7 @@ import json
 import os
 import sys
 
-ROOT     = '/Users/constantinzemelman/Projects/Triz_matrixes'
+ROOT     = '/Users/constantinzemelman/Projects/Triz_matrixes/prizm/data'
 MATRICES = os.path.join(ROOT, 'matrices')
 
 def hash_file(p: str) -> str:

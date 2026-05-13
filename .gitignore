@@ -1,6 +1,6 @@
 # --- Restricted-license matrices (NOT redistributable; see MATRICES_OPTIONAL.md) ---
-matrices/drug_safety_18x18.json
-matrices/mann_matrix2003_48x48.json
+prizm/data/matrices/drug_safety_18x18.json
+prizm/data/matrices/mann_matrix2003_48x48.json
 
 # --- Runtime artifacts ---
 .triz/                      # per-project plugin run state

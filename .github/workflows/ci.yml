@@ -1,7 +1,7 @@
 # prizm CI workflow (design v6 §20, §20.9, §20.11, §20.12).
 #
 # This workflow lives at the REPO ROOT — not inside prizm/ — because
-# the matrix corpus (matrices/, use_cases/, registry.json) sits at the root
+# the matrix corpus (prizm/data/matrices/, prizm/data/use_cases/, prizm/data/registry.json) is bundled inside the plugin
 # and the plugin code at prizm/ shares it. The `paths` filter
 # narrows triggering to changes that could plausibly break the test suite.
 #
@@ -44,19 +44,19 @@ name: prizm CI
   push:
     paths:
       - "prizm/**"
-      - "matrices/**"
-      - "use_cases/**"
-      - "registry.json"
-      - "selector_tags_vocabulary.json"
+      - "prizm/data/matrices/**"
+      - "prizm/data/use_cases/**"
+      - "prizm/data/registry.json"
+      - "prizm/data/selector_tags_vocabulary.json"
       - "validate_matrix.py"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "prizm/**"
-      - "matrices/**"
-      - "use_cases/**"
-      - "registry.json"
-      - "selector_tags_vocabulary.json"
+      - "prizm/data/matrices/**"
+      - "prizm/data/use_cases/**"
+      - "prizm/data/registry.json"
+      - "prizm/data/selector_tags_vocabulary.json"
       - "validate_matrix.py"
       - ".github/workflows/ci.yml"
 
@@ -68,7 +68,7 @@ jobs:
     env:
       # The plugin's helper scripts and tests both honor TRIZ_MATRICES_PATH
       # to find the corpus. In CI the corpus is the repo root.
-      TRIZ_MATRICES_PATH: ${{ github.workspace }}
+      TRIZ_MATRICES_PATH: ${{ github.workspace }}/prizm/data
       # Subprocess-coverage: tell every Python child to read the rc and
       # write its fragments alongside the parent's data file.
       COVERAGE_PROCESS_START: ${{ github.workspace }}/prizm/.coveragerc

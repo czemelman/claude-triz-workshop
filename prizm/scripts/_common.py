@@ -37,22 +37,32 @@ def matrices_root() -> Path:
     """Resolve the matrix corpus root.
 
     Precedence (matches design v6 §23):
-        1. TRIZ_MATRICES_PATH env var
-        2. ./Triz_matrixes relative to plugin root's parent
-           (the way this repo is laid out: matrices live as a sibling of the
-           plugin, not inside it)
+        1. TRIZ_MATRICES_PATH env var (user override)
+        2. <plugin>/data/   (the bundled corpus — ships with the marketplace install)
+        3. <plugin>/../     (sibling layout used by dev clones of this repo)
+        4. <plugin>/../Triz_matrixes/  (legacy / last-resort fallback)
+
+    Step 2 is the production path. When users install via
+    `/plugin install prizm@prizm`, the marketplace clones only the
+    plugin directory, so the corpus must live INSIDE the plugin.
+    Step 3 supports dev workflows where the repo is cloned whole and
+    the plugin sits next to the corpus.
     """
     env = os.environ.get("TRIZ_MATRICES_PATH")
     if env:
         p = Path(env).expanduser().resolve()
-        if p.exists():
+        if p.exists() and (p / "registry.json").exists():
             return p
-        # If env was set but doesn't resolve, fall back to default to keep
-        # tests / smoke runs working even when the env points at nothing.
-    # Default: corpus is a sibling of the plugin (this repo's layout).
-    candidate = _PLUGIN_ROOT.parent
-    if (candidate / "registry.json").exists():
-        return candidate
+        # If env was set but doesn't resolve, fall through to defaults
+        # to keep tests / smoke runs working even when the env points at nothing.
+    # Bundled corpus inside the plugin (production install).
+    bundled = _PLUGIN_ROOT / "data"
+    if (bundled / "registry.json").exists():
+        return bundled
+    # Sibling layout (dev clone of the source repo).
+    sibling = _PLUGIN_ROOT.parent
+    if (sibling / "registry.json").exists():
+        return sibling
     # Last-resort: a Triz_matrixes subdir under the plugin's parent.
     return (_PLUGIN_ROOT.parent / "Triz_matrixes").resolve()
 
