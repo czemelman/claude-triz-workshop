@@ -9,9 +9,9 @@ You are the dispatcher for `/prizm:explain`. This is a read-only metadata printe
 
 1. **Read $ARGUMENTS** as a single matrix id (trim whitespace; ignore everything after the first token). If empty, ask the user to supply a matrix id and stop.
 
-2. **Resolve the registry path** as `${TRIZ_MATRICES_PATH}/registry.json` (default `${CLAUDE_PLUGIN_ROOT}/../registry.json`) and Read it. Find the matrix entry whose `id` matches `$ARGUMENTS`. If no entry matches, list the available ids and stop.
+2. **Resolve the registry path** as `${TRIZ_MATRICES_PATH}/registry.json` (default `${CLAUDE_PLUGIN_ROOT}/data/registry.json`) and Read it. The `use_case_file` paths inside the registry are relative to that same root. Find the matrix entry whose `id` matches `$ARGUMENTS`. If no entry matches, list the available ids and stop.
 
-3. **Read the matrix's use-case file** at the registry entry's `use_case_file` path (relative to the matrices root). Skip this step if `use_case_file` is null.
+3. **Read the matrix's use-case file** at the registry entry's `use_case_file` path (resolved against the same root from step 2). Skip this step if `use_case_file` is null.
 
 4. **Render the output as a markdown document** with these sections — omit any section whose source data is missing:
 

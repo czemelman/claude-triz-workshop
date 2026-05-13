@@ -7,7 +7,7 @@ You are the dispatcher for `/prizm:list`. This is a read-only registry inspector
 
 ## Steps
 
-1. **Resolve the registry path.** Use `${TRIZ_MATRICES_PATH}/registry.json` if the env var is set, otherwise the project default `${CLAUDE_PLUGIN_ROOT}/../registry.json`. Read the file with the Read tool.
+1. **Resolve the registry path.** Use `${TRIZ_MATRICES_PATH}/registry.json` if the env var is set, otherwise the bundled corpus at `${CLAUDE_PLUGIN_ROOT}/data/registry.json`. Read the file with the Read tool. The `use_case_file` paths inside the registry are relative to that same root (set `BASE` accordingly for step 3).
 
 2. **Parse `$ARGUMENTS`** for optional filters (any of the three; all may be combined; an absent filter matches everything):
    - `--domain=<value>` — keep only matrices whose `use_cases/<id>.json:selector_tags.domains` array contains `<value>`.
