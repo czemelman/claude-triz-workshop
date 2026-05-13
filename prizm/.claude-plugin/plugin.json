@@ -1,6 +1,6 @@
 {
   "name": "prizm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "prizm — refract one problem through multiple TRIZ matrices and keep their distinct framings. Multi-matrix selection, structurally-blinded mapping critic, principle lookup, concrete synthesis, secondary-contradiction critique. State machine in Python; LLM is a dispatcher.",
   "author": {
     "name": "Constantin Zemelman",

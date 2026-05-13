@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-05-13
+
+### Added
+
+- **`digest.html` — a self-contained dark-theme HTML report** emitted by
+  `assemble_report.py` alongside `final-report.md` at the end of every
+  `/prizm:solve` run. Stat cards (matrices / principles / candidates /
+  severity counts), pipeline strip, contradiction pole layout,
+  matrix-selection cards, Phase 2 verdict pills, severity-color-coded
+  candidate cards, collapsible drill-downs for implementation sketch /
+  contributing interpretations / critique. Inline CSS, no JS, no external
+  assets — opens cleanly from disk or via htmlpreview.github.io.
+- **`generate_digest.py`** — standalone digest renderer. Reads the
+  artifacts in `.triz/runs/<run-id>/` and produces `digest.html`. Can be
+  re-run independently to regenerate or to render a digest for an
+  externally-edited run.
+- **README revamp.** Added Mermaid pipeline / two-phase-critic /
+  architecture diagrams, concrete use-case examples per matrix lineage,
+  a "when not to use this" section, and links to the sample digest +
+  Markdown report under `docs/examples/`.
+- **`docs/examples/`** — `digest-nfc-attestation.html` and
+  `final-report-nfc-attestation.md` from a real end-to-end run on an
+  NFC-chip + blockchain authentication architecture problem.
+
 ## [0.1.1] - 2026-05-13
 
 Post-MVP refinements driven by the first full end-to-end production run

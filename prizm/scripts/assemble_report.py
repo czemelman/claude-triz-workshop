@@ -451,8 +451,26 @@ def main(argv: list[str] | None = None) -> int:
 
     rd = _common.run_dir(args.run_id)
     out = rd / "final-report.md"
-    _common.atomic_write(out, text)
+    # final-report.md is markdown, not a schema-validated artifact.
+    _common.atomic_write(out, text, validate=False)
     print(f"assemble_report: wrote {out} ({len(text.splitlines())} lines)")
+
+    # Render the HTML digest as a sibling artifact. Failure here is logged
+    # but does not fail the run — the markdown report is the authoritative
+    # output; digest.html is a visual convenience.
+    try:
+        import generate_digest
+        digest_text = generate_digest.render_digest(
+            args.run_id, excluded, args.override_logged,
+        )
+        digest_out = rd / "digest.html"
+        _common.atomic_write(digest_out, digest_text, validate=False)
+        print(f"assemble_report: wrote {digest_out} "
+              f"({len(digest_text)} bytes)")
+    except Exception as e:
+        print(f"assemble_report: digest generation failed "
+              f"({type(e).__name__}: {e}); final-report.md is unaffected",
+              file=sys.stderr)
     return 0
 
 
