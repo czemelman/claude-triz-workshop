@@ -6,13 +6,10 @@
     "name": "Constantin Zemelman",
     "url": "https://github.com/czemelman"
   },
-  "metadata": {
-    "pluginRoot": "./"
-  },
   "plugins": [
     {
       "name": "prizm",
-      "source": "prizm",
+      "source": "./prizm",
       "description": "Frame a problem as a TRIZ contradiction → select the best-fitting matrix from 9 bundled options → map contradiction to parameters with a structurally-blinded independent critic → look up inventive principles → expand into concrete solutions → stress-test for secondary contradictions. Every step writes an auditable JSON artifact. Runs are replayable.",
       "homepage": "https://github.com/czemelman/claude-triz-workshop",
       "categories": ["problem-solving", "design", "engineering", "methodology"]
