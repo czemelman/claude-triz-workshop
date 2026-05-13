@@ -184,8 +184,11 @@ def _render_synth_section(
 
     candidates = solutions.get("candidates", [])
     rendered = 0
-    for cand in candidates:
-        if cand.get("name") in excluded:
+    for idx, cand in enumerate(candidates):
+        # excluded may contain free-text names OR stable ordinal ids ("s1",
+        # "s2", ...). Either form drops the candidate.
+        solution_id = f"s{idx + 1}"
+        if cand.get("name") in excluded or solution_id in excluded:
             continue
         rendered += 1
         lines.append(f"### Candidate: {cand['name']}")
@@ -399,11 +402,19 @@ def assemble(
     lines.append("## Trace")
     lines.append("")
     rd = _common.run_dir(run_id, create=False)
-    artifacts = sorted(p.name for p in rd.glob("0*.json"))
+    top_artifacts = sorted(p.name for p in rd.glob("0*.json"))
+    partial_dir = rd / "partial"
+    partial_artifacts = sorted(p.name for p in partial_dir.glob("*.json")) \
+        if partial_dir.exists() else []
+    total = len(top_artifacts) + len(partial_artifacts)
     lines.append(f"- **Run dir:** `{rd}`")
-    lines.append(f"- **Artifacts:** {len(artifacts)}")
-    for a in artifacts:
+    lines.append(f"- **Artifacts:** {total} "
+                 f"(top-level {len(top_artifacts)}, "
+                 f"partial/ {len(partial_artifacts)})")
+    for a in top_artifacts:
         lines.append(f"  - {a}")
+    for a in partial_artifacts:
+        lines.append(f"  - partial/{a}")
     lines.append("")
     return "\n".join(lines)
 

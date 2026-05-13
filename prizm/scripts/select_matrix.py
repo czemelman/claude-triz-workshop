@@ -459,10 +459,17 @@ def main(argv: list[str] | None = None) -> int:
         return 3
 
     out = _common.write_artifact(args.run_id, "02_selection.json", selection)
-    print(f"select_matrix: wrote {out} "
-          f"(selected={len(selection['selected_matrices'])}, "
-          f"strategy={selection['run_strategy']}, "
-          f"stage_e_invoked={selection['stage_e_invoked']})")
+    if selection.get("stage_e_invoked"):
+        # The Stage D output is provisional — the matrix-selector subagent
+        # will rewrite selected_matrices / run_strategy next. Logging the
+        # counts here is misleading because they'll change.
+        print(f"select_matrix: wrote {out} "
+              f"(stage_e_invoked=True, awaiting LLM tiebreak)")
+    else:
+        print(f"select_matrix: wrote {out} "
+              f"(selected={len(selection['selected_matrices'])}, "
+              f"strategy={selection['run_strategy']}, "
+              f"stage_e_invoked=False)")
     return 0
 
 

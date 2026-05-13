@@ -25,9 +25,9 @@ You are the orchestrator dispatcher for `/prizm:solve`. Per design v6 §6 the st
 
 ## Action handlers
 
-- **`dispatch_subagent`** — Use the Task tool with `subagent_type` set to `subagent` and the action's `prompt` as the message. The subagent writes its artifact to `expected_artifact` itself; you do not touch the file.
+- **`dispatch_subagent`** — Use the Task tool with `subagent_type` set to `prizm:<action.subagent>` (the plugin's agents are namespaced — e.g. `triz-problem-framer` → `prizm:triz-problem-framer`) and the action's `prompt` as the message. The subagent writes its artifact to `expected_artifact` itself; you do not touch the file.
 
-- **`dispatch_subagents_parallel`** — Issue all entries in `dispatches` as Task calls in parallel (one assistant message, multiple tool calls). Respect `batch_size` if present: chunk the list and run one batch per loop iteration. Each entry has its own `subagent`, `prompt`, and `expected_artifact`.
+- **`dispatch_subagents_parallel`** — Issue all entries in `dispatches` as Task calls in parallel (one assistant message, multiple tool calls). Respect `batch_size` if present: chunk the list and run one batch per loop iteration. Each entry has its own `subagent` (prepend `prizm:` to get the `subagent_type`), `prompt`, and `expected_artifact`.
 
 - **`run_script`** — Run `python3 ${CLAUDE_PLUGIN_ROOT}/scripts/<script>` with the action's `args`. Read the script's stdout/stderr only for diagnostic display; the next iteration of `next_action.py` validates the resulting `expected_artifact`.
 

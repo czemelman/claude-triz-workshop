@@ -92,15 +92,62 @@ def run_dir(run_id: str, create: bool = True) -> Path:
     return rd
 
 
-def atomic_write(path: Path | str, data: Any) -> None:
+def _validate_against_schema_if_known(path: Path, data: Any) -> None:
+    """If the filename maps to a known artifact schema, validate.
+
+    Raises ValueError on schema violation. Silently skips when no mapping
+    exists (state.json, awaiting_decision.json, final-report.md, etc.).
+
+    Lives inline (rather than calling validate_artifact.py) so script-written
+    artifacts get the same gate that subagent Write/Edit calls get via the
+    PostToolUse hook — addressing the gap where the hook never fires for
+    files written via os.replace.
+    """
+    if not isinstance(data, (dict, list)):
+        return
+    schema_name = schema_for_artifact(path.name)
+    if schema_name is None:
+        return
+    try:
+        import jsonschema  # local import to avoid import cost on hot paths
+        schema = load_schema(schema_name)
+        validator = jsonschema.Draft202012Validator(schema)
+        errs = sorted(
+            validator.iter_errors(data),
+            key=lambda e: list(e.absolute_path),
+        )
+        if errs:
+            first = errs[0]
+            loc = "/".join(str(p) for p in first.absolute_path) or "<root>"
+            raise ValueError(
+                f"{path.name} schema violation at {loc}: {first.message}"
+            )
+    except ImportError:
+        # jsonschema not available in this environment — silently skip.
+        # Tests that don't import jsonschema still work; production has it
+        # via requirements.txt.
+        return
+
+
+def atomic_write(path: Path | str, data: Any, *, validate: bool = True) -> None:
     """Write JSON atomically: tmp file in the same dir, fsync, rename.
 
     Same-directory tmp guarantees rename is atomic on POSIX (no cross-device
     move). Hook log readers and concurrent state-driver invocations never see
     a half-written file.
+
+    When `validate=True` (the default) and the filename maps to a known
+    artifact schema, the data is validated before write. This closes the
+    silent gap where script-written artifacts bypassed the PostToolUse
+    validation hook (the hook only fires for Write/Edit/MultiEdit tool calls,
+    not os.replace). Pass `validate=False` for raw markdown / non-schema'd
+    files like final-report.md or state.json.
     """
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
+    # Schema gate BEFORE we open a tmp file: bad data never produces a file.
+    if validate:
+        _validate_against_schema_if_known(p, data)
     # Encode first so we don't create a tmp file when the data is bad.
     if isinstance(data, (dict, list)):
         text = json.dumps(data, indent=2, sort_keys=False, ensure_ascii=False)
@@ -117,6 +164,13 @@ def atomic_write(path: Path | str, data: Any) -> None:
             f.flush()
             os.fsync(f.fileno())
         os.replace(tmp_path, p)
+        # mkstemp creates files 0600 by default; subagent-written artifacts
+        # are 0644 (Write tool default). Match that so permissions don't
+        # split by write-path.
+        try:
+            os.chmod(p, 0o644)
+        except OSError:
+            pass
     except Exception:
         # Best-effort cleanup of leftover tmp file.
         try:

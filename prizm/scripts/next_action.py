@@ -105,7 +105,7 @@ def _emit_ask_user(kind: str, run_id: str, **extra) -> int:
     # killed orchestrator can be resumed without losing the prompt context.
     try:
         rd = _common.run_dir(run_id)
-        _common.atomic_write(rd / "awaiting_decision.json", payload)
+        _common.atomic_write(rd / "awaiting_decision.json", payload, validate=False)
     except Exception:
         pass
     return _emit(payload)
@@ -182,7 +182,25 @@ def _load_state(run_id: str) -> dict:
 
 def _persist_state(state: dict) -> None:
     rd = _common.run_dir(state["run_id"])
-    _common.atomic_write(rd / "state.json", state)
+    # state.json has no JSON schema; pass validate=False to skip the schema
+    # gate that atomic_write applies for known artifact filenames.
+    _common.atomic_write(rd / "state.json", state, validate=False)
+
+
+def _dismiss_awaiting_decision(run_id: str) -> None:
+    """Remove the awaiting_decision.json sentinel once the user has answered.
+
+    The state-driver writes this file when emitting an ask_user action so a
+    killed orchestrator can resume cleanly. Once the answer arrives and the
+    state advances, the file is stale and lying about run state.
+    """
+    try:
+        p = _common.run_dir(run_id, create=False) / "awaiting_decision.json"
+        if p.exists():
+            p.unlink()
+    except OSError:
+        # Best-effort cleanup; never let stale-file housekeeping break the run.
+        pass
 
 
 def _bump_retry(state: dict, stage: str) -> int:
@@ -613,6 +631,12 @@ def _stage_stage_e_check(state: dict) -> int:
         _persist_state(state)
         return _emit(_action_run_selector_subagent(run_id))
 
+    # After Stage E (or skip), the selector subagent may have rewritten
+    # selected_matrices. Resync state so downstream readers don't see the
+    # pre-Stage-E set.
+    state["selected_matrices"] = [
+        m["matrix_id"] for m in selection.get("selected_matrices", [])
+    ]
     _advance_stage(state, _common.Stage.MAPPING_PHASE1)
     _persist_state(state)
     return _stage_mapping_phase1(state)
@@ -977,11 +1001,23 @@ def _stage_check_fatal(state: dict) -> int:
         {"id": "abandon_with_writeup",
          "label": "Abandon the run; produce a 'no acceptable resolution' report."},
     ])
+    # Stable ordinal-based ids so callers can address candidates without
+    # relying on the free-text name (which can drift across re-synthesis).
+    # Pairs surface in the ask_user payload alongside the legacy names.
+    fatal_with_ids = [
+        {"solution_id": f"s{crits.index(c) + 1}", "name": c["candidate_name"]}
+        for c in fatal
+    ]
+    non_fatal_with_ids = [
+        {"solution_id": f"s{crits.index(c) + 1}", "name": c["candidate_name"]}
+        for c in crits if c.get("severity") != "fatal"
+    ]
     return _emit_ask_user(
         "fatal_severity_in_critique", run_id,
         stage_paused_at="07_critique",
         fatal_candidates=[c["candidate_name"] for c in fatal],
         non_fatal_candidates=[c["candidate_name"] for c in crits if c.get("severity") != "fatal"],
+        candidates_with_ids=fatal_with_ids + non_fatal_with_ids,
         options=options,
     )
 
@@ -1065,17 +1101,28 @@ def _apply_user_decision(state: dict, raw: str) -> tuple[bool, str | None]:
         return True, None
 
     if choice == "drop_fatal_proceed":
-        # Caller usually supplies fatal_candidates; if not, derive from critique.
-        excluded = payload.get("fatal_candidates")
-        if not excluded:
-            try:
-                crit = _common.read_artifact(state["run_id"], "07_critique.json")
-                excluded = [c["candidate_name"]
-                            for c in crit.get("per_solution_critiques", [])
-                            if c.get("severity") == "fatal"]
-            except Exception:
-                excluded = []
-        flags["excluded_candidates"] = excluded
+        # Three ways the caller can specify what to drop, in precedence order:
+        #   1. fatal_solution_ids: ["s1", "s3"]  (stable ordinal ids, preferred)
+        #   2. fatal_candidates:   ["name1", ...] (legacy free-text names)
+        #   3. neither supplied → derive from critique severity
+        excluded: list[str] = []
+        try:
+            crit = _common.read_artifact(state["run_id"], "07_critique.json")
+            crit_list = crit.get("per_solution_critiques", [])
+        except Exception:
+            crit_list = []
+        ids = payload.get("fatal_solution_ids") or []
+        if ids and crit_list:
+            id_set = set(ids)
+            for idx, c in enumerate(crit_list):
+                if f"s{idx + 1}" in id_set:
+                    excluded.append(c.get("candidate_name", ""))
+        elif payload.get("fatal_candidates"):
+            excluded = list(payload["fatal_candidates"])
+        elif crit_list:
+            excluded = [c["candidate_name"] for c in crit_list
+                        if c.get("severity") == "fatal"]
+        flags["excluded_candidates"] = [e for e in excluded if e]
         state["current_stage"] = _common.Stage.ASSEMBLE.value
         return True, None
 
@@ -1255,6 +1302,11 @@ def main(argv: list[str] | None = None) -> int:
                     hint='--user-input must be a JSON object with at least {"choice": "..."}',
                 )
             _persist_state(state)
+            # The pending ask_user prompt is resolved — remove the
+            # awaiting_decision.json sentinel so a later replay/inspector
+            # doesn't think the run is still paused. The state machine
+            # already advanced via _apply_user_decision.
+            _dismiss_awaiting_decision(state["run_id"])
 
         return _dispatch(state)
 
